@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="facebook_app_id">583698071813390</string>
-    <string name="app_name">我就是愛爆料APP</string>
+    <string name="app_name">二手書交流書鋪</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">贊助</string>
-    <string name="title_activity_two">我就是愛爆料APP</string>
-    <string name="title_activity_headpage">我就是愛爆料APP</string>
+    <string name="title_activity_two">二手書交流書鋪</string>
+    <string name="title_activity_headpage">二手書交流書鋪</string>
     <string name="banner_ad_unit_id">ca-app-pub-7019441527375550/1880466629</string>
     <string name="Network_status">網路狀態</string>
     <string name="no_network">目前無網路連線</string>
