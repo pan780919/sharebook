@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">821567933476-40fdhr3p14lum5j44ld1qqhorhuvc2or.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://bookshare-99cb3.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">821567933476</string>
+    <string name="google_api_key" translatable="false">AIzaSyD5hd5FvUzQpoF-wsuQAVcb_LI7uFXayrg</string>
+    <string name="google_app_id" translatable="false">1:821567933476:android:1ae32213accea759</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyD5hd5FvUzQpoF-wsuQAVcb_LI7uFXayrg</string>
+    <string name="google_storage_bucket" translatable="false">bookshare-99cb3.appspot.com</string>
+</resources>

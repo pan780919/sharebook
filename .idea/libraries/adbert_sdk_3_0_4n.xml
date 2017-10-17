@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="adbert-sdk-3.0.4n">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/taiwanpetadoptionApp/libs/adbert-sdk-3.0.4n.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
