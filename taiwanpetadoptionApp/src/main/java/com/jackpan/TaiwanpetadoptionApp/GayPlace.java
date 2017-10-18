@@ -16,22 +16,24 @@ public class GayPlace{
     public  String pic;
     public  String pic2;
     public  String pic3;
-    public  String pic4;
-    public  String pic5;
+//    public  String pic4;
+//    public  String pic5;
     public String name;
     public String date;
     public String url;
-    public String url2;
-    public String url3;
+//    public String url2;
+//    public String url3;
     public String adds;
-    public  Double lat;
-    public  Double lon;
+//    public  Double lat;
+//    public  Double lon;
     public  int   like = 1;
     public  String tomsg;
     public  int   view =1;
-    public  String mood;
+//    public  String mood;
     public  String cat;
-
+    public  String phone;
+    public  String price;
+    public  String isbn;
 //    List<ForMsg> ForMsg;
 
 

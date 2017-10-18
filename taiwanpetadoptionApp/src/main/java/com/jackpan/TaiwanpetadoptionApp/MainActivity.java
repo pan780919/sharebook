@@ -29,6 +29,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
 import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
@@ -100,6 +101,7 @@ import com.jackpan.MyPushService;
 import com.jackpan.VideoViewActivity;
 import com.jackpan.video.VideoMainActivity;
 import com.jackpan.Brokethenews.R;
+
 public class MainActivity extends Activity {
     private ListView petlist;
     private ArrayList<ResultData> mAllData = new ArrayList<ResultData>();
@@ -130,10 +132,10 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 //		 //開啟全螢幕
-//        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,	
-//                             WindowManager.LayoutParams.FLAG_FULLSCREEN);	
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                             WindowManager.LayoutParams.FLAG_FULLSCREEN);
 //        //設定隱藏APP標題	
-//        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
         auth = FirebaseAuth.getInstance();
         authListener = new FirebaseAuth.AuthStateListener() {
             @Override
@@ -144,16 +146,19 @@ public class MainActivity extends Activity {
                     Log.d("onAuthStateChanged", "登入:" +
                             user.getUid());
                     userUID = user.getUid();
-                    MySharedPrefernces.saveUserId(MainActivity.this,userUID);
-                   if(firebaseAuth.getCurrentUser().getDisplayName()!=null) MySharedPrefernces.saveUserName(MainActivity.this,firebaseAuth.getCurrentUser().getDisplayName());
-                    else MySharedPrefernces.saveUserName(MainActivity.this,"沒有暱稱");
-                    if(firebaseAuth.getCurrentUser().getEmail()!=null) MySharedPrefernces.saveUserMail(MainActivity.this,firebaseAuth.getCurrentUser().getEmail());
-                    else MySharedPrefernces.saveUserMail(MainActivity.this,"");
-                    if(firebaseAuth.getCurrentUser().getPhotoUrl()!=null)MySharedPrefernces.saveUserPic(MainActivity.this, String.valueOf(firebaseAuth.getCurrentUser().getPhotoUrl()));
-                    else MySharedPrefernces.saveUserPic(MainActivity.this,"");
+                    MySharedPrefernces.saveUserId(MainActivity.this, userUID);
+                    if (firebaseAuth.getCurrentUser().getDisplayName() != null)
+                        MySharedPrefernces.saveUserName(MainActivity.this, firebaseAuth.getCurrentUser().getDisplayName());
+                    else MySharedPrefernces.saveUserName(MainActivity.this, "沒有暱稱");
+                    if (firebaseAuth.getCurrentUser().getEmail() != null)
+                        MySharedPrefernces.saveUserMail(MainActivity.this, firebaseAuth.getCurrentUser().getEmail());
+                    else MySharedPrefernces.saveUserMail(MainActivity.this, "");
+                    if (firebaseAuth.getCurrentUser().getPhotoUrl() != null)
+                        MySharedPrefernces.saveUserPic(MainActivity.this, String.valueOf(firebaseAuth.getCurrentUser().getPhotoUrl()));
+                    else MySharedPrefernces.saveUserPic(MainActivity.this, "");
                 } else {
                     Log.d("onAuthStateChanged", "已登出");
-                    MySharedPrefernces.saveUserId(MainActivity.this,"");
+                    MySharedPrefernces.saveUserId(MainActivity.this, "");
                 }
             }
         };
@@ -573,27 +578,25 @@ public class MainActivity extends Activity {
 
             TextView place = (TextView) convertView.findViewById(R.id.palace);
             TextView time = (TextView) convertView.findViewById(R.id.time);
-            TextView  userview = (TextView) convertView.findViewById(R.id.view);
-            TextView  userlike = (TextView) convertView.findViewById(R.id.like);
+            TextView userview = (TextView) convertView.findViewById(R.id.view);
+            TextView userlike = (TextView) convertView.findViewById(R.id.like);
             bigtext.setText(taipeiZoo.cat);
             textname.setText(taipeiZoo.getTittle());
-            list.setText("作者:" +taipeiZoo.getName());
-            time.setText("發文時間:"+taipeiZoo.getDate());
+            list.setText("賣家:" + taipeiZoo.getName());
+            time.setText("發文時間:" + taipeiZoo.getDate());
 //            bigtext.setVisibility(View.GONE);
             place.setVisibility(View.VISIBLE);
-            place.setText("ID:"+taipeiZoo.getId());
-            if(taipeiZoo.getView()==-1){
-                userview.setText("觀看人數:"+0);
-            }else {
-                userview.setText("觀看人數:"+taipeiZoo.view);
+            place.setText("ID:" + taipeiZoo.getId());
+            if (taipeiZoo.getView() == -1) {
+                userview.setText("觀看人數:" + 0);
+            } else {
+                userview.setText("觀看人數:" + taipeiZoo.view);
             }
-            if (taipeiZoo.getLike()==-1){
-                userlike.setText("喜歡人數:"+0);
-            }else {
-                userlike.setText("喜歡人數:"+taipeiZoo.like);
+            if (taipeiZoo.getLike() == -1) {
+                userlike.setText("喜歡人數:" + 0);
+            } else {
+                userlike.setText("喜歡人數:" + taipeiZoo.like);
             }
-
-
 
 
 //            time.setVisibility(View.GONE);
@@ -644,7 +647,7 @@ public class MainActivity extends Activity {
 
                 MainActivity.this.finish();//關閉activity
                 auth.signOut();
-                MySharedPrefernces.saveUserId(MainActivity.this,"");
+                MySharedPrefernces.saveUserId(MainActivity.this, "");
 //                interstitial.show();
 
             }
@@ -665,70 +668,6 @@ public class MainActivity extends Activity {
 
     }
 
-
-    private void loadImage(final String path,
-                           final ImageView imageView) {
-
-        new Thread() {
-
-            @Override
-            public void run() {
-
-                try {
-                    URL imageUrl = new URL(path);
-                    HttpURLConnection httpCon =
-                            (HttpURLConnection) imageUrl.openConnection();
-                    InputStream imageStr = httpCon.getInputStream();
-                    final Bitmap bitmap = BitmapFactory.decodeStream(imageStr);
-
-                    runOnUiThread(new Runnable() {
-
-                        @Override
-                        public void run() {
-                            // TODO Auto-generated method stub
-                            imageView.setImageBitmap(bitmap);
-                        }
-                    });
-
-
-                } catch (MalformedURLException e) {
-                    // TODO Auto-generated catch block
-                    Log.e("Howard", "MalformedURLException:" + e);
-                } catch (IOException e) {
-                    // TODO Auto-generated catch block
-                    Log.e("Howard", "IOException:" + e);
-                }
-
-
-            }
-
-
-        }.start();
-
-    }
-
-    public class User {
-
-        public String username;
-        public String email;
-
-        public User() {
-            // Default constructor required for calls to DataSnapshot.getValue(User.class)
-        }
-
-        public User(String username, String email) {
-            this.username = username;
-            this.email = email;
-        }
-
-    }
-
-    @Override
-    protected void onDestroy() {
-//		adView.destroy();
-
-        super.onDestroy();
-    }
 
     private void configVersionCheck() {
 
@@ -759,7 +698,7 @@ public class MainActivity extends Activity {
 
     private void setFireBase() {
         Firebase.setAndroidContext(this);
-        String url = "https://sevenpeoplebook.firebaseio.com/Broke";
+        String url = "https://bookshare-99cb3.firebaseio.com/sharebook";
 
         Firebase mFirebaseRef = new Firebase(url);
 
@@ -781,23 +720,18 @@ public class MainActivity extends Activity {
 ////                    }
 //
                 GayPlace gayPlace = dataSnapshot.getValue(GayPlace.class);
-                list.add(0,gayPlace);
+                list.add(0, gayPlace);
 
 
                 mAdapter.notifyDataSetChanged();
                 progressDialog.dismiss();
 
 
-
-
-
-
-
             }
 
             @Override
             public void onChildChanged(com.firebase.client.DataSnapshot dataSnapshot, String s) {
-                Log.d(TAG, "onChildChanged: "+"onChildChanged");
+                Log.d(TAG, "onChildChanged: " + "onChildChanged");
 
             }
 
@@ -952,10 +886,10 @@ public class MainActivity extends Activity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        if(id == R.id.action_user){
-            startActivity(new Intent(MainActivity.this,UserActivity.class));
-            return true;
-        }
+//        if (id == R.id.action_user) {
+//            startActivity(new Intent(MainActivity.this, UserActivity.class));
+//            return true;
+//        }
 //        if (id == R.id.action_settings) {
 //            startActivity(new Intent(MainActivity.this,InAppBillingActivity.class));
 //

@@ -1,15 +1,15 @@
 [
     {
-        "merged": "/Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/res/merged/debug/layout/abc_screen_simple_overlay_action_mode.xml",
-        "source": "/Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/layout/abc_screen_simple_overlay_action_mode.xml"
+        "merged": "/Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/res/merged/debug/layout/place_autocomplete_item_powered_by_google.xml",
+        "source": "/Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/exploded-aar/com.google.android.gms/play-services-places/10.0.1/res/layout/place_autocomplete_item_powered_by_google.xml"
     },
     {
         "merged": "/Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/res/merged/debug/layout/abc_screen_toolbar.xml",
         "source": "/Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/layout/abc_screen_toolbar.xml"
     },
     {
-        "merged": "/Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/res/merged/debug/layout/place_autocomplete_item_powered_by_google.xml",
-        "source": "/Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/exploded-aar/com.google.android.gms/play-services-places/10.0.1/res/layout/place_autocomplete_item_powered_by_google.xml"
+        "merged": "/Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/res/merged/debug/layout/abc_screen_simple_overlay_action_mode.xml",
+        "source": "/Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/layout/abc_screen_simple_overlay_action_mode.xml"
     },
     {
         "merged": "/Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/res/merged/debug/layout/mr_chooser_dialog.xml",

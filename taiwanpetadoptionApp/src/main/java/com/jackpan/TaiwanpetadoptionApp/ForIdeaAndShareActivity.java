@@ -113,6 +113,7 @@ public class ForIdeaAndShareActivity extends Activity implements View.OnClickLis
     String returnAddress = "";
     Double lat, lon;
     LocationManager locationMgr;
+    private  EditText pricetext, isbntext;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -138,6 +139,8 @@ public class ForIdeaAndShareActivity extends Activity implements View.OnClickLis
 //        mVideoName = (TextView) findViewById(R.id.videonametext);
 //        mVideoName2 = (TextView) findViewById(R.id.videonametext2);
 //        mVideoName3 = (TextView) findViewById(R.id.videonametext3);
+        pricetext = (EditText) findViewById(R.id.price);
+        isbntext = (EditText)findViewById(R.id.isbnedt);
         mNameEdt = (EditText) findViewById(R.id.nameedt);
         mMailEdt = (EditText) findViewById(R.id.phoneedt);
         mTiitleEdt = (EditText) findViewById(R.id.tittle);
@@ -230,11 +233,12 @@ public class ForIdeaAndShareActivity extends Activity implements View.OnClickLis
                         mMessageEdt.getText().toString().trim(),
                         mMailEdt.getText().toString().trim(),
                         mcatStr,
-                        mMoodStr,
                         picUri,
                         picUri2,
                         picUri3,
                         mNameEdt.getText().toString().trim(),
+                        pricetext.getText().toString().trim(),
+                        isbntext.getText().toString().trim(),
                         String.valueOf(s),
                         mAddEdt.getText().toString().trim()
 
@@ -290,8 +294,8 @@ public class ForIdeaAndShareActivity extends Activity implements View.OnClickLis
 
     }
 
-    private void setFireBaseDB(String id, String tittle, String message, String phone,String cat, String mood, String uri, String uri2, String uri3
-            ,  String name, String date,
+    private void setFireBaseDB(String id, String tittle, String message, String phone,String cat, String uri, String uri2, String uri3
+            ,  String name,String price ,String isbn, String date,
                                String adds
     ) {
 
@@ -326,7 +330,8 @@ public class ForIdeaAndShareActivity extends Activity implements View.OnClickLis
 //        newPost.put("url", videoUri);
 //        newPost.put("url2", videoUri2);
 //        newPost.put("url3", videoUri3);
-
+        newPost.put("price",price);
+        newPost.put("isbn",isbn);
 
         newPost.put("date", date);
         newPost.put("like", 1);

@@ -256,8 +256,6 @@
                         android:text="＊"
                         android:textColor="#f9835e"
                         android:layout_marginLeft="12dp"
-
-
                         ></TextView>
                     <TextView
                         android:layout_toRightOf="@+id/textView4"
@@ -286,6 +284,108 @@
                 </LinearLayout>
 
             </LinearLayout>>
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                >
+                <RelativeLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="12dp"
+                    >
+                    <TextView
+                        android:id="@+id/isbntext"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="＊"
+                        android:textColor="#f9835e"
+                        android:layout_marginLeft="12dp"
+
+
+                        ></TextView>
+                    <TextView
+                        android:layout_toRightOf="@+id/isbntext"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="ISBN："
+                        android:textColor="#313131"
+
+                        ></TextView>
+
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    >
+                    <EditText
+                        android:background="@drawable/list3"
+                        android:layout_height="35dp"
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:paddingLeft="8dp"
+                        android:id="@+id/isbnedt"
+                        android:hint="ISBN"></EditText>
+                </LinearLayout>
+
+            </LinearLayout>>
+
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                >
+                <RelativeLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="12dp"
+                    >
+                    <TextView
+                        android:id="@+id/pricetext"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="＊"
+                        android:textColor="#f9835e"
+                        android:layout_marginLeft="12dp"
+
+
+                        ></TextView>
+                    <TextView
+                        android:layout_toRightOf="@+id/pricetext"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="價格："
+                        android:textColor="#313131"
+
+                        ></TextView>
+
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    >
+                    <EditText
+                        android:background="@drawable/list3"
+                        android:layout_height="35dp"
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:paddingLeft="8dp"
+                        android:id="@+id/price"
+                        android:hint="價格"></EditText>
+                </LinearLayout>
+
+            </LinearLayout>>
+
+
+
             <LinearLayout
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"

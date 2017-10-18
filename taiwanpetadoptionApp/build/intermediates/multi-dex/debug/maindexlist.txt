@@ -1260,7 +1260,6 @@ com/google/android/gms/internal/zzlm.class
 android/support/v4/app/FragmentManagerImpl$PopBackStackState.class
 com/fasterxml/jackson/databind/jsonFormatVisitors/JsonFormatVisitorWithSerializerProvider.class
 com/jackpan/TaiwanpetadoptionApp/MainActivity$4.class
-com/jackpan/TaiwanpetadoptionApp/MainActivity$13.class
 android/support/v4/util/MapCollections.class
 com/igexin/sdk/message/GTPushMessage.class
 com/google/android/gms/internal/zzmg.class
@@ -1770,7 +1769,6 @@ com/google/android/gms/analytics/ecommerce/ProductAction.class
 com/util/IabHelper$OnConsumeFinishedListener.class
 com/fasterxml/jackson/databind/deser/std/DateDeserializers.class
 com/google/firebase/auth/AuthCredential.class
-com/jackpan/TaiwanpetadoptionApp/MainActivity$User.class
 android/support/v4/util/ContainerHelpers.class
 com/google/android/exoplayer2/extractor/ts/ElementaryStreamReader.class
 com/jackpan/video/VideoTwoActivity$2.class

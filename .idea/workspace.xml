@@ -11,145 +11,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8937790-a171-47d5-84d4-f286683668e0" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-af/values-af.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-am/values-am.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ar/values-ar.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-az-rAZ/values-az-rAZ.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-az/values-az.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-b+sr+Latn/values-b+sr+Latn.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-be-rBY/values-be-rBY.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-be/values-be.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-bg/values-bg.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-bn-rBD/values-bn-rBD.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-bn/values-bn.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-bs-rBA/values-bs-rBA.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-bs/values-bs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ca/values-ca.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-cs/values-cs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-da/values-da.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-de/values-de.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-el/values-el.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rAU/values-en-rAU.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rCA/values-en-rCA.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rGB/values-en-rGB.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rIN/values-en-rIN.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rSG/values-en-rSG.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-es-rES/values-es-rES.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-es-rUS/values-es-rUS.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-es/values-es.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-et-rEE/values-et-rEE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-et/values-et.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-eu-rES/values-eu-rES.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-eu/values-eu.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-fa/values-fa.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-fi/values-fi.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-fr-rCA/values-fr-rCA.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-fr/values-fr.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-gl-rES/values-gl-rES.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-gl/values-gl.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-gu-rIN/values-gu-rIN.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-gu/values-gu.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-h720dp-v13/values-h720dp-v13.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hdpi-v4/values-hdpi-v4.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hi/values-hi.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hr/values-hr.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hu/values-hu.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hy-rAM/values-hy-rAM.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hy/values-hy.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-id/values-id.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-in/values-in.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-is-rIS/values-is-rIS.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-is/values-is.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-it/values-it.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-iw/values-iw.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ja/values-ja.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ka-rGE/values-ka-rGE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ka/values-ka.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-kk-rKZ/values-kk-rKZ.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-kk/values-kk.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-km-rKH/values-km-rKH.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-km/values-km.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-kn-rIN/values-kn-rIN.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-kn/values-kn.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ko/values-ko.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ky-rKG/values-ky-rKG.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ky/values-ky.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-large-v4/values-large-v4.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ldltr-v21/values-ldltr-v21.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-lo-rLA/values-lo-rLA.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-lo/values-lo.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-lt/values-lt.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-lv/values-lv.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-mk-rMK/values-mk-rMK.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-mk/values-mk.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ml-rIN/values-ml-rIN.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ml/values-ml.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-mn-rMN/values-mn-rMN.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-mn/values-mn.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-mr-rIN/values-mr-rIN.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-mr/values-mr.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ms-rMY/values-ms-rMY.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ms/values-ms.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-my-rMM/values-my-rMM.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-my/values-my.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-nb/values-nb.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ne-rNP/values-ne-rNP.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ne/values-ne.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-nl/values-nl.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-pa-rIN/values-pa-rIN.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-pa/values-pa.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-pl/values-pl.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-port/values-port.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-pt-rBR/values-pt-rBR.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-pt-rPT/values-pt-rPT.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-pt/values-pt.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ro/values-ro.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ru/values-ru.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-si-rLK/values-si-rLK.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-si/values-si.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sk/values-sk.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sl/values-sl.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sq-rAL/values-sq-rAL.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sq/values-sq.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sr/values-sr.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sv/values-sv.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw/values-sw.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw600dp-v13/values-sw600dp-v13.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw720dp-v13/values-sw720dp-v13.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ta-rIN/values-ta-rIN.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ta/values-ta.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-te-rIN/values-te-rIN.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-te/values-te.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-th/values-th.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-tl/values-tl.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-tr/values-tr.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-uk/values-uk.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ur-rPK/values-ur-rPK.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ur/values-ur.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-uz-rUZ/values-uz-rUZ.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-uz/values-uz.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v11/values-v11.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v12/values-v12.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v13/values-v13.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v14/values-v14.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v17/values-v17.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v18/values-v18.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v21/values-v21.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v22/values-v22.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v23/values-v23.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v25/values-v25.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-vi/values-vi.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w820dp-v13/values-w820dp-v13.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-xlarge-v4/values-xlarge-v4.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zh-rCN/values-zh-rCN.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zh-rHK/values-zh-rHK.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zh-rTW/values-zh-rTW.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zu/values-zu.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$13.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$9$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$User.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/outputs/apk/taiwanpetadoptionApp-debug.apk" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/cache.properties.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshots.bin" />
@@ -157,34 +22,92 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/taskArtifacts.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_taiwanpetadoptionApp_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_taiwanpetadoptionApp_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_taiwanpetadoptionApp_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_taiwanpetadoptionApp_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_taiwanpetadoptionApp_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_taiwanpetadoptionApp_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_taiwanpetadoptionApp_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_taiwanpetadoptionApp_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/exploded-aar/com.google.android.gms/play-services/10.0.1/jars/classes.jar" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/exploded-aar/com.google.android.gms/play-services/10.0.1/jars/classes.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/exploded-aar/com.google.firebase/firebase-ads/10.0.1/jars/classes.jar" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/exploded-aar/com.google.firebase/firebase-ads/10.0.1/jars/classes.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/exploded-aar/com.google.firebase/firebase-core/10.0.1/jars/classes.jar" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/exploded-aar/com.google.firebase/firebase-core/10.0.1/jars/classes.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/res/resources-debug-androidTest.ap_" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/res/resources-debug-androidTest.ap_" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/android/support/v7/appcompat/R$id.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/android/support/v7/appcompat/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/android/support/v7/mediarouter/R$id.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/android/support/v7/mediarouter/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/adlocus/AdLocusLibrary/R$id.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/adlocus/AdLocusLibrary/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/facebook/R$id.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/facebook/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/facebook/ads/R$id.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/facebook/ads/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/facebook/common/R$id.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/facebook/common/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/facebook/login/R$id.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/facebook/login/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/facebook/messenger/R$id.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/facebook/messenger/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/facebook/share/R$id.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/facebook/share/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/google/android/exoplayer2/R$id.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/google/android/exoplayer2/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/google/android/gms/R$id.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/google/android/gms/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/Brokethenews/R$id.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/Brokethenews/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/Brokethenews/R$integer.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/Brokethenews/R$integer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/Brokethenews/R$interpolator.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/Brokethenews/R$interpolator.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/Brokethenews/R$layout.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/Brokethenews/R$layout.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/Brokethenews/R$menu.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/Brokethenews/R$menu.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/Brokethenews/R$raw.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/Brokethenews/R$raw.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/Brokethenews/R$string.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/Brokethenews/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/Brokethenews/R$style.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/Brokethenews/R$style.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/Brokethenews/R$styleable.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/Brokethenews/R$styleable.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/DialogUtils.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/DialogUtils.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/ForIdeaAndShareActivity$1.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/ForIdeaAndShareActivity$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/ForIdeaAndShareActivity$10.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/ForIdeaAndShareActivity$10.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/ForIdeaAndShareActivity$11.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/ForIdeaAndShareActivity$11.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/ForIdeaAndShareActivity$12.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/ForIdeaAndShareActivity$12.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/ForIdeaAndShareActivity$13.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/ForIdeaAndShareActivity$13.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/ForIdeaAndShareActivity$14.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/ForIdeaAndShareActivity$14.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/ForIdeaAndShareActivity$2$1.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/ForIdeaAndShareActivity$2$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/ForIdeaAndShareActivity$2.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/ForIdeaAndShareActivity$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/ForIdeaAndShareActivity$3.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/ForIdeaAndShareActivity$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/ForIdeaAndShareActivity$4.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/ForIdeaAndShareActivity$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/ForIdeaAndShareActivity$5.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/ForIdeaAndShareActivity$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/ForIdeaAndShareActivity$6.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/ForIdeaAndShareActivity$6.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/ForIdeaAndShareActivity$7.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/ForIdeaAndShareActivity$7.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/ForIdeaAndShareActivity$8.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/ForIdeaAndShareActivity$8.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/ForIdeaAndShareActivity$9.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/ForIdeaAndShareActivity$9.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/ForIdeaAndShareActivity.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/ForIdeaAndShareActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/GayPlace.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/GayPlace.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/HeadpageActivity.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/HeadpageActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/InAppBillingActivity$3.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/InAppBillingActivity$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/LoginActivity.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/LoginActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$1.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$10.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$10.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$11.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$11.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$12.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$12.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$2.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$3.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$4.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$5.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$6.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$6.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$7.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$7.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$8$1.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$8$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$8.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$8.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$9.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$9.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$LoadNetAsyncTask$1.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$LoadNetAsyncTask$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$LoadNetAsyncTask$2.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$LoadNetAsyncTask$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$LoadNetAsyncTask$3.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$LoadNetAsyncTask$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$LoadNetAsyncTask.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$LoadNetAsyncTask.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$MyAdapter.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$MyAdapter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/SpinnerActivity.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/SpinnerActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/TwoActivity$1.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/TwoActivity$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/TwoActivity$2.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/TwoActivity$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/TwoActivity$3.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/TwoActivity$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/TwoActivity$4.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/TwoActivity$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/TwoActivity$5.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/TwoActivity$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/TwoActivity$6.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/TwoActivity$6.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/TwoActivity$7$1.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/TwoActivity$7$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/TwoActivity$7.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/TwoActivity$7.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/TwoActivity$8.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/TwoActivity$8.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/TwoActivity$9.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/TwoActivity$9.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/TwoActivity.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/TwoActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/UserActivity.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/UserActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/UserMessgeActivity.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/UserMessgeActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/VideoViewActivity.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/VideoViewActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/video/ForIdeaAndShareVideoActivity.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/video/ForIdeaAndShareVideoActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/video/VideoMainActivity$MyAdapter.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/video/VideoMainActivity$MyAdapter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/video/VideoMainActivity.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/video/VideoMainActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/video/VideoTwoActivity.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/video/VideoTwoActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/packageDebug/zip-cache/qFRnPxbOBlzSzs05bYRO_VDHdUo=" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/packageDebug/zip-cache/qFRnPxbOBlzSzs05bYRO_VDHdUo=" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/multi-dex/debug/componentClasses.jar" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/multi-dex/debug/componentClasses.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/res/resources-debug.ap_" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/res/resources-debug.ap_" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_25_3_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_25_3_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/customtabs_25_3_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/customtabs_25_3_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/exoplayer_r2_0_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/exoplayer_r2_0_3.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/facebook_android_sdk_4_27_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/facebook_android_sdk_4_27_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/facebook_common_4_27_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/facebook_common_4_27_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/facebook_messenger_4_27_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/facebook_messenger_4_27_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/firebase_ads_10_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/firebase_ads_10_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/firebase_storage_common_10_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/firebase_storage_common_10_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/mediarouter_v7_24_0_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/mediarouter_v7_24_0_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_10_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_10_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_ads_10_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_ads_10_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_auth_10_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_auth_10_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_base_10_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_base_10_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_tagmanager_v4_impl_10_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_tagmanager_v4_impl_10_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/recyclerview_v7_25_3_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/recyclerview_v7_25_3_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_compat_25_3_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_compat_25_3_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_core_ui_25_3_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_core_ui_25_3_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_core_utils_25_3_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_core_utils_25_3_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_fragment_25_3_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_fragment_25_3_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_media_compat_25_3_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_media_compat_25_3_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_v4_25_3_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_v4_25_3_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes2.dex" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes2.dex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/transforms/jarMerging/debug/jars/1/1f/combined.jar" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/transforms/jarMerging/debug/jars/1/1f/combined.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/generated/source/r/debug/android/support/v7/appcompat/R.java" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/generated/source/r/debug/android/support/v7/appcompat/R.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/generated/source/r/debug/android/support/v7/mediarouter/R.java" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/generated/source/r/debug/android/support/v7/mediarouter/R.java" />
@@ -198,16 +121,17 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/generated/source/r/debug/com/google/android/exoplayer2/R.java" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/generated/source/r/debug/com/google/android/exoplayer2/R.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/generated/source/r/debug/com/google/android/gms/R.java" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/generated/source/r/debug/com/google/android/gms/R.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/generated/source/r/debug/com/jackpan/Brokethenews/R.java" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/generated/source/r/debug/com/jackpan/Brokethenews/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/blame/res/debug/single/drawable-hdpi-v4.json" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/blame/res/debug/single/drawable-hdpi-v4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/blame/res/debug/single/drawable-mdpi-v4.json" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/blame/res/debug/single/drawable-mdpi-v4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/blame/res/debug/single/drawable-xxhdpi-v4.json" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/blame/res/debug/single/drawable-xxhdpi-v4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/blame/res/debug/single/drawable-xxxhdpi-v4.json" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/blame/res/debug/single/drawable-xxxhdpi-v4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugAndroidTestResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugAndroidTestResources/compile-file-map.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/blame/res/debug/single/layout.json" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/blame/res/debug/single/layout.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/packageDebug/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/packageDebug/dex-renamer-state.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/packageDebug/file-input-save-data.txt" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/packageDebug/file-input-save-data.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/multi-dex/debug/maindexlist.txt" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/multi-dex/debug/maindexlist.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/res/merged/debug/layout/activity_for_idea_and_share.xml" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/res/merged/debug/layout/activity_for_idea_and_share.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/symbols/debug/R.txt" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/symbols/debug/R.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/src/main/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/ForIdeaAndShareActivity.java" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/ForIdeaAndShareActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/GayPlace.java" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/GayPlace.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/MainActivity.java" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/MainActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/TwoActivity.java" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/TwoActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/src/main/res/layout/activity_for_idea_and_share.xml" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/src/main/res/layout/activity_for_idea_and_share.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/taiwanpetadoptionApp.iml" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/taiwanpetadoptionApp.iml" />
     </list>
@@ -232,7 +156,9 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
-        <projects_view />
+        <projects_view>
+          <tree_state />
+        </projects_view>
       </state>
     </system>
   </component>
@@ -246,10 +172,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="76">
               <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
-              <folding>
-                <element signature="e#7869#7870#0" expanded="false" />
-                <element signature="e#7925#7926#0" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -257,30 +180,48 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2185">
-              <caret line="214" column="0" selection-start-line="214" selection-start-column="0" selection-end-line="214" selection-end-column="0" />
+            <state relative-caret-position="5054">
+              <caret line="885" column="32" selection-start-line="885" selection-start-column="32" selection-end-line="885" selection-end-column="32" />
               <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#20883#20884#0" expanded="false" />
-                <element signature="e#20921#20922#0" expanded="false" />
-                <element signature="e#21107#21108#0" expanded="false" />
-                <element signature="e#21151#21152#0" expanded="false" />
-                <element signature="e#21216#21217#0" expanded="false" />
-                <element signature="e#21267#21268#0" expanded="false" />
-                <element signature="e#21332#21333#0" expanded="false" />
-                <element signature="e#21371#21372#0" expanded="false" />
+                <element signature="e#4709#6250#0" expanded="true" />
+                <element signature="e#6249#6250#0" expanded="true" />
+                <element signature="method#selectSpinner#0;class#MainActivity#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ChildEventRegistration.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.firebase/firebase-client-jvm/2.3.1/4d53b7d6983247af02b8fe7e4228fff555a5e828/firebase-client-jvm-2.3.1.jar!/com/firebase/client/core/ChildEventRegistration.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="148">
+              <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/taiwanpetadoptionApp/src/main/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="39" column="43" selection-start-line="39" selection-start-column="43" selection-end-line="39" selection-end-column="43" />
+            <state relative-caret-position="-3914">
+              <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
               <folding>
+                <element signature="e#2063#2081#0" expanded="true" />
                 <element signature="e#2725#2743#0" expanded="true" />
+                <element signature="e#3018#3046#0" expanded="true" />
+                <element signature="e#3312#3330#0" expanded="true" />
+                <element signature="e#3595#3623#0" expanded="true" />
+                <element signature="e#3900#3928#0" expanded="true" />
+                <element signature="e#5784#5817#0" expanded="true" />
+                <element signature="e#6098#6137#0" expanded="true" />
+                <element signature="e#6595#6627#0" expanded="true" />
+                <element signature="e#7254#7293#0" expanded="true" />
+                <element signature="e#7982#8007#0" expanded="true" />
+                <element signature="e#8720#8738#0" expanded="true" />
+                <element signature="e#9008#9026#0" expanded="true" />
+                <element signature="e#9418#9447#0" expanded="true" />
+                <element signature="e#10055#10091#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -289,71 +230,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ResponObj.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/ResponObj.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-              <folding>
-                <element signature="e#0#11#0" expanded="false" />
-                <element signature="e#710#711#0" expanded="false" />
-                <element signature="e#747#748#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="GayPlace.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/GayPlace.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="551">
-              <caret line="32" column="23" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#775#776#0" expanded="false" />
-                <element signature="e#802#803#0" expanded="false" />
-                <element signature="e#830#831#0" expanded="false" />
-                <element signature="e#857#858#0" expanded="false" />
-                <element signature="e#944#945#0" expanded="false" />
-                <element signature="e#972#973#0" expanded="false" />
-                <element signature="e#1016#1017#0" expanded="false" />
-                <element signature="e#1052#1053#0" expanded="false" />
-                <element signature="e#1098#1099#0" expanded="false" />
-                <element signature="e#1136#1137#0" expanded="false" />
-                <element signature="e#1176#1177#0" expanded="false" />
-                <element signature="e#1208#1209#0" expanded="false" />
-                <element signature="e#1248#1249#0" expanded="false" />
-                <element signature="e#1280#1281#0" expanded="false" />
-                <element signature="e#1318#1319#0" expanded="false" />
-                <element signature="e#1348#1349#0" expanded="false" />
-                <element signature="e#1386#1387#0" expanded="false" />
-                <element signature="e#1416#1417#0" expanded="false" />
-                <element signature="e#1446#1447#0" expanded="false" />
-                <element signature="e#1472#1473#0" expanded="false" />
-                <element signature="e#1503#1504#0" expanded="false" />
-                <element signature="e#1530#1531#0" expanded="false" />
-                <element signature="e#1561#1562#0" expanded="false" />
-                <element signature="e#1588#1589#0" expanded="false" />
-                <element signature="e#1617#1618#0" expanded="false" />
-                <element signature="e#1642#1643#0" expanded="false" />
-                <element signature="e#1676#1677#0" expanded="false" />
-                <element signature="e#1706#1707#0" expanded="false" />
-                <element signature="e#1736#1737#0" expanded="false" />
-                <element signature="e#1762#1763#0" expanded="false" />
-                <element signature="e#1795#1796#0" expanded="false" />
-                <element signature="e#1824#1825#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="215">
+              <caret line="33" column="22" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TwoActivity.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TwoActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/TwoActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2147">
-              <caret line="181" column="30" selection-start-line="181" selection-start-column="30" selection-end-line="181" selection-end-column="30" />
+            <state relative-caret-position="83">
+              <caret line="147" column="60" selection-start-line="147" selection-start-column="60" selection-end-line="147" selection-end-column="60" />
               <folding>
-                <element signature="imports" expanded="false" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#8769#9321#0" expanded="true" />
+                <element signature="e#9320#9321#0" expanded="true" />
+                <element signature="e#16965#17125#0" expanded="true" />
+                <element signature="e#17124#17125#0" expanded="true" />
+                <element signature="e#18941#18942#0" expanded="true" />
+                <element signature="e#18963#18964#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -362,8 +261,8 @@
       <file leaf-file-name="ForIdeaAndShareActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/ForIdeaAndShareActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="148" column="8" selection-start-line="148" selection-start-column="8" selection-end-line="149" selection-end-column="45" />
+            <state relative-caret-position="633">
+              <caret line="235" column="0" selection-start-line="235" selection-start-column="0" selection-end-line="235" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -377,17 +276,17 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-200">
-              <caret line="311" column="40" selection-start-line="311" selection-start-column="40" selection-end-line="311" selection-end-column="40" />
+            <state relative-caret-position="291">
+              <caret line="380" column="36" selection-start-line="380" selection-start-column="36" selection-end-line="380" selection-end-column="36" />
               <folding>
-                <marker date="1508298840000" expanded="true" signature="19868:21594" ph="..." />
-                <marker date="1508298840000" expanded="true" signature="20088:20548" ph="..." />
-                <marker date="1508298840000" expanded="true" signature="20597:21052" ph="..." />
-                <marker date="1508298840000" expanded="true" signature="21099:21547" ph="..." />
-                <marker date="1508298840000" expanded="true" signature="21643:23369" ph="..." />
-                <marker date="1508298840000" expanded="true" signature="21863:22323" ph="..." />
-                <marker date="1508298840000" expanded="true" signature="22372:22827" ph="..." />
-                <marker date="1508298840000" expanded="true" signature="22874:23322" ph="..." />
+                <marker date="1508305768000" expanded="true" signature="23864:25590" ph="..." />
+                <marker date="1508305768000" expanded="true" signature="24084:24544" ph="..." />
+                <marker date="1508305768000" expanded="true" signature="24593:25048" ph="..." />
+                <marker date="1508305768000" expanded="true" signature="25095:25543" ph="..." />
+                <marker date="1508305768000" expanded="true" signature="25639:27365" ph="..." />
+                <marker date="1508305768000" expanded="true" signature="25859:26319" ph="..." />
+                <marker date="1508305768000" expanded="true" signature="26368:26823" ph="..." />
+                <marker date="1508305768000" expanded="true" signature="26870:27318" ph="..." />
               </folding>
             </state>
           </provider>
@@ -2593,7 +2492,6 @@
                           <list>
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/gradle/2.2.3/344060a1bf4666fea5590eeee815fc2a79b5235a/gradle-2.2.3-sources.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/gradle/2.2.3/7b8f79621d95e3ce1e95c0852db14d9d7e1d1951/gradle-2.2.3.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.gms/google-services/3.0.0/32b833222c886ecfb37d79b1a05ce1eddb702db1/google-services-3.0.0-sources.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.gms/google-services/3.0.0/ee538ce9cf4148485e43017c5542202b8c78ff8e/google-services-3.0.0.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/gradle-core/2.2.3/bfc5ed39e7ac5890d6cf80e8c5545dab9021b810/gradle-core-2.2.3-sources.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/gradle-core/2.2.3/3a777b0626810e0ccdced7d750ac4b60c279616c/gradle-core-2.2.3.jar" />
@@ -2691,7 +2589,6 @@
                           <list>
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/gradle/2.2.3/344060a1bf4666fea5590eeee815fc2a79b5235a/gradle-2.2.3-sources.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/gradle/2.2.3/7b8f79621d95e3ce1e95c0852db14d9d7e1d1951/gradle-2.2.3.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.gms/google-services/3.0.0/32b833222c886ecfb37d79b1a05ce1eddb702db1/google-services-3.0.0-sources.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.gms/google-services/3.0.0/ee538ce9cf4148485e43017c5542202b8c78ff8e/google-services-3.0.0.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/gradle-core/2.2.3/bfc5ed39e7ac5890d6cf80e8c5545dab9021b810/gradle-core-2.2.3-sources.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/gradle-core/2.2.3/3a777b0626810e0ccdced7d750ac4b60c279616c/gradle-core-2.2.3.jar" />
@@ -2806,9 +2703,12 @@
         <option value="$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/LoginActivity.java" />
         <option value="$PROJECT_DIR$/taiwanpetadoptionApp/build.gradle" />
         <option value="$PROJECT_DIR$/taiwanpetadoptionApp/src/main/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/ForIdeaAndShareActivity.java" />
-        <option value="$PROJECT_DIR$/taiwanpetadoptionApp/src/main/res/layout/activity_for_idea_and_share.xml" />
         <option value="$PROJECT_DIR$/taiwanpetadoptionApp/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/MainActivity.java" />
+        <option value="$PROJECT_DIR$/taiwanpetadoptionApp/src/main/res/layout/activity_for_idea_and_share.xml" />
+        <option value="$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/GayPlace.java" />
+        <option value="$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/ForIdeaAndShareActivity.java" />
+        <option value="$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/TwoActivity.java" />
       </list>
     </option>
   </component>
@@ -2841,43 +2741,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane">
+      <pane id="Scratches">
         <subPane />
-      </pane>
-      <pane id="AndroidView">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sharebook" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sharebook" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="taiwanpetadoptionApp" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sharebook" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="taiwanpetadoptionApp" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="manifests" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidManifestsGroupNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
       </pane>
       <pane id="ProjectPane">
         <subPane>
@@ -2913,9 +2778,132 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches">
+      <pane id="PackagesPane">
         <subPane />
       </pane>
+      <pane id="AndroidView">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sharebook" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sharebook" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="taiwanpetadoptionApp" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sharebook" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="taiwanpetadoptionApp" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sharebook" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="taiwanpetadoptionApp" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jackpan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sharebook" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="taiwanpetadoptionApp" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jackpan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TaiwanpetadoptionApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sharebook" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="taiwanpetadoptionApp" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="adlocus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sharebook" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="taiwanpetadoptionApp" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -3002,6 +2990,54 @@
       </Profilers>
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="EXTRA_OPTIONS" value="" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
+        <option name="SUPPORT_LIB_ENABLED" value="true" />
+        <option name="INSTRUMENTATION_ENABLED" value="true" />
+      </Profilers>
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -3232,6 +3268,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="d8937790-a171-47d5-84d4-f286683668e0" name="Default" comment="" />
@@ -3244,7 +3283,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3286119" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -3261,7 +3300,7 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24959612" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24959612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Fabric" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -3297,40 +3336,39 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/LoginActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
-          <folding>
-            <element signature="e#7869#7870#0" expanded="false" />
-            <element signature="e#7925#7926#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2185">
           <caret line="214" column="0" selection-start-line="214" selection-start-column="0" selection-end-line="214" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#20883#20884#0" expanded="false" />
-            <element signature="e#20921#20922#0" expanded="false" />
-            <element signature="e#21107#21108#0" expanded="false" />
-            <element signature="e#21151#21152#0" expanded="false" />
-            <element signature="e#21216#21217#0" expanded="false" />
-            <element signature="e#21267#21268#0" expanded="false" />
-            <element signature="e#21332#21333#0" expanded="false" />
-            <element signature="e#21371#21372#0" expanded="false" />
+            <element signature="e#4709#6250#0" expanded="true" />
+            <element signature="e#6249#6250#0" expanded="true" />
+            <element signature="method#selectSpinner#0;class#MainActivity#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/ResultData.java">
+    <entry file="file://$PROJECT_DIR$/taiwanpetadoptionApp/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="28" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="28" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#2063#2081#0" expanded="true" />
+            <element signature="e#2725#2743#0" expanded="true" />
+            <element signature="e#3018#3046#0" expanded="true" />
+            <element signature="e#3312#3330#0" expanded="true" />
+            <element signature="e#3595#3623#0" expanded="true" />
+            <element signature="e#3900#3928#0" expanded="true" />
+            <element signature="e#5784#5817#0" expanded="true" />
+            <element signature="e#6098#6137#0" expanded="true" />
+            <element signature="e#6595#6627#0" expanded="true" />
+            <element signature="e#7254#7293#0" expanded="true" />
+            <element signature="e#7982#8007#0" expanded="true" />
+            <element signature="e#8720#8738#0" expanded="true" />
+            <element signature="e#9008#9026#0" expanded="true" />
+            <element signature="e#9418#9447#0" expanded="true" />
+            <element signature="e#10055#10091#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -3338,11 +3376,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#11#0" expanded="false" />
-            <element signature="e#710#711#0" expanded="false" />
-            <element signature="e#747#748#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -3350,41 +3384,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="551">
           <caret line="32" column="23" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#775#776#0" expanded="false" />
-            <element signature="e#802#803#0" expanded="false" />
-            <element signature="e#830#831#0" expanded="false" />
-            <element signature="e#857#858#0" expanded="false" />
-            <element signature="e#944#945#0" expanded="false" />
-            <element signature="e#972#973#0" expanded="false" />
-            <element signature="e#1016#1017#0" expanded="false" />
-            <element signature="e#1052#1053#0" expanded="false" />
-            <element signature="e#1098#1099#0" expanded="false" />
-            <element signature="e#1136#1137#0" expanded="false" />
-            <element signature="e#1176#1177#0" expanded="false" />
-            <element signature="e#1208#1209#0" expanded="false" />
-            <element signature="e#1248#1249#0" expanded="false" />
-            <element signature="e#1280#1281#0" expanded="false" />
-            <element signature="e#1318#1319#0" expanded="false" />
-            <element signature="e#1348#1349#0" expanded="false" />
-            <element signature="e#1386#1387#0" expanded="false" />
-            <element signature="e#1416#1417#0" expanded="false" />
-            <element signature="e#1446#1447#0" expanded="false" />
-            <element signature="e#1472#1473#0" expanded="false" />
-            <element signature="e#1503#1504#0" expanded="false" />
-            <element signature="e#1530#1531#0" expanded="false" />
-            <element signature="e#1561#1562#0" expanded="false" />
-            <element signature="e#1588#1589#0" expanded="false" />
-            <element signature="e#1617#1618#0" expanded="false" />
-            <element signature="e#1642#1643#0" expanded="false" />
-            <element signature="e#1676#1677#0" expanded="false" />
-            <element signature="e#1706#1707#0" expanded="false" />
-            <element signature="e#1736#1737#0" expanded="false" />
-            <element signature="e#1762#1763#0" expanded="false" />
-            <element signature="e#1795#1796#0" expanded="false" />
-            <element signature="e#1824#1825#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -3393,7 +3393,121 @@
         <state relative-caret-position="2147">
           <caret line="181" column="30" selection-start-line="181" selection-start-column="30" selection-end-line="181" selection-end-column="30" />
           <folding>
-            <element signature="imports" expanded="false" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#8769#9321#0" expanded="true" />
+            <element signature="e#9320#9321#0" expanded="true" />
+            <element signature="e#16965#17125#0" expanded="true" />
+            <element signature="e#17124#17125#0" expanded="true" />
+            <element signature="e#18941#18942#0" expanded="true" />
+            <element signature="e#18963#18964#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/ForIdeaAndShareActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1444">
+          <caret line="148" column="8" selection-start-line="148" selection-start-column="8" selection-end-line="149" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taiwanpetadoptionApp/src/main/res/layout/activity_for_idea_and_share.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5909">
+          <caret line="311" column="40" selection-start-line="311" selection-start-column="40" selection-end-line="311" selection-end-column="40" />
+          <folding>
+            <marker date="1508305768000" expanded="true" signature="23864:25590" ph="..." />
+            <marker date="1508305768000" expanded="true" signature="24084:24544" ph="..." />
+            <marker date="1508305768000" expanded="true" signature="24593:25048" ph="..." />
+            <marker date="1508305768000" expanded="true" signature="25095:25543" ph="..." />
+            <marker date="1508305768000" expanded="true" signature="25639:27365" ph="..." />
+            <marker date="1508305768000" expanded="true" signature="25859:26319" ph="..." />
+            <marker date="1508305768000" expanded="true" signature="26368:26823" ph="..." />
+            <marker date="1508305768000" expanded="true" signature="26870:27318" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/exploded-aar/com.google.firebase/firebase-storage/10.0.1/jars/classes.jar!/com/google/firebase/storage/UploadTask.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1501">
+          <caret line="80" column="31" selection-start-line="80" selection-start-column="31" selection-end-line="80" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taiwanpetadoptionApp/src/main/res/layout/activity_two.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3686">
+          <caret line="194" column="47" selection-start-line="194" selection-start-column="47" selection-end-line="194" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/LoginActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2185">
+          <caret line="214" column="0" selection-start-line="214" selection-start-column="0" selection-end-line="214" selection-end-column="0" />
+          <folding>
+            <element signature="e#4709#6250#0" expanded="true" />
+            <element signature="e#6249#6250#0" expanded="true" />
+            <element signature="method#selectSpinner#0;class#MainActivity#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/ResultData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="28" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/ResponObj.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/GayPlace.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="32" column="23" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/TwoActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2147">
+          <caret line="181" column="30" selection-start-line="181" selection-start-column="30" selection-end-line="181" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#8769#9321#0" expanded="true" />
+            <element signature="e#9320#9321#0" expanded="true" />
+            <element signature="e#16965#17125#0" expanded="true" />
+            <element signature="e#17124#17125#0" expanded="true" />
+            <element signature="e#18941#18942#0" expanded="true" />
+            <element signature="e#18963#18964#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -3416,14 +3530,14 @@
         <state relative-caret-position="8227">
           <caret line="433" column="0" selection-start-line="433" selection-start-column="0" selection-end-line="493" selection-end-column="0" />
           <folding>
-            <marker date="1508298840000" expanded="true" signature="19868:21594" ph="..." />
-            <marker date="1508298840000" expanded="true" signature="20088:20548" ph="..." />
-            <marker date="1508298840000" expanded="true" signature="20597:21052" ph="..." />
-            <marker date="1508298840000" expanded="true" signature="21099:21547" ph="..." />
-            <marker date="1508298840000" expanded="true" signature="21643:23369" ph="..." />
-            <marker date="1508298840000" expanded="true" signature="21863:22323" ph="..." />
-            <marker date="1508298840000" expanded="true" signature="22372:22827" ph="..." />
-            <marker date="1508298840000" expanded="true" signature="22874:23322" ph="..." />
+            <marker date="1508305768000" expanded="true" signature="23864:25590" ph="..." />
+            <marker date="1508305768000" expanded="true" signature="24084:24544" ph="..." />
+            <marker date="1508305768000" expanded="true" signature="24593:25048" ph="..." />
+            <marker date="1508305768000" expanded="true" signature="25095:25543" ph="..." />
+            <marker date="1508305768000" expanded="true" signature="25639:27365" ph="..." />
+            <marker date="1508305768000" expanded="true" signature="25859:26319" ph="..." />
+            <marker date="1508305768000" expanded="true" signature="26368:26823" ph="..." />
+            <marker date="1508305768000" expanded="true" signature="26870:27318" ph="..." />
           </folding>
         </state>
       </provider>
@@ -3451,7 +3565,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3459,7 +3572,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="893">
           <caret line="47" column="49" selection-start-line="47" selection-start-column="49" selection-end-line="47" selection-end-column="49" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3467,7 +3579,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1045">
           <caret line="55" column="38" selection-start-line="55" selection-start-column="38" selection-end-line="55" selection-end-column="38" />
-          <folding />
+          <folding>
+            <element signature="e#2063#2081#0" expanded="true" />
+            <element signature="e#2725#2743#0" expanded="true" />
+            <element signature="e#3018#3046#0" expanded="true" />
+            <element signature="e#3312#3330#0" expanded="true" />
+            <element signature="e#3595#3623#0" expanded="true" />
+            <element signature="e#3900#3928#0" expanded="true" />
+            <element signature="e#5784#5817#0" expanded="true" />
+            <element signature="e#6098#6137#0" expanded="true" />
+            <element signature="e#6595#6627#0" expanded="true" />
+            <element signature="e#7254#7293#0" expanded="true" />
+            <element signature="e#7982#8007#0" expanded="true" />
+            <element signature="e#8720#8738#0" expanded="true" />
+            <element signature="e#9008#9026#0" expanded="true" />
+            <element signature="e#9418#9447#0" expanded="true" />
+            <element signature="e#10055#10091#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -3490,10 +3618,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
-          <folding>
-            <element signature="e#7869#7870#0" expanded="false" />
-            <element signature="e#7925#7926#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -3508,7 +3633,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3523,7 +3647,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="893">
           <caret line="47" column="49" selection-start-line="47" selection-start-column="49" selection-end-line="47" selection-end-column="49" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3538,7 +3661,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1045">
           <caret line="55" column="38" selection-start-line="55" selection-start-column="38" selection-end-line="55" selection-end-column="38" />
-          <folding />
+          <folding>
+            <element signature="e#2063#2081#0" expanded="true" />
+            <element signature="e#2725#2743#0" expanded="true" />
+            <element signature="e#3018#3046#0" expanded="true" />
+            <element signature="e#3312#3330#0" expanded="true" />
+            <element signature="e#3595#3623#0" expanded="true" />
+            <element signature="e#3900#3928#0" expanded="true" />
+            <element signature="e#5784#5817#0" expanded="true" />
+            <element signature="e#6098#6137#0" expanded="true" />
+            <element signature="e#6595#6627#0" expanded="true" />
+            <element signature="e#7254#7293#0" expanded="true" />
+            <element signature="e#7982#8007#0" expanded="true" />
+            <element signature="e#8720#8738#0" expanded="true" />
+            <element signature="e#9008#9026#0" expanded="true" />
+            <element signature="e#9418#9447#0" expanded="true" />
+            <element signature="e#10055#10091#0" expanded="true" />
+          </folding>
         </state>
       </provider>
       <provider editor-type-id="android-manifest">
@@ -3557,7 +3696,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="4" column="28" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3565,53 +3703,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#11#0" expanded="false" />
-            <element signature="e#710#711#0" expanded="false" />
-            <element signature="e#747#748#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/GayPlace.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="32" column="23" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#775#776#0" expanded="false" />
-            <element signature="e#802#803#0" expanded="false" />
-            <element signature="e#830#831#0" expanded="false" />
-            <element signature="e#857#858#0" expanded="false" />
-            <element signature="e#944#945#0" expanded="false" />
-            <element signature="e#972#973#0" expanded="false" />
-            <element signature="e#1016#1017#0" expanded="false" />
-            <element signature="e#1052#1053#0" expanded="false" />
-            <element signature="e#1098#1099#0" expanded="false" />
-            <element signature="e#1136#1137#0" expanded="false" />
-            <element signature="e#1176#1177#0" expanded="false" />
-            <element signature="e#1208#1209#0" expanded="false" />
-            <element signature="e#1248#1249#0" expanded="false" />
-            <element signature="e#1280#1281#0" expanded="false" />
-            <element signature="e#1318#1319#0" expanded="false" />
-            <element signature="e#1348#1349#0" expanded="false" />
-            <element signature="e#1386#1387#0" expanded="false" />
-            <element signature="e#1416#1417#0" expanded="false" />
-            <element signature="e#1446#1447#0" expanded="false" />
-            <element signature="e#1472#1473#0" expanded="false" />
-            <element signature="e#1503#1504#0" expanded="false" />
-            <element signature="e#1530#1531#0" expanded="false" />
-            <element signature="e#1561#1562#0" expanded="false" />
-            <element signature="e#1588#1589#0" expanded="false" />
-            <element signature="e#1617#1618#0" expanded="false" />
-            <element signature="e#1642#1643#0" expanded="false" />
-            <element signature="e#1676#1677#0" expanded="false" />
-            <element signature="e#1706#1707#0" expanded="false" />
-            <element signature="e#1736#1737#0" expanded="false" />
-            <element signature="e#1762#1763#0" expanded="false" />
-            <element signature="e#1795#1796#0" expanded="false" />
-            <element signature="e#1824#1825#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -3619,10 +3711,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-646">
           <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
-          <folding>
-            <element signature="e#7869#7870#0" expanded="false" />
-            <element signature="e#7925#7926#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -3645,34 +3734,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/TwoActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2147">
-          <caret line="181" column="30" selection-start-line="181" selection-start-column="30" selection-end-line="181" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2185">
-          <caret line="214" column="0" selection-start-line="214" selection-start-column="0" selection-end-line="214" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#20883#20884#0" expanded="false" />
-            <element signature="e#20921#20922#0" expanded="false" />
-            <element signature="e#21107#21108#0" expanded="false" />
-            <element signature="e#21151#21152#0" expanded="false" />
-            <element signature="e#21216#21217#0" expanded="false" />
-            <element signature="e#21267#21268#0" expanded="false" />
-            <element signature="e#21332#21333#0" expanded="false" />
-            <element signature="e#21371#21372#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/exploded-aar/com.google.firebase/firebase-auth/10.0.1/jars/classes.jar!/com/google/firebase/auth/FirebaseAuth.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="137">
@@ -3698,10 +3759,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
-          <folding>
-            <element signature="e#7869#7870#0" expanded="false" />
-            <element signature="e#7925#7926#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -3726,14 +3784,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/ForIdeaAndShareActivity.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.firebase/firebase-client-jvm/2.3.1/4d53b7d6983247af02b8fe7e4228fff555a5e828/firebase-client-jvm-2.3.1.jar!/com/firebase/client/core/ChildEventRegistration.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="148" column="8" selection-start-line="148" selection-start-column="8" selection-end-line="149" selection-end-column="45" />
+        <state relative-caret-position="148">
+          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5054">
+          <caret line="885" column="32" selection-start-line="885" selection-start-column="32" selection-end-line="885" selection-end-column="32" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#4709#6250#0" expanded="true" />
+            <element signature="e#6249#6250#0" expanded="true" />
+            <element signature="method#selectSpinner#0;class#MainActivity#0" expanded="false" />
           </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taiwanpetadoptionApp/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3914">
+          <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
+          <folding>
+            <element signature="e#2063#2081#0" expanded="true" />
+            <element signature="e#2725#2743#0" expanded="true" />
+            <element signature="e#3018#3046#0" expanded="true" />
+            <element signature="e#3312#3330#0" expanded="true" />
+            <element signature="e#3595#3623#0" expanded="true" />
+            <element signature="e#3900#3928#0" expanded="true" />
+            <element signature="e#5784#5817#0" expanded="true" />
+            <element signature="e#6098#6137#0" expanded="true" />
+            <element signature="e#6595#6627#0" expanded="true" />
+            <element signature="e#7254#7293#0" expanded="true" />
+            <element signature="e#7982#8007#0" expanded="true" />
+            <element signature="e#8720#8738#0" expanded="true" />
+            <element signature="e#9008#9026#0" expanded="true" />
+            <element signature="e#9418#9447#0" expanded="true" />
+            <element signature="e#10055#10091#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-manifest">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/taiwanpetadoptionApp/src/main/res/layout/activity_for_idea_and_share.xml">
@@ -3741,32 +3836,53 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-200">
-          <caret line="311" column="40" selection-start-line="311" selection-start-column="40" selection-end-line="311" selection-end-column="40" />
+        <state relative-caret-position="291">
+          <caret line="380" column="36" selection-start-line="380" selection-start-column="36" selection-end-line="380" selection-end-column="36" />
           <folding>
-            <marker date="1508298840000" expanded="true" signature="19868:21594" ph="..." />
-            <marker date="1508298840000" expanded="true" signature="20088:20548" ph="..." />
-            <marker date="1508298840000" expanded="true" signature="20597:21052" ph="..." />
-            <marker date="1508298840000" expanded="true" signature="21099:21547" ph="..." />
-            <marker date="1508298840000" expanded="true" signature="21643:23369" ph="..." />
-            <marker date="1508298840000" expanded="true" signature="21863:22323" ph="..." />
-            <marker date="1508298840000" expanded="true" signature="22372:22827" ph="..." />
-            <marker date="1508298840000" expanded="true" signature="22874:23322" ph="..." />
+            <marker date="1508305768000" expanded="true" signature="23864:25590" ph="..." />
+            <marker date="1508305768000" expanded="true" signature="24084:24544" ph="..." />
+            <marker date="1508305768000" expanded="true" signature="24593:25048" ph="..." />
+            <marker date="1508305768000" expanded="true" signature="25095:25543" ph="..." />
+            <marker date="1508305768000" expanded="true" signature="25639:27365" ph="..." />
+            <marker date="1508305768000" expanded="true" signature="25859:26319" ph="..." />
+            <marker date="1508305768000" expanded="true" signature="26368:26823" ph="..." />
+            <marker date="1508305768000" expanded="true" signature="26870:27318" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/taiwanpetadoptionApp/src/main/AndroidManifest.xml">
+    <entry file="file://$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/GayPlace.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="39" column="43" selection-start-line="39" selection-start-column="43" selection-end-line="39" selection-end-column="43" />
+        <state relative-caret-position="215">
+          <caret line="33" column="22" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/ForIdeaAndShareActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="633">
+          <caret line="235" column="0" selection-start-line="235" selection-start-column="0" selection-end-line="235" selection-end-column="0" />
           <folding>
-            <element signature="e#2725#2743#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
-      <provider editor-type-id="android-manifest">
-        <state />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/TwoActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="83">
+          <caret line="147" column="60" selection-start-line="147" selection-start-column="60" selection-end-line="147" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#8769#9321#0" expanded="true" />
+            <element signature="e#9320#9321#0" expanded="true" />
+            <element signature="e#16965#17125#0" expanded="true" />
+            <element signature="e#17124#17125#0" expanded="true" />
+            <element signature="e#18941#18942#0" expanded="true" />
+            <element signature="e#18963#18964#0" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
   </component>
