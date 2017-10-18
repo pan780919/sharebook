@@ -106,8 +106,8 @@ public class ForIdeaAndShareActivity extends Activity implements View.OnClickLis
     private EditText mAddEdt;
     private Button mAddBtn;
     private String mcatStr, mMoodStr;
-    String[] cat = {"食", "衣", "住", "行", "育", "樂"};
-    String[] mood = {"喜", "怒", "哀", "樂"};
+    String[] cat = {"文學", "文財經企管", "生活風格", "飲食料理", "心理勵志", "醫療保健", "旅遊", "宗教命理","教育/親子教養","童書","漫畫"};
+//    String[] mood = {"喜", "怒", "哀", "樂"};
     private int picInt = 0;
     private int videoInt = 0;
     String returnAddress = "";
@@ -139,14 +139,15 @@ public class ForIdeaAndShareActivity extends Activity implements View.OnClickLis
 //        mVideoName2 = (TextView) findViewById(R.id.videonametext2);
 //        mVideoName3 = (TextView) findViewById(R.id.videonametext3);
         mNameEdt = (EditText) findViewById(R.id.nameedt);
-        mMailEdt = (EditText) findViewById(R.id.mailedt);
+        mMailEdt = (EditText) findViewById(R.id.phoneedt);
         mTiitleEdt = (EditText) findViewById(R.id.tittle);
         mMessageEdt = (EditText) findViewById(R.id.ideaedt);
         mAddEdt = (EditText) findViewById(R.id.addedt);
         mSureBtn = (Button) findViewById(R.id.btn_sure_send);
         mCancelBtn = (Button) findViewById(R.id.btn_cancel_send);
         mSpinner = (Spinner) findViewById(R.id.spinner1);
-        mSpinner2 = (Spinner) findViewById(R.id.spinner2);
+//        mSpinner2 = (Spinner) findViewById(R.id.spinner2);
+//        mSpinner2.setVisibility(View.GONE);
         ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_spinner_item, cat);
         //設定下拉選單的樣式
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -164,23 +165,23 @@ public class ForIdeaAndShareActivity extends Activity implements View.OnClickLis
 
             }
         });
-        ArrayAdapter adapter2 = new ArrayAdapter(this, android.R.layout.simple_spinner_item, mood);
-        //設定下拉選單的樣式
-        adapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        mSpinner2.setAdapter(adapter2);
-        mSpinner2.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(ForIdeaAndShareActivity.this, "您選擇" + parent.getSelectedItem().toString(), Toast.LENGTH_SHORT).show();
-                mMoodStr = parent.getSelectedItem().toString();
-
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-
-            }
-        });
+//        ArrayAdapter adapter2 = new ArrayAdapter(this, android.R.layout.simple_spinner_item, mood);
+//        //設定下拉選單的樣式
+//        adapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+//        mSpinner2.setAdapter(adapter2);
+//        mSpinner2.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+//            @Override
+//            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+//                Toast.makeText(ForIdeaAndShareActivity.this, "您選擇" + parent.getSelectedItem().toString(), Toast.LENGTH_SHORT).show();
+//                mMoodStr = parent.getSelectedItem().toString();
+//
+//            }
+//
+//            @Override
+//            public void onNothingSelected(AdapterView<?> parent) {
+//
+//            }
+//        });
         findViewById(R.id.btn_sure_send).setOnClickListener(this);
         findViewById(R.id.btn_cancel_send).setOnClickListener(this);
         findViewById(R.id.picbtn).setOnClickListener(this);
@@ -223,24 +224,19 @@ public class ForIdeaAndShareActivity extends Activity implements View.OnClickLis
                     Toast.makeText(ForIdeaAndShareActivity.this, "至少放一張相片吧！！", Toast.LENGTH_SHORT).show();
                     return;
                 }
-                if (returnAddress.equals("")) {
-                    Toast.makeText(ForIdeaAndShareActivity.this, "記得輸入地址喔！！", Toast.LENGTH_SHORT).show();
-                    return;
-                }
+
                 setFireBaseDB(MySharedPrefernces.getUserId(this),
                         mTiitleEdt.getText().toString().trim(),
                         mMessageEdt.getText().toString().trim(),
+                        mMailEdt.getText().toString().trim(),
                         mcatStr,
                         mMoodStr,
                         picUri,
                         picUri2,
                         picUri3,
-
                         mNameEdt.getText().toString().trim(),
-
-
                         String.valueOf(s),
-                        returnAddress
+                        mAddEdt.getText().toString().trim()
 
                 );
                 break;
@@ -294,7 +290,7 @@ public class ForIdeaAndShareActivity extends Activity implements View.OnClickLis
 
     }
 
-    private void setFireBaseDB(String id, String tittle, String message, String cat, String mood, String uri, String uri2, String uri3
+    private void setFireBaseDB(String id, String tittle, String message, String phone,String cat, String mood, String uri, String uri2, String uri3
             ,  String name, String date,
                                String adds
     ) {
@@ -316,8 +312,9 @@ public class ForIdeaAndShareActivity extends Activity implements View.OnClickLis
         newPost.put("name", name);
         newPost.put("tittle", tittle);
         newPost.put("message", message);
+        newPost.put("phone",phone);
         newPost.put("cat", cat);
-        newPost.put("mood", mood);
+//        newPost.put("mood", mood);
         newPost.put("pic", uri);
         newPost.put("pic2", uri2);
         newPost.put("pic3", uri3);
@@ -663,7 +660,8 @@ public class ForIdeaAndShareActivity extends Activity implements View.OnClickLis
 //			ContentResolver cr = this.getContentResolver();
 //			String uri = "sdcard/req_images/temp.jpg";
         FirebaseStorage storage = FirebaseStorage.getInstance();
-        StorageReference storageRef = storage.getReferenceFromUrl("gs://sevenpeoplebook.appspot.com");
+        StorageReference storageRef = storage.getReferenceFromUrl("gs://bookshare-99cb3.appspot.com" +
+                "");
 
         StorageReference mountainsRef = storageRef.child(filePath);
 
@@ -861,56 +859,56 @@ public class ForIdeaAndShareActivity extends Activity implements View.OnClickLis
         super.onResume();
         //  mAdapter.updateData(mAllData);
         // 取得位置提供者，不下條件，讓系統決定最適用者，true 表示生效的 provider
-        String provider = this.locationMgr.getBestProvider(new Criteria(), true);
-        if (provider == null) {
-
-            return;
-        }
-        if (locationMgr.isProviderEnabled(LocationManager.NETWORK_PROVIDER)) {
-            if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-                // TODO: Consider calling
-                //    ActivityCompat#requestPermissions
-                // here to request the missing permissions, and then overriding
-                //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
-                //                                          int[] grantResults)
-                // to handle the case where the user grants the permission. See the documentation
-                // for ActivityCompat#requestPermissions for more details.
-                return;
-            }
-            locationMgr.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 30000, 10, this);
-        }
-        if (locationMgr.isProviderEnabled(LocationManager.GPS_PROVIDER)) {
-            if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-                // TODO: Consider calling
-                //    ActivityCompat#requestPermissions
-                // here to request the missing permissions, and then overriding
-                //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
-                //                                          int[] grantResults)
-                // to handle the case where the user grants the permission. See the documentation
-                // for ActivityCompat#requestPermissions for more details.
-                return;
-            }
-
-            locationMgr.requestLocationUpdates(LocationManager.GPS_PROVIDER, 30000, 10, this);
-
-        }
+//        String provider = this.locationMgr.getBestProvider(new Criteria(), true);
+//        if (provider == null) {
+//
+//            return;
+//        }
+//        if (locationMgr.isProviderEnabled(LocationManager.NETWORK_PROVIDER)) {
+//            if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+//                // TODO: Consider calling
+//                //    ActivityCompat#requestPermissions
+//                // here to request the missing permissions, and then overriding
+//                //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+//                //                                          int[] grantResults)
+//                // to handle the case where the user grants the permission. See the documentation
+//                // for ActivityCompat#requestPermissions for more details.
+//                return;
+//            }
+//            locationMgr.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 30000, 10, this);
+//        }
+//        if (locationMgr.isProviderEnabled(LocationManager.GPS_PROVIDER)) {
+//            if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+//                // TODO: Consider calling
+//                //    ActivityCompat#requestPermissions
+//                // here to request the missing permissions, and then overriding
+//                //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+//                //                                          int[] grantResults)
+//                // to handle the case where the user grants the permission. See the documentation
+//                // for ActivityCompat#requestPermissions for more details.
+//                return;
+//            }
+//
+//            locationMgr.requestLocationUpdates(LocationManager.GPS_PROVIDER, 30000, 10, this);
+//
+//        }
     }
 
     @Override
     protected void onPause() {
         super.onPause();
-        Log.e("jack", "removeUpdates...");
-        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-            // TODO: Consider calling
-            //    ActivityCompat#requestPermissions
-            // here to request the missing permissions, and then overriding
-            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
-            //                                          int[] grantResults)
-            // to handle the case where the user grants the permission. See the documentation
-            // for ActivityCompat#requestPermissions for more details.
-            return;
-        }
-        this.locationMgr.removeUpdates(this);
+//        Log.e("jack", "removeUpdates...");
+//        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+//            // TODO: Consider calling
+//            //    ActivityCompat#requestPermissions
+//            // here to request the missing permissions, and then overriding
+//            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+//            //                                          int[] grantResults)
+//            // to handle the case where the user grants the permission. See the documentation
+//            // for ActivityCompat#requestPermissions for more details.
+//            return;
+//        }
+//        this.locationMgr.removeUpdates(this);
     }
 
 }

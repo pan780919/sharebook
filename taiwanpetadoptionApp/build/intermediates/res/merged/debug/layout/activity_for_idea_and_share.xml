@@ -36,7 +36,7 @@
                         android:layout_toRightOf="@+id/textView10"
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"
-                        android:text="主題分類："
+                        android:text="書本分類："
                         android:textColor="#313131"
 
                         ></TextView>
@@ -55,44 +55,44 @@
                         android:paddingLeft="8dp"
                        ></Spinner>
                 </LinearLayout>
-                <RelativeLayout
-                    android:layout_height="wrap_content"
-                    android:layout_width="match_parent"
-                    android:orientation="horizontal"
-                    android:layout_marginTop="12dp"
-                    >
-                    <TextView
-                        android:id="@+id/textView11"
-                        android:layout_height="wrap_content"
-                        android:layout_width="wrap_content"
-                        android:text="＊"
-                        android:textColor="#f9835e"
-                        android:layout_marginLeft="12dp"
-                        ></TextView>
-                    <TextView
-                        android:layout_toRightOf="@+id/textView11"
-                        android:layout_height="wrap_content"
-                        android:layout_width="wrap_content"
-                        android:text="此刻心情："
-                        android:textColor="#313131"
+                <!--<RelativeLayout-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:layout_marginTop="12dp"-->
+                    <!--&gt;-->
+                    <!--<TextView-->
+                        <!--android:id="@+id/textView11"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:text="＊"-->
+                        <!--android:textColor="#f9835e"-->
+                        <!--android:layout_marginLeft="12dp"-->
+                        <!--&gt;</TextView>-->
+                    <!--<TextView-->
+                        <!--android:layout_toRightOf="@+id/textView11"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:text="此刻心情："-->
+                        <!--android:textColor="#313131"-->
 
-                        ></TextView>
-                </RelativeLayout>
-                <LinearLayout
-                    android:layout_height="wrap_content"
-                    android:layout_width="match_parent"
-                    android:orientation="vertical"
-                    >
-                    <Spinner
-                        android:id="@+id/spinner2"
+                        <!--&gt;</TextView>-->
+                <!--</RelativeLayout>-->
+                <!--<LinearLayout-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:orientation="vertical"-->
+                    <!--&gt;-->
+                    <!--<Spinner-->
+                        <!--android:id="@+id/spinner2"-->
 
-                        android:layout_height="35dp"
-                        android:layout_width="match_parent"
-                        android:layout_marginLeft="12dp"
-                        android:layout_marginRight="12dp"
-                        android:paddingLeft="8dp"
-                        ></Spinner>
-                </LinearLayout>
+                        <!--android:layout_height="35dp"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_marginLeft="12dp"-->
+                        <!--android:layout_marginRight="12dp"-->
+                        <!--android:paddingLeft="8dp"-->
+                        <!--&gt;</Spinner>-->
+                <!--</LinearLayout>-->
                 <RelativeLayout
                     android:layout_height="wrap_content"
                     android:layout_width="match_parent"
@@ -158,7 +158,7 @@
                         android:layout_toRightOf="@+id/textView2"
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"
-                        android:text="發生地點："
+                        android:text="所在地："
                         android:textColor="#313131"
 
                         ></TextView>
@@ -178,7 +178,7 @@
                         android:layout_marginRight="12dp"
                         android:paddingLeft="8dp"
                         android:id="@+id/addedt"
-                        android:hint="輸入發生地點或直接按定位"></EditText>
+                        android:hint="輸入書籍所在地方"></EditText>
                     <Button
                         android:id="@+id/addbtn"
                         android:text="定位"
@@ -195,7 +195,7 @@
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
                 android:orientation="vertical"
-                android:visibility="gone">
+                android:visibility="visible">
                 <RelativeLayout
                     android:layout_height="wrap_content"
                     android:layout_width="match_parent"
@@ -263,7 +263,7 @@
                         android:layout_toRightOf="@+id/textView4"
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"
-                        android:text="主題："
+                        android:text="書籍名稱："
                         android:textColor="#313131"
 
                         ></TextView>
@@ -282,7 +282,7 @@
                         android:layout_marginRight="12dp"
                         android:paddingLeft="8dp"
                         android:id="@+id/tittle"
-                        android:hint="爆料主題"></EditText>
+                        android:hint="書籍名稱"></EditText>
                 </LinearLayout>
 
             </LinearLayout>>
@@ -309,7 +309,7 @@
                         android:layout_toRightOf="@+id/textView5"
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"
-                        android:text="內容："
+                        android:text="書籍內容："
                         android:textColor="#313131"
 
                         ></TextView>
