@@ -772,7 +772,7 @@
     <string name="accept">Accept</string>
     <string name="action_settings">贊助</string>
     <string name="admob_unit_id">ca-app-pub-7019441527375550/4887903024</string>
-    <string name="app_name">我就是愛爆料APP</string>
+    <string name="app_name">二手書交流書鋪</string>
     <string name="banner_ad_unit_id">ca-app-pub-7019441527375550/1880466629</string>
     <string name="cancel">取消</string>
     <string name="cast_ad_label">Ad</string>
@@ -911,11 +911,11 @@
     <string name="tagmanager_preview_dialog_message">Preview mode updated.</string>
     <string name="tagmanager_preview_dialog_title">Preview</string>
     <string name="title_activity_fire_base_list">FireBaseListActivity</string>
-    <string name="title_activity_headpage">我就是愛爆料APP</string>
+    <string name="title_activity_headpage">二手書交流書鋪</string>
     <string name="title_activity_in_app_billing">贊助開發者</string>
     <string name="title_activity_login">LoginActivity</string>
     <string name="title_activity_spinner">SpinnerActivity</string>
-    <string name="title_activity_two">我就是愛爆料APP</string>
+    <string name="title_activity_two">二手書交流書鋪</string>
     <string name="title_activity_user">會員中心</string>
     <string name="title_activity_user_messge">留言板</string>
     <string name="title_activity_video_view">VideoViewActivity</string>

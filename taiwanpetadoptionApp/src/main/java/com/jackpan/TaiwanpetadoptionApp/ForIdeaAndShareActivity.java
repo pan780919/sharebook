@@ -113,15 +113,14 @@ public class ForIdeaAndShareActivity extends Activity implements View.OnClickLis
     String returnAddress = "";
     Double lat, lon;
     LocationManager locationMgr;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_for_idea_and_share);
         mPhone = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(mPhone);
-        MyApi.checkGPS(ForIdeaAndShareActivity.this);
-        this.locationMgr = (LocationManager) this.getSystemService(LOCATION_SERVICE);
+//        MyApi.checkGPS(ForIdeaAndShareActivity.this);
+//        this.locationMgr = (LocationManager) this.getSystemService(LOCATION_SERVICE);
 
         initLayout();
 
@@ -134,11 +133,11 @@ public class ForIdeaAndShareActivity extends Activity implements View.OnClickLis
         mPicName = (TextView) findViewById(R.id.picnametext);
         mPicName2 = (TextView) findViewById(R.id.picnametext2);
         mPicName3 = (TextView) findViewById(R.id.picnametext3);
-        mPicName4 = (TextView) findViewById(R.id.picnametext4);
-        mPicName5 = (TextView) findViewById(R.id.picnametext5);
-        mVideoName = (TextView) findViewById(R.id.videonametext);
-        mVideoName2 = (TextView) findViewById(R.id.videonametext2);
-        mVideoName3 = (TextView) findViewById(R.id.videonametext3);
+//        mPicName4 = (TextView) findViewById(R.id.picnametext4);
+//        mPicName5 = (TextView) findViewById(R.id.picnametext5);
+//        mVideoName = (TextView) findViewById(R.id.videonametext);
+//        mVideoName2 = (TextView) findViewById(R.id.videonametext2);
+//        mVideoName3 = (TextView) findViewById(R.id.videonametext3);
         mNameEdt = (EditText) findViewById(R.id.nameedt);
         mMailEdt = (EditText) findViewById(R.id.mailedt);
         mTiitleEdt = (EditText) findViewById(R.id.tittle);
@@ -187,18 +186,19 @@ public class ForIdeaAndShareActivity extends Activity implements View.OnClickLis
         findViewById(R.id.picbtn).setOnClickListener(this);
         findViewById(R.id.picbtn2).setOnClickListener(this);
         findViewById(R.id.picbtn3).setOnClickListener(this);
-        findViewById(R.id.picbtn4).setOnClickListener(this);
-        findViewById(R.id.picbtn5).setOnClickListener(this);
-        findViewById(R.id.videobtn).setOnClickListener(this);
-        findViewById(R.id.videobtn2).setOnClickListener(this);
-        findViewById(R.id.videobtn3).setOnClickListener(this);
+//        findViewById(R.id.picbtn4).setOnClickListener(this);
+//        findViewById(R.id.picbtn5).setOnClickListener(this);
+//        findViewById(R.id.videobtn).setOnClickListener(this);
+//        findViewById(R.id.videobtn2).setOnClickListener(this);
+//        findViewById(R.id.videobtn3).setOnClickListener(this);
+
         findViewById(R.id.addbtn).setOnClickListener(this);
         mAddBtn = (Button) findViewById(R.id.addbtn);
         mAddBtn.setVisibility(View.GONE);
         returnAddress = mAddEdt.getText().toString().trim();
-        MyApi.AddtoLatLon(ForIdeaAndShareActivity.this, returnAddress);
-        lat = MyApi.getLatitude();
-        lon = MyApi.getLongitude();
+//        MyApi.AddtoLatLon(ForIdeaAndShareActivity.this, returnAddress);
+//        lat = MyApi.getLatitude();
+//        lon = MyApi.getLongitude();
 
     }
 
@@ -235,18 +235,12 @@ public class ForIdeaAndShareActivity extends Activity implements View.OnClickLis
                         picUri,
                         picUri2,
                         picUri3,
-                        picUri4,
-                        picUri5,
 
                         mNameEdt.getText().toString().trim(),
-                        videoUri,
-                        videoUri2,
-                        videoUri3,
+
 
                         String.valueOf(s),
-                        returnAddress,
-                        lat,
-                        lon
+                        returnAddress
 
                 );
                 break;
@@ -265,29 +259,29 @@ public class ForIdeaAndShareActivity extends Activity implements View.OnClickLis
                 picInt = 3;
                 selectPic();
                 break;
-            case R.id.picbtn4:
-                picInt = 4;
-                selectPic();
-                break;
-            case R.id.picbtn5:
-                picInt = 5;
-                selectPic();
-                break;
-
-            case R.id.videobtn:
-                videoInt = 1;
-                selectVideo();
-                break;
-
-            case R.id.videobtn2:
-                videoInt = 2;
-                selectVideo();
-                break;
-
-            case R.id.videobtn3:
-                videoInt = 3;
-                selectVideo();
-                break;
+//            case R.id.picbtn4:
+//                picInt = 4;
+//                selectPic();
+//                break;
+//            case R.id.picbtn5:
+//                picInt = 5;
+//                selectPic();
+//                break;
+//
+//            case R.id.videobtn:
+//                videoInt = 1;
+//                selectVideo();
+//                break;
+//
+//            case R.id.videobtn2:
+//                videoInt = 2;
+//                selectVideo();
+//                break;
+//
+//            case R.id.videobtn3:
+//                videoInt = 3;
+//                selectVideo();
+//                break;
             case R.id.addbtn:
 
                 if (mAddEdt.getText().toString().trim().equals("")) {
@@ -300,11 +294,13 @@ public class ForIdeaAndShareActivity extends Activity implements View.OnClickLis
 
     }
 
-    private void setFireBaseDB(String id, String tittle, String message, String cat, String mood, String uri, String uri2, String uri3, String uri4
-            , String uri5, String name, String videoUri, String videoUri2, String videoUri3, String date,
-                               String adds, Double lat, Double lon
+    private void setFireBaseDB(String id, String tittle, String message, String cat, String mood, String uri, String uri2, String uri3
+            ,  String name, String date,
+                               String adds
     ) {
-        String url = "https://sevenpeoplebook.firebaseio.com/Broke";
+
+
+        String url = "https://bookshare-99cb3.firebaseio.com/sharebook";
         Firebase mFirebaseRef = new Firebase(url);
 //		Firebase userRef = mFirebaseRef.child("user");
 //		Map newUserData = new HashMap();
@@ -325,14 +321,14 @@ public class ForIdeaAndShareActivity extends Activity implements View.OnClickLis
         newPost.put("pic", uri);
         newPost.put("pic2", uri2);
         newPost.put("pic3", uri3);
-        newPost.put("pic4", uri4);
-        newPost.put("pic5", uri5);
+//        newPost.put("pic4", uri4);
+//        newPost.put("pic5", uri5);
         newPost.put("adds", adds);
-        newPost.put("lat", lat);
-        newPost.put("lon", lon);
-        newPost.put("url", videoUri);
-        newPost.put("url2", videoUri2);
-        newPost.put("url3", videoUri3);
+//        newPost.put("lat", lat);
+//        newPost.put("lon", lon);
+//        newPost.put("url", videoUri);
+//        newPost.put("url2", videoUri2);
+//        newPost.put("url3", videoUri3);
 
 
         newPost.put("date", date);
@@ -392,7 +388,7 @@ public class ForIdeaAndShareActivity extends Activity implements View.OnClickLis
             @Override
             public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
                 // taskSnapshot.getMetadata() contains file metadata such as size, content-type, and download URL.
-                Uri downloadUrl = taskSnapshot.getDownloadUrl();
+                 Uri downloadUrl = taskSnapshot.getDownloadUrl();
             }
         });
     }
@@ -541,7 +537,8 @@ public class ForIdeaAndShareActivity extends Activity implements View.OnClickLis
 
     private void uploadFromFile(Uri path) {
         FirebaseStorage storage = FirebaseStorage.getInstance();
-        StorageReference storageRef = storage.getReferenceFromUrl("gs://sevenpeoplebook.appspot.com");
+        StorageReference storageRef = storage.getReferenceFromUrl("gs://bookshare-99cb3.appspot.com\n" +
+                "file_upload 上傳檔案");
         Uri file = path;
         StorageReference imageRef = storageRef.child(file.getLastPathSegment());
         StorageMetadata metadata = new StorageMetadata.Builder()

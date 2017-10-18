@@ -105,14 +105,14 @@ public class TwoActivity extends Activity implements android.location.LocationLi
 //		        requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.activity_two);
 		getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
-		MyApi.checkGPS(TwoActivity.this);
-		this.locationMgr = (LocationManager) this.getSystemService(LOCATION_SERVICE);
-		mAdView = (AdView) findViewById(R.id.adView);
-		setAd();
-		checkBuyAd();
+//		MyApi.checkGPS(TwoActivity.this);
+//		this.locationMgr = (LocationManager) this.getSystemService(LOCATION_SERVICE);
+//		mAdView = (AdView) findViewById(R.id.adView);
+//		setAd();
+//		checkBuyAd();
 		initLayout();
 		loadIntent();
-		loadInterstitialAd();
+//		loadInterstitialAd();
 //		Like();
 		FacebookSdk.sdkInitialize(getApplicationContext());
 		callbackManager = CallbackManager.Factory.create();
@@ -163,10 +163,14 @@ public class TwoActivity extends Activity implements android.location.LocationLi
 		textview4 = (TextView) findViewById(R.id.textView4);
 		textview5 = (TextView) findViewById(R.id.textView5);
 		textview6 = (TextView) findViewById(R.id.textView6);
+		textview4.setVisibility(View.GONE);
+		textview5.setVisibility(View.GONE);
+		textview6.setVisibility(View.GONE);
 		textview7 = (TextView) findViewById(R.id.textView7);
 		textview8= (TextView) findViewById(R.id.textView8);
 		mBtnGPS= (Button) findViewById(R.id.buttongps);
 		mBtnGPS.setText("位置讀取中！！");
+		mBtnGPS.setVisibility(View.GONE);
 		textview10= (TextView) findViewById(R.id.textView10);
 		textview11= (TextView) findViewById(R.id.textView11);
 		textview12= (TextView) findViewById(R.id.textView12);
@@ -222,45 +226,45 @@ public class TwoActivity extends Activity implements android.location.LocationLi
 		textview.setText("標題:"+data.getTittle());
 		textview2.setText("內容:"+data.getMessage());
 		textview3.setText("作者:"+data.getName());
-		if(!data.getUrl().equals(""))textview4.setText("點擊觀看影片");
-		else textview4.setText("無影片可觀看");
-		 textview4.setOnClickListener(new View.OnClickListener() {
-			 @Override
-			 public void onClick(View v) {
-				 if(data.getUrl().equals("")) return;
-				 Intent i = new Intent(TwoActivity.this, VideoViewActivity.class);
-				 Bundle bundle = new Bundle();
-				 bundle.putString("video",data.getUrl());
-				 i.putExtras(bundle);
-				 startActivity(i);
-			 }
-		 });
-		if(!data.url2.equals(""))textview5.setText("點擊觀看影片");
-		else textview5.setText("無影片可觀看");
-		textview5.setOnClickListener(new View.OnClickListener() {
-			@Override
-			public void onClick(View v) {
-				if(data.url2.equals("")) return;
-				Intent i = new Intent(TwoActivity.this, VideoViewActivity.class);
-				Bundle bundle = new Bundle();
-				bundle.putString("video",data.url2);
-				i.putExtras(bundle);
-				startActivity(i);
-			}
-		});
-		if(!data.url3.equals(""))textview6.setText("點擊觀看影片");
-		else textview6.setText("無影片可觀看");
-		textview6.setOnClickListener(new View.OnClickListener() {
-			@Override
-			public void onClick(View v) {
-				if(data.url3.equals("")) return;
-				Intent i = new Intent(TwoActivity.this, VideoViewActivity.class);
-				Bundle bundle = new Bundle();
-				bundle.putString("video",data.url3);
-				i.putExtras(bundle);
-				startActivity(i);
-			}
-		});
+//		if(!data.getUrl().equals(""))textview4.setText("點擊觀看影片");
+//		else textview4.setText("無影片可觀看");
+//		 textview4.setOnClickListener(new View.OnClickListener() {
+//			 @Override
+//			 public void onClick(View v) {
+//				 if(data.getUrl().equals("")) return;
+//				 Intent i = new Intent(TwoActivity.this, VideoViewActivity.class);
+//				 Bundle bundle = new Bundle();
+//				 bundle.putString("video",data.getUrl());
+//				 i.putExtras(bundle);
+//				 startActivity(i);
+//			 }
+//		 });
+//		if(!data.url2.equals(""))textview5.setText("點擊觀看影片");
+//		else textview5.setText("無影片可觀看");
+//		textview5.setOnClickListener(new View.OnClickListener() {
+//			@Override
+//			public void onClick(View v) {
+//				if(data.url2.equals("")) return;
+//				Intent i = new Intent(TwoActivity.this, VideoViewActivity.class);
+//				Bundle bundle = new Bundle();
+//				bundle.putString("video",data.url2);
+//				i.putExtras(bundle);
+//				startActivity(i);
+//			}
+//		});
+//		if(!data.url3.equals(""))textview6.setText("點擊觀看影片");
+//		else textview6.setText("無影片可觀看");
+//		textview6.setOnClickListener(new View.OnClickListener() {
+//			@Override
+//			public void onClick(View v) {
+//				if(data.url3.equals("")) return;
+//				Intent i = new Intent(TwoActivity.this, VideoViewActivity.class);
+//				Bundle bundle = new Bundle();
+//				bundle.putString("video",data.url3);
+//				i.putExtras(bundle);
+//				startActivity(i);
+//			}
+//		});
 
 
 		mUserLikeBtn.setOnClickListener(new View.OnClickListener() {
@@ -297,27 +301,27 @@ public class TwoActivity extends Activity implements android.location.LocationLi
 		mUserText.setText(data.getLike()+"人");
 		textview7.setText("此刻心情:"+data.mood);
 		textview8.setText("發生地點:"+data.adds);
-		mBtnGPS.setOnClickListener(new View.OnClickListener() {
-			@Override
-			public void onClick(View v) {
-				if(mBtnGPS.getText().toString().trim().equals("位置讀取中！！"))return;
-				double startLatitude = lat;
-				double startLongitude = lon;
-
-				double endLatitude = data.lat;
-				double endLongitude = data.lon;
-
-				String saddr = "saddr=" + startLatitude + "," + startLongitude;
-				String daddr = "daddr=" + endLatitude + "," + endLongitude;
-				String uriString = "http://maps.google.com/maps?" + saddr + "&" + daddr;
-
-				Uri uri = Uri.parse(uriString);
-
-				Intent intent = new Intent(android.content.Intent.ACTION_VIEW, uri);
-
-				startActivity(intent);
-			}
-		});
+//		mBtnGPS.setOnClickListener(new View.OnClickListener() {
+//			@Override
+//			public void onClick(View v) {
+//				if(mBtnGPS.getText().toString().trim().equals("位置讀取中！！"))return;
+//				double startLatitude = lat;
+//				double startLongitude = lon;
+//
+//				double endLatitude = data.lat;
+//				double endLongitude = data.lon;
+//
+//				String saddr = "saddr=" + startLatitude + "," + startLongitude;
+//				String daddr = "daddr=" + endLatitude + "," + endLongitude;
+//				String uriString = "http://maps.google.com/maps?" + saddr + "&" + daddr;
+//
+//				Uri uri = Uri.parse(uriString);
+//
+//				Intent intent = new Intent(android.content.Intent.ACTION_VIEW, uri);
+//
+//				startActivity(intent);
+//			}
+//		});
 //		textview8.setText("分類學_綱:"+data.A_Class);
 //		textview9.setText("分類學_目:"+data.A_Order);
 

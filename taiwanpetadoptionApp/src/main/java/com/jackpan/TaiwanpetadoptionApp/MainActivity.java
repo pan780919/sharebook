@@ -102,8 +102,6 @@ import com.jackpan.video.VideoMainActivity;
 import com.jackpan.Brokethenews.R;
 public class MainActivity extends Activity {
     private ListView petlist;
-    //	private ArrayAdapter<String>petadp;
-    //	private List<String>listpet =new ArrayList<String>();
     private ArrayList<ResultData> mAllData = new ArrayList<ResultData>();
     private TextView numtext;
     MyAdapter mydapter = null;
@@ -213,7 +211,7 @@ public class MainActivity extends Activity {
                 finish();
             }
         });
-        configVersionCheck();
+//        configVersionCheck();
 
         boolean isbuy = MySharedPrefernces.getIsBuyed(this);
         if (isbuy) {
@@ -299,8 +297,8 @@ public class MainActivity extends Activity {
 //		initUpdateAdsTimer();
 
         setFireBase();
-		setAdMobAd();
-        setFbAd();
+//		setAdMobAd();
+//        setFbAd();
     }
 
     @Override
@@ -647,7 +645,7 @@ public class MainActivity extends Activity {
                 MainActivity.this.finish();//關閉activity
                 auth.signOut();
                 MySharedPrefernces.saveUserId(MainActivity.this,"");
-                interstitial.show();
+//                interstitial.show();
 
             }
 
@@ -658,7 +656,7 @@ public class MainActivity extends Activity {
             public void onClick(DialogInterface dialog, int i) {
 
                 MainActivity.this.finish();//關閉activity
-                interstitial.show();
+//                interstitial.show();
             }
 
         });
