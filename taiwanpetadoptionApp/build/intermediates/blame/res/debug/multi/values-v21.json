@@ -2102,8 +2102,29 @@
                     "startLine": 297,
                     "startColumn": 4,
                     "startOffset": 21578,
+                    "endLine": 299,
+                    "endColumn": 12,
+                    "endOffset": 21771
+                },
+                "from": {
+                    "file": "/Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/exploded-aar/com.android.support/design/25.1.0/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endLine": 4,
+                        "endColumn": 12,
+                        "endOffset": 248
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 300,
+                    "startColumn": 4,
+                    "startOffset": 21776,
                     "endColumn": 96,
-                    "endOffset": 21670
+                    "endOffset": 21868
                 },
                 "from": {
                     "file": "/Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/exploded-aar/com.adlocus/library/3.5.2/res/values-v21/values-v21.xml",
@@ -2118,11 +2139,11 @@
             },
             {
                 "to": {
-                    "startLine": 298,
+                    "startLine": 301,
                     "startColumn": 4,
-                    "startOffset": 21675,
+                    "startOffset": 21873,
                     "endColumn": 100,
-                    "endOffset": 21771
+                    "endOffset": 21969
                 },
                 "from": {
                     "file": "/Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/exploded-aar/com.adlocus/library/3.5.2/res/values-v21/values-v21.xml",

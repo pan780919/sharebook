@@ -36,7 +36,7 @@
                         android:layout_toRightOf="@+id/textView10"
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"
-                        android:text="主題分類："
+                        android:text="書本分類："
                         android:textColor="#313131"
 
                         ></TextView>
@@ -55,44 +55,44 @@
                         android:paddingLeft="8dp"
                        ></Spinner>
                 </LinearLayout>
-                <RelativeLayout
-                    android:layout_height="wrap_content"
-                    android:layout_width="match_parent"
-                    android:orientation="horizontal"
-                    android:layout_marginTop="12dp"
-                    >
-                    <TextView
-                        android:id="@+id/textView11"
-                        android:layout_height="wrap_content"
-                        android:layout_width="wrap_content"
-                        android:text="＊"
-                        android:textColor="#f9835e"
-                        android:layout_marginLeft="12dp"
-                        ></TextView>
-                    <TextView
-                        android:layout_toRightOf="@+id/textView11"
-                        android:layout_height="wrap_content"
-                        android:layout_width="wrap_content"
-                        android:text="此刻心情："
-                        android:textColor="#313131"
+                <!--<RelativeLayout-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:layout_marginTop="12dp"-->
+                    <!--&gt;-->
+                    <!--<TextView-->
+                        <!--android:id="@+id/textView11"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:text="＊"-->
+                        <!--android:textColor="#f9835e"-->
+                        <!--android:layout_marginLeft="12dp"-->
+                        <!--&gt;</TextView>-->
+                    <!--<TextView-->
+                        <!--android:layout_toRightOf="@+id/textView11"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:text="此刻心情："-->
+                        <!--android:textColor="#313131"-->
 
-                        ></TextView>
-                </RelativeLayout>
-                <LinearLayout
-                    android:layout_height="wrap_content"
-                    android:layout_width="match_parent"
-                    android:orientation="vertical"
-                    >
-                    <Spinner
-                        android:id="@+id/spinner2"
+                        <!--&gt;</TextView>-->
+                <!--</RelativeLayout>-->
+                <!--<LinearLayout-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:orientation="vertical"-->
+                    <!--&gt;-->
+                    <!--<Spinner-->
+                        <!--android:id="@+id/spinner2"-->
 
-                        android:layout_height="35dp"
-                        android:layout_width="match_parent"
-                        android:layout_marginLeft="12dp"
-                        android:layout_marginRight="12dp"
-                        android:paddingLeft="8dp"
-                        ></Spinner>
-                </LinearLayout>
+                        <!--android:layout_height="35dp"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_marginLeft="12dp"-->
+                        <!--android:layout_marginRight="12dp"-->
+                        <!--android:paddingLeft="8dp"-->
+                        <!--&gt;</Spinner>-->
+                <!--</LinearLayout>-->
                 <RelativeLayout
                     android:layout_height="wrap_content"
                     android:layout_width="match_parent"
@@ -158,7 +158,7 @@
                         android:layout_toRightOf="@+id/textView2"
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"
-                        android:text="發生地點："
+                        android:text="所在地："
                         android:textColor="#313131"
 
                         ></TextView>
@@ -178,7 +178,7 @@
                         android:layout_marginRight="12dp"
                         android:paddingLeft="8dp"
                         android:id="@+id/addedt"
-                        android:hint="輸入發生地點或直接按定位"></EditText>
+                        android:hint="輸入書籍所在地方"></EditText>
                     <Button
                         android:id="@+id/addbtn"
                         android:text="定位"
@@ -195,7 +195,7 @@
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
                 android:orientation="vertical"
-                android:visibility="gone">
+                android:visibility="visible">
                 <RelativeLayout
                     android:layout_height="wrap_content"
                     android:layout_width="match_parent"
@@ -256,14 +256,12 @@
                         android:text="＊"
                         android:textColor="#f9835e"
                         android:layout_marginLeft="12dp"
-
-
                         ></TextView>
                     <TextView
                         android:layout_toRightOf="@+id/textView4"
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"
-                        android:text="主題："
+                        android:text="書籍名稱："
                         android:textColor="#313131"
 
                         ></TextView>
@@ -282,10 +280,112 @@
                         android:layout_marginRight="12dp"
                         android:paddingLeft="8dp"
                         android:id="@+id/tittle"
-                        android:hint="爆料主題"></EditText>
+                        android:hint="書籍名稱"></EditText>
                 </LinearLayout>
 
             </LinearLayout>>
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                >
+                <RelativeLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="12dp"
+                    >
+                    <TextView
+                        android:id="@+id/isbntext"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="＊"
+                        android:textColor="#f9835e"
+                        android:layout_marginLeft="12dp"
+
+
+                        ></TextView>
+                    <TextView
+                        android:layout_toRightOf="@+id/isbntext"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="ISBN："
+                        android:textColor="#313131"
+
+                        ></TextView>
+
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    >
+                    <EditText
+                        android:background="@drawable/list3"
+                        android:layout_height="35dp"
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:paddingLeft="8dp"
+                        android:id="@+id/isbnedt"
+                        android:hint="ISBN"></EditText>
+                </LinearLayout>
+
+            </LinearLayout>>
+
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                >
+                <RelativeLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="12dp"
+                    >
+                    <TextView
+                        android:id="@+id/pricetext"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="＊"
+                        android:textColor="#f9835e"
+                        android:layout_marginLeft="12dp"
+
+
+                        ></TextView>
+                    <TextView
+                        android:layout_toRightOf="@+id/pricetext"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="價格："
+                        android:textColor="#313131"
+
+                        ></TextView>
+
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    >
+                    <EditText
+                        android:background="@drawable/list3"
+                        android:layout_height="35dp"
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:paddingLeft="8dp"
+                        android:id="@+id/price"
+                        android:hint="價格"></EditText>
+                </LinearLayout>
+
+            </LinearLayout>>
+
+
+
             <LinearLayout
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
@@ -309,7 +409,7 @@
                         android:layout_toRightOf="@+id/textView5"
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"
-                        android:text="內容："
+                        android:text="書籍內容："
                         android:textColor="#313131"
 
                         ></TextView>
@@ -431,163 +531,163 @@
                                 android:layout_marginRight="8dp"
                                 />
                         </LinearLayout>
-                        <LinearLayout
-                            style="@style/FullWidthButton"
-                            android:orientation="horizontal"
-                            >
+                        <!--<LinearLayout-->
+                            <!--style="@style/FullWidthButton"-->
+                            <!--android:orientation="horizontal"-->
+                            <!--&gt;-->
 
-                            <TextView
-                                android:layout_weight="3"
-                                android:layout_marginLeft="8dp"
-                                android:layout_height="wrap_content"
-                                android:layout_width="match_parent"
-                                android:text="第四張："
-                                android:textSize="20dp"
-                                ></TextView>
-                            <TextView
-                                android:id="@+id/picnametext4"
-                                android:layout_weight="3"
-                                android:layout_height="wrap_content"
-                                android:layout_width="match_parent"
-                                android:text=""
-                                android:textSize="20dp"
-                                ></TextView>
-                            <Button
-                                android:id="@+id/picbtn4"
-                                android:layout_weight="3"
-                                android:layout_height="wrap_content"
-                                android:layout_width="match_parent"
-                                android:text="選擇"
-                                android:layout_marginRight="8dp"
-                                />
-                        </LinearLayout>
-                        <LinearLayout
-                            style="@style/FullWidthButton"
-                            android:orientation="horizontal"
-                            >
+                            <!--<TextView-->
+                                <!--android:layout_weight="3"-->
+                                <!--android:layout_marginLeft="8dp"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:text="第四張："-->
+                                <!--android:textSize="20dp"-->
+                                <!--&gt;</TextView>-->
+                            <!--<TextView-->
+                                <!--android:id="@+id/picnametext4"-->
+                                <!--android:layout_weight="3"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:text=""-->
+                                <!--android:textSize="20dp"-->
+                                <!--&gt;</TextView>-->
+                            <!--<Button-->
+                                <!--android:id="@+id/picbtn4"-->
+                                <!--android:layout_weight="3"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:text="選擇"-->
+                                <!--android:layout_marginRight="8dp"-->
+                                <!--/>-->
+                        <!--</LinearLayout>-->
+                        <!--<LinearLayout-->
+                            <!--style="@style/FullWidthButton"-->
+                            <!--android:orientation="horizontal"-->
+                            <!--&gt;-->
 
-                            <TextView
-                                android:layout_weight="3"
-                                android:layout_marginLeft="8dp"
-                                android:layout_height="wrap_content"
-                                android:layout_width="match_parent"
-                                android:text="第五張："
-                                android:textSize="20dp"
-                                ></TextView>
-                            <TextView
-                                android:id="@+id/picnametext5"
-                                android:layout_weight="3"
-                                android:layout_height="wrap_content"
-                                android:layout_width="match_parent"
-                                android:text=""
-                                android:textSize="20dp"
-                                ></TextView>
-                            <Button
-                                android:id="@+id/picbtn5"
-                                android:layout_weight="3"
-                                android:layout_height="wrap_content"
-                                android:layout_width="match_parent"
-                                android:text="選擇"
-                                android:layout_marginRight="8dp"
-                                />
-                        </LinearLayout>
-
-
+                            <!--<TextView-->
+                                <!--android:layout_weight="3"-->
+                                <!--android:layout_marginLeft="8dp"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:text="第五張："-->
+                                <!--android:textSize="20dp"-->
+                                <!--&gt;</TextView>-->
+                            <!--<TextView-->
+                                <!--android:id="@+id/picnametext5"-->
+                                <!--android:layout_weight="3"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:text=""-->
+                                <!--android:textSize="20dp"-->
+                                <!--&gt;</TextView>-->
+                            <!--<Button-->
+                                <!--android:id="@+id/picbtn5"-->
+                                <!--android:layout_weight="3"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:text="選擇"-->
+                                <!--android:layout_marginRight="8dp"-->
+                                <!--/>-->
+                        <!--</LinearLayout>-->
 
 
-                        <LinearLayout
-                            style="@style/FullWidthButton"
-                            android:orientation="horizontal">
-
-                            <TextView
-                                android:layout_weight="3"
-                                android:layout_marginLeft="8dp"
-                                android:layout_height="wrap_content"
-                                android:layout_width="match_parent"
-                                android:text="上傳影片："
-                                android:textSize="20dp"
-                                ></TextView>
-                            <TextView
-                                android:id="@+id/videonametext"
-                                android:layout_weight="3"
-                                android:layout_height="wrap_content"
-                                android:layout_width="match_parent"
-                                android:text=""
-                                android:textSize="20dp"
-                                ></TextView>
-                            <Button
-                                android:id="@+id/videobtn"
-                                android:layout_weight="3"
-                                android:layout_height="wrap_content"
-                                android:layout_width="match_parent"
-                                android:text="選擇"
-                                android:layout_marginRight="8dp"
-                                />
 
 
-                        </LinearLayout>
-                        <LinearLayout
-                            style="@style/FullWidthButton"
-                            android:orientation="horizontal">
+                        <!--<LinearLayout-->
+                            <!--style="@style/FullWidthButton"-->
+                            <!--android:orientation="horizontal">-->
 
-                            <TextView
-                                android:layout_weight="3"
-                                android:layout_marginLeft="8dp"
-                                android:layout_height="wrap_content"
-                                android:layout_width="match_parent"
-                                android:text="第二部："
-                                android:textSize="20dp"
-                                ></TextView>
-                            <TextView
-                                android:id="@+id/videonametext2"
-                                android:layout_weight="3"
-                                android:layout_height="wrap_content"
-                                android:layout_width="match_parent"
-                                android:text=""
-                                android:textSize="20dp"
-                                ></TextView>
-                            <Button
-                                android:id="@+id/videobtn2"
-                                android:layout_weight="3"
-                                android:layout_height="wrap_content"
-                                android:layout_width="match_parent"
-                                android:text="選擇"
-                                android:layout_marginRight="8dp"
-                                />
-
-
-                        </LinearLayout>
-                        <LinearLayout
-                            style="@style/FullWidthButton"
-                            android:orientation="horizontal">
-
-                            <TextView
-                                android:layout_weight="3"
-                                android:layout_marginLeft="8dp"
-                                android:layout_height="wrap_content"
-                                android:layout_width="match_parent"
-                                android:text="第三部："
-                                android:textSize="20dp"
-                                ></TextView>
-                            <TextView
-                                android:id="@+id/videonametext3"
-                                android:layout_weight="3"
-                                android:layout_height="wrap_content"
-                                android:layout_width="match_parent"
-                                android:text=""
-                                android:textSize="20dp"
-                                ></TextView>
-                            <Button
-                                android:id="@+id/videobtn3"
-                                android:layout_weight="3"
-                                android:layout_height="wrap_content"
-                                android:layout_width="match_parent"
-                                android:text="選擇"
-                                android:layout_marginRight="8dp"
-                                />
+                            <!--<TextView-->
+                                <!--android:layout_weight="3"-->
+                                <!--android:layout_marginLeft="8dp"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:text="上傳影片："-->
+                                <!--android:textSize="20dp"-->
+                                <!--&gt;</TextView>-->
+                            <!--<TextView-->
+                                <!--android:id="@+id/videonametext"-->
+                                <!--android:layout_weight="3"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:text=""-->
+                                <!--android:textSize="20dp"-->
+                                <!--&gt;</TextView>-->
+                            <!--<Button-->
+                                <!--android:id="@+id/videobtn"-->
+                                <!--android:layout_weight="3"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:text="選擇"-->
+                                <!--android:layout_marginRight="8dp"-->
+                                <!--/>-->
 
 
-                        </LinearLayout>
+                        <!--</LinearLayout>-->
+                        <!--<LinearLayout-->
+                            <!--style="@style/FullWidthButton"-->
+                            <!--android:orientation="horizontal">-->
+
+                            <!--<TextView-->
+                                <!--android:layout_weight="3"-->
+                                <!--android:layout_marginLeft="8dp"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:text="第二部："-->
+                                <!--android:textSize="20dp"-->
+                                <!--&gt;</TextView>-->
+                            <!--<TextView-->
+                                <!--android:id="@+id/videonametext2"-->
+                                <!--android:layout_weight="3"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:text=""-->
+                                <!--android:textSize="20dp"-->
+                                <!--&gt;</TextView>-->
+                            <!--<Button-->
+                                <!--android:id="@+id/videobtn2"-->
+                                <!--android:layout_weight="3"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:text="選擇"-->
+                                <!--android:layout_marginRight="8dp"-->
+                                <!--/>-->
+
+
+                        <!--</LinearLayout>-->
+                        <!--<LinearLayout-->
+                            <!--style="@style/FullWidthButton"-->
+                            <!--android:orientation="horizontal">-->
+
+                            <!--<TextView-->
+                                <!--android:layout_weight="3"-->
+                                <!--android:layout_marginLeft="8dp"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:text="第三部："-->
+                                <!--android:textSize="20dp"-->
+                                <!--&gt;</TextView>-->
+                            <!--<TextView-->
+                                <!--android:id="@+id/videonametext3"-->
+                                <!--android:layout_weight="3"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:text=""-->
+                                <!--android:textSize="20dp"-->
+                                <!--&gt;</TextView>-->
+                            <!--<Button-->
+                                <!--android:id="@+id/videobtn3"-->
+                                <!--android:layout_weight="3"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:text="選擇"-->
+                                <!--android:layout_marginRight="8dp"-->
+                                <!--/>-->
+
+
+                        <!--</LinearLayout>-->
 
 
                     </LinearLayout>

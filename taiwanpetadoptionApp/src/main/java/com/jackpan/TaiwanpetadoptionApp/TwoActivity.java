@@ -1,23 +1,14 @@
 package com.jackpan.TaiwanpetadoptionApp;
 
-import android.Manifest;
+
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.location.Address;
-import android.location.Criteria;
-import android.location.Geocoder;
-import android.location.Location;
 import android.location.LocationManager;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v4.app.ActivityCompat;
-import android.util.Log;
 import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -49,27 +40,19 @@ import com.firebase.client.Transaction;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.InterstitialAd;
-import com.google.android.gms.common.ConnectionResult;
-import com.google.android.gms.common.api.GoogleApiClient;
+
 
 import com.google.gson.Gson;
-import com.jackpan.VideoViewActivity;
 
-import java.io.IOException;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.text.DecimalFormat;
-import java.util.List;
-import java.util.Locale;
 
 import Appkey.MyAdKey;
 import com.facebook.ads.*;
 
-//import com.adlocus.AdLocusLayout$ErrorCode;
-//import com.google.analytics.tracking.android.EasyTracker;
 import com.jackpan.Brokethenews.R;
-public class TwoActivity extends Activity implements android.location.LocationListener {
+public class TwoActivity extends Activity {
 	private TextView textview,textview2,textview3,textview4,
 	textview5,textview6,textview7,textview8,textview9,textview10,textview11,
 	textview12,textview13,textview14,textview15,textview16,textview17,textview18,textview19,textview20,textview21;
@@ -105,14 +88,14 @@ public class TwoActivity extends Activity implements android.location.LocationLi
 //		        requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.activity_two);
 		getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
-		MyApi.checkGPS(TwoActivity.this);
-		this.locationMgr = (LocationManager) this.getSystemService(LOCATION_SERVICE);
-		mAdView = (AdView) findViewById(R.id.adView);
-		setAd();
-		checkBuyAd();
+//		MyApi.checkGPS(TwoActivity.this);
+//		this.locationMgr = (LocationManager) this.getSystemService(LOCATION_SERVICE);
+//		mAdView = (AdView) findViewById(R.id.adView);
+//		setAd();
+//		checkBuyAd();
 		initLayout();
 		loadIntent();
-		loadInterstitialAd();
+//		loadInterstitialAd();
 //		Like();
 		FacebookSdk.sdkInitialize(getApplicationContext());
 		callbackManager = CallbackManager.Factory.create();
@@ -167,6 +150,7 @@ public class TwoActivity extends Activity implements android.location.LocationLi
 		textview8= (TextView) findViewById(R.id.textView8);
 		mBtnGPS= (Button) findViewById(R.id.buttongps);
 		mBtnGPS.setText("位置讀取中！！");
+		mBtnGPS.setVisibility(View.GONE);
 		textview10= (TextView) findViewById(R.id.textView10);
 		textview11= (TextView) findViewById(R.id.textView11);
 		textview12= (TextView) findViewById(R.id.textView12);
@@ -180,7 +164,9 @@ public class TwoActivity extends Activity implements android.location.LocationLi
 		img3= (ImageView) findViewById(R.id.pageimg3);
 		textview18= (TextView) findViewById(R.id.textView18);
 		img4= (ImageView) findViewById(R.id.pageimg4);
+		img4.setVisibility(View.GONE);
 		img5= (ImageView) findViewById(R.id.pageimg5);
+		img5.setVisibility(View.GONE);
 
 		textview20= (TextView) findViewById(R.id.textView20);
 		textview21= (TextView) findViewById(R.id.textView21);
@@ -215,52 +201,55 @@ public class TwoActivity extends Activity implements android.location.LocationLi
 				MyApi.copyToClipboard(getApplication(),data.getMessage());
 			}
 		});
-		endlat =data.lat;
-		endlon =data.lon;
+//		endlat =data.lat;
+//		endlon =data.lon;
 		likeid = data.getId()+data.getDate();
 		loadImage(data.getPic(), img);
-		textview.setText("標題:"+data.getTittle());
-		textview2.setText("內容:"+data.getMessage());
-		textview3.setText("作者:"+data.getName());
-		if(!data.getUrl().equals(""))textview4.setText("點擊觀看影片");
-		else textview4.setText("無影片可觀看");
-		 textview4.setOnClickListener(new View.OnClickListener() {
-			 @Override
-			 public void onClick(View v) {
-				 if(data.getUrl().equals("")) return;
-				 Intent i = new Intent(TwoActivity.this, VideoViewActivity.class);
-				 Bundle bundle = new Bundle();
-				 bundle.putString("video",data.getUrl());
-				 i.putExtras(bundle);
-				 startActivity(i);
-			 }
-		 });
-		if(!data.url2.equals(""))textview5.setText("點擊觀看影片");
-		else textview5.setText("無影片可觀看");
-		textview5.setOnClickListener(new View.OnClickListener() {
-			@Override
-			public void onClick(View v) {
-				if(data.url2.equals("")) return;
-				Intent i = new Intent(TwoActivity.this, VideoViewActivity.class);
-				Bundle bundle = new Bundle();
-				bundle.putString("video",data.url2);
-				i.putExtras(bundle);
-				startActivity(i);
-			}
-		});
-		if(!data.url3.equals(""))textview6.setText("點擊觀看影片");
-		else textview6.setText("無影片可觀看");
-		textview6.setOnClickListener(new View.OnClickListener() {
-			@Override
-			public void onClick(View v) {
-				if(data.url3.equals("")) return;
-				Intent i = new Intent(TwoActivity.this, VideoViewActivity.class);
-				Bundle bundle = new Bundle();
-				bundle.putString("video",data.url3);
-				i.putExtras(bundle);
-				startActivity(i);
-			}
-		});
+		textview.setText("書本名稱:"+data.getTittle());
+		textview2.setText("書本大綱:"+data.getMessage());
+		textview3.setText("賣家:"+data.getName());
+		textview4.setText("聯絡電話:"+data.phone);
+		textview5.setText("價錢:"+data.price);
+		textview6.setText("ISBN:"+data.isbn);
+//		if(!data.getUrl().equals(""))textview4.setText("點擊觀看影片");
+//		else textview4.setText("無影片可觀看");
+//		 textview4.setOnClickListener(new View.OnClickListener() {
+//			 @Override
+//			 public void onClick(View v) {
+//				 if(data.getUrl().equals("")) return;
+//				 Intent i = new Intent(TwoActivity.this, VideoViewActivity.class);
+//				 Bundle bundle = new Bundle();
+//				 bundle.putString("video",data.getUrl());
+//				 i.putExtras(bundle);
+//				 startActivity(i);
+//			 }
+//		 });
+//		if(!data.url2.equals(""))textview5.setText("點擊觀看影片");
+//		else textview5.setText("無影片可觀看");
+//		textview5.setOnClickListener(new View.OnClickListener() {
+//			@Override
+//			public void onClick(View v) {
+//				if(data.url2.equals("")) return;
+//				Intent i = new Intent(TwoActivity.this, VideoViewActivity.class);
+//				Bundle bundle = new Bundle();
+//				bundle.putString("video",data.url2);
+//				i.putExtras(bundle);
+//				startActivity(i);
+//			}
+//		});
+//		if(!data.url3.equals(""))textview6.setText("點擊觀看影片");
+//		else textview6.setText("無影片可觀看");
+//		textview6.setOnClickListener(new View.OnClickListener() {
+//			@Override
+//			public void onClick(View v) {
+//				if(data.url3.equals("")) return;
+//				Intent i = new Intent(TwoActivity.this, VideoViewActivity.class);
+//				Bundle bundle = new Bundle();
+//				bundle.putString("video",data.url3);
+//				i.putExtras(bundle);
+//				startActivity(i);
+//			}
+//		});
 
 
 		mUserLikeBtn.setOnClickListener(new View.OnClickListener() {
@@ -295,29 +284,29 @@ public class TwoActivity extends Activity implements android.location.LocationLi
 		});
 		if(data.getView()!=0)userView();
 		mUserText.setText(data.getLike()+"人");
-		textview7.setText("此刻心情:"+data.mood);
-		textview8.setText("發生地點:"+data.adds);
-		mBtnGPS.setOnClickListener(new View.OnClickListener() {
-			@Override
-			public void onClick(View v) {
-				if(mBtnGPS.getText().toString().trim().equals("位置讀取中！！"))return;
-				double startLatitude = lat;
-				double startLongitude = lon;
-
-				double endLatitude = data.lat;
-				double endLongitude = data.lon;
-
-				String saddr = "saddr=" + startLatitude + "," + startLongitude;
-				String daddr = "daddr=" + endLatitude + "," + endLongitude;
-				String uriString = "http://maps.google.com/maps?" + saddr + "&" + daddr;
-
-				Uri uri = Uri.parse(uriString);
-
-				Intent intent = new Intent(android.content.Intent.ACTION_VIEW, uri);
-
-				startActivity(intent);
-			}
-		});
+//		textview7.setText("此刻心情:"+data.mood);
+		textview8.setText("書籍所在地:"+data.adds);
+//		mBtnGPS.setOnClickListener(new View.OnClickListener() {
+//			@Override
+//			public void onClick(View v) {
+//				if(mBtnGPS.getText().toString().trim().equals("位置讀取中！！"))return;
+//				double startLatitude = lat;
+//				double startLongitude = lon;
+//
+//				double endLatitude = data.lat;
+//				double endLongitude = data.lon;
+//
+//				String saddr = "saddr=" + startLatitude + "," + startLongitude;
+//				String daddr = "daddr=" + endLatitude + "," + endLongitude;
+//				String uriString = "http://maps.google.com/maps?" + saddr + "&" + daddr;
+//
+//				Uri uri = Uri.parse(uriString);
+//
+//				Intent intent = new Intent(android.content.Intent.ACTION_VIEW, uri);
+//
+//				startActivity(intent);
+//			}
+//		});
 //		textview8.setText("分類學_綱:"+data.A_Class);
 //		textview9.setText("分類學_目:"+data.A_Order);
 
@@ -334,8 +323,8 @@ public class TwoActivity extends Activity implements android.location.LocationLi
 //		textview16.setText(data.A_Pic02_ALT);
 		loadImage(data.pic3, img3);
 //		textview18.setText(data.A_Pic03_ALT);
-		loadImage(data.pic4, img4);
-		loadImage(data.pic5, img4);
+//		loadImage(data.pic4, img4);
+//		loadImage(data.pic5, img4);
 //		textview20.setText(data.A_Pic04_ALT);
 
 	}
@@ -546,7 +535,7 @@ public class TwoActivity extends Activity implements android.location.LocationLi
 			boolean isBuy = MySharedPrefernces.getIsBuyed(TwoActivity.this);
 
 //			if(!isBuy)interstitial.show();
-			interstitialAd.show();
+//			interstitialAd.show();
 
 			return true;  
 
@@ -623,126 +612,14 @@ public class TwoActivity extends Activity implements android.location.LocationLi
 	}
 
 	@Override
-	public void onLocationChanged(Location location) {
-		Log.e("Jack", "onLocationChanged...");
-		if (location == null) return;
-
-		String msg = "經度: " + location.getLongitude() + ", 緯度: "
-				+ location.getLatitude();
-		Log.e("Jack", msg);
-		lat = location.getLatitude();
-		lon = location.getLongitude();
-		try {
-			Geocoder gc = new Geocoder(TwoActivity.this, Locale.TRADITIONAL_CHINESE);
-			List<Address> lstAddress = null;
-			lstAddress = gc.getFromLocation(location.getLatitude(), location.getLongitude(), 1);
-
-
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-
-
-		if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-			// TODO: Consider calling
-			//    ActivityCompat#requestPermissions
-			// here to request the missing permissions, and then overriding
-			//   public void onRequestPermissionsResult(int requestCode, String[] permissions,
-			//                                          int[] grantResults)
-			// to handle the case where the user grants the permission. See the documentation
-			// for ActivityCompat#requestPermissions for more details.
-			return;
-		}
-
-
-		if (lat!=null&&lon!=null){
-			float distance = 0;
-			Location crntLocation = new Location("");
-			crntLocation.setLatitude(lat);
-			crntLocation.setLongitude(lon);
-
-			Location newLocation = new Location("");
-			newLocation.setLatitude(endlat);
-			newLocation.setLongitude(endlon);
-			distance = crntLocation.distanceTo(newLocation); // in mdistance = distance / 1000;//km
-
-			String km =  new DecimalFormat("0.0").format(distance/1000);
-
-			textview10.setText("距離" +km+"公里");
-
-		}
-		mBtnGPS.setText("導航功能準備完成!!");
-		this.locationMgr.removeUpdates(this);
-	}
-
-	@Override
-	public void onStatusChanged(String provider, int status, Bundle extras) {
-
-	}
-
-	@Override
-	public void onProviderEnabled(String provider) {
-
-	}
-
-	@Override
-	public void onProviderDisabled(String provider) {
-
-	}
-	@Override
 	protected void onResume() {
 		super.onResume();
 		//  mAdapter.updateData(mAllData);
-		// 取得位置提供者，不下條件，讓系統決定最適用者，true 表示生效的 provider
-		String provider = this.locationMgr.getBestProvider(new Criteria(), true);
-		if (provider == null) {
 
-			return;
-		}
-		if (locationMgr.isProviderEnabled(LocationManager.NETWORK_PROVIDER)) {
-			if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-				// TODO: Consider calling
-				//    ActivityCompat#requestPermissions
-				// here to request the missing permissions, and then overriding
-				//   public void onRequestPermissionsResult(int requestCode, String[] permissions,
-				//                                          int[] grantResults)
-				// to handle the case where the user grants the permission. See the documentation
-				// for ActivityCompat#requestPermissions for more details.
-				return;
-			}
-			locationMgr.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 30000, 10, this);
-		}
-		if (locationMgr.isProviderEnabled(LocationManager.GPS_PROVIDER)) {
-			if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-				// TODO: Consider calling
-				//    ActivityCompat#requestPermissions
-				// here to request the missing permissions, and then overriding
-				//   public void onRequestPermissionsResult(int requestCode, String[] permissions,
-				//                                          int[] grantResults)
-				// to handle the case where the user grants the permission. See the documentation
-				// for ActivityCompat#requestPermissions for more details.
-				return;
-			}
-
-			locationMgr.requestLocationUpdates(LocationManager.GPS_PROVIDER, 30000, 10, this);
-
-		}
 	}
 
 	@Override
 	protected void onPause() {
 		super.onPause();
-		Log.e("jack", "removeUpdates...");
-		if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-			// TODO: Consider calling
-			//    ActivityCompat#requestPermissions
-			// here to request the missing permissions, and then overriding
-			//   public void onRequestPermissionsResult(int requestCode, String[] permissions,
-			//                                          int[] grantResults)
-			// to handle the case where the user grants the permission. See the documentation
-			// for ActivityCompat#requestPermissions for more details.
-			return;
-		}
-		this.locationMgr.removeUpdates(this);
 	}
 }

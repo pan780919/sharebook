@@ -23,4 +23,87 @@
     <string name="title_activity_login">LoginActivity</string>
     <string name="title_activity_user">會員中心</string>
     <string name="title_activity_user_messge">留言板</string>
+
+
+    <string-array name="film_genre">
+        <item>會員專區</item>
+        <item>書本分類</item>
+        <!--<item>Drama</item>-->
+        <!--<item>Musical</item>-->
+        <!--<item>Thriller</item>-->
+    </string-array>
+
+    <string-array name="actionFilms">
+        <item>會員登入</item>
+        <item>會員註冊</item>
+        <item>忘記密碼</item>
+        <item>修改密碼</item>
+    </string-array>
+
+    <string-array name="musicals">
+        <item>文學</item>
+        <item>文財經企管</item>
+        <item>生活風格</item>
+        <item>飲食料理</item>
+        <item>心理勵志</item>
+        <item>醫療保健</item>
+        <item>旅遊</item>
+        <item>宗教命理</item>
+        <item>教育/親子教養</item>
+        <item>童書</item>
+        <item>漫畫</item>
+    </string-array>
+
+    <string-array name="dramas">
+        <item>Home of the Brave (1949)</item>
+        <item>The Accused (1949)</item>
+        <item>12 Angry Men (1957)</item>
+        <item>Compulsion (1959)</item>
+        <item>Inherit the Wind (1960)</item>
+        <item>To Kill a Mockingbird (1962)</item>
+        <item>Mrs. Miniver (1942)</item>
+        <item>Since You Went Away (1944)</item>
+        <item>The Champ (1931)</item>
+        <item>Nashville (1975)</item>
+    </string-array>
+
+    <string-array name="thrillers">
+        <item>Alien (1979)</item>
+        <item>The French Connection (1971)</item>
+        <item>High Noon (1952)</item>
+        <item>Double Indemnity (1944)</item>
+        <item>Safety Last (1923)</item>
+        <item>The Lady From Shanghai (1948)</item>
+        <item>The Third Man (1949)</item>
+        <item>Rear Window (1954)</item>
+        <item>The 39 Steps (1935)</item>
+        <item>Shadow of a Doubt (1943)</item>
+    </string-array>
+
+    <string-array name="comedies">
+        <item>Safety Last (1923)</item>
+        <item>Duck Soup (1933)</item>
+        <item>Cat Ballou (1965)</item>
+        <item>What\'s Up, Tiger Lily? (1966)</item>
+        <item>Blazing Saddles (1974)</item>
+        <item>Play It Again, Sam (1972)</item>
+        <item>The Cheap Detective (1978)</item>
+        <item>The Naked Gun (1988)</item>
+        <item>The Freshman (1990)</item>
+        <item>Waiting for Guffman (1996) </item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="movie_title">movie title</string>
+    <string name="action_movies">Action</string>
+    <string name="musical_movies">Musical</string>
+    <string name="drama_movies">Drama</string>
+    <string name="comedy_movies">Comedy</string>
+    <string name="thriller_movies">Thriller</string>
+    <string name="movie_genre">genre</string>
+
+
+
+
 </resources>
