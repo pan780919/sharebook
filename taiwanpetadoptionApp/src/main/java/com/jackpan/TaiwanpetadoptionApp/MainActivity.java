@@ -65,8 +65,11 @@ import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.GenericTypeIndicator;
+import com.google.firebase.database.Query;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
@@ -294,7 +297,16 @@ public class MainActivity extends Activity {
 
             }
         });
-
+        petlist.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+            @Override
+            public boolean onItemLongClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Firebase myFirebaseRef = new Firebase("https://bookshare-99cb3.firebaseio.com/sharebook");
+                Firebase userRef = myFirebaseRef.child(mAdapter.mDatas.get(i).id+ mAdapter.mDatas.get(i).date);
+                Log.d(TAG, "onItemLongClick: "+userRef.toString());
+                userRef.removeValue();
+                return true;
+            }
+        });
 
         mAdapter = new MyAdapter(list);
 
@@ -326,7 +338,9 @@ public class MainActivity extends Activity {
 //		setAdMobAd();
 //        setFbAd();
     }
+    private void deleteData(){
 
+    }
     @Override
     protected void onResume() {
         super.onResume();
@@ -722,8 +736,7 @@ public class MainActivity extends Activity {
         String url = "https://bookshare-99cb3.firebaseio.com/sharebook";
 
         Firebase mFirebaseRef = new Firebase(url);
-
-
+        //.orderByChild("cat").equalTo("醫療保健")
 //		if(Firebase.getDefaultConfig().isPersistenceEnabled()==false)mFirebaseRef.getDefaultConfig().setPersistenceEnabled(true);
         mFirebaseRef.orderByChild("date").addChildEventListener(new com.firebase.client.ChildEventListener() {
             @Override
@@ -740,6 +753,8 @@ public class MainActivity extends Activity {
 ////                        Log.d(TAG, "onChildAdded: "+recipient.getValue().toString());
 ////                    }
 //
+                Log.d(TAG, "onChildAdded: "+dataSnapshot.getKey().toString().trim());
+
                 GayPlace gayPlace = dataSnapshot.getValue(GayPlace.class);
                 list.add(0, gayPlace);
 

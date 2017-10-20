@@ -1824,6 +1824,7 @@ com/jackpan/TaiwanpetadoptionApp/HeadpageActivity$8.class
 com/google/android/gms/internal/zzmc.class
 com/fasterxml/jackson/databind/jsontype/TypeDeserializer.class
 android/support/v7/widget/AdapterHelper$Callback.class
+com/jackpan/TaiwanpetadoptionApp/MainActivity$16.class
 com/google/android/gms/internal/zznf.class
 com/google/firebase/database/ThrowOnExtraProperties.class
 com/google/android/gms/common/api/Api$ApiOptions$NotRequiredOptions.class
