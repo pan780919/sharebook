@@ -1,6 +1,5 @@
 package com.jackpan.TaiwanpetadoptionApp;
 
-import android.*;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
@@ -22,6 +21,9 @@ import android.os.Environment;
 import android.provider.DocumentsContract;
 import android.provider.MediaStore;
 import android.support.annotation.NonNull;
+import android.support.design.widget.NavigationView;
+import android.support.v4.view.GravityCompat;
+import android.support.v4.widget.DrawerLayout;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
@@ -36,6 +38,8 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
 import android.widget.Button;
+import android.widget.ExpandableListAdapter;
+import android.widget.ExpandableListView;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
@@ -109,6 +113,8 @@ public class MainActivity extends Activity {
     MyAdapter mydapter = null;
     private boolean isCencel = false;
     private ProgressDialog progressDialog;
+    private DrawerLayout drawerLayout;
+    private NavigationView navigation_view;
 
     private com.facebook.ads.AdView adView, googleads;
     private InterstitialAd interstitial;
@@ -127,15 +133,23 @@ public class MainActivity extends Activity {
     FirebaseAuth auth;
     FirebaseAuth.AuthStateListener authListener;
     private String userUID;
+    private ExpandableListView mExpandableListView;
 
+    private String[] items;
+
+    private List<String> mExpandableListTitle;
+//    private NavigationManager mNavigationManager;
+    private ExpandableListAdapter mExpandableListAdapter;
+
+    private Map<String, List<String>> mExpandableListData;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//		 //開啟全螢幕
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
-                             WindowManager.LayoutParams.FLAG_FULLSCREEN);
-//        //設定隱藏APP標題	
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
+////		 //開啟全螢幕
+//        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+//                             WindowManager.LayoutParams.FLAG_FULLSCREEN);
+////        //設定隱藏APP標題
+//        requestWindowFeature(Window.FEATURE_NO_TITLE);
         auth = FirebaseAuth.getInstance();
         authListener = new FirebaseAuth.AuthStateListener() {
             @Override
@@ -300,8 +314,15 @@ public class MainActivity extends Activity {
 //		petlist.setAdapter(adapterWrapper);
 //		mAdapter.notifyDataSetChanged();
 //		initUpdateAdsTimer();
+        items = getResources().getStringArray(R.array.film_genre);
 
         setFireBase();
+        mExpandableListData = ExpandableListDataSource.getData(this);
+        mExpandableListTitle = new ArrayList(mExpandableListData.keySet());
+        Log.d(TAG, "onCreate: "+mExpandableListData.keySet());
+
+        initdrawlatout();
+
 //		setAdMobAd();
 //        setFbAd();
     }
@@ -857,7 +878,44 @@ public class MainActivity extends Activity {
         }
         return Uri.fromFile(file);
     }
+    private void initdrawlatout() {
+        drawerLayout = (DrawerLayout) findViewById(R.id.drawerLayout);
+        mExpandableListView = (ExpandableListView) findViewById(R.id.navList);
 
+        addDrawerItems();
+
+    }
+    private void addDrawerItems() {
+        mExpandableListAdapter = new CustomExpandableListAdapter(this, mExpandableListTitle, mExpandableListData);
+        mExpandableListView.setAdapter(mExpandableListAdapter);
+        mExpandableListView.setOnGroupExpandListener(new ExpandableListView.OnGroupExpandListener() {
+            @Override
+            public void onGroupExpand(int groupPosition) {
+            }
+        });
+
+        mExpandableListView.setOnGroupCollapseListener(new ExpandableListView.OnGroupCollapseListener() {
+            @Override
+            public void onGroupCollapse(int groupPosition) {
+            }
+        });
+
+        mExpandableListView.setOnChildClickListener(new ExpandableListView.OnChildClickListener() {
+            @Override
+            public boolean onChildClick(ExpandableListView parent, View v,
+                                        int groupPosition, int childPosition, long id) {
+                String selectedItem = ((List) (mExpandableListData.get(mExpandableListTitle.get(groupPosition))))
+                        .get(childPosition).toString();
+                Log.d(TAG, "selectedItem: "+selectedItem);
+                Log.d(TAG, "groupPosition: "+groupPosition);
+                Log.d(TAG, "childPosition: "+childPosition);
+                Log.d(TAG, "id: "+id);
+
+                drawerLayout.closeDrawer(GravityCompat.START);
+                return false;
+            }
+        });
+    }
     @Override
     protected void onStart() {
         super.onStart();
@@ -870,35 +928,5 @@ public class MainActivity extends Activity {
         if (authListener != null) {
             auth.removeAuthStateListener(authListener);
         }
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.main, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-//        if (id == R.id.action_user) {
-//            startActivity(new Intent(MainActivity.this, UserActivity.class));
-//            return true;
-//        }
-//        if (id == R.id.action_settings) {
-//            startActivity(new Intent(MainActivity.this,InAppBillingActivity.class));
-//
-//            return true;
-//        }
-//        if (id== R.id.action_video){
-//            startActivity(new Intent(MainActivity.this, VideoMainActivity.class));
-//            return true;
-//        }
-        return super.onOptionsItemSelected(item);
     }
 }

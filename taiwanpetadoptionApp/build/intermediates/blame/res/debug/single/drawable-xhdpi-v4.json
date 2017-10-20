@@ -896,6 +896,10 @@
         "source": "/Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/exploded-aar/com.facebook.android/facebook-login/4.27.0/res/drawable-xhdpi-v4/com_facebook_tooltip_blue_bottomnub.png"
     },
     {
+        "merged": "/Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/res/merged/debug/drawable-xhdpi-v4/design_ic_visibility_off.png",
+        "source": "/Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/exploded-aar/com.android.support/design/25.1.0/res/drawable-xhdpi-v4/design_ic_visibility_off.png"
+    },
+    {
         "merged": "/Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/res/merged/debug/drawable-xhdpi-v4/ic_media_route_connecting_15_dark.png",
         "source": "/Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/res/drawable-xhdpi-v4/ic_media_route_connecting_15_dark.png"
     },
@@ -1402,6 +1406,10 @@
     {
         "merged": "/Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/res/merged/debug/drawable-xhdpi-v4/ic_media_route_on_09_light.png",
         "source": "/Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/res/drawable-xhdpi-v4/ic_media_route_on_09_light.png"
+    },
+    {
+        "merged": "/Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/res/merged/debug/drawable-xhdpi-v4/design_ic_visibility.png",
+        "source": "/Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/exploded-aar/com.android.support/design/25.1.0/res/drawable-xhdpi-v4/design_ic_visibility.png"
     },
     {
         "merged": "/Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/res/merged/debug/drawable-xhdpi-v4/al_icon_4_5.png",

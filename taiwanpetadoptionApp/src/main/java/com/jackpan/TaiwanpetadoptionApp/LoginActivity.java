@@ -6,10 +6,20 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.app.Activity;
 import android.support.annotation.NonNull;
+import android.support.design.widget.Snackbar;
+import android.support.v4.view.GravityCompat;
+import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBarDrawerToggle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.ListView;
+import android.widget.Toast;
+import  android.support.design.widget.NavigationView;
 import com.facebook.AccessToken;
 import com.facebook.AccessTokenTracker;
 import com.facebook.CallbackManager;
@@ -26,6 +36,7 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthCredential;
 import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.EmailAuthProvider;
 import com.google.firebase.auth.FacebookAuthProvider;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -41,10 +52,12 @@ public class LoginActivity extends Activity implements View.OnClickListener {
     private LoginButton loginButton;
     CallbackManager callbackManager;
     private ImageView fbImg;
+    private FirebaseUser userpassword;
 
     AccessTokenTracker accessTokenTracker ;
     ProfileTracker profileTracker;
     private static final String TAG = "LoginActivity";
+    private  String userEmail = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,8 +66,8 @@ public class LoginActivity extends Activity implements View.OnClickListener {
         callbackManager = CallbackManager.Factory.create();
         setContentView(R.layout.activity_login);
         findViewById(R.id.button).setOnClickListener(this);
+        findViewById(R.id.button2).setOnClickListener(this);
         fbImg  =(ImageView )findViewById(R.id.fdimg);
-
         fbLogin();
         auth = FirebaseAuth.getInstance();
         authListener = new FirebaseAuth.AuthStateListener() {
@@ -69,6 +82,7 @@ public class LoginActivity extends Activity implements View.OnClickListener {
                     Log.d(TAG, "onAuthStateChanged: "+ firebaseAuth.getCurrentUser().getPhotoUrl());
                     Log.d(TAG, "onAuthStateChanged: "+ firebaseAuth.getCurrentUser().getDisplayName());
                     Log.d(TAG, "onAuthStateChanged: "+ firebaseAuth.getCurrentUser().getEmail());
+                    userEmail = firebaseAuth.getCurrentUser().getEmail();
                     MySharedPrefernces.saveUserId(LoginActivity.this,userUID);
                     startActivity(new Intent(LoginActivity.this,MainActivity.class));
                     LoginActivity.this.finish();
@@ -84,19 +98,38 @@ public class LoginActivity extends Activity implements View.OnClickListener {
 
     }
 
+
+
     private void register(final String email, final String password) {
-        new AlertDialog.Builder(LoginActivity.this)
-                .setTitle("登入問題")
-                .setMessage("無此帳號，是否要以此帳號與密碼註冊?")
-                .setPositiveButton("註冊",
-                        new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
-                                createUser(email, password);
-                            }
-                        })
-                .setNeutralButton("取消", null)
-                .show();
+        String account = MySharedPrefernces.getUserId(this);
+        if(!account.equals("")){
+            new AlertDialog.Builder(LoginActivity.this)
+                    .setTitle("登入問題")
+                    .setMessage("密碼錯誤?")
+                    .setNeutralButton("取消", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+                            dialogInterface.dismiss();
+                        }
+                    })
+                    .show();
+        }else {
+            new AlertDialog.Builder(LoginActivity.this)
+                    .setTitle("登入問題")
+                    .setMessage("無此帳號，是否要以此帳號與密碼註冊?")
+                    .setPositiveButton("註冊",
+                            new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialog, int which) {
+                                    createUser(email, password);
+                                }
+                            })
+                    .setNeutralButton("取消", null)
+                    .show();
+        }
+
+
+
     }
 
     private void createUser(String email, String password) {
@@ -160,6 +193,9 @@ public class LoginActivity extends Activity implements View.OnClickListener {
                         Log.d(TAG, "onSuccess: "+authResult.getUser());
                     }
                 });
+                break;
+            case  R.id.button2:
+                resetPassWord();
                 break;
         }
 
@@ -266,5 +302,33 @@ public class LoginActivity extends Activity implements View.OnClickListener {
          Log.d(getClass().getSimpleName(), "profile currentProfile Tracking: " + "no");
 
  }
+ private  void resetPassWord(){
+     userpassword = FirebaseAuth.getInstance().getCurrentUser();
+     final String email = userpassword.getEmail();
+     AuthCredential credential = EmailAuthProvider.getCredential(email,"123456");
+
+     userpassword.reauthenticate(credential).addOnCompleteListener(new OnCompleteListener<Void>() {
+         @Override
+         public void onComplete(@NonNull Task<Void> task) {
+             if(task.isSuccessful()){
+                 userpassword.updatePassword("654321").addOnCompleteListener(new OnCompleteListener<Void>() {
+                     @Override
+                     public void onComplete(@NonNull Task<Void> task) {
+                         if(!task.isSuccessful()){
+                             Log.d(TAG, "onComplete: "+"1111");
+                         }else {
+                             Log.d(TAG, "onComplete: "+"22222");
+                         }
+                     }
+                 });
+             }else {
+                 Log.d(TAG, "onComplete: "+"3333");
+
+             }
+         }
+     });
+ }
+
+
 
 }
