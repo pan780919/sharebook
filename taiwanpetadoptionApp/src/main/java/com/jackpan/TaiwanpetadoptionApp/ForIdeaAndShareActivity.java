@@ -74,7 +74,7 @@ import java.util.Map;
 
 import static com.jackpan.Brokethenews.R.menu.spinner;
 
-public class ForIdeaAndShareActivity extends Activity implements View.OnClickListener, android.location.LocationListener {
+public class ForIdeaAndShareActivity extends Activity implements View.OnClickListener{
     private EditText mNameEdt, mMailEdt, mTiitleEdt, mMessageEdt;
     private Button mSureBtn, mCancelBtn;
     private ImageView mImg;
@@ -120,25 +120,15 @@ public class ForIdeaAndShareActivity extends Activity implements View.OnClickLis
         setContentView(R.layout.activity_for_idea_and_share);
         mPhone = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(mPhone);
-//        MyApi.checkGPS(ForIdeaAndShareActivity.this);
-//        this.locationMgr = (LocationManager) this.getSystemService(LOCATION_SERVICE);
-
         initLayout();
-
         Calendar mCal = Calendar.getInstance();
         s = DateFormat.format("yyyy-MM-dd kk:mm:ss", mCal.getTime());
-        Log.d(TAG, "onCreate: " + s);
     }
 
     private void initLayout() {
         mPicName = (TextView) findViewById(R.id.picnametext);
         mPicName2 = (TextView) findViewById(R.id.picnametext2);
         mPicName3 = (TextView) findViewById(R.id.picnametext3);
-//        mPicName4 = (TextView) findViewById(R.id.picnametext4);
-//        mPicName5 = (TextView) findViewById(R.id.picnametext5);
-//        mVideoName = (TextView) findViewById(R.id.videonametext);
-//        mVideoName2 = (TextView) findViewById(R.id.videonametext2);
-//        mVideoName3 = (TextView) findViewById(R.id.videonametext3);
         pricetext = (EditText) findViewById(R.id.price);
         isbntext = (EditText)findViewById(R.id.isbnedt);
         mNameEdt = (EditText) findViewById(R.id.nameedt);
@@ -149,8 +139,6 @@ public class ForIdeaAndShareActivity extends Activity implements View.OnClickLis
         mSureBtn = (Button) findViewById(R.id.btn_sure_send);
         mCancelBtn = (Button) findViewById(R.id.btn_cancel_send);
         mSpinner = (Spinner) findViewById(R.id.spinner1);
-//        mSpinner2 = (Spinner) findViewById(R.id.spinner2);
-//        mSpinner2.setVisibility(View.GONE);
         ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_spinner_item, cat);
         //設定下拉選單的樣式
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -168,41 +156,15 @@ public class ForIdeaAndShareActivity extends Activity implements View.OnClickLis
 
             }
         });
-//        ArrayAdapter adapter2 = new ArrayAdapter(this, android.R.layout.simple_spinner_item, mood);
-//        //設定下拉選單的樣式
-//        adapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-//        mSpinner2.setAdapter(adapter2);
-//        mSpinner2.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-//            @Override
-//            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-//                Toast.makeText(ForIdeaAndShareActivity.this, "您選擇" + parent.getSelectedItem().toString(), Toast.LENGTH_SHORT).show();
-//                mMoodStr = parent.getSelectedItem().toString();
-//
-//            }
-//
-//            @Override
-//            public void onNothingSelected(AdapterView<?> parent) {
-//
-//            }
-//        });
         findViewById(R.id.btn_sure_send).setOnClickListener(this);
         findViewById(R.id.btn_cancel_send).setOnClickListener(this);
         findViewById(R.id.picbtn).setOnClickListener(this);
         findViewById(R.id.picbtn2).setOnClickListener(this);
         findViewById(R.id.picbtn3).setOnClickListener(this);
-//        findViewById(R.id.picbtn4).setOnClickListener(this);
-//        findViewById(R.id.picbtn5).setOnClickListener(this);
-//        findViewById(R.id.videobtn).setOnClickListener(this);
-//        findViewById(R.id.videobtn2).setOnClickListener(this);
-//        findViewById(R.id.videobtn3).setOnClickListener(this);
-
         findViewById(R.id.addbtn).setOnClickListener(this);
         mAddBtn = (Button) findViewById(R.id.addbtn);
         mAddBtn.setVisibility(View.GONE);
         returnAddress = mAddEdt.getText().toString().trim();
-//        MyApi.AddtoLatLon(ForIdeaAndShareActivity.this, returnAddress);
-//        lat = MyApi.getLatitude();
-//        lon = MyApi.getLongitude();
 
     }
 
@@ -258,36 +220,6 @@ public class ForIdeaAndShareActivity extends Activity implements View.OnClickLis
             case R.id.picbtn3:
                 picInt = 3;
                 selectPic();
-                break;
-//            case R.id.picbtn4:
-//                picInt = 4;
-//                selectPic();
-//                break;
-//            case R.id.picbtn5:
-//                picInt = 5;
-//                selectPic();
-//                break;
-//
-//            case R.id.videobtn:
-//                videoInt = 1;
-//                selectVideo();
-//                break;
-//
-//            case R.id.videobtn2:
-//                videoInt = 2;
-//                selectVideo();
-//                break;
-//
-//            case R.id.videobtn3:
-//                videoInt = 3;
-//                selectVideo();
-//                break;
-            case R.id.addbtn:
-
-                if (mAddEdt.getText().toString().trim().equals("")) {
-                    Toast.makeText(ForIdeaAndShareActivity.this, "帶入地址！！", Toast.LENGTH_SHORT).show();
-                    mAddEdt.setText(returnAddress);
-                }
                 break;
         }
 
@@ -772,7 +704,6 @@ public class ForIdeaAndShareActivity extends Activity implements View.OnClickLis
 
     /**
      * 查詢MediaStroe Uri對應的絕對路徑。
-     *
      * @param context 傳入Context
      * @param uri     傳入MediaStore Uri
      * @return 傳回絕對路徑
@@ -793,126 +724,6 @@ public class ForIdeaAndShareActivity extends Activity implements View.OnClickLis
             }
         }
         return null;
-    }
-
-
-    @Override
-    protected void onStart() {
-        super.onStart();
-    }
-
-    @Override
-    protected void onStop() {
-        super.onStop();
-
-    }
-
-    @Override
-    public void onLocationChanged(Location location) {
-        Log.e("Jack", "onLocationChanged...");
-        if (location == null) return;
-
-        String msg = "經度: " + location.getLongitude() + ", 緯度: "
-                + location.getLatitude();
-        Log.e("Jack", msg);
-        lat = location.getLatitude();
-        lon = location.getLongitude();
-        try {
-            Geocoder gc = new Geocoder(ForIdeaAndShareActivity.this, Locale.TRADITIONAL_CHINESE);
-            List<Address> lstAddress = null;
-            lstAddress = gc.getFromLocation(location.getLatitude(), location.getLongitude(), 1);
-            returnAddress = lstAddress.get(0).getAddressLine(0);
-            Log.d(TAG, "onLocationChanged: " + returnAddress);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-
-        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-            // TODO: Consider calling
-            //    ActivityCompat#requestPermissions
-            // here to request the missing permissions, and then overriding
-            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
-            //                                          int[] grantResults)
-            // to handle the case where the user grants the permission. See the documentation
-            // for ActivityCompat#requestPermissions for more details.
-            return;
-        }
-        mAddBtn.setVisibility(View.VISIBLE);
-        this.locationMgr.removeUpdates(this);
-
-    }
-
-    @Override
-    public void onStatusChanged(String provider, int status, Bundle extras) {
-
-    }
-
-    @Override
-    public void onProviderEnabled(String provider) {
-
-    }
-
-    @Override
-    public void onProviderDisabled(String provider) {
-
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-        //  mAdapter.updateData(mAllData);
-        // 取得位置提供者，不下條件，讓系統決定最適用者，true 表示生效的 provider
-//        String provider = this.locationMgr.getBestProvider(new Criteria(), true);
-//        if (provider == null) {
-//
-//            return;
-//        }
-//        if (locationMgr.isProviderEnabled(LocationManager.NETWORK_PROVIDER)) {
-//            if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-//                // TODO: Consider calling
-//                //    ActivityCompat#requestPermissions
-//                // here to request the missing permissions, and then overriding
-//                //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
-//                //                                          int[] grantResults)
-//                // to handle the case where the user grants the permission. See the documentation
-//                // for ActivityCompat#requestPermissions for more details.
-//                return;
-//            }
-//            locationMgr.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 30000, 10, this);
-//        }
-//        if (locationMgr.isProviderEnabled(LocationManager.GPS_PROVIDER)) {
-//            if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-//                // TODO: Consider calling
-//                //    ActivityCompat#requestPermissions
-//                // here to request the missing permissions, and then overriding
-//                //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
-//                //                                          int[] grantResults)
-//                // to handle the case where the user grants the permission. See the documentation
-//                // for ActivityCompat#requestPermissions for more details.
-//                return;
-//            }
-//
-//            locationMgr.requestLocationUpdates(LocationManager.GPS_PROVIDER, 30000, 10, this);
-//
-//        }
-    }
-
-    @Override
-    protected void onPause() {
-        super.onPause();
-//        Log.e("jack", "removeUpdates...");
-//        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-//            // TODO: Consider calling
-//            //    ActivityCompat#requestPermissions
-//            // here to request the missing permissions, and then overriding
-//            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
-//            //                                          int[] grantResults)
-//            // to handle the case where the user grants the permission. See the documentation
-//            // for ActivityCompat#requestPermissions for more details.
-//            return;
-//        }
-//        this.locationMgr.removeUpdates(this);
     }
 
 }
