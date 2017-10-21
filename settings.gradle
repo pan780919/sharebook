@@ -1,1 +1,1 @@
-include ':taiwanpetadoptionApp'
+include ':taiwanpetadoptionApp', ':mfirebaselibs'

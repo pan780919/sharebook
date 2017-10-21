@@ -106,10 +106,12 @@ import com.google.gson.reflect.TypeToken;
 import com.igexin.sdk.PushManager;
 import com.jackpan.MyPushService;
 import com.jackpan.VideoViewActivity;
+import com.jackpan.libs.mfirebaselib.MfiebaselibsClass;
+import com.jackpan.libs.mfirebaselib.MfirebaeCallback;
 import com.jackpan.video.VideoMainActivity;
 import com.jackpan.Brokethenews.R;
 
-public class MainActivity extends Activity {
+public class MainActivity extends Activity implements MfirebaeCallback {
     private ListView petlist;
     private ArrayList<ResultData> mAllData = new ArrayList<ResultData>();
     private TextView numtext;
@@ -300,10 +302,9 @@ public class MainActivity extends Activity {
         petlist.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
             public boolean onItemLongClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Firebase myFirebaseRef = new Firebase("https://bookshare-99cb3.firebaseio.com/sharebook");
-                Firebase userRef = myFirebaseRef.child(mAdapter.mDatas.get(i).id+ mAdapter.mDatas.get(i).date);
-                Log.d(TAG, "onItemLongClick: "+userRef.toString());
-                userRef.removeValue();
+
+
+//                userRef.removeValue();
                 return true;
             }
         });
@@ -327,8 +328,9 @@ public class MainActivity extends Activity {
 //		mAdapter.notifyDataSetChanged();
 //		initUpdateAdsTimer();
         items = getResources().getStringArray(R.array.film_genre);
-
-        setFireBase();
+        MfiebaselibsClass m = new MfiebaselibsClass(this,MainActivity.this);
+        m.getFirebaseDatabase("https://bookshare-99cb3.firebaseio.com/sharebook","data");
+//        setFireBase();
         mExpandableListData = ExpandableListDataSource.getData(this);
         mExpandableListTitle = new ArrayList(mExpandableListData.keySet());
         Log.d(TAG, "onCreate: "+mExpandableListData.keySet());
@@ -338,9 +340,7 @@ public class MainActivity extends Activity {
 //		setAdMobAd();
 //        setFbAd();
     }
-    private void deleteData(){
 
-    }
     @Override
     protected void onResume() {
         super.onResume();
@@ -392,6 +392,22 @@ public class MainActivity extends Activity {
 
         mDatabase.updateChildren(childUpdates);
     }
+
+    @Override
+    public void getDatabaseData(Object o) {
+        Gson gson = new Gson();
+        String jsonInString = gson.toJson(o);
+        GayPlace g = gson.fromJson(jsonInString,GayPlace.class);
+        Log.d(TAG, "getDatabaseData: "+g.getName()
+        );
+        list.add(0, g);
+
+
+        mAdapter.notifyDataSetChanged();
+        progressDialog.dismiss();
+
+    }
+
 
     private class LoadNetAsyncTask extends AsyncTask<String, Void, ArrayList<ResultData>> {
 
@@ -753,7 +769,9 @@ public class MainActivity extends Activity {
 ////                        Log.d(TAG, "onChildAdded: "+recipient.getValue().toString());
 ////                    }
 //
-                Log.d(TAG, "onChildAdded: "+dataSnapshot.getKey().toString().trim());
+                Log.d(TAG, "onChildAdded: "+dataSnapshot.getValue());
+//                Log.d(TAG, "onChildAdded: "+dataSnapshot.toString());
+//                Log.d(TAG, "onChildAdded: "+dataSnapshot.getKey().toString().trim());
 
                 GayPlace gayPlace = dataSnapshot.getValue(GayPlace.class);
                 list.add(0, gayPlace);

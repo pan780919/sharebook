@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Sat Oct 21 02:29:12 CST 2017
+#Sat Oct 21 03:45:19 CST 2017
 835.base=/Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/res/resources-debug.ap_
 100.set=ANDROID_RESOURCE
 57.file=/Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/res/resources-debug.ap_/res/drawable-xhdpi-v4/exo_controls_play.png

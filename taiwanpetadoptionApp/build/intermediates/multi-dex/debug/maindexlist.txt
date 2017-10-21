@@ -237,6 +237,7 @@ com/google/ads/mediation/EmptyNetworkExtras.class
 com/facebook/ads/internal/view/c.class
 android/support/v7/widget/RecyclerView$5.class
 com/jackpan/TaiwanpetadoptionApp/MainActivity$14.class
+com/jackpan/libs/mfirebaselib/MfirebaeCallback.class
 com/google/android/gms/internal/zzfn.class
 android/support/design/widget/CoordinatorLayout$SavedState.class
 android/support/v7/widget/ActionMenuView$LayoutParams.class
@@ -565,6 +566,7 @@ com/fasterxml/jackson/databind/ser/BeanSerializerFactory.class
 com/google/android/gms/internal/zzhy$zza.class
 android/support/v4/app/NotificationCompatBase$Action$Factory.class
 com/google/android/gms/internal/zzdo.class
+com/jackpan/libs/mfirebaselib/MfiebaselibsClass.class
 com/google/android/gms/common/internal/safeparcel/zzc.class
 com/fasterxml/jackson/databind/deser/std/PrimitiveArrayDeserializers$IntDeser.class
 android/support/v4/view/NestedScrollingParent.class

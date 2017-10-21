@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="mFirebaseLibs">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/taiwanpetadoptionApp/libs/mFirebaseLibs.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
