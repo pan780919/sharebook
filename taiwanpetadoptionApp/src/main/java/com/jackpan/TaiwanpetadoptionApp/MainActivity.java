@@ -61,8 +61,10 @@ import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 
 import com.google.android.gms.ads.InterstitialAd;
+import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseError;
@@ -192,9 +194,10 @@ public class MainActivity extends Activity implements MfirebaeCallback {
         mInviteBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent();
-                i.setClass(MainActivity.this, ForIdeaAndShareActivity.class);
-                startActivity(i);
+
+//                Intent i = new Intent();
+//                i.setClass(MainActivity.this, LoginActivity.class);
+//                startActivity(i);
 //				uploadFromStream();
 //				upLoad();
 //				setFireBaseDB();

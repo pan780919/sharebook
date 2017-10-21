@@ -202,7 +202,6 @@ com/facebook/ads/NativeAd.class
 c/CordovaWebView$2.class
 com/google/android/gms/internal/zzhy$zzc.class
 com/google/android/gms/internal/zzid.class
-com/jackpan/TaiwanpetadoptionApp/LoginActivity$10.class
 com/facebook/ads/AudienceNetworkActivity$a.class
 com/facebook/ads/AudienceNetworkActivity$4.class
 android/support/v7/widget/RecyclerView$AdapterDataObserver.class
@@ -1047,7 +1046,6 @@ com/google/android/gms/internal/zzoj.class
 com/google/android/exoplayer2/Timeline$Window.class
 com/igexin/sdk/PushActivity.class
 com/google/android/gms/internal/zzym.class
-com/google/firebase/auth/EmailAuthProvider.class
 android/support/design/widget/ViewGroupUtils.class
 com/vpadn/widget/VpadnActivity$2.class
 com/fasterxml/jackson/annotation/JsonAutoDetect$Visibility.class

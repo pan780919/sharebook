@@ -1,12 +1,12 @@
 <component name="libraryTable">
   <library name="exoplayer-r2.0.3">
     <ANNOTATIONS>
-      <root url="jar://$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/exploded-aar/com.google.android.exoplayer/exoplayer/r2.0.3/annotations.zip!/" />
       <root url="jar://$PROJECT_DIR$/mfirebaselibs/build/intermediates/exploded-aar/com.google.android.exoplayer/exoplayer/r2.0.3/annotations.zip!/" />
+      <root url="jar://$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/exploded-aar/com.google.android.exoplayer/exoplayer/r2.0.3/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/exploded-aar/com.google.android.exoplayer/exoplayer/r2.0.3/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/exploded-aar/com.google.android.exoplayer/exoplayer/r2.0.3/res" />
+      <root url="file://$PROJECT_DIR$/mfirebaselibs/build/intermediates/exploded-aar/com.google.android.exoplayer/exoplayer/r2.0.3/res" />
+      <root url="jar://$PROJECT_DIR$/mfirebaselibs/build/intermediates/exploded-aar/com.google.android.exoplayer/exoplayer/r2.0.3/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

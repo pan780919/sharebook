@@ -246,6 +246,22 @@ public class MfiebaselibsClass {
             }
         });
     }
+    public  void sendPasswordResetEmail(String emailAddress){
+        auth.sendPasswordResetEmail(emailAddress)
+                .addOnCompleteListener(new OnCompleteListener<Void>() {
+                    @Override
+                    public void onComplete(@NonNull Task<Void> task) {
+                        if (task.isSuccessful()) {
+                            callback.getsSndPasswordResetEmailState(true);
+                        }else {
+                            callback.getsSndPasswordResetEmailState(false);
+
+                        }
+                    }
+
+                });
+
+    }
 
     @TargetApi(Build.VERSION_CODES.KITKAT)
     /**

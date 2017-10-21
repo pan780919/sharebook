@@ -24,4 +24,6 @@ public interface MfirebaeCallback {
 
     void  getFirebaseStorageType(String uri , String name);
 
+    void  getsSndPasswordResetEmailState(boolean b);
+
 }
