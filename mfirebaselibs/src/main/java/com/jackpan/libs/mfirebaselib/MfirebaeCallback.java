@@ -18,5 +18,10 @@ public interface MfirebaeCallback {
 
     void resetPassWordState(boolean b);
 
+    void getFireBaseDBState(boolean b, String s);
+
+    void getFirebaseStorageState(boolean b);
+
+    void  getFirebaseStorageType(String uri , String name);
 
 }

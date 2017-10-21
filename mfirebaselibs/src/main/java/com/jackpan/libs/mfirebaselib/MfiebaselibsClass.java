@@ -1,18 +1,16 @@
 package com.jackpan.libs.mfirebaselib;
 
-import android.app.AlertDialog;
+import android.app.ProgressDialog;
 import android.content.Context;
-import android.content.DialogInterface;
-import android.content.Intent;
 import android.support.annotation.NonNull;
-import android.util.Log;
-import android.widget.EditText;
+import android.widget.Toast;
 
 import com.firebase.client.DataSnapshot;
 import com.firebase.client.Firebase;
 import com.firebase.client.FirebaseError;
 import com.firebase.client.ValueEventListener;
 import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthCredential;
@@ -20,6 +18,17 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.EmailAuthProvider;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.OnProgressListener;
+import com.google.firebase.storage.StorageReference;
+import com.google.firebase.storage.UploadTask;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.InputStream;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Created by JackPan on 2017/10/21.
@@ -32,8 +41,10 @@ public class MfiebaselibsClass {
     private FirebaseUser userpassword;
     private  String DELETESUCCESS = "成功刪除資料";
     private  String DELETEFAIL = "刪除資料失敗";
+    private  String SETDBSUCCESS = "成功寫入資料";
     private Context mContext;
     private  MfirebaeCallback callback;
+    private ProgressDialog progressDialog;
     public MfiebaselibsClass(Context context,MfirebaeCallback mfirebaeCallback){
         this.mContext = context;
         this.callback = mfirebaeCallback;
@@ -92,7 +103,22 @@ public class MfiebaselibsClass {
          };
 
      }
-
+    public void setFireBaseDB(String url,String key,HashMap<String,String> newPost) {
+        Firebase mFirebaseRef = new Firebase(url);
+        Firebase newPostRef = mFirebaseRef.child("posts").push();
+        Map updatedUserData = new HashMap();
+        updatedUserData.put(key, newPost);
+        mFirebaseRef.updateChildren(updatedUserData, new Firebase.CompletionListener() {
+            @Override
+            public void onComplete(FirebaseError firebaseError, Firebase firebase) {
+                if (firebaseError != null) {
+                    callback.getFireBaseDBState(false, firebaseError.getMessage());
+                } else {
+                    callback.getFireBaseDBState(true, SETDBSUCCESS);
+                }
+            }
+        });
+    }
     public void getFirebaseDatabase(String url, String orderByChildStr){
         Firebase.setAndroidContext(mContext);
         Firebase mFirebaseRef = new Firebase(url);
@@ -203,7 +229,57 @@ public class MfiebaselibsClass {
             }
         });
     }
+    public  void setFirebaseStorage(String url,String filePath){
+        FirebaseStorage storage = FirebaseStorage.getInstance();
+        StorageReference storageRef = storage.getReferenceFromUrl(url);
 
+        StorageReference mountainsRef = storageRef.child(filePath);
+
+
+        InputStream stream = null;
+        try {
+            stream = new FileInputStream(new File(filePath));
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        UploadTask mUploadTask = mountainsRef.putStream(stream);
+        progressDialog = new ProgressDialog(mContext);
+
+
+        mUploadTask.addOnFailureListener(new OnFailureListener() {
+
+
+            @Override
+            public void onFailure(@NonNull Exception exception) {
+                callback.getFirebaseStorageState(false);
+                progressDialog.dismiss();
+                Toast.makeText(mContext, "上傳失敗", Toast.LENGTH_SHORT).show();
+
+            }
+        }).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
+            @Override
+            public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
+                callback.getFirebaseStorageState(true);
+                callback.getFirebaseStorageType(taskSnapshot.getDownloadUrl().toString(),taskSnapshot.getMetadata().getName());
+                progressDialog.dismiss();
+                Toast.makeText(mContext, "上傳成功", Toast.LENGTH_SHORT).show();
+                
+            }
+
+        }).addOnProgressListener(new OnProgressListener<UploadTask.TaskSnapshot>() {
+            @Override
+            public void onProgress(UploadTask.TaskSnapshot taskSnapshot) {
+                //calculating progress percentage
+                int progress = (int) ((100 * taskSnapshot.getBytesTransferred()) / taskSnapshot.getTotalByteCount());
+                progressDialog.setTitle("提示訊息");
+                progressDialog.setCancelable(false);
+                progressDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
+                progressDialog.setMessage("上傳中！！");
+                progressDialog.show();
+            }
+
+        });
+    }
     public  void setAuthListener(){
         if(authListener!=null){
             auth.addAuthStateListener(authListener);
@@ -215,8 +291,6 @@ public class MfiebaselibsClass {
         if(authListener!=null){
             auth.removeAuthStateListener(authListener);
         }
-
-
 
     }
 }

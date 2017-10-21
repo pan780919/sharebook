@@ -14,7 +14,7 @@
     <list default="true" id="d8937790-a171-47d5-84d4-f286683668e0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mfirebaselibs/src/main/java/com/jackpan/libs/mfirebaselib/MfiebaselibsClass.java" afterPath="$PROJECT_DIR$/mfirebaselibs/src/main/java/com/jackpan/libs/mfirebaselib/MfiebaselibsClass.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mfirebaselibs/src/main/java/com/jackpan/libs/mfirebaselib/MfirebaeCallback.java" afterPath="$PROJECT_DIR$/mfirebaselibs/src/main/java/com/jackpan/libs/mfirebaselib/MfirebaeCallback.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/LoginActivity.java" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/LoginActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/ForIdeaAndShareActivity.java" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/ForIdeaAndShareActivity.java" />
     </list>
     <ignored path="sharebook.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -124,16 +124,24 @@
       <file leaf-file-name="MfiebaselibsClass.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mfirebaselibs/src/main/java/com/jackpan/libs/mfirebaselib/MfiebaselibsClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="723">
-              <caret line="160" column="33" selection-start-line="160" selection-start-column="33" selection-end-line="160" selection-end-column="33" />
+            <state relative-caret-position="343">
+              <caret line="265" column="16" selection-start-line="265" selection-start-column="16" selection-end-line="265" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1568#1908#0" expanded="true" />
-                <element signature="e#1907#1908#0" expanded="true" />
-                <element signature="e#2271#2769#0" expanded="true" />
-                <element signature="e#2768#2769#0" expanded="true" />
-                <element signature="e#2838#3226#0" expanded="true" />
-                <element signature="e#3225#3226#0" expanded="true" />
+                <element signature="e#1990#2330#0" expanded="true" />
+                <element signature="e#2329#2330#0" expanded="true" />
+                <element signature="e#2693#3191#0" expanded="true" />
+                <element signature="e#3190#3191#0" expanded="true" />
+                <element signature="e#3260#3648#0" expanded="true" />
+                <element signature="e#3647#3648#0" expanded="true" />
+                <element signature="e#4002#4409#0" expanded="true" />
+                <element signature="e#4408#4409#0" expanded="true" />
+                <element signature="e#9088#9404#0" expanded="true" />
+                <element signature="e#9403#9404#0" expanded="true" />
+                <element signature="e#9427#9918#0" expanded="true" />
+                <element signature="e#9917#9918#0" expanded="true" />
+                <element signature="e#9942#10555#0" expanded="true" />
+                <element signature="e#10554#10555#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -142,8 +150,8 @@
       <file leaf-file-name="GayPlace.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/GayPlace.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+            <state relative-caret-position="0">
+              <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
               <folding>
                 <element signature="e#1536#1537#0" expanded="true" />
                 <element signature="e#1562#1563#0" expanded="true" />
@@ -173,28 +181,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Object.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/Library/Android/sdk/platforms/android-25/android.jar!/java/lang/Object.class">
+      <file leaf-file-name="ForIdeaAndShareActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/ForIdeaAndShareActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+            <state relative-caret-position="4328">
+              <caret line="758" column="11" selection-start-line="666" selection-start-column="7" selection-end-line="758" selection-end-column="11" />
               <folding>
-                <element signature="e#259#260#0" expanded="true" />
-                <element signature="e#310#311#0" expanded="true" />
+                <element signature="e#27205#27585#0" expanded="true" />
+                <element signature="e#27584#27585#0" expanded="true" />
+                <element signature="e#29717#30597#0" expanded="true" />
+                <element signature="e#30596#30597#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DataSnapshot.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.firebase/firebase-client-jvm/2.3.1/4d53b7d6983247af02b8fe7e4228fff555a5e828/firebase-client-jvm-2.3.1.jar!/com/firebase/client/DataSnapshot.class">
+      <file leaf-file-name="FirebaseStorage.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/exploded-aar/com.google.firebase/firebase-storage/10.0.1/jars/classes.jar!/com/google/firebase/storage/FirebaseStorage.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="60" column="17" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="17" />
-              <folding>
-                <element signature="e#1579#1580#0" expanded="true" />
-                <element signature="e#1632#1633#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="148">
+              <caret line="40" column="56" selection-start-line="40" selection-start-column="56" selection-end-line="40" selection-end-column="56" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -202,8 +209,8 @@
       <file leaf-file-name="MfirebaeCallback.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mfirebaselibs/src/main/java/com/jackpan/libs/mfirebaselib/MfirebaeCallback.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+            <state relative-caret-position="275">
+              <caret line="24" column="20" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -3847,7 +3854,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/taiwanpetadoptionApp/src/main/res/layout/activity_for_idea_and_share.xml" />
-        <option value="$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/ForIdeaAndShareActivity.java" />
         <option value="$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/TwoActivity.java" />
         <option value="$PROJECT_DIR$/taiwanpetadoptionApp/build.gradle" />
         <option value="$PROJECT_DIR$/taiwanpetadoptionApp/src/main/res/menu/drawer.xml" />
@@ -3866,6 +3872,7 @@
         <option value="$PROJECT_DIR$/mfirebaselibs/src/main/java/com/jackpan/libs/mfirebaselib/mmm.java" />
         <option value="$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/MainActivity.java" />
         <option value="$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/LoginActivity.java" />
+        <option value="$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/ForIdeaAndShareActivity.java" />
         <option value="$PROJECT_DIR$/mfirebaselibs/src/main/java/com/jackpan/libs/mfirebaselib/MfirebaeCallback.java" />
         <option value="$PROJECT_DIR$/mfirebaselibs/src/main/java/com/jackpan/libs/mfirebaselib/MfiebaselibsClass.java" />
       </list>
@@ -4685,16 +4692,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/taiwanpetadoptionApp/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="50" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="50" />
-          <folding>
-            <marker date="1508518168000" expanded="true" signature="49:4401" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/taiwanpetadoptionApp/google-services.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -4844,6 +4841,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="7220">
           <caret line="380" column="36" selection-start-line="380" selection-start-column="36" selection-end-line="380" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
       <provider editor-type-id="android-designer2">
@@ -4969,17 +4967,6 @@
       </provider>
       <provider editor-type-id="android-designer2">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/ForIdeaAndShareActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="760">
-          <caret line="112" column="27" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <marker date="1508518168000" expanded="true" signature="37297:37348" ph="{...}" />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/taiwanpetadoptionApp/src/main/res/layout/list_group.xml">
@@ -5118,15 +5105,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/GayPlace.java">
+    <entry file="jar://$PROJECT_DIR$/taiwanpetadoptionApp/libs/mFirebaseLibs.jar!/com/jackpan/libs/mfirebaselib/MfiebaselibsClass.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+        <state relative-caret-position="-417">
+          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
           <folding>
-            <element signature="e#1536#1537#0" expanded="true" />
-            <element signature="e#1562#1563#0" expanded="true" />
-            <element signature="e#1593#1594#0" expanded="true" />
-            <element signature="e#1620#1621#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/exploded-aar/com.google.firebase/firebase-storage/10.0.1/jars/classes.jar!/com/google/firebase/storage/FirebaseStorage.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="40" column="56" selection-start-line="40" selection-start-column="56" selection-end-line="40" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/ForIdeaAndShareActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4328">
+          <caret line="758" column="11" selection-start-line="666" selection-start-column="7" selection-end-line="758" selection-end-column="11" />
+          <folding>
+            <element signature="e#27205#27585#0" expanded="true" />
+            <element signature="e#27584#27585#0" expanded="true" />
+            <element signature="e#29717#30597#0" expanded="true" />
+            <element signature="e#30596#30597#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -5148,36 +5153,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mfirebaselibs/src/main/java/com/jackpan/libs/mfirebaselib/MfirebaeCallback.java">
+    <entry file="file://$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/GayPlace.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+          <folding>
+            <element signature="e#1536#1537#0" expanded="true" />
+            <element signature="e#1562#1563#0" expanded="true" />
+            <element signature="e#1593#1594#0" expanded="true" />
+            <element signature="e#1620#1621#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/taiwanpetadoptionApp/libs/mFirebaseLibs.jar!/com/jackpan/libs/mfirebaselib/MfiebaselibsClass.class">
+    <entry file="file://$PROJECT_DIR$/mfirebaselibs/src/main/java/com/jackpan/libs/mfirebaselib/MfirebaeCallback.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-417">
-          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="275">
+          <caret line="24" column="20" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mfirebaselibs/src/main/java/com/jackpan/libs/mfirebaselib/MfiebaselibsClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="723">
-          <caret line="160" column="33" selection-start-line="160" selection-start-column="33" selection-end-line="160" selection-end-column="33" />
+        <state relative-caret-position="343">
+          <caret line="265" column="16" selection-start-line="265" selection-start-column="16" selection-end-line="265" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1568#1908#0" expanded="true" />
-            <element signature="e#1907#1908#0" expanded="true" />
-            <element signature="e#2271#2769#0" expanded="true" />
-            <element signature="e#2768#2769#0" expanded="true" />
-            <element signature="e#2838#3226#0" expanded="true" />
-            <element signature="e#3225#3226#0" expanded="true" />
+            <element signature="e#1990#2330#0" expanded="true" />
+            <element signature="e#2329#2330#0" expanded="true" />
+            <element signature="e#2693#3191#0" expanded="true" />
+            <element signature="e#3190#3191#0" expanded="true" />
+            <element signature="e#3260#3648#0" expanded="true" />
+            <element signature="e#3647#3648#0" expanded="true" />
+            <element signature="e#4002#4409#0" expanded="true" />
+            <element signature="e#4408#4409#0" expanded="true" />
+            <element signature="e#9088#9404#0" expanded="true" />
+            <element signature="e#9403#9404#0" expanded="true" />
+            <element signature="e#9427#9918#0" expanded="true" />
+            <element signature="e#9917#9918#0" expanded="true" />
+            <element signature="e#9942#10555#0" expanded="true" />
+            <element signature="e#10554#10555#0" expanded="true" />
           </folding>
         </state>
       </provider>

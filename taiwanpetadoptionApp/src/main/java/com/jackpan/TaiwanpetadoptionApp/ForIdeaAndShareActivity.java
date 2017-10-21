@@ -665,8 +665,7 @@ public class ForIdeaAndShareActivity extends Activity implements View.OnClickLis
 //			ContentResolver cr = this.getContentResolver();
 //			String uri = "sdcard/req_images/temp.jpg";
         FirebaseStorage storage = FirebaseStorage.getInstance();
-        StorageReference storageRef = storage.getReferenceFromUrl("gs://bookshare-99cb3.appspot.com" +
-                "");
+        StorageReference storageRef = storage.getReferenceFromUrl("gs://bookshare-99cb3.appspot.com" + "");
 
         StorageReference mountainsRef = storageRef.child(filePath);
 
