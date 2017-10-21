@@ -2,6 +2,7 @@ package com.jackpan.libs.mfirebaselib;
 
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.widget.Toast;
 
@@ -20,6 +21,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.OnProgressListener;
+import com.google.firebase.storage.StorageMetadata;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 
@@ -229,9 +231,9 @@ public class MfiebaselibsClass {
             }
         });
     }
-    public  void setFirebaseStorage(String url,String filePath){
+    public  void setFirebaseStorageForPhoto(String url,String filePath){
         FirebaseStorage storage = FirebaseStorage.getInstance();
-        StorageReference storageRef = storage.getReferenceFromUrl(url);
+        StorageReference storageRef = storage.getReferenceFromUrl(url+"");
 
         StorageReference mountainsRef = storageRef.child(filePath);
 
@@ -263,7 +265,7 @@ public class MfiebaselibsClass {
                 callback.getFirebaseStorageType(taskSnapshot.getDownloadUrl().toString(),taskSnapshot.getMetadata().getName());
                 progressDialog.dismiss();
                 Toast.makeText(mContext, "上傳成功", Toast.LENGTH_SHORT).show();
-                
+
             }
 
         }).addOnProgressListener(new OnProgressListener<UploadTask.TaskSnapshot>() {
@@ -278,6 +280,50 @@ public class MfiebaselibsClass {
                 progressDialog.show();
             }
 
+        });
+    }
+
+    private void setFirebaseStorageForFile(String url ,Uri path) {
+        FirebaseStorage storage = FirebaseStorage.getInstance();
+        StorageReference storageRef = storage.getReferenceFromUrl(url + "file_upload 上傳檔案");
+        Uri file = path;
+        StorageReference imageRef = storageRef.child(file.getLastPathSegment());
+        StorageMetadata metadata = new StorageMetadata.Builder()
+                .setContentType("audio/mpeg")
+                .setCustomMetadata("country", "x")
+                .build();
+        UploadTask uploadTask = imageRef.putFile(file, metadata);
+
+        progressDialog = new ProgressDialog(mContext);
+
+
+        uploadTask.addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception exception) {
+                callback.getFirebaseStorageState(false);
+                progressDialog.dismiss();
+                Toast.makeText(mContext, "上傳失敗", Toast.LENGTH_SHORT).show();
+
+
+            }
+        }).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
+            @Override
+            public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
+                callback.getFirebaseStorageState(true);
+                callback.getFirebaseStorageType(taskSnapshot.getDownloadUrl().toString(),taskSnapshot.getMetadata().getName());
+                Toast.makeText(mContext, "上傳成功", Toast.LENGTH_SHORT).show();
+                progressDialog.dismiss();
+
+            }
+        }).addOnProgressListener(new OnProgressListener<UploadTask.TaskSnapshot>() {
+            @Override
+            public void onProgress(UploadTask.TaskSnapshot taskSnapshot) {
+                progressDialog.setTitle("提示訊息");
+                progressDialog.setCancelable(false);
+                progressDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
+                progressDialog.setMessage("上傳中！！");
+                progressDialog.show();
+            }
         });
     }
     public  void setAuthListener(){

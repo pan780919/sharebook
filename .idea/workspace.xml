@@ -13,8 +13,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d8937790-a171-47d5-84d4-f286683668e0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mfirebaselibs/src/main/java/com/jackpan/libs/mfirebaselib/MfiebaselibsClass.java" afterPath="$PROJECT_DIR$/mfirebaselibs/src/main/java/com/jackpan/libs/mfirebaselib/MfiebaselibsClass.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mfirebaselibs/src/main/java/com/jackpan/libs/mfirebaselib/MfirebaeCallback.java" afterPath="$PROJECT_DIR$/mfirebaselibs/src/main/java/com/jackpan/libs/mfirebaselib/MfirebaeCallback.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/ForIdeaAndShareActivity.java" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/ForIdeaAndShareActivity.java" />
     </list>
     <ignored path="sharebook.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -124,24 +122,30 @@
       <file leaf-file-name="MfiebaselibsClass.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mfirebaselibs/src/main/java/com/jackpan/libs/mfirebaselib/MfiebaselibsClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="343">
-              <caret line="265" column="16" selection-start-line="265" selection-start-column="16" selection-end-line="265" selection-end-column="16" />
+            <state relative-caret-position="247">
+              <caret line="319" column="74" selection-start-line="319" selection-start-column="74" selection-end-line="319" selection-end-column="74" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1990#2330#0" expanded="true" />
-                <element signature="e#2329#2330#0" expanded="true" />
-                <element signature="e#2693#3191#0" expanded="true" />
-                <element signature="e#3190#3191#0" expanded="true" />
-                <element signature="e#3260#3648#0" expanded="true" />
-                <element signature="e#3647#3648#0" expanded="true" />
-                <element signature="e#4002#4409#0" expanded="true" />
-                <element signature="e#4408#4409#0" expanded="true" />
-                <element signature="e#9088#9404#0" expanded="true" />
-                <element signature="e#9403#9404#0" expanded="true" />
-                <element signature="e#9427#9918#0" expanded="true" />
-                <element signature="e#9917#9918#0" expanded="true" />
-                <element signature="e#9942#10555#0" expanded="true" />
-                <element signature="e#10554#10555#0" expanded="true" />
+                <element signature="e#2066#2406#0" expanded="true" />
+                <element signature="e#2405#2406#0" expanded="true" />
+                <element signature="e#2769#3267#0" expanded="true" />
+                <element signature="e#3266#3267#0" expanded="true" />
+                <element signature="e#3336#3724#0" expanded="true" />
+                <element signature="e#3723#3724#0" expanded="true" />
+                <element signature="e#4078#4485#0" expanded="true" />
+                <element signature="e#4484#4485#0" expanded="true" />
+                <element signature="e#9175#9491#0" expanded="true" />
+                <element signature="e#9490#9491#0" expanded="true" />
+                <element signature="e#9514#9989#0" expanded="true" />
+                <element signature="e#9988#9989#0" expanded="true" />
+                <element signature="e#10013#10626#0" expanded="true" />
+                <element signature="e#10625#10626#0" expanded="true" />
+                <element signature="e#11319#11634#0" expanded="true" />
+                <element signature="e#11633#11634#0" expanded="true" />
+                <element signature="e#11657#12131#0" expanded="true" />
+                <element signature="e#12130#12131#0" expanded="true" />
+                <element signature="e#12155#12599#0" expanded="true" />
+                <element signature="e#12598#12599#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -184,8 +188,8 @@
       <file leaf-file-name="ForIdeaAndShareActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/ForIdeaAndShareActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4328">
-              <caret line="758" column="11" selection-start-line="666" selection-start-column="7" selection-end-line="758" selection-end-column="11" />
+            <state relative-caret-position="224">
+              <caret line="608" column="5" selection-start-line="539" selection-start-column="4" selection-end-line="608" selection-end-column="5" />
               <folding>
                 <element signature="e#27205#27585#0" expanded="true" />
                 <element signature="e#27584#27585#0" expanded="true" />
@@ -209,8 +213,8 @@
       <file leaf-file-name="MfirebaeCallback.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mfirebaselibs/src/main/java/com/jackpan/libs/mfirebaselib/MfirebaeCallback.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="24" column="20" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+            <state relative-caret-position="237">
+              <caret line="22" column="44" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -5123,19 +5127,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/ForIdeaAndShareActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4328">
-          <caret line="758" column="11" selection-start-line="666" selection-start-column="7" selection-end-line="758" selection-end-column="11" />
-          <folding>
-            <element signature="e#27205#27585#0" expanded="true" />
-            <element signature="e#27584#27585#0" expanded="true" />
-            <element signature="e#29717#30597#0" expanded="true" />
-            <element signature="e#30596#30597#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/LoginActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="82">
@@ -5166,34 +5157,53 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/ForIdeaAndShareActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="608" column="5" selection-start-line="539" selection-start-column="4" selection-end-line="608" selection-end-column="5" />
+          <folding>
+            <element signature="e#27205#27585#0" expanded="true" />
+            <element signature="e#27584#27585#0" expanded="true" />
+            <element signature="e#29717#30597#0" expanded="true" />
+            <element signature="e#30596#30597#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mfirebaselibs/src/main/java/com/jackpan/libs/mfirebaselib/MfirebaeCallback.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="24" column="20" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+        <state relative-caret-position="237">
+          <caret line="22" column="44" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mfirebaselibs/src/main/java/com/jackpan/libs/mfirebaselib/MfiebaselibsClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="265" column="16" selection-start-line="265" selection-start-column="16" selection-end-line="265" selection-end-column="16" />
+        <state relative-caret-position="247">
+          <caret line="319" column="74" selection-start-line="319" selection-start-column="74" selection-end-line="319" selection-end-column="74" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1990#2330#0" expanded="true" />
-            <element signature="e#2329#2330#0" expanded="true" />
-            <element signature="e#2693#3191#0" expanded="true" />
-            <element signature="e#3190#3191#0" expanded="true" />
-            <element signature="e#3260#3648#0" expanded="true" />
-            <element signature="e#3647#3648#0" expanded="true" />
-            <element signature="e#4002#4409#0" expanded="true" />
-            <element signature="e#4408#4409#0" expanded="true" />
-            <element signature="e#9088#9404#0" expanded="true" />
-            <element signature="e#9403#9404#0" expanded="true" />
-            <element signature="e#9427#9918#0" expanded="true" />
-            <element signature="e#9917#9918#0" expanded="true" />
-            <element signature="e#9942#10555#0" expanded="true" />
-            <element signature="e#10554#10555#0" expanded="true" />
+            <element signature="e#2066#2406#0" expanded="true" />
+            <element signature="e#2405#2406#0" expanded="true" />
+            <element signature="e#2769#3267#0" expanded="true" />
+            <element signature="e#3266#3267#0" expanded="true" />
+            <element signature="e#3336#3724#0" expanded="true" />
+            <element signature="e#3723#3724#0" expanded="true" />
+            <element signature="e#4078#4485#0" expanded="true" />
+            <element signature="e#4484#4485#0" expanded="true" />
+            <element signature="e#9175#9491#0" expanded="true" />
+            <element signature="e#9490#9491#0" expanded="true" />
+            <element signature="e#9514#9989#0" expanded="true" />
+            <element signature="e#9988#9989#0" expanded="true" />
+            <element signature="e#10013#10626#0" expanded="true" />
+            <element signature="e#10625#10626#0" expanded="true" />
+            <element signature="e#11319#11634#0" expanded="true" />
+            <element signature="e#11633#11634#0" expanded="true" />
+            <element signature="e#11657#12131#0" expanded="true" />
+            <element signature="e#12130#12131#0" expanded="true" />
+            <element signature="e#12155#12599#0" expanded="true" />
+            <element signature="e#12598#12599#0" expanded="true" />
           </folding>
         </state>
       </provider>
