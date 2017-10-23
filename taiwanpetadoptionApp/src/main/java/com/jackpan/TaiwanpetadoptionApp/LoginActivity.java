@@ -131,15 +131,14 @@ public class LoginActivity extends Activity implements View.OnClickListener, Mfi
     @Override
     protected void onStart() {
         super.onStart();
-        auth.addAuthStateListener(authListener);
+        mfiebaselibsClass.setAuthListener();
+
     }
 
     @Override
     protected void onStop() {
         super.onStop();
-        if (authListener != null) {
-            auth.removeAuthStateListener(authListener);
-        }
+    mfiebaselibsClass.removeAuthListener();
     }
 
     @Override
@@ -168,7 +167,6 @@ public class LoginActivity extends Activity implements View.OnClickListener, Mfi
 
     private void fbLogin() {
         List<String> PERMISSIONS_PUBLISH = Arrays.asList("public_profile", "email", "user_friends");
-//        fbName  =(TextView ) findViewById(R.id.fbname);
         loginButton = (LoginButton) findViewById(R.id.fb_btn);
         loginButton.setReadPermissions(PERMISSIONS_PUBLISH);
         loginButton.registerCallback(callbackManager, new FacebookCallback<LoginResult>() {

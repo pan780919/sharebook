@@ -273,7 +273,7 @@ public class MainActivity extends Activity implements MfirebaeCallback {
 
     @Override
     public void getDeleteState(boolean b, String s) {
-        
+
     }
 
     @Override
