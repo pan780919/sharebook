@@ -5443,15 +5443,8 @@ containing a value of this type.
         public static final int Animation_Design_BottomSheetDialog=0x7f0a00ab;
         /**  API 11 theme customizations can go here. 
  API 14 theme customizations can go here. 
-
-            Theme customizations available in newer API levels can go in
-            res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.
-        
          */
         public static final int AppBaseTheme=0x7f0a000c;
-        /**  All customizations that are NOT specific to a particular API-level can go here. 
-         */
         public static final int AppTheme=0x7f0a00ac;
         public static final int Base_AlertDialog_AppCompat=0x7f0a00ad;
         public static final int Base_AlertDialog_AppCompat_Light=0x7f0a00ae;
@@ -5903,8 +5896,6 @@ containing a value of this type.
         public static final int com_facebook_button_share=0x7f0a01c7;
         public static final int com_facebook_loginview_default_style=0x7f0a01c8;
         public static final int com_facebook_loginview_silver_style=0x7f0a01c9;
-        /**  背景是否模糊显示 
-         */
         public static final int loading_dialog=0x7f0a01ca;
         public static final int myteme=0x7f0a01cb;
         public static final int tooltip_bubble_text=0x7f0a01cc;

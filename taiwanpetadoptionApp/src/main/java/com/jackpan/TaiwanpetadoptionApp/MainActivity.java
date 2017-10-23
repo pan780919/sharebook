@@ -3,35 +3,23 @@ package com.jackpan.TaiwanpetadoptionApp;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
-import android.content.ContentResolver;
-import android.content.CursorLoader;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.pm.PackageManager;
-import android.database.Cursor;
 import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.graphics.Color;
 import android.graphics.Matrix;
 import android.net.Uri;
-import android.os.AsyncTask;
-import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
-import android.provider.DocumentsContract;
-import android.provider.MediaStore;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
+import android.support.v4.content.Loader;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.Window;
 import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
@@ -42,59 +30,25 @@ import android.widget.ExpandableListAdapter;
 import android.widget.ExpandableListView;
 import android.widget.ImageView;
 import android.widget.ListView;
-import android.widget.RelativeLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.MyAPI.VersionChecker;
 import com.adlocus.PushAd;
 import com.bumptech.glide.Glide;
 import com.facebook.FacebookSdk;
 import com.facebook.appevents.AppEventsLogger;
 import com.facebook.applinks.AppLinkData;
-import com.firebase.client.DataSnapshot;
-import com.firebase.client.Firebase;
-import com.firebase.client.FirebaseError;
-import com.firebase.client.ValueEventListener;
-import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 
 import com.google.android.gms.ads.InterstitialAd;
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.OnFailureListener;
-import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.GenericTypeIndicator;
-import com.google.firebase.database.Query;
-import com.google.firebase.storage.FirebaseStorage;
-import com.google.firebase.storage.StorageReference;
-import com.google.firebase.storage.UploadTask;
 import com.google.gson.Gson;
 
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.io.BufferedReader;
-import java.io.ByteArrayOutputStream;
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.lang.reflect.Type;
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -102,15 +56,10 @@ import java.util.Map;
 import Appkey.MyAdKey;
 import bolts.AppLinks;
 
-import com.facebook.ads.*;
-
-import com.google.gson.reflect.TypeToken;
 import com.igexin.sdk.PushManager;
 import com.jackpan.MyPushService;
-import com.jackpan.VideoViewActivity;
 import com.jackpan.libs.mfirebaselib.MfiebaselibsClass;
 import com.jackpan.libs.mfirebaselib.MfirebaeCallback;
-import com.jackpan.video.VideoMainActivity;
 import com.jackpan.Brokethenews.R;
 
 public class MainActivity extends Activity implements MfirebaeCallback {
@@ -134,9 +83,7 @@ public class MainActivity extends Activity implements MfirebaeCallback {
     private Button mInviteBtn;
     ImageView imageView;
     private static final String TAG = "MainActivity";
-    private ArrayList<GayPlace> list = new ArrayList<>();
-
-    private AdView admobAd, admobAd2;
+    private ArrayList<FirebaseData> list = new ArrayList<>();
     FirebaseAuth auth;
     FirebaseAuth.AuthStateListener authListener;
     private String userUID;
@@ -145,7 +92,6 @@ public class MainActivity extends Activity implements MfirebaeCallback {
     private String[] items;
 
     private List<String> mExpandableListTitle;
-//    private NavigationManager mNavigationManager;
     private ExpandableListAdapter mExpandableListAdapter;
 
     private Map<String, List<String>> mExpandableListData;
@@ -199,9 +145,9 @@ public class MainActivity extends Activity implements MfirebaeCallback {
             @Override
             public void onClick(View v) {
 
-//                Intent i = new Intent();
-//                i.setClass(MainActivity.this, LoginActivity.class);
-//                startActivity(i);
+                Intent i = new Intent();
+                i.setClass(MainActivity.this, ForIdeaAndShareActivity.class);
+                startActivity(i);
 //				uploadFromStream();
 //				upLoad();
 //				setFireBaseDB();
@@ -315,7 +261,7 @@ public class MainActivity extends Activity implements MfirebaeCallback {
     public void getDatabaseData(Object o) {
         Gson gson = new Gson();
         String jsonInString = gson.toJson(o);
-        GayPlace g = gson.fromJson(jsonInString,GayPlace.class);
+        FirebaseData g = gson.fromJson(jsonInString,FirebaseData.class);
         list.add(0, g);
 
 
@@ -328,13 +274,13 @@ public class MainActivity extends Activity implements MfirebaeCallback {
 
     public class MyAdapter extends BaseAdapter {
         //		private ArrayList<ResultData> mDatas;
-        private ArrayList<GayPlace> mDatas;
+        private ArrayList<FirebaseData> mDatas;
 
-        public MyAdapter(ArrayList<GayPlace> datas) {
+        public MyAdapter(ArrayList<FirebaseData> datas) {
             mDatas = datas;
         }
 
-        public void updateData(ArrayList<GayPlace> datas) {
+        public void updateData(ArrayList<FirebaseData> datas) {
             mDatas = datas;
             notifyDataSetChanged();
         }
@@ -359,8 +305,7 @@ public class MainActivity extends Activity implements MfirebaeCallback {
             if (convertView == null)
                 convertView = LayoutInflater.from(MainActivity.this).inflate(
                         R.layout.mylayout, null);
-//			ResultData data = mDatas.get(position);
-            GayPlace taipeiZoo = mDatas.get(position);
+            FirebaseData taipeiZoo = mDatas.get(position);
             TextView textname = (TextView) convertView.findViewById(R.id.name);
             TextView list = (TextView) convertView.findViewById(R.id.txtengname);
             TextView bigtext = (TextView) convertView.findViewById(R.id.bigtext);
@@ -369,31 +314,16 @@ public class MainActivity extends Activity implements MfirebaeCallback {
             TextView time = (TextView) convertView.findViewById(R.id.time);
             TextView userview = (TextView) convertView.findViewById(R.id.view);
             TextView userlike = (TextView) convertView.findViewById(R.id.like);
+            userview.setVisibility(View.GONE);
+            userlike.setVisibility(View.GONE);
+
             bigtext.setText(taipeiZoo.cat);
             textname.setText(taipeiZoo.getTittle());
             list.setText("賣家:" + taipeiZoo.getName());
             time.setText("發文時間:" + taipeiZoo.getDate());
-//            bigtext.setVisibility(View.GONE);
             place.setVisibility(View.VISIBLE);
             place.setText("ID:" + taipeiZoo.getId());
-            if (taipeiZoo.getView() == -1) {
-                userview.setText("觀看人數:" + 0);
-            } else {
-                userview.setText("觀看人數:" + taipeiZoo.view);
-            }
-            if (taipeiZoo.getLike() == -1) {
-                userlike.setText("喜歡人數:" + 0);
-            } else {
-                userlike.setText("喜歡人數:" + taipeiZoo.like);
-            }
-
-
-//            time.setVisibility(View.GONE);
-//			place.setText("英文名:"+taipeiZoo.getAge());
-//			time.setText("地理分布:"+data.A_Distribution );
             imageView = (ImageView) convertView.findViewById(R.id.photoimg);
-            //			loadImage(data.album_file, img);
-            //			Glide.with(MainActivity.this).load(data.album_file).into(imageView);
 
             Glide.with(MainActivity.this)
                     .load(taipeiZoo.getPic())
@@ -437,7 +367,6 @@ public class MainActivity extends Activity implements MfirebaeCallback {
                 MainActivity.this.finish();//關閉activity
                 auth.signOut();
                 MySharedPrefernces.saveUserId(MainActivity.this, "");
-//                interstitial.show();
 
             }
 
@@ -448,7 +377,6 @@ public class MainActivity extends Activity implements MfirebaeCallback {
             public void onClick(DialogInterface dialog, int i) {
 
                 MainActivity.this.finish();//關閉activity
-//                interstitial.show();
             }
 
         });
@@ -534,9 +462,16 @@ public class MainActivity extends Activity implements MfirebaeCallback {
                 String selectedItem = ((List) (mExpandableListData.get(mExpandableListTitle.get(groupPosition))))
                         .get(childPosition).toString();
                 Log.d(TAG, "selectedItem: "+selectedItem);
-                Log.d(TAG, "groupPosition: "+groupPosition);
-                Log.d(TAG, "childPosition: "+childPosition);
-                Log.d(TAG, "id: "+id);
+                switch (selectedItem){
+                    case "會員登入":
+                        break;
+                    case "會員註冊":
+                        break;
+                    case "忘記密碼":
+                        break;
+                    case "修改密碼":
+                        break;
+                }
                 drawerLayout.closeDrawer(GravityCompat.START);
                 return false;
             }

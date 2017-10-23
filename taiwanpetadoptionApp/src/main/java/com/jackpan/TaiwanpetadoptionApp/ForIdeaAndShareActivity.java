@@ -112,7 +112,7 @@ public class ForIdeaAndShareActivity extends Activity implements View.OnClickLis
         setContentView(R.layout.activity_for_idea_and_share);
         mPhone = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(mPhone);
-        cat =getResources().getStringArray(R.array.actionFilms);
+        cat =getResources().getStringArray(R.array.musicals);
         initLayout();
         Calendar mCal = Calendar.getInstance();
         s = DateFormat.format("yyyy-MM-dd kk:mm:ss", mCal.getTime());
@@ -225,7 +225,7 @@ public class ForIdeaAndShareActivity extends Activity implements View.OnClickLis
     ) {
 
 
-        String url = "https://bookshare-99cb3.firebaseio.com/sharebook123";
+        String url = "https://bookshare-99cb3.firebaseio.com/sharebook";
         Firebase mFirebaseRef = new Firebase(url);
 //		Firebase userRef = mFirebaseRef.child("user");
 //		Map newUserData = new HashMap();
@@ -495,20 +495,7 @@ public class ForIdeaAndShareActivity extends Activity implements View.OnClickLis
                         progressDialog.dismiss();
                         Toast.makeText(ForIdeaAndShareActivity.this, "上傳成功", Toast.LENGTH_SHORT).show();
                         break;
-                    case 4:
 
-                        picUri4 = taskSnapshot.getDownloadUrl().toString();
-                        mPicName4.setText(taskSnapshot.getMetadata().getName());
-                        progressDialog.dismiss();
-                        Toast.makeText(ForIdeaAndShareActivity.this, "上傳成功", Toast.LENGTH_SHORT).show();
-                        break;
-                    case 5:
-
-                        picUri5 = taskSnapshot.getDownloadUrl().toString();
-                        mPicName5.setText(taskSnapshot.getMetadata().getName());
-                        progressDialog.dismiss();
-                        Toast.makeText(ForIdeaAndShareActivity.this, "上傳成功", Toast.LENGTH_SHORT).show();
-                        break;
 
 
                 }

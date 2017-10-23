@@ -3,34 +3,24 @@ package com.jackpan.TaiwanpetadoptionApp;
 
 import android.app.Activity;
 import android.app.ProgressDialog;
-import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.location.LocationManager;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
-import android.webkit.WebView;
-import android.webkit.WebViewClient;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.facebook.CallbackManager;
 import com.facebook.FacebookCallback;
 import com.facebook.FacebookException;
 import com.facebook.FacebookSdk;
-import com.facebook.ads.AdSize;
 import com.facebook.share.Sharer;
-import com.facebook.share.model.ShareLinkContent;
-import com.facebook.share.model.SharePhoto;
-import com.facebook.share.model.SharePhotoContent;
 import com.facebook.share.widget.ShareDialog;
 import com.firebase.client.DataSnapshot;
 import com.firebase.client.Firebase;
@@ -49,7 +39,6 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 import Appkey.MyAdKey;
-import com.facebook.ads.*;
 
 import com.jackpan.Brokethenews.R;
 public class TwoActivity extends Activity {
@@ -183,7 +172,7 @@ public class TwoActivity extends Activity {
 	private static final String TAG = "TwoActivity";
 	private void loadIntent() {
 		String json = getIntent().getStringExtra("json");
-		final GayPlace data = new Gson().fromJson(json, GayPlace.class);
+		final FirebaseData data = new Gson().fromJson(json, FirebaseData.class);
 
 		likeid = data.getId()+data.getDate();
 		loadImage(data.getPic(), img);
@@ -194,7 +183,7 @@ public class TwoActivity extends Activity {
 		textview5.setText("價錢:"+data.price);
 		textview6.setText("ISBN:"+data.isbn);
 
-		if(data.getView()!=0)userView();
+//		if(data.getView()!=0)userView();
 		mUserText.setText(data.getLike()+"人");
 		mUserText.setVisibility(View.GONE);
 		textview8.setText("書籍所在地:"+data.adds);
@@ -277,11 +266,11 @@ public class TwoActivity extends Activity {
 //
 //			return true;
 //		}
-
-		if(id == R.id.action_user){
-			startActivity(new Intent(TwoActivity.this,UserActivity.class));
-			return true;
-		}
+//
+//		if(id == R.id.action_user){
+//			startActivity(new Intent(TwoActivity.this,UserActivity.class));
+//			return true;
+//		}
 
 		return super.onOptionsItemSelected(item);
 	}
@@ -418,83 +407,5 @@ public class TwoActivity extends Activity {
 
 		return super.onKeyDown(keyCode, event);  
 
-	}
-	WebViewClient mWebViewClient = new WebViewClient() {
-		  @Override
-		  public boolean shouldOverrideUrlLoading(WebView view, String url) {
-		   view.loadUrl(url);
-		   return true;
-		  }
-		 };
-
-	@Override
-	protected void onActivityResult(final int requestCode, final int resultCode, final Intent data) {
-		super.onActivityResult(requestCode, resultCode, data);
-		callbackManager.onActivityResult(requestCode, resultCode, data);
-	}
-	private  void setAd(){
-		RelativeLayout adViewContainer = (RelativeLayout) findViewById(R.id.adViewContainer);
-		adView = new com.facebook.ads.AdView(this, "583698071813390_587400221443175", AdSize.RECTANGLE_HEIGHT_250);
-		adViewContainer.addView(adView);
-		adView.loadAd();
-
-		RelativeLayout adViewContainer2 = (RelativeLayout) findViewById(R.id.adViewContainer2);
-		adView2 = new com.facebook.ads.AdView(this, "583698071813390_587400221443175", AdSize.RECTANGLE_HEIGHT_250);
-		adViewContainer2.addView(adView2);
-		adView2.loadAd();
-
-		RelativeLayout adViewContainer3 = (RelativeLayout) findViewById(R.id.adViewContainer3);
-		adView3 = new com.facebook.ads.AdView(this, "583698071813390_587400221443175", AdSize.RECTANGLE_HEIGHT_250);
-		adViewContainer3.addView(adView3);
-		adView3.loadAd();
-
-	}
-	private void loadInterstitialAd() {
-		interstitialAd = new com.facebook.ads.InterstitialAd(this, "583698071813390_680915735424956");
-		interstitialAd.setAdListener(new InterstitialAdListener() {
-			@Override
-			public void onInterstitialDisplayed(Ad ad) {
-
-			}
-
-			@Override
-			public void onInterstitialDismissed(Ad ad) {
-
-			}
-
-			@Override
-			public void onError(Ad ad, AdError adError) {
-
-			}
-
-			@Override
-			public void onAdLoaded(Ad ad) {
-				interstitialAd.show();
-
-			}
-
-			@Override
-			public void onAdClicked(Ad ad) {
-
-			}
-
-			@Override
-			public void onLoggingImpression(Ad ad) {
-
-			}
-		});
-		interstitialAd.loadAd();
-	}
-
-	@Override
-	protected void onResume() {
-		super.onResume();
-		//  mAdapter.updateData(mAllData);
-
-	}
-
-	@Override
-	protected void onPause() {
-		super.onPause();
 	}
 }

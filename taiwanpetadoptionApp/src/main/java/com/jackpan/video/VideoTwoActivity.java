@@ -37,13 +37,11 @@ import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.InterstitialAd;
 import com.google.gson.Gson;
-import com.jackpan.TaiwanpetadoptionApp.GayPlace;
 import com.jackpan.TaiwanpetadoptionApp.InAppBillingActivity;
 import com.jackpan.TaiwanpetadoptionApp.MyApi;
 import com.jackpan.TaiwanpetadoptionApp.MySharedPrefernces;
 
 import com.jackpan.TaiwanpetadoptionApp.UserActivity;
-import com.jackpan.TaiwanpetadoptionApp.UserMessgeActivity;
 import com.jackpan.VideoViewActivity;
 
 import java.io.InputStream;
@@ -303,7 +301,7 @@ public class VideoTwoActivity extends Activity {
 					ShareLinkContent linkContent = new ShareLinkContent.Builder()
 							.setContentTitle("我要推薦好文章")
 							.setContentDescription(data.getMessage())
-							.setContentUrl(Uri.parse("https://play.google.com/store/apps/details?id=com.jackpan.GayPlace"))
+							.setContentUrl(Uri.parse("https://play.google.com/store/apps/details?id=com.jackpan.FirebaseData"))
 							.setImageUrl(Uri.parse(data.getPic()))
 							.build();
 					shareDialog.show(linkContent);
@@ -360,7 +358,7 @@ public class VideoTwoActivity extends Activity {
 	}
 	private void Like(){
 
-		String url = "https://sevenpeoplebook.firebaseio.com/GayPlace";
+		String url = "https://sevenpeoplebook.firebaseio.com/FirebaseData";
 		Firebase mFirebaseRef = new Firebase(url);
 
 		Firebase countRef = mFirebaseRef.child(likeid).child("like");
