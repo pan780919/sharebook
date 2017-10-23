@@ -1556,6 +1556,7 @@ int id btn_sure_send 0x7f0f00e4
 int id button 0x7f0f0092
 int id button1 0x7f0f00fb
 int id button2 0x7f0f0101
+int id button3 0x7f0f0102
 int id buttonPanel 0x7f0f00a3
 int id button_0 0x7f0f0157
 int id button_1 0x7f0f0158
@@ -1563,7 +1564,6 @@ int id button_2 0x7f0f015a
 int id button_3 0x7f0f015b
 int id button_play_pause_toggle 0x7f0f0159
 int id buttongps 0x7f0f0126
-int id buttonˇ 0x7f0f0102
 int id buyButton 0x7f0f007a
 int id buyList 0x7f0f00fc
 int id buy_now 0x7f0f007e

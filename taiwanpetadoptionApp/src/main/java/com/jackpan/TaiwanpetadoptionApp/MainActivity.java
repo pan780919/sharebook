@@ -12,7 +12,6 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
-import android.support.v4.content.Loader;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.util.Log;
@@ -38,7 +37,6 @@ import com.bumptech.glide.Glide;
 import com.facebook.FacebookSdk;
 import com.facebook.appevents.AppEventsLogger;
 import com.facebook.applinks.AppLinkData;
-import com.google.android.gms.ads.AdView;
 
 import com.google.android.gms.ads.InterstitialAd;
 import com.google.firebase.auth.FirebaseAuth;
@@ -61,6 +59,8 @@ import com.jackpan.MyPushService;
 import com.jackpan.libs.mfirebaselib.MfiebaselibsClass;
 import com.jackpan.libs.mfirebaselib.MfirebaeCallback;
 import com.jackpan.Brokethenews.R;
+import com.newqm.sdkoffer.AdView;
+import com.newqm.sdkoffer.QuMiConnect;
 
 public class MainActivity extends Activity implements MfirebaeCallback {
     private ListView petlist;
@@ -71,8 +71,6 @@ public class MainActivity extends Activity implements MfirebaeCallback {
     private ProgressDialog progressDialog;
     private DrawerLayout drawerLayout;
     private NavigationView navigation_view;
-
-    private com.facebook.ads.AdView adView, googleads;
     private InterstitialAd interstitial;
     private Spinner mSpinner, mSpinner2;
     HashMap<String, ArrayList<ResultData>> mKind;
@@ -213,9 +211,6 @@ public class MainActivity extends Activity implements MfirebaeCallback {
         petlist.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
             public boolean onItemLongClick(AdapterView<?> adapterView, View view, int i, long l) {
-
-
-//                userRef.removeValue();
                 return true;
             }
         });
@@ -230,6 +225,12 @@ public class MainActivity extends Activity implements MfirebaeCallback {
         mExpandableListTitle = new ArrayList(mExpandableListData.keySet());
 
         initdrawlatout();
+//        QuMiConnect.ConnectQuMi(this, "5dd972580405c9d2", "6345c4cc61b91055");
+//        AdView adView = (AdView) findViewById(R.id.adView);
+//        adView.setSwitchStatus(true);//隐藏关闭按钮
+//        QuMiConnect.getQumiConnectInstance(this).initAdView(adView);
+
+
     }
 
     @Override
@@ -270,6 +271,50 @@ public class MainActivity extends Activity implements MfirebaeCallback {
 
     }
 
+    @Override
+    public void getDeleteState(boolean b, String s) {
+
+    }
+
+    @Override
+    public void createUserState(boolean b) {
+
+    }
+
+    @Override
+    public void useLognState(boolean b) {
+
+    }
+
+    @Override
+    public void getuseLoginId(String s) {
+
+    }
+
+    @Override
+    public void resetPassWordState(boolean b) {
+
+    }
+
+    @Override
+    public void getFireBaseDBState(boolean b, String s) {
+
+    }
+
+    @Override
+    public void getFirebaseStorageState(boolean b) {
+
+    }
+
+    @Override
+    public void getFirebaseStorageType(String s, String s1) {
+
+    }
+
+    @Override
+    public void getsSndPasswordResetEmailState(boolean b) {
+
+    }
 
 
     public class MyAdapter extends BaseAdapter {

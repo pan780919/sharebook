@@ -30,6 +30,8 @@
     <!-- 个推3.0电子围栏功能所需权限 -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
 
     <meta-data
         android:name="android.support.VERSION"
@@ -61,6 +63,20 @@
             <!-- Accepts URIs "com.example.myapp://" -->
             <data android:scheme="com.jackpan.TaipeiZoo" />
         </intent-filter>
+
+        <activity
+            android:name="com.newqm.sdkoffer.QuMiActivity"
+            android:configChanges="keyboardHidden|orientation" />
+
+        <service android:name="com.newqm.sdkoffer.BanSy" />
+
+        <receiver android:name="com.newqm.sdkoffer.BannerReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
 
         <activity
             android:name="com.jackpan.TaiwanpetadoptionApp.MainActivity"

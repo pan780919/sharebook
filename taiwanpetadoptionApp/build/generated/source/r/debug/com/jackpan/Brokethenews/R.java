@@ -4630,6 +4630,7 @@ containing a value of this type.
         public static final int button=0x7f0f0092;
         public static final int button1=0x7f0f00fb;
         public static final int button2=0x7f0f0101;
+        public static final int button3=0x7f0f0102;
         public static final int buttonPanel=0x7f0f00a3;
         public static final int button_0=0x7f0f0157;
         public static final int button_1=0x7f0f0158;
@@ -4637,7 +4638,6 @@ containing a value of this type.
         public static final int button_3=0x7f0f015b;
         public static final int button_play_pause_toggle=0x7f0f0159;
         public static final int buttongps=0x7f0f0126;
-        public static final int buttonˇ=0x7f0f0102;
         public static final int buyButton=0x7f0f007a;
         public static final int buyList=0x7f0f00fc;
         public static final int buy_now=0x7f0f007e;

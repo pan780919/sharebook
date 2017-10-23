@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:2:1-301:12
+ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:2:1-311:12
 	package
 		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:4:5-39
 		INJECTED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml
@@ -210,8 +210,16 @@ uses-permission#android.permission.ACCESS_FINE_LOCATION
 ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:34:5-79
 	android:name
 		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:34:22-76
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:36:5-77
+	android:name
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:36:22-75
+uses-permission#android.permission.GET_TASKS
+ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:37:5-67
+	android:name
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:37:22-65
 application
-ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:37:5-299:19
+ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:39:5-309:19
 MERGED from [com.facebook.android:audience-network-sdk:4.26.0] /Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/exploded-aar/com.facebook.android/audience-network-sdk/4.26.0/AndroidManifest.xml:14:5-18:19
 MERGED from [com.facebook.android:facebook-android-sdk:4.27.0] /Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.27.0/AndroidManifest.xml:28:5-29:19
 MERGED from [com.facebook.android:facebook-login:4.27.0] /Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/exploded-aar/com.facebook.android/facebook-login/4.27.0/AndroidManifest.xml:28:5-29:19
@@ -280,448 +288,468 @@ MERGED from [com.android.support:support-core-ui:25.3.1] /Users/jackpan/shareboo
 MERGED from [com.android.support:support-core-utils:25.3.1] /Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.3.1/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-compat:25.3.1] /Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/exploded-aar/com.android.support/support-compat/25.3.1/AndroidManifest.xml:29:5-20
 	android:label
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:41:9-41
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:43:9-41
 	android:supportsRtl
 		ADDED from [com.facebook.android:facebook-android-sdk:4.27.0] /Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.27.0/AndroidManifest.xml:28:18-44
 	android:allowBackup
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:39:9-35
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:41:9-35
 	android:icon
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:40:9-45
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:42:9-45
 	android:theme
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:42:9-40
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:44:9-40
 	android:name
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:38:9-68
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:40:9-68
 intent-filter#android.intent.action.VIEW+android.intent.category.BROWSABLE+android.intent.category.DEFAULT
-ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:43:9-50:25
+ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:45:9-52:25
 action#android.intent.action.VIEW
-ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:44:13-65
+ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:46:13-65
 	android:name
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:44:21-62
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:46:21-62
 category#android.intent.category.DEFAULT
-ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:46:13-72
+ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:48:13-72
 	android:name
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:46:23-69
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:48:23-69
 category#android.intent.category.BROWSABLE
-ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:47:13-74
+ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:49:13-74
 	android:name
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:47:23-71
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:49:23-71
 data
-ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:49:13-60
+ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:51:13-60
 	android:scheme
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:49:19-57
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:51:19-57
+activity#com.newqm.sdkoffer.QuMiActivity
+ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:53:9-54:65
+	android:configChanges
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:54:13-63
+	android:name
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:53:19-65
+service#com.newqm.sdkoffer.BanSy
+ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:55:9-59
+	android:name
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:55:18-57
+receiver#com.newqm.sdkoffer.BannerReceiver
+ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:56:9-61:20
+	android:name
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:56:19-67
+intent-filter#android.intent.action.PACKAGE_ADDED
+ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:57:13-60:29
+action#android.intent.action.PACKAGE_ADDED
+ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:58:17-85
+	android:name
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:58:25-75
 activity#com.jackpan.TaiwanpetadoptionApp.MainActivity
-ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:52:9-67:20
+ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:62:9-77:20
 	android:screenOrientation
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:58:13-49
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:68:13-49
 	android:label
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:57:13-45
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:67:13-45
 	android:hardwareAccelerated
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:56:13-47
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:66:13-47
 	android:configChanges
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:55:13-59
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:65:13-59
 	android:theme
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:53:13-69
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:63:13-69
 	android:name
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:54:13-73
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:64:13-73
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:60:13-64:29
+ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:70:13-74:29
 action#android.intent.action.MAIN
-ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:61:17-69
+ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:71:17-69
 	android:name
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:61:25-66
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:71:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:63:17-77
+ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:73:17-77
 	android:name
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:63:27-74
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:73:27-74
 activity#com.jackpan.TaiwanpetadoptionApp.TwoActivity
-ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:68:9-73:52
+ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:78:9-83:52
 	android:screenOrientation
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:73:13-49
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:83:13-49
 	android:label
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:72:13-55
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:82:13-55
 	android:hardwareAccelerated
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:71:13-47
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:81:13-47
 	android:configChanges
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:70:13-59
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:80:13-59
 	android:name
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:69:13-72
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:79:13-72
 activity#com.jackpan.video.VideoMainActivity
-ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:74:9-79:52
+ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:84:9-89:52
 	android:screenOrientation
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:79:13-49
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:89:13-49
 	android:label
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:78:13-45
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:88:13-45
 	android:hardwareAccelerated
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:77:13-47
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:87:13-47
 	android:configChanges
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:76:13-59
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:86:13-59
 	android:name
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:75:13-63
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:85:13-63
 activity#com.jackpan.video.VideoTwoActivity
-ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:80:9-85:52
+ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:90:9-95:52
 	android:screenOrientation
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:85:13-49
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:95:13-49
 	android:label
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:84:13-55
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:94:13-55
 	android:hardwareAccelerated
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:83:13-47
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:93:13-47
 	android:configChanges
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:82:13-59
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:92:13-59
 	android:name
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:81:13-62
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:91:13-62
 activity#com.jackpan.video.ForIdeaAndShareVideoActivity
-ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:86:9-91:52
+ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:96:9-101:52
 	android:screenOrientation
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:91:13-49
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:101:13-49
 	android:label
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:90:13-55
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:100:13-55
 	android:hardwareAccelerated
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:89:13-47
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:99:13-47
 	android:configChanges
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:88:13-59
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:98:13-59
 	android:name
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:87:13-74
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:97:13-74
 activity#com.adlocus.AdActivity
-ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:93:9-100:20
+ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:103:9-110:20
 MERGED from [com.adlocus:library:3.5.2] /Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/exploded-aar/com.adlocus/library/3.5.2/AndroidManifest.xml:24:9-29:20
 	android:parentActivityName
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:95:13-87
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:105:13-87
 	android:excludeFromRecents
 		ADDED from [com.adlocus:library:3.5.2] /Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/exploded-aar/com.adlocus/library/3.5.2/AndroidManifest.xml:26:13-46
 	android:launchMode
 		ADDED from [com.adlocus:library:3.5.2] /Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/exploded-aar/com.adlocus/library/3.5.2/AndroidManifest.xml:27:13-44
 	android:theme
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:96:13-54
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:106:13-54
 	android:name
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:94:13-50
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:104:13-50
 meta-data#android.support.PARENT_ACTIVITY
-ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:97:13-99:81
+ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:107:13-109:81
 	android:value
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:99:17-78
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:109:17-78
 	android:name
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:98:17-63
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:108:17-63
 activity#com.adlocus.VideoAdActivity
-ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:101:9-104:50
+ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:111:9-114:50
 MERGED from [com.adlocus:library:3.5.2] /Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/exploded-aar/com.adlocus/library/3.5.2/AndroidManifest.xml:30:9-35:20
 	android:hardwareAccelerated
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:104:13-47
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:114:13-47
 	android:launchMode
 		ADDED from [com.adlocus:library:3.5.2] /Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/exploded-aar/com.adlocus/library/3.5.2/AndroidManifest.xml:34:13-44
 	android:configChanges
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:103:13-122
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:113:13-122
 	android:name
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:102:13-55
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:112:13-55
 service#com.adlocus.push.PushService
-ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:106:9-108:42
+ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:116:9-118:42
 MERGED from [com.adlocus:library:3.5.2] /Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/exploded-aar/com.adlocus/library/3.5.2/AndroidManifest.xml:37:9-40:19
 	android:process
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:108:13-39
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:118:13-39
 	android:name
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:107:13-56
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:117:13-56
 receiver#com.adlocus.push.PushReceive
-ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:110:9-122:20
+ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:120:9-132:20
 MERGED from [com.adlocus:library:3.5.2] /Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/exploded-aar/com.adlocus/library/3.5.2/AndroidManifest.xml:42:9-54:20
 	android:enabled
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:112:13-35
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:122:13-35
 	android:process
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:113:13-39
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:123:13-39
 	android:name
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:111:13-56
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:121:13-56
 intent-filter#android.intent.action.BOOT_COMPLETED+android.intent.category.DEFAULT
-ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:114:13-118:29
+ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:124:13-128:29
 action#android.intent.action.BOOT_COMPLETED
-ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:115:17-79
+ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:125:17-79
 	android:name
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:115:25-76
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:125:25-76
 intent-filter#com.adlocus.action.RECEIVE
-ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:119:13-121:29
+ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:129:13-131:29
 action#com.adlocus.action.RECEIVE
-ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:120:17-69
+ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:130:17-69
 	android:name
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:120:25-66
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:130:25-66
 activity#com.vpadn.widget.VpadnActivity
-ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:124:9-128:64
+ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:134:9-138:64
 	android:hardwareAccelerated
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:127:13-47
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:137:13-47
 	android:configChanges
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:126:13-133
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:136:13-133
 	android:theme
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:128:13-61
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:138:13-61
 	android:name
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:125:13-58
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:135:13-58
 activity#com.jackpan.TaiwanpetadoptionApp.HeadpageActivity
-ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:129:9-134:52
+ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:139:9-144:52
 	android:screenOrientation
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:134:13-49
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:144:13-49
 	android:label
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:132:13-60
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:142:13-60
 	android:launchMode
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:133:13-48
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:143:13-48
 	android:configChanges
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:131:13-59
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:141:13-59
 	android:name
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:130:13-77
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:140:13-77
 meta-data#com.google.android.gms.version
-ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:136:9-138:69
+ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:146:9-148:69
 MERGED from [com.google.android.gms:play-services-basement:10.0.1] /Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/10.0.1/AndroidManifest.xml:20:9-121
 	android:value
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:138:13-66
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:148:13-66
 	android:name
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:137:13-58
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:147:13-58
 activity#com.google.android.gms.ads.AdActivity
-ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:140:9-143:64
+ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:150:9-153:64
 MERGED from [com.google.android.gms:play-services-ads-lite:10.0.1] /Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads-lite/10.0.1/AndroidManifest.xml:25:9-232
 	android:configChanges
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:142:13-122
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:152:13-122
 	android:theme
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:143:13-61
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:153:13-61
 	android:name
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:141:13-65
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:151:13-65
 activity#com.jackpan.TaiwanpetadoptionApp.SpinnerActivity
-ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:144:9-146:62
+ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:154:9-156:62
 	android:label
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:146:13-59
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:156:13-59
 	android:name
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:145:13-76
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:155:13-76
 receiver#com.google.android.gms.analytics.AnalyticsReceiver
-ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:148:9-154:20
+ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:158:9-164:20
 	android:enabled
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:150:13-35
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:160:13-35
 	android:name
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:149:13-78
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:159:13-78
 intent-filter#com.google.android.gms.analytics.ANALYTICS_DISPATCH
-ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:151:13-153:29
+ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:161:13-163:29
 action#com.google.android.gms.analytics.ANALYTICS_DISPATCH
-ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:152:17-94
+ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:162:17-94
 	android:name
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:152:25-91
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:162:25-91
 service#com.google.android.gms.analytics.AnalyticsService
-ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:156:9-159:40
+ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:166:9-169:40
 	android:enabled
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:158:13-35
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:168:13-35
 	android:exported
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:159:13-37
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:169:13-37
 	android:name
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:157:13-77
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:167:13-77
 activity#com.jackpan.TaiwanpetadoptionApp.InAppBillingActivity
-ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:161:9-164:51
+ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:171:9-174:51
 	android:label
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:163:13-66
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:173:13-66
 	android:launchMode
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:164:13-48
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:174:13-48
 	android:name
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:162:13-81
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:172:13-81
 service#com.jackpan.TaiwanpetadoptionApp.MyFirebaseInstanceIDService
-ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:171:9-175:19
+ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:181:9-185:19
 	android:name
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:171:18-93
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:181:18-93
 intent-filter#com.google.firebase.INSTANCE_ID_EVENT
-ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:172:13-174:29
+ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:182:13-184:29
 action#com.google.firebase.INSTANCE_ID_EVENT
-ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:173:17-80
+ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:183:17-80
 	android:name
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:173:25-77
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:183:25-77
 meta-data#com.facebook.sdk.ApplicationId
-ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:177:9-179:55
+ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:187:9-189:55
 	android:value
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:179:13-52
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:189:13-52
 	android:name
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:178:13-58
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:188:13-58
 provider#com.facebook.FacebookContentProvider
-ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:181:9-184:39
+ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:191:9-194:39
 	android:authorities
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:183:13-90
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:193:13-90
 	android:exported
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:184:13-36
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:194:13-36
 	android:name
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:182:13-64
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:192:13-64
 activity#com.jackpan.TaiwanpetadoptionApp.ForIdeaAndShareActivity
-ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:189:9-192:45
-	android:configChanges
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:191:13-59
-	android:theme
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:192:13-42
-	android:name
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:190:13-84
-activity#com.jackpan.VideoViewActivity
-ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:193:9-196:45
-	android:label
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:195:13-45
-	android:theme
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:196:13-42
-	android:name
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:194:13-57
-activity#com.jackpan.TaiwanpetadoptionApp.LoginActivity
-ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:197:9-205:20
-	android:screenOrientation
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:204:13-49
-	android:label
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:203:13-45
-	android:hardwareAccelerated
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:202:13-47
+ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:199:9-202:45
 	android:configChanges
 		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:201:13-59
 	android:theme
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:198:13-69
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:202:13-42
 	android:name
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:200:13-74
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:200:13-84
+activity#com.jackpan.VideoViewActivity
+ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:203:9-206:45
+	android:label
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:205:13-45
+	android:theme
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:206:13-42
+	android:name
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:204:13-57
+activity#com.jackpan.TaiwanpetadoptionApp.LoginActivity
+ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:207:9-215:20
+	android:screenOrientation
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:214:13-49
+	android:label
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:213:13-45
+	android:hardwareAccelerated
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:212:13-47
+	android:configChanges
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:211:13-59
+	android:theme
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:208:13-69
+	android:name
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:210:13-74
 activity#com.jackpan.TaiwanpetadoptionApp.UserActivity
-ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:206:9-208:59
+ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:216:9-218:59
 	android:label
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:208:13-56
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:218:13-56
 	android:name
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:207:13-73
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:217:13-73
 activity#com.adbert.AdbertActivity
-ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:209:9-212:84
+ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:219:9-222:84
 	android:configChanges
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:211:13-74
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:221:13-74
 	android:theme
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:212:13-72
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:222:13-72
 	android:name
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:210:13-53
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:220:13-53
 activity#com.adbert.AdbertInterstitialActivity
-ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:213:9-216:95
+ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:223:9-226:95
 	android:configChanges
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:215:13-74
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:225:13-74
 	android:theme
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:216:13-83
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:226:13-83
 	android:name
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:214:13-65
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:224:13-65
 activity#com.jackpan.TaiwanpetadoptionApp.UserMessgeActivity
-ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:217:9-219:75
+ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:227:9-229:75
 	android:label
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:219:13-63
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:229:13-63
 	android:name
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:218:13-79
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:228:13-79
 service#com.jackpan.MyPushService
-ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:220:9-225:19
+ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:230:9-235:19
 	android:process
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:224:13-43
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:234:13-43
 	android:label
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:223:13-40
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:233:13-40
 	android:exported
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:222:13-36
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:232:13-36
 	android:name
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:221:13-53
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:231:13-53
 service#com.jackpan.TaiwanpetadoptionApp.MyIntentService
-ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:226:9-83
+ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:236:9-83
 	android:name
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:226:18-81
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:236:18-81
 meta-data#PUSH_APPID
-ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:230:9-232:53
+ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:240:9-242:53
 	android:value
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:232:13-50
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:242:13-50
 	android:name
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:231:13-38
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:241:13-38
 meta-data#PUSH_APPKEY
-ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:233:9-235:54
+ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:243:9-245:54
 	android:value
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:235:13-51
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:245:13-51
 	android:name
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:234:13-39
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:244:13-39
 meta-data#PUSH_APPSECRET
-ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:236:9-238:54
+ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:246:9-248:54
 	android:value
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:238:13-51
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:248:13-51
 	android:name
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:237:13-42
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:247:13-42
 service#com.igexin.sdk.PushService
-ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:241:9-249:19
+ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:251:9-259:19
 	android:process
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:245:13-43
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:255:13-43
 	android:label
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:244:13-47
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:254:13-47
 	android:exported
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:243:13-36
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:253:13-36
 	android:name
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:242:13-54
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:252:13-54
 intent-filter#com.igexin.sdk.action.service.message
-ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:246:13-248:29
+ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:256:13-258:29
 action#com.igexin.sdk.action.service.message
-ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:247:17-79
+ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:257:17-79
 	android:name
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:247:25-77
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:257:25-77
 receiver#com.igexin.sdk.PushReceiver
-ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:251:9-262:20
+ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:261:9-272:20
 	android:name
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:251:19-61
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:261:19-61
 intent-filter#android.intent.action.ACTION_POWER_CONNECTED+android.intent.action.ACTION_POWER_DISCONNECTED+android.intent.action.BOOT_COMPLETED+android.intent.action.MEDIA_MOUNTED+android.intent.action.USER_PRESENT+android.net.conn.CONNECTIVITY_CHANGE+com.igexin.sdk.action.refreshls
-ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:252:13-261:29
+ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:262:13-271:29
 action#android.net.conn.CONNECTIVITY_CHANGE
-ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:254:17-79
+ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:264:17-79
 	android:name
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:254:25-76
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:264:25-76
 action#android.intent.action.USER_PRESENT
-ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:255:17-77
+ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:265:17-77
 	android:name
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:255:25-74
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:265:25-74
 action#com.igexin.sdk.action.refreshls
-ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:256:17-74
+ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:266:17-74
 	android:name
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:256:25-71
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:266:25-71
 action#android.intent.action.MEDIA_MOUNTED
-ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:258:17-78
+ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:268:17-78
 	android:name
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:258:25-75
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:268:25-75
 action#android.intent.action.ACTION_POWER_CONNECTED
-ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:259:17-87
+ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:269:17-87
 	android:name
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:259:25-84
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:269:25-84
 action#android.intent.action.ACTION_POWER_DISCONNECTED
-ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:260:17-90
+ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:270:17-90
 	android:name
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:260:25-87
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:270:25-87
 activity#com.igexin.sdk.PushActivity
-ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:264:9-271:20
+ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:274:9-281:20
 	android:process
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:268:13-43
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:278:13-43
 	android:excludeFromRecents
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:266:13-46
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:276:13-46
 	android:exported
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:267:13-37
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:277:13-37
 	android:theme
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:270:13-72
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:280:13-72
 	android:taskAffinity
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:269:13-67
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:279:13-67
 	android:name
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:265:13-55
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:275:13-55
 service#com.igexin.download.DownloadService
-ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:273:9-275:46
+ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:283:9-285:46
 	android:process
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:275:13-43
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:285:13-43
 	android:name
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:274:13-63
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:284:13-63
 receiver#com.igexin.download.DownloadReceiver
-ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:277:9-281:20
+ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:287:9-291:20
 	android:name
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:277:19-70
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:287:19-70
 intent-filter#android.net.conn.CONNECTIVITY_CHANGE
-ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:278:13-280:29
+ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:288:13-290:29
 provider#com.igexin.download.DownloadProvider
-ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:283:9-287:46
+ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:293:9-297:46
 	android:authorities
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:286:13-61
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:296:13-61
 		INJECTED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml
 	android:process
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:287:13-43
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:297:13-43
 	android:exported
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:285:13-36
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:295:13-36
 	android:name
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:284:13-64
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:294:13-64
 activity#com.igexin.sdk.GActivity
-ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:289:9-295:74
+ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:299:9-305:74
 	android:process
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:293:13-43
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:303:13-43
 	android:excludeFromRecents
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:291:13-46
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:301:13-46
 	android:exported
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:292:13-36
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:302:13-36
 	android:theme
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:295:13-72
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:305:13-72
 	android:taskAffinity
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:294:13-67
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:304:13-67
 	android:name
-		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:290:13-52
+		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:300:13-52
 activity#com.facebook.ads.AudienceNetworkActivity
 ADDED from [com.facebook.android:audience-network-sdk:4.26.0] /Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/exploded-aar/com.facebook.android/audience-network-sdk/4.26.0/AndroidManifest.xml:15:9-17:77
 	android:configChanges
