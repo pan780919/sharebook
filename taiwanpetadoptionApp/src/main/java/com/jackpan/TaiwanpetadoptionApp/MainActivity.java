@@ -462,16 +462,10 @@ public class MainActivity extends Activity implements MfirebaeCallback {
                 String selectedItem = ((List) (mExpandableListData.get(mExpandableListTitle.get(groupPosition))))
                         .get(childPosition).toString();
                 Log.d(TAG, "selectedItem: "+selectedItem);
-                switch (selectedItem){
-                    case "會員登入":
-                        break;
-                    case "會員註冊":
-                        break;
-                    case "忘記密碼":
-                        break;
-                    case "修改密碼":
-                        break;
+                if(groupPosition==1){
+                    startActivity(new Intent(MainActivity.this,LoginActivity.class));
                 }
+
                 drawerLayout.closeDrawer(GravityCompat.START);
                 return false;
             }

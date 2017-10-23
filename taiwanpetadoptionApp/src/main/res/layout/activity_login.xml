@@ -54,16 +54,8 @@
             android:layout_marginTop="12dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="登入或註冊"
+            android:text="登入"
             android:id="@+id/button"
-            android:layout_gravity="center_horizontal"
-            />
-        <Button
-            android:layout_marginTop="12dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="修改密碼"
-            android:id="@+id/button2"
             android:layout_gravity="center_horizontal"
             />
         <com.facebook.login.widget.LoginButton
@@ -73,7 +65,29 @@
             android:id="@+id/fb_btn"
             android:layout_gravity="center_horizontal"
             ></com.facebook.login.widget.LoginButton>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="95dp"
+            android:layout_marginTop="12dp"
+            >
+            <Button
 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="修改密碼"
+                android:id="@+id/button2"
+                android:layout_gravity="center_horizontal"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="忘記密碼"
+                android:id="@+id/buttonˇ"
+                android:layout_gravity="center_horizontal"
+                />
+        </LinearLayout>
 
     </LinearLayout>
     <!-- 選單 -->

@@ -639,7 +639,6 @@ com/google/android/gms/analytics/Logger.class
 com/google/android/gms/internal/zzle.class
 android/support/v4/app/FragmentState.class
 com/igexin/push/core/a/e.class
-com/jackpan/TaiwanpetadoptionApp/SpinnerActivity.class
 android/support/v4/app/TaskStackBuilder.class
 com/google/android/gms/internal/zzos.class
 com/igexin/sdk/GTIntentService.class
