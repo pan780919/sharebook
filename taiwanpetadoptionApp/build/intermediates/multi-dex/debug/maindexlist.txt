@@ -221,6 +221,7 @@ com/google/android/gms/internal/zzne.class
 com/fasterxml/jackson/annotation/JsonFormat$Shape.class
 com/google/android/gms/internal/zzgh.class
 android/support/v7/app/ActionBarActivity.class
+com/facebook/login/LoginManager.class
 com/google/firebase/iid/FirebaseInstanceIdService.class
 com/google/android/gms/internal/zzuf$zza.class
 com/google/android/gms/internal/zzhe.class
@@ -1211,7 +1212,6 @@ com/bumptech/glide/GlideBuilder.class
 android/support/annotation/DimenRes.class
 com/google/android/gms/ads/NativeExpressAdView.class
 com/google/android/gms/internal/zzlr.class
-com/newqm/sdkoffer/AdView.class
 android/support/v4/app/ServiceCompat$StopForegroundFlags.class
 com/facebook/ads/internal/view/d$a.class
 com/google/android/gms/internal/zzez.class
@@ -1649,7 +1649,6 @@ com/bumptech/glide/DownloadOptions.class
 com/google/android/gms/internal/zzfz.class
 com/util/SkuDetails.class
 com/google/firebase/FirebaseException.class
-com/newqm/sdkoffer/QuMiConnect.class
 android/support/v4/util/DebugUtils.class
 com/google/android/gms/internal/zzasi.class
 android/support/v4/view/ViewPager$4.class

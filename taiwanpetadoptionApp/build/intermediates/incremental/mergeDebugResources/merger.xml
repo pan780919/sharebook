@@ -2673,8 +2673,7 @@
         <item>考試用書</item>
         <item>電腦資訊</item>
         <item>專業/教科書/政府出版本</item>
-
-
+        <item>外文書分類</item>
     </string-array><string name="drama_movies">Drama</string><string name="banner_ad_unit_id">ca-app-pub-7019441527375550/1880466629</string><string name="setting">設定</string><string name="action_settings">贊助</string><string name="app_name">二手書交流書鋪</string><string name="title_activity_in_app_billing">贊助開發者</string><string name="title_activity_fire_base_list">FireBaseListActivity</string><string name="cancel">取消</string><string name="musical_movies">Musical</string><string name="title_activity_video_view">VideoViewActivity</string><string name="no_network">目前無網路連線</string><string name="ok">確定</string><string name="thriller_movies">Thriller</string><string name="action_movies">Action</string><string name="movie_title">movie title</string><string name="waitting">請稍後.....</string><string name="hello_blank_fragment">Hello blank fragment</string><string name="Network_status">網路狀態</string><string-array name="dramas">
         <item>Home of the Brave (1949)</item>
         <item>The Accused (1949)</item>
