@@ -139,7 +139,7 @@ public class TwoActivity extends Activity {
 
 //		MyGAManager.sendScreenName(this,"資料頁面");
 		mShareBtn = (Button) findViewById(R.id.b_button_share);
-
+		mShareBtn.setVisibility(View.GONE);
 		textview = (TextView) findViewById(R.id.textView1);
 		textview2 = (TextView) findViewById(R.id.textView2);
 		textview3 = (TextView) findViewById(R.id.textView3);
@@ -173,8 +173,10 @@ public class TwoActivity extends Activity {
 		img = (ImageView) findViewById(R.id.pageimg);
 
 		mUserLikeBtn = (Button) findViewById(R.id.b_button_like);
+		mUserLikeBtn.setVisibility(View.GONE);
 		mUserText = (TextView) findViewById(R.id.liketext);
 		toUserMsg = (Button) findViewById(R.id.b_button_message);
+		toUserMsg.setVisibility(View.GONE);
 
 	}
 
@@ -182,27 +184,7 @@ public class TwoActivity extends Activity {
 	private void loadIntent() {
 		String json = getIntent().getStringExtra("json");
 		final GayPlace data = new Gson().fromJson(json, GayPlace.class);
-//		for (GayPlace.ForMsg forMsg : data.formsg) {
-//			Log.d(TAG, "loadIntent: "+forMsg.id);
-//			Log.d(TAG, "loadIntent: "+forMsg.tomsg);
-//		}
-		mShareBtn.setOnClickListener(new View.OnClickListener() {
-			@Override
-			public void onClick(View v) {
-				if (ShareDialog.canShow(ShareLinkContent.class)) {
-					ShareLinkContent linkContent = new ShareLinkContent.Builder()
-							.setContentTitle("我要推薦好文章")
-							.setContentDescription(data.getMessage())
-							.setContentUrl(Uri.parse("https://play.google.com/store/apps/details?id=com.jackpan.Brokethenews"))
-							.setImageUrl(Uri.parse(data.getPic()))
-							.build();
-					shareDialog.show(linkContent);
-				}
-				MyApi.copyToClipboard(getApplication(),data.getMessage());
-			}
-		});
-//		endlat =data.lat;
-//		endlon =data.lon;
+
 		likeid = data.getId()+data.getDate();
 		loadImage(data.getPic(), img);
 		textview.setText("書本名稱:"+data.getTittle());
@@ -211,121 +193,14 @@ public class TwoActivity extends Activity {
 		textview4.setText("聯絡電話:"+data.phone);
 		textview5.setText("價錢:"+data.price);
 		textview6.setText("ISBN:"+data.isbn);
-//		if(!data.getUrl().equals(""))textview4.setText("點擊觀看影片");
-//		else textview4.setText("無影片可觀看");
-//		 textview4.setOnClickListener(new View.OnClickListener() {
-//			 @Override
-//			 public void onClick(View v) {
-//				 if(data.getUrl().equals("")) return;
-//				 Intent i = new Intent(TwoActivity.this, VideoViewActivity.class);
-//				 Bundle bundle = new Bundle();
-//				 bundle.putString("video",data.getUrl());
-//				 i.putExtras(bundle);
-//				 startActivity(i);
-//			 }
-//		 });
-//		if(!data.url2.equals(""))textview5.setText("點擊觀看影片");
-//		else textview5.setText("無影片可觀看");
-//		textview5.setOnClickListener(new View.OnClickListener() {
-//			@Override
-//			public void onClick(View v) {
-//				if(data.url2.equals("")) return;
-//				Intent i = new Intent(TwoActivity.this, VideoViewActivity.class);
-//				Bundle bundle = new Bundle();
-//				bundle.putString("video",data.url2);
-//				i.putExtras(bundle);
-//				startActivity(i);
-//			}
-//		});
-//		if(!data.url3.equals(""))textview6.setText("點擊觀看影片");
-//		else textview6.setText("無影片可觀看");
-//		textview6.setOnClickListener(new View.OnClickListener() {
-//			@Override
-//			public void onClick(View v) {
-//				if(data.url3.equals("")) return;
-//				Intent i = new Intent(TwoActivity.this, VideoViewActivity.class);
-//				Bundle bundle = new Bundle();
-//				bundle.putString("video",data.url3);
-//				i.putExtras(bundle);
-//				startActivity(i);
-//			}
-//		});
 
-
-		mUserLikeBtn.setOnClickListener(new View.OnClickListener() {
-			@Override
-			public void onClick(View v) {
-				String Time =MySharedPrefernces.getMyCardTime(TwoActivity.this);
-
-				if (Time.equals("")) Time = "0";
-				if (System.currentTimeMillis() - Long.valueOf(Time) > 24*60 * 60 * 1000) {
-					MySharedPrefernces.saveMyCardTime(TwoActivity.this, System.currentTimeMillis() + "");
-					Like();
-					Toast.makeText(TwoActivity.this,"已經對他按讚囉！！",Toast.LENGTH_SHORT).show();
-
-				}else{
-					Toast.makeText(TwoActivity.this,"你今天已經按過讚囉！明天再按吧",Toast.LENGTH_SHORT).show();
-				}
-
-			}
-		});
-		toUserMsg.setOnClickListener(new View.OnClickListener() {
-			@Override
-			public void onClick(View v) {
-				if(data.tomsg ==null) return;
-				Intent i = new Intent(TwoActivity.this, UserMessgeActivity.class);
-				Bundle bundle = new Bundle();
-				bundle.putString("id",likeid);
-				bundle.putString("name",data.getName());
-				bundle.putString("msg",data.tomsg);
-				i.putExtras(bundle);
-				startActivity(i);
-			}
-		});
 		if(data.getView()!=0)userView();
 		mUserText.setText(data.getLike()+"人");
-//		textview7.setText("此刻心情:"+data.mood);
+		mUserText.setVisibility(View.GONE);
 		textview8.setText("書籍所在地:"+data.adds);
-//		mBtnGPS.setOnClickListener(new View.OnClickListener() {
-//			@Override
-//			public void onClick(View v) {
-//				if(mBtnGPS.getText().toString().trim().equals("位置讀取中！！"))return;
-//				double startLatitude = lat;
-//				double startLongitude = lon;
-//
-//				double endLatitude = data.lat;
-//				double endLongitude = data.lon;
-//
-//				String saddr = "saddr=" + startLatitude + "," + startLongitude;
-//				String daddr = "daddr=" + endLatitude + "," + endLongitude;
-//				String uriString = "http://maps.google.com/maps?" + saddr + "&" + daddr;
-//
-//				Uri uri = Uri.parse(uriString);
-//
-//				Intent intent = new Intent(android.content.Intent.ACTION_VIEW, uri);
-//
-//				startActivity(intent);
-//			}
-//		});
-//		textview8.setText("分類學_綱:"+data.A_Class);
-//		textview9.setText("分類學_目:"+data.A_Order);
 
-
-//		textview11.setText("保育等級:"+data.A_Conservation);
-//		textview12.setText("地理分布:"+data.A_Distribution);
-//		textview13.setText("棲地型態:"+data.A_Habitat);
-//		textview14.setText("解說:"+data.A_Interpretation);
-//		textview15.setText("棲地型態:"+data.A_Habitat );
-//		textview17.setText("形態特徵:"+data.A_Feature );
-//		textview19.setText("生態習性:"+data.A_Behavior);
-//		textview21.setText("食性:"+data.A_Diet);
 		loadImage(data.pic2, img2);
-//		textview16.setText(data.A_Pic02_ALT);
 		loadImage(data.pic3, img3);
-//		textview18.setText(data.A_Pic03_ALT);
-//		loadImage(data.pic4, img4);
-//		loadImage(data.pic5, img4);
-//		textview20.setText(data.A_Pic04_ALT);
 
 	}
 
