@@ -1,4 +1,4 @@
-#Mon Oct 23 15:10:05 CST 2017
+#Mon Oct 23 16:14:09 CST 2017
 base.0=/Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/transforms/dex/debug/folders/1000/1f/main
 renamed.1=classes2.dex
 renamed.0=classes.dex

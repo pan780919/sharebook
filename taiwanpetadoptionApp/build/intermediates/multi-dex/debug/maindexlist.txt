@@ -1,6 +1,7 @@
 com/google/firebase/provider/FirebaseInitProvider.class
 com/fasterxml/jackson/annotation/JsonAutoDetect.class
 android/support/customtabs/CustomTabsIntent$Builder.class
+com/newqm/sdkoffer/BannerReceiver.class
 com/google/android/gms/internal/zzho.class
 android/support/annotation/VisibleForTesting.class
 com/fasterxml/jackson/databind/ser/std/NumberSerializers$ShortSerializer.class
@@ -63,6 +64,7 @@ android/support/multidex/MultiDex.class
 android/support/v4/media/session/MediaSessionCompat$1.class
 com/google/android/gms/games/leaderboard/LeaderboardScore.class
 android/support/v4/app/FragmentTabHost.class
+com/a/a/a.class
 android/support/v4/app/DialogFragment.class
 android/support/design/widget/FloatingActionButton$1.class
 android/support/v4/util/ArrayMap.class
@@ -113,6 +115,7 @@ android/support/v7/widget/ViewBoundsCheck$Callback.class
 com/google/android/gms/drive/query/Query$Builder.class
 com/google/android/gms/internal/zznw.class
 android/support/v7/app/AppCompatCallback.class
+com/newqm/sdkoffer/a/b.class
 android/support/v4/app/NotificationCompatBase$Action.class
 android/support/v7/widget/RecyclerView$Recycler.class
 com/adlocus/push/PushService$b.class
@@ -796,6 +799,7 @@ com/google/android/gms/internal/zzox.class
 com/igexin/download/c.class
 com/google/android/gms/internal/zzdy.class
 android/support/v4/app/AppOpsManagerCompat.class
+com/newqm/sdkoffer/b/a.class
 com/google/android/gms/internal/zzia.class
 android/support/v4/app/FragmentContainer.class
 com/google/android/gms/internal/zzkq.class
@@ -1020,6 +1024,7 @@ com/google/android/gms/auth/api/credentials/CredentialPickerConfig$Builder.class
 android/support/v4/os/ResultReceiver.class
 android/support/annotation/UiThread.class
 com/vpadn/ads/VpadnAdRequest.class
+com/newqm/sdkoffer/j.class
 com/facebook/common/R.class
 com/google/firebase/auth/FacebookAuthProvider.class
 com/vpadn/widget/VpadnActivity$3.class
@@ -1027,6 +1032,7 @@ com/google/android/gms/games/quest/Quest.class
 com/google/android/gms/internal/zzeg.class
 com/fasterxml/jackson/databind/annotation/JsonPOJOBuilder.class
 android/support/v7/widget/RecyclerView$ItemAnimator$ItemAnimatorFinishedListener.class
+com/newqm/sdkoffer/k.class
 android/support/v4/media/session/MediaSessionCompat$OnActiveChangeListener.class
 com/google/android/gms/internal/zzoj.class
 com/google/android/exoplayer2/Timeline$Window.class
@@ -1038,6 +1044,7 @@ com/fasterxml/jackson/annotation/JsonAutoDetect$Visibility.class
 com/vpon/video/ActionButton.class
 com/adlocus/a/b.class
 com/facebook/share/widget/JoinAppGroupDialog$Result.class
+com/newqm/sdkoffer/a/j.class
 com/util/IabHelper$OnIabPurchaseFinishedListener.class
 com/google/android/gms/drive/DriveStatusCodes.class
 android/support/v4/app/ServiceCompatApi24.class
@@ -1192,6 +1199,7 @@ android/support/annotation/Keep.class
 com/google/android/gms/internal/zzkx.class
 com/google/android/exoplayer2/C$PcmEncoding.class
 com/jackpan/video/VideoTwoActivity$12.class
+com/newqm/sdkoffer/a/c.class
 com/facebook/ads/AdView.class
 android/support/v4/media/MediaMetadataCompat$RatingKey.class
 com/google/android/gms/internal/zzhy$zzd.class
@@ -1203,6 +1211,7 @@ com/bumptech/glide/GlideBuilder.class
 android/support/annotation/DimenRes.class
 com/google/android/gms/ads/NativeExpressAdView.class
 com/google/android/gms/internal/zzlr.class
+com/newqm/sdkoffer/AdView.class
 android/support/v4/app/ServiceCompat$StopForegroundFlags.class
 com/facebook/ads/internal/view/d$a.class
 com/google/android/gms/internal/zzez.class
@@ -1219,6 +1228,7 @@ com/google/android/gms/internal/zzoz.class
 android/support/v4/widget/ScrollerCompat.class
 com/jackpan/TaiwanpetadoptionApp/LoginActivity$8.class
 com/google/android/exoplayer2/C$Encoding.class
+com/newqm/sdkoffer/c.class
 com/vpon/webview/VponAdWebView$c.class
 com/google/android/gms/common/api/Api$ApiOptions$HasOptions.class
 com/google/android/gms/internal/zznx.class
@@ -1235,6 +1245,7 @@ android/support/v4/os/TraceCompat.class
 com/google/zxing/EncodeHintType.class
 com/google/android/gms/internal/zzic.class
 com/fasterxml/jackson/databind/deser/std/JacksonDeserializers.class
+com/a/b/r.class
 android/support/v4/media/session/MediaSessionCompat$2.class
 com/google/android/gms/common/api/Api.class
 com/google/android/gms/internal/zzmj.class
@@ -1624,6 +1635,7 @@ com/google/android/exoplayer2/util/Predicate.class
 com/google/android/gms/internal/zzkd.class
 android/support/v4/media/RatingCompat$Style.class
 android/support/v7/app/AppCompatDelegate.class
+com/newqm/sdkoffer/BanSy.class
 com/google/android/gms/common/api/Api$zzc.class
 android/support/v4/app/FragmentManagerImpl$AnimateOnHWLayerIfNeededListener.class
 com/fasterxml/jackson/databind/AnnotationIntrospector$Pair.class
@@ -1637,6 +1649,7 @@ com/bumptech/glide/DownloadOptions.class
 com/google/android/gms/internal/zzfz.class
 com/util/SkuDetails.class
 com/google/firebase/FirebaseException.class
+com/newqm/sdkoffer/QuMiConnect.class
 android/support/v4/util/DebugUtils.class
 com/google/android/gms/internal/zzasi.class
 android/support/v4/view/ViewPager$4.class
@@ -2064,6 +2077,7 @@ android/support/design/widget/AppBarLayout$LayoutParams.class
 Appkey/MyAdKey.class
 com/google/android/gms/internal/zzfw.class
 com/google/android/gms/internal/zzmz.class
+com/newqm/sdkoffer/QuMiActivity.class
 com/adbert/AdbertInterstitialActivity.class
 com/google/android/exoplayer2/upstream/HttpDataSource$Factory.class
 com/google/android/exoplayer2/text/webvtt/WebvttCssStyle$FontSizeUnit.class

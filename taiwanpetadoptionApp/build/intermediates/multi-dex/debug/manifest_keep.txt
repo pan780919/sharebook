@@ -2,6 +2,9 @@
     <init>();
     void attachBaseContext(android.content.Context);
 }
+-keep class com.newqm.sdkoffer.QuMiActivity { <init>(); }
+-keep class com.newqm.sdkoffer.BanSy { <init>(); }
+-keep class com.newqm.sdkoffer.BannerReceiver { <init>(); }
 -keep class com.jackpan.TaiwanpetadoptionApp.MainActivity { <init>(); }
 -keep class com.jackpan.TaiwanpetadoptionApp.TwoActivity { <init>(); }
 -keep class com.jackpan.video.VideoMainActivity { <init>(); }
