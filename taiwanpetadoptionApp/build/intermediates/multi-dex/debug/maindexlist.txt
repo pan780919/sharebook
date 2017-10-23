@@ -202,7 +202,6 @@ com/facebook/ads/NativeAd.class
 c/CordovaWebView$2.class
 com/google/android/gms/internal/zzhy$zzc.class
 com/google/android/gms/internal/zzid.class
-com/jackpan/TaiwanpetadoptionApp/LoginActivity$10.class
 com/facebook/ads/AudienceNetworkActivity$a.class
 com/facebook/ads/AudienceNetworkActivity$4.class
 android/support/v7/widget/RecyclerView$AdapterDataObserver.class
@@ -237,6 +236,7 @@ com/google/ads/mediation/EmptyNetworkExtras.class
 com/facebook/ads/internal/view/c.class
 android/support/v7/widget/RecyclerView$5.class
 com/jackpan/TaiwanpetadoptionApp/MainActivity$14.class
+com/jackpan/libs/mfirebaselib/MfirebaeCallback.class
 com/google/android/gms/internal/zzfn.class
 android/support/design/widget/CoordinatorLayout$SavedState.class
 android/support/v7/widget/ActionMenuView$LayoutParams.class
@@ -565,6 +565,7 @@ com/fasterxml/jackson/databind/ser/BeanSerializerFactory.class
 com/google/android/gms/internal/zzhy$zza.class
 android/support/v4/app/NotificationCompatBase$Action$Factory.class
 com/google/android/gms/internal/zzdo.class
+com/jackpan/libs/mfirebaselib/MfiebaselibsClass.class
 com/google/android/gms/common/internal/safeparcel/zzc.class
 com/fasterxml/jackson/databind/deser/std/PrimitiveArrayDeserializers$IntDeser.class
 android/support/v4/view/NestedScrollingParent.class
@@ -1045,7 +1046,6 @@ com/google/android/gms/internal/zzoj.class
 com/google/android/exoplayer2/Timeline$Window.class
 com/igexin/sdk/PushActivity.class
 com/google/android/gms/internal/zzym.class
-com/google/firebase/auth/EmailAuthProvider.class
 android/support/design/widget/ViewGroupUtils.class
 com/vpadn/widget/VpadnActivity$2.class
 com/fasterxml/jackson/annotation/JsonAutoDetect$Visibility.class
@@ -1824,6 +1824,7 @@ com/jackpan/TaiwanpetadoptionApp/HeadpageActivity$8.class
 com/google/android/gms/internal/zzmc.class
 com/fasterxml/jackson/databind/jsontype/TypeDeserializer.class
 android/support/v7/widget/AdapterHelper$Callback.class
+com/jackpan/TaiwanpetadoptionApp/MainActivity$16.class
 com/google/android/gms/internal/zznf.class
 com/google/firebase/database/ThrowOnExtraProperties.class
 com/google/android/gms/common/api/Api$ApiOptions$NotRequiredOptions.class

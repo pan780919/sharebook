@@ -8,12 +8,12 @@
         "source": "/Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/res/menu/main.xml"
     },
     {
-        "merged": "/Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/res/merged/debug/menu/two.xml",
-        "source": "/Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/res/menu/two.xml"
-    },
-    {
         "merged": "/Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/res/merged/debug/menu/drawer.xml",
         "source": "/Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/res/menu/drawer.xml"
+    },
+    {
+        "merged": "/Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/res/merged/debug/menu/two.xml",
+        "source": "/Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/res/menu/two.xml"
     },
     {
         "merged": "/Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/res/merged/debug/menu/spinner.xml",

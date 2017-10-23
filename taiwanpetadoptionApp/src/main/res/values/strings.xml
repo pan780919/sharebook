@@ -52,6 +52,12 @@
         <item>教育/親子教養</item>
         <item>童書</item>
         <item>漫畫</item>
+        <item>語言學習</item>
+        <item>考試用書</item>
+        <item>電腦資訊</item>
+        <item>專業/教科書/政府出版本</item>
+
+
     </string-array>
 
     <string-array name="dramas">

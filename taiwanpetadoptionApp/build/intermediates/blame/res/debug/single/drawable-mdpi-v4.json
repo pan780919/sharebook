@@ -296,12 +296,12 @@
         "source": "/Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/drawable-mdpi-v4/abc_ic_menu_selectall_mtrl_alpha.png"
     },
     {
-        "merged": "/Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/res/merged/debug/drawable-mdpi-v4/exo_controls_pause.png",
-        "source": "/Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/exploded-aar/com.google.android.exoplayer/exoplayer/r2.0.3/res/drawable-mdpi-v4/exo_controls_pause.png"
-    },
-    {
         "merged": "/Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/res/merged/debug/drawable-mdpi-v4/ic_media_route_off_mono_dark.png",
         "source": "/Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/res/drawable-mdpi-v4/ic_media_route_off_mono_dark.png"
+    },
+    {
+        "merged": "/Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/res/merged/debug/drawable-mdpi-v4/exo_controls_pause.png",
+        "source": "/Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/exploded-aar/com.google.android.exoplayer/exoplayer/r2.0.3/res/drawable-mdpi-v4/exo_controls_pause.png"
     },
     {
         "merged": "/Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/res/merged/debug/drawable-mdpi-v4/quantum_ic_play_arrow_white_24.png",
@@ -352,12 +352,12 @@
         "source": "/Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/10.0.1/res/drawable-mdpi-v4/common_google_signin_btn_text_dark_pressed.9.png"
     },
     {
-        "merged": "/Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_ic_commit_search_api_mtrl_alpha.png",
-        "source": "/Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/drawable-mdpi-v4/abc_ic_commit_search_api_mtrl_alpha.png"
-    },
-    {
         "merged": "/Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/res/merged/debug/drawable-mdpi-v4/pm_ic_04.png",
         "source": "/Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/exploded-aar/com.adlocus/library/3.5.2/res/drawable-mdpi-v4/pm_ic_04.png"
+    },
+    {
+        "merged": "/Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_ic_commit_search_api_mtrl_alpha.png",
+        "source": "/Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/drawable-mdpi-v4/abc_ic_commit_search_api_mtrl_alpha.png"
     },
     {
         "merged": "/Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/res/merged/debug/drawable-mdpi-v4/notification_bg_normal_pressed.9.png",

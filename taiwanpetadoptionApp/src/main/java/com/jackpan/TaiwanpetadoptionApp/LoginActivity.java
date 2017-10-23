@@ -49,10 +49,11 @@ public class LoginActivity extends Activity implements View.OnClickListener {
     FirebaseAuth auth;
     FirebaseAuth.AuthStateListener authListener;
     private String userUID;
+    private FirebaseUser userpassword;
+
     private LoginButton loginButton;
     CallbackManager callbackManager;
     private ImageView fbImg;
-    private FirebaseUser userpassword;
 
     AccessTokenTracker accessTokenTracker ;
     ProfileTracker profileTracker;
@@ -195,7 +196,7 @@ public class LoginActivity extends Activity implements View.OnClickListener {
                 });
                 break;
             case  R.id.button2:
-                resetPassWord();
+//                resetPassWord();
                 break;
         }
 
@@ -302,33 +303,5 @@ public class LoginActivity extends Activity implements View.OnClickListener {
          Log.d(getClass().getSimpleName(), "profile currentProfile Tracking: " + "no");
 
  }
- private  void resetPassWord(){
-     userpassword = FirebaseAuth.getInstance().getCurrentUser();
-     final String email = userpassword.getEmail();
-     AuthCredential credential = EmailAuthProvider.getCredential(email,"123456");
-
-     userpassword.reauthenticate(credential).addOnCompleteListener(new OnCompleteListener<Void>() {
-         @Override
-         public void onComplete(@NonNull Task<Void> task) {
-             if(task.isSuccessful()){
-                 userpassword.updatePassword("654321").addOnCompleteListener(new OnCompleteListener<Void>() {
-                     @Override
-                     public void onComplete(@NonNull Task<Void> task) {
-                         if(!task.isSuccessful()){
-                             Log.d(TAG, "onComplete: "+"1111");
-                         }else {
-                             Log.d(TAG, "onComplete: "+"22222");
-                         }
-                     }
-                 });
-             }else {
-                 Log.d(TAG, "onComplete: "+"3333");
-
-             }
-         }
-     });
- }
-
-
 
 }

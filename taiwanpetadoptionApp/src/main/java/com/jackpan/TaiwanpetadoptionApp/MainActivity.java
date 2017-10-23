@@ -61,12 +61,17 @@ import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 
 import com.google.android.gms.ads.InterstitialAd;
+import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.GenericTypeIndicator;
+import com.google.firebase.database.Query;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
@@ -103,10 +108,12 @@ import com.google.gson.reflect.TypeToken;
 import com.igexin.sdk.PushManager;
 import com.jackpan.MyPushService;
 import com.jackpan.VideoViewActivity;
+import com.jackpan.libs.mfirebaselib.MfiebaselibsClass;
+import com.jackpan.libs.mfirebaselib.MfirebaeCallback;
 import com.jackpan.video.VideoMainActivity;
 import com.jackpan.Brokethenews.R;
 
-public class MainActivity extends Activity {
+public class MainActivity extends Activity implements MfirebaeCallback {
     private ListView petlist;
     private ArrayList<ResultData> mAllData = new ArrayList<ResultData>();
     private TextView numtext;
@@ -150,6 +157,10 @@ public class MainActivity extends Activity {
 //                             WindowManager.LayoutParams.FLAG_FULLSCREEN);
 ////        //設定隱藏APP標題
 //        requestWindowFeature(Window.FEATURE_NO_TITLE);
+
+
+        MfiebaselibsClass m = new MfiebaselibsClass(this,MainActivity.this);
+        m.getFirebaseDatabase("https://bookshare-99cb3.firebaseio.com/sharebook","data");
         auth = FirebaseAuth.getInstance();
         authListener = new FirebaseAuth.AuthStateListener() {
             @Override
@@ -187,9 +198,10 @@ public class MainActivity extends Activity {
         mInviteBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent();
-                i.setClass(MainActivity.this, ForIdeaAndShareActivity.class);
-                startActivity(i);
+
+//                Intent i = new Intent();
+//                i.setClass(MainActivity.this, LoginActivity.class);
+//                startActivity(i);
 //				uploadFromStream();
 //				upLoad();
 //				setFireBaseDB();
@@ -230,8 +242,6 @@ public class MainActivity extends Activity {
                 finish();
             }
         });
-//        configVersionCheck();
-
         boolean isbuy = MySharedPrefernces.getIsBuyed(this);
         if (isbuy) {
             Intent promotionIntent = new Intent(this, MainActivity.class);
@@ -239,48 +249,8 @@ public class MainActivity extends Activity {
         } else {
             PushAd.disablePush(MainActivity.this);
         }
-//		FirebaseMessaging.getInstance().subscribeToTopic("news");
-//
-//
-//		mDatabase = FirebaseDatabase.getInstance().getReference();
-//		final String userId = "123456";
-//		mDatabase.child("users").child(userId).addListenerForSingleValueEvent(
-//				new ValueEventListener() {
-//					@Override
-//					public void onDataChange(DataSnapshot dataSnapshot) {
-//						// Get user value
-//						User user = dataSnapshot.getValue(User.class);
-//
-//						// [START_EXCLUDE]
-//						if (user == null) {
-//							// User is null, error out
-//							Log.e("Jack", "User " + userId + " is unexpectedly null");
-//							Toast.makeText(MainActivity.this,
-//									"Error: could not fetch user.",
-//									Toast.LENGTH_SHORT).show();
-//						} else {
-//							// Write new post
-//							writeNewPost(userId, user.username, "name", "message");
-//						}
-//
-//						// Finish this Activity, back to the stream
-//						finish();
-//						// [END_EXCLUDE]
-//					}
-//
-//					@Override
-//					public void onCancelled(DatabaseError databaseError) {
-//						Log.d("Jack", "getUser:onCancelled", databaseError.toException());
-//					}
-//				});
 
-//		PushAd.test(this);
-
-        //		numtext= (TextView) findViewById(R.id.textView1);
-        //		numtext.setVisibility(View.GONE);
         petlist = (ListView) findViewById(R.id.listView1);
-        //		petadp= new ArrayAdapter<String>(this, android.R.layout.simple_expandable_list_item_1,android.R.id.text1);
-
         petlist.setOnItemClickListener(new OnItemClickListener() {
 
             @Override
@@ -294,37 +264,26 @@ public class MainActivity extends Activity {
 
             }
         });
+        petlist.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+            @Override
+            public boolean onItemLongClick(AdapterView<?> adapterView, View view, int i, long l) {
 
+
+//                userRef.removeValue();
+                return true;
+            }
+        });
 
         mAdapter = new MyAdapter(list);
 
         petlist.setAdapter(mAdapter);
-//
-//		LoadNetAsyncTask loadNetAsyncTask = new LoadNetAsyncTask();
-//		loadNetAsyncTask.execute(MyAdKey.jsondata);
-//		MobileAds.initialize(this, "ca-app-pub-7019441527375550~9403733429");
-//		adapterWrapper = new AdmobAdapterWrapper(this);
-//		String admobUnitId =getResources().getString(R.string.admob_unit_id);
-//
-//		adapterWrapper.setAdmobReleaseUnitId(admobUnitId);
-//		adapterWrapper.setAdapter(mAdapter);
-//		adapterWrapper.setLimitOfAds(3);
-//		adapterWrapper.setNoOfDataBetweenAds(3);
-//
-//		petlist.setAdapter(adapterWrapper);
-//		mAdapter.notifyDataSetChanged();
-//		initUpdateAdsTimer();
         items = getResources().getStringArray(R.array.film_genre);
 
-        setFireBase();
+//        setFireBase();
         mExpandableListData = ExpandableListDataSource.getData(this);
         mExpandableListTitle = new ArrayList(mExpandableListData.keySet());
-        Log.d(TAG, "onCreate: "+mExpandableListData.keySet());
 
         initdrawlatout();
-
-//		setAdMobAd();
-//        setFbAd();
     }
 
     @Override
@@ -335,35 +294,8 @@ public class MainActivity extends Activity {
     }
 
 
-    private void setFbAd() {
-        interstitial = new InterstitialAd(this);
-        interstitial.setAdUnitId(MyAdKey.AdmobinterstitialBannerId);
-        AdRequest adRequest = new AdRequest.Builder().build();
-        interstitial.loadAd(adRequest);
-//        RelativeLayout adViewContainer = (RelativeLayout) findViewById(R.id.adViewContainer);
-//
-//        adView = new com.facebook.ads.AdView(this, "583698071813390_587400221443175", AdSize.BANNER_320_50);
-//        adViewContainer.addView(adView);
-//        adView.loadAd();
-
-        RelativeLayout adViewContainer2 = (RelativeLayout) findViewById(R.id.adViewContainer2);
-        googleads = new com.facebook.ads.AdView(this, "583698071813390_587400221443175", AdSize.BANNER_320_50);
-        adViewContainer2.addView(googleads);
-        googleads.loadAd();
-
-    }
-
-    private void setAdMobAd() {
-        admobAd = (AdView) findViewById(R.id.adView);
-        AdRequest adRequest = new AdRequest.Builder().build();
-        admobAd.loadAd(adRequest);
-
-//        admobAd2 = (AdView) findViewById(R.id.adView);
-//        AdRequest adRequest2 = new AdRequest.Builder().build();
-//        admobAd2.loadAd(adRequest2);
 
 
-    }
 
     private void writeNewPost(String userId, String username, String title, String body) {
         // Create new post at /user-posts/$userid/$postid and at
@@ -379,184 +311,20 @@ public class MainActivity extends Activity {
         mDatabase.updateChildren(childUpdates);
     }
 
-    private class LoadNetAsyncTask extends AsyncTask<String, Void, ArrayList<ResultData>> {
-
-        @Override
-        protected void onPostExecute(final ArrayList<ResultData> result) {
-            super.onPostExecute(result);
-            progressDialog.dismiss();
-            if (result == null) {
-                new AlertDialog.Builder(MainActivity.this)
-                        .setTitle("出錯囉!!")
-                        .setMessage("很抱歉，系統暫時無法提供服務。請您稍後再試～")
-                        .setPositiveButton("確定", new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
-                                MainActivity.this.finish();
-//						interstitial.show();
-                            }
-                        }).show();
-                return;
-
-            }
-
-            final ArrayList<String> kindStrings = new ArrayList<String>(mCity.keySet());
+    @Override
+    public void getDatabaseData(Object o) {
+        Gson gson = new Gson();
+        String jsonInString = gson.toJson(o);
+        GayPlace g = gson.fromJson(jsonInString,GayPlace.class);
+        list.add(0, g);
 
 
-            String id = kindStrings.toString().substring(0, kindStrings.toString().length());
-
-            kindStrings.add(0, "全部");
-
-            ArrayAdapter<String> animalKindSpinner = new
-                    ArrayAdapter<String>(MainActivity.this, R.layout.myspinnerlayout, kindStrings);
-            mAdapter2 = new ArrayAdapter<String>(MainActivity.this, R.layout.myspinnerlayout, new ArrayList<String>());
-
-
-            animalKindSpinner.setDropDownViewResource(R.layout.myspinnerlayout);
-            mAdapter2.setDropDownViewResource(R.layout.myspinnerlayout);
-            mSpinner.setAdapter(animalKindSpinner);
-            mSpinner2.setAdapter(mAdapter2);
-
-
-            mSpinner.setOnItemSelectedListener(new
-                                                       AdapterView.OnItemSelectedListener() {
-                                                           @Override
-                                                           public void onItemSelected(AdapterView<?> parent, View view, int
-                                                                   position, long id) {
-//					if (position == 0) {
-//						mAdapter.updateData(mAllData);
-//						mSpinner2.setVisibility(View.GONE);
-//					} else {
-//						selectSpinner(kindStrings.get(position));
-//						mSpinner2.setVisibility(View.VISIBLE);
-//					}
-                                                           }
-
-                                                           @Override
-                                                           public void onNothingSelected(AdapterView<?> parent) {
-//					mAdapter.updateData(mAllData);
-                                                           }
-                                                       });
-            mSpinner2.setOnItemSelectedListener(new
-                                                        AdapterView.OnItemSelectedListener() {
-                                                            @Override
-                                                            public void onItemSelected(AdapterView<?> parent, View view, int
-                                                                    position, long id) {
-
-                                                                String city = (String) mSpinner.getSelectedItem();
-                                                                String township = (String) mSpinner2.getSelectedItem();
-
-                                                                selectSpinner2(city + "," + township);
-                                                            }
-
-                                                            @Override
-                                                            public void onNothingSelected(AdapterView<?> parent) {
-//					mAdapter2.updateData(mAllData);
-                                                            }
-                                                        });
-
-            mAllData = result;
-//			mAdapter.updateData(mAllData);
-
-        }
-
-        @Override
-        protected ArrayList<ResultData> doInBackground(String... params) {
-            BufferedReader br = null;
-            StringBuilder sb = new StringBuilder();
-            try {
-                URL url = new URL(params[0]);
-                HttpURLConnection httpUrlCon =
-                        (HttpURLConnection) url.openConnection();
-                httpUrlCon.setConnectTimeout(20000);//連線
-                httpUrlCon.setReadTimeout(20000);//讀取
-
-                InputStream inputStream = httpUrlCon.getInputStream();
-                InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
-                br = new BufferedReader(inputStreamReader);
-                String value = null;
-
-                while ((value = br.readLine()) != null) {
-                    sb.append(value);
-                }
-                String result = sb.toString();
-
-                ArrayList<ResultData> allData = new ArrayList<ResultData>();
-                mKind = new HashMap<String, ArrayList<ResultData>>();//city
-                mCity = new HashMap<String, ArrayList<String>>();
-                try {
-
-//					JSONArray jsonarry = new JSONArray(result);
-                    JSONObject o = new JSONObject(result);
-                    JSONObject resultObj = o.getJSONObject("result");
-                    JSONArray jsonarry = resultObj.getJSONArray("results");
-                    for (int i = 0; i < jsonarry.length(); i++) {
-                        JSONObject jsonObject = jsonarry.getJSONObject(i);
-                        Gson gson = new Gson();
-                        ResultData data = gson.fromJson(jsonObject.toString(), ResultData.class);
-                        String key = data.A_Location + "," + data.A_Name_Ch;
-                        ArrayList<ResultData> animalKind = mKind.get(key);
-                        if (animalKind == null) {
-                            animalKind = new ArrayList<ResultData>();
-
-                        }
-                        mKind.put(key, animalKind);
-
-                        animalKind.add(data);
-
-
-                        ArrayList<String> towmShip = mCity.get(data.A_Location);
-                        if (towmShip == null) {
-                            towmShip = new ArrayList<String>();
-
-                        }
-                        mCity.put(data.A_Location, towmShip);
-                        if (!towmShip.contains(data.A_Name_Ch)) towmShip.add(data.A_Name_Ch);
-
-//						data.startTime = MyApi.getTime(data.animal_opendate);
-
-                        allData.add(data);
-
-                    }
-//					Collections.sort(allData);
-
-
-                } catch (JSONException e) {
-                }
-
-                return allData;
-            } catch (MalformedURLException e) {
-            } catch (IOException e) {
-            } finally {
-
-                try {
-                    if (br != null) br.close();
-                } catch (IOException e) {
-                }
-            }
-
-            return null;
-
-        }
-
+        mAdapter.notifyDataSetChanged();
+        progressDialog.dismiss();
 
     }
 
-    public void selectSpinner(String kinds) {
-        ArrayList<String> kindList = mCity.get(kinds);
-        mAdapter2.clear();
 
-        mAdapter2.addAll(kindList);
-
-    }
-
-    public void selectSpinner2(String kinds) {
-
-        ArrayList<ResultData> kindList = mKind.get(kinds);
-
-//		mAdapter.updateData(kindList);
-
-    }
 
     public class MyAdapter extends BaseAdapter {
         //		private ArrayList<ResultData> mDatas;
@@ -690,148 +458,7 @@ public class MainActivity extends Activity {
     }
 
 
-    private void configVersionCheck() {
 
-//        if (!GtApi.checkNetwork(IndexActivity.this)) return;
-
-        VersionChecker.checkOnce(MainActivity.this, new VersionChecker.DoneAdapter() {
-
-            @Override
-            public void onHasNewVersion() {
-                new AlertDialog.Builder(MainActivity.this)
-                        .setTitle("已有最新版本!")
-                        .setMessage("本次更新內容：\n\n" +
-                                "修正 觀看人數 按讚 留言板問題！！")
-                        .setNegativeButton("確定", new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
-                                startActivity(VersionChecker.openMartketIntent());
-                                dialog.dismiss();
-                            }
-                        })
-                        .show();
-            }
-
-
-        });
-
-    }
-
-    private void setFireBase() {
-        Firebase.setAndroidContext(this);
-        String url = "https://bookshare-99cb3.firebaseio.com/sharebook";
-
-        Firebase mFirebaseRef = new Firebase(url);
-
-
-//		if(Firebase.getDefaultConfig().isPersistenceEnabled()==false)mFirebaseRef.getDefaultConfig().setPersistenceEnabled(true);
-        mFirebaseRef.orderByChild("date").addChildEventListener(new com.firebase.client.ChildEventListener() {
-            @Override
-            public void onChildAdded(com.firebase.client.DataSnapshot dataSnapshot, String s) {
-//                Log.d(TAG, "onChildAdded: " + dataSnapshot.getValue().toString());
-//				Log.d(TAG, "onChildAdded: "+ (String) dataSnapshot.child("tittle").getValue());
-//				Log.d(TAG, "onChildAdded: "+ (Long) dataSnapshot.child("message").getValue());
-//				TaipeiZoo taipeiZoo = new TaipeiZoo();
-//				taipeiZoo.setName((String)dataSnapshot.child("name").getValue());
-//                for (DataSnapshot alert: dataSnapshot.getChildren()) {
-//                    Log.d(TAG, "onChildAdded: "+alert.getValue().toString());
-//                    list.add(0,gayPlace);
-////                    for (DataSnapshot recipient: alert.child("formsg").getChildren()) {
-////                        Log.d(TAG, "onChildAdded: "+recipient.getValue().toString());
-////                    }
-//
-                GayPlace gayPlace = dataSnapshot.getValue(GayPlace.class);
-                list.add(0, gayPlace);
-
-
-                mAdapter.notifyDataSetChanged();
-                progressDialog.dismiss();
-
-
-            }
-
-            @Override
-            public void onChildChanged(com.firebase.client.DataSnapshot dataSnapshot, String s) {
-                Log.d(TAG, "onChildChanged: " + "onChildChanged");
-
-            }
-
-            @Override
-            public void onChildRemoved(com.firebase.client.DataSnapshot dataSnapshot) {
-
-            }
-
-            @Override
-            public void onChildMoved(com.firebase.client.DataSnapshot dataSnapshot, String s) {
-
-            }
-
-            @Override
-            public void onCancelled(FirebaseError firebaseError) {
-
-            }
-
-        });
-
-
-    }
-
-    private void setFireBaseDB(String uri) {
-        String url = "https://sevenpeoplebook.firebaseio.com/GayPlace";
-        Firebase mFirebaseRef = new Firebase(url);
-//		Firebase userRef = mFirebaseRef.child("user");
-//		Map newUserData = new HashMap();
-//		newUserData.put("age", 30);
-//		newUserData.put("city", "Provo, UT");
-        Firebase newPostRef = mFirebaseRef.child("posts").push();
-        String newPostKey = newPostRef.getKey();
-        Log.d(TAG, "setFireBaseDB: " + newPostKey);
-        Map newPost = new HashMap();
-        newPost.put("tittle", "hello");
-        newPost.put("message", 21);
-        newPost.put("pic", uri);
-        Map updatedUserData = new HashMap();
-//		updatedUserData.put("3/posts/" + newPostKey, true);
-        updatedUserData.put(newPostKey, newPost);
-        mFirebaseRef.updateChildren(updatedUserData, new Firebase.CompletionListener() {
-            @Override
-            public void onComplete(FirebaseError firebaseError, Firebase firebase) {
-                if (firebaseError != null) {
-                    Log.d(TAG, "onComplete: " + "Error updating data: " + firebaseError.getMessage());
-                }
-            }
-        });
-    }
-
-    private void upLoad() {
-
-//				sharePicWithUri(uri);
-
-        FirebaseStorage storage = FirebaseStorage.getInstance();
-        StorageReference storageRef = storage.getReferenceFromUrl("gs://sevenpeoplebook.appspot.com");
-        StorageReference mountainsRef = storageRef.child("file.jpg");
-        // Get the data from an ImageView as bytes
-        imageView.setDrawingCacheEnabled(true);
-        imageView.buildDrawingCache();
-        Bitmap bitmap = imageView.getDrawingCache();
-        ByteArrayOutputStream baos = new ByteArrayOutputStream();
-        bitmap.compress(Bitmap.CompressFormat.JPEG, 100, baos);
-        byte[] data = baos.toByteArray();
-
-        UploadTask uploadTask = mountainsRef.putBytes(data);
-        uploadTask.addOnFailureListener(new OnFailureListener() {
-            @Override
-            public void onFailure(@NonNull Exception exception) {
-                // Handle unsuccessful uploads
-            }
-        }).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
-            @Override
-            public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-                // taskSnapshot.getMetadata() contains file metadata such as size, content-type, and download URL.
-                Uri downloadUrl = taskSnapshot.getDownloadUrl();
-            }
-        });
-    }
 
 
     //縮放照片
@@ -910,7 +537,6 @@ public class MainActivity extends Activity {
                 Log.d(TAG, "groupPosition: "+groupPosition);
                 Log.d(TAG, "childPosition: "+childPosition);
                 Log.d(TAG, "id: "+id);
-
                 drawerLayout.closeDrawer(GravityCompat.START);
                 return false;
             }
