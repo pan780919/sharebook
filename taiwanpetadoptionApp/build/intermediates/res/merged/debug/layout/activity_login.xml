@@ -84,7 +84,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="忘記密碼"
-                android:id="@+id/buttonˇ"
+                android:id="@+id/button3"
                 android:layout_gravity="center_horizontal"
                 />
         </LinearLayout>

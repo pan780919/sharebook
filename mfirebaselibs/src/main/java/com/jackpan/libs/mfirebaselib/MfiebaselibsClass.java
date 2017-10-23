@@ -455,6 +455,9 @@ public class MfiebaselibsClass {
             }
         });
     }
+    /**
+     * 每次建構完 都要在 onstart 呼叫
+     */
 
     public void setAuthListener() {
         if (authListener != null) {
@@ -463,7 +466,9 @@ public class MfiebaselibsClass {
 
 
     }
-
+    /**
+     * 每次建構完 都要在 onstop 呼叫
+     */
     public void removeAuthListener() {
         if (authListener != null) {
             auth.removeAuthStateListener(authListener);

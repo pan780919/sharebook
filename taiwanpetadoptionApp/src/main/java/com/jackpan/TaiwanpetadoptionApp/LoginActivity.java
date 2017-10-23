@@ -10,6 +10,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.Toast;
+
 import com.facebook.AccessToken;
 import com.facebook.AccessTokenTracker;
 import com.facebook.CallbackManager;
@@ -32,9 +34,12 @@ import com.google.firebase.auth.FirebaseUser;
 
 import java.util.Arrays;
 import java.util.List;
-import com.jackpan.Brokethenews.R;
 
-public class LoginActivity extends Activity implements View.OnClickListener {
+import com.jackpan.Brokethenews.R;
+import com.jackpan.libs.mfirebaselib.MfiebaselibsClass;
+import com.jackpan.libs.mfirebaselib.MfirebaeCallback;
+
+public class LoginActivity extends Activity implements View.OnClickListener, MfirebaeCallback {
     FirebaseAuth auth;
     FirebaseAuth.AuthStateListener authListener;
     private String userUID;
@@ -44,55 +49,35 @@ public class LoginActivity extends Activity implements View.OnClickListener {
     CallbackManager callbackManager;
     private ImageView fbImg;
 
-    AccessTokenTracker accessTokenTracker ;
+    AccessTokenTracker accessTokenTracker;
     ProfileTracker profileTracker;
     private static final String TAG = "LoginActivity";
-    private  String userEmail = "";
+    private String userEmail = "";
+    MfiebaselibsClass mfiebaselibsClass;
+    String email = "";
+    String password = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         FacebookSdk.sdkInitialize(getApplicationContext());
         callbackManager = CallbackManager.Factory.create();
+        mfiebaselibsClass = new MfiebaselibsClass(this, LoginActivity.this);
+        mfiebaselibsClass.userLoginCheck();
         setContentView(R.layout.activity_login);
         findViewById(R.id.button).setOnClickListener(this);
         findViewById(R.id.button2).setOnClickListener(this);
-        fbImg  =(ImageView )findViewById(R.id.fdimg);
+        findViewById(R.id.button3).setOnClickListener(this);
+        fbImg = (ImageView) findViewById(R.id.fdimg);
         fbLogin();
-        auth = FirebaseAuth.getInstance();
-        authListener = new FirebaseAuth.AuthStateListener() {
-            @Override
-            public void onAuthStateChanged(
-                    @NonNull FirebaseAuth firebaseAuth) {
-                FirebaseUser user = firebaseAuth.getCurrentUser();
-                if (user != null) {
-                    Log.d(TAG, "登入:" +
-                            user.getUid());
-                    userUID = user.getUid();
-                    Log.d(TAG, "onAuthStateChanged: "+ firebaseAuth.getCurrentUser().getPhotoUrl());
-                    Log.d(TAG, "onAuthStateChanged: "+ firebaseAuth.getCurrentUser().getDisplayName());
-                    Log.d(TAG, "onAuthStateChanged: "+ firebaseAuth.getCurrentUser().getEmail());
-                    userEmail = firebaseAuth.getCurrentUser().getEmail();
-                    MySharedPrefernces.saveUserId(LoginActivity.this,userUID);
-                    startActivity(new Intent(LoginActivity.this,MainActivity.class));
-                    LoginActivity.this.finish();
-                } else {
-                    Log.d(TAG,"已登出");
-                    MySharedPrefernces.saveUserId(LoginActivity.this,"");
-                    LoginManager.getInstance().logOut();
-                    fbImg.setImageBitmap(null);
 
-                }
-            }
-        };
 
     }
 
 
-
     private void register(final String email, final String password) {
         String account = MySharedPrefernces.getUserId(this);
-        if(!account.equals("")){
+        if (!account.equals("")) {
             new AlertDialog.Builder(LoginActivity.this)
                     .setTitle("登入問題")
                     .setMessage("密碼錯誤?")
@@ -103,7 +88,7 @@ public class LoginActivity extends Activity implements View.OnClickListener {
                         }
                     })
                     .show();
-        }else {
+        } else {
             new AlertDialog.Builder(LoginActivity.this)
                     .setTitle("登入問題")
                     .setMessage("無此帳號，是否要以此帳號與密碼註冊?")
@@ -117,7 +102,6 @@ public class LoginActivity extends Activity implements View.OnClickListener {
                     .setNeutralButton("取消", null)
                     .show();
         }
-
 
 
     }
@@ -136,7 +120,7 @@ public class LoginActivity extends Activity implements View.OnClickListener {
                                         .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                                             @Override
                                             public void onClick(DialogInterface dialog, int which) {
-                                                startActivity(new Intent(LoginActivity.this,MainActivity.class));
+                                                startActivity(new Intent(LoginActivity.this, MainActivity.class));
                                                 LoginActivity.this.finish();
                                                 dialog.dismiss();
 
@@ -150,60 +134,106 @@ public class LoginActivity extends Activity implements View.OnClickListener {
     @Override
     protected void onStart() {
         super.onStart();
-        auth.addAuthStateListener(authListener);
+        mfiebaselibsClass.setAuthListener();
+
     }
 
     @Override
     protected void onStop() {
         super.onStop();
-        if (authListener != null){
-            auth.removeAuthStateListener(authListener);
-        }
+        mfiebaselibsClass.removeAuthListener();
     }
+
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.button:
-                final String email = ((EditText) findViewById(R.id.email))
+                email = ((EditText) findViewById(R.id.email))
                         .getText().toString();
-                final String password = ((EditText) findViewById(R.id.password))
+                password = ((EditText) findViewById(R.id.password))
                         .getText().toString();
                 Log.d("AUTH", email + "/" + password);
-                auth.signInWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        if (!task.isSuccessful()) {
-                            Log.d("onComplete", "登入失敗");
-                            register(email, password);
-                        }
-                    }
-                }).addOnSuccessListener(new OnSuccessListener<AuthResult>() {
-                    @Override
-                    public void onSuccess(AuthResult authResult) {
-                        Log.d(TAG, "onSuccess: "+authResult.getUser());
-                    }
-                });
+                mfiebaselibsClass.userLogin(email, password);
                 break;
-            case  R.id.button2:
-//                resetPassWord();
+            case R.id.button2:
+                final EditText passwordeditText = new EditText(this);
+                new AlertDialog.Builder(this)
+                        .setView(passwordeditText)
+                        .setTitle("重設密碼")
+                        .setMessage("請輸入當初設定舊密碼")
+                        .setPositiveButton("送出", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+                                final String oldPassword = passwordeditText.getText().toString().trim();
+                                if (oldPassword.equals("")) {
+                                    Toast.makeText(LoginActivity.this, "請勿輸入空白", Toast.LENGTH_SHORT).show();
+                                    return;
+                                }
+                                final EditText passwordeditText = new EditText(LoginActivity.this);
+                                new AlertDialog.Builder(LoginActivity.this)
+                                        .setView(passwordeditText)
+                                        .setTitle("重設密碼")
+                                        .setMessage("請輸入新密碼")
+                                        .setPositiveButton("送出", new DialogInterface.OnClickListener() {
+                                            @Override
+                                            public void onClick(DialogInterface dialogInterface, int i) {
+                                                String newPassword = passwordeditText.getText().toString().trim();
+                                                if (newPassword.equals("")) {
+                                                    Toast.makeText(LoginActivity.this, "請勿輸入空白", Toast.LENGTH_SHORT).show();
+                                                    return;
+                                                }
+                                                Log.d(TAG, "onClick: " + oldPassword);
+                                                Log.d(TAG, "onClick: " + newPassword);
+                                                mfiebaselibsClass.resetPassWord(oldPassword,newPassword);
+                                                dialogInterface.dismiss();
+                                            }
+                                        }).show();
+                                dialogInterface.dismiss();
+                            }
+                        }).show();
+
+
+                break;
+            case R.id.button3:
+                final EditText editText = new EditText(this);
+                new AlertDialog.Builder(this)
+                        .setView(editText)
+                        .setTitle("忘記密碼")
+                        .setMessage("請輸入當初設定的email帳號")
+                        .setPositiveButton("送出", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+                                String emailAddress = editText.getText().toString().trim();
+                                if (emailAddress.equals("")) {
+                                    Toast.makeText(LoginActivity.this, "請勿輸入空白", Toast.LENGTH_SHORT).show();
+                                    return;
+                                }
+                                mfiebaselibsClass.sendPasswordResetEmail(emailAddress);
+                                dialogInterface.dismiss();
+                            }
+                        }).show();
+
+
                 break;
         }
 
     }
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         callbackManager.onActivityResult(requestCode, resultCode, data);
     }
-    private  void fbLogin(){
-        List<String> PERMISSIONS_PUBLISH = Arrays.asList("public_profile", "email","user_friends");
+
+    private void fbLogin() {
+        List<String> PERMISSIONS_PUBLISH = Arrays.asList("public_profile", "email", "user_friends");
 //        fbName  =(TextView ) findViewById(R.id.fbname);
         loginButton = (LoginButton) findViewById(R.id.fb_btn);
         loginButton.setReadPermissions(PERMISSIONS_PUBLISH);
         loginButton.registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
             @Override
             public void onSuccess(LoginResult loginResult) {
-                Log.d(TAG, "onSuccess: "+loginResult.getAccessToken());
+                Log.d(TAG, "onSuccess: " + loginResult.getAccessToken());
                 handleFacebookAccessToken(loginResult.getAccessToken());
                 setUsetProfile();
             }
@@ -228,9 +258,8 @@ public class LoginActivity extends Activity implements View.OnClickListener {
 //		};
 
 
-
-
     }
+
     private void handleFacebookAccessToken(AccessToken token) {
 
         // [START_EXCLUDE silent]
@@ -257,40 +286,139 @@ public class LoginActivity extends Activity implements View.OnClickListener {
                     }
                 });
     }
- private void setUsetProfile(){
-     profileTracker = new ProfileTracker() {
-         @Override
-         protected void onCurrentProfileChanged(Profile oldProfile, Profile currentProfile) {
-             if(oldProfile!=null){
-                 //登出後
+
+    private void setUsetProfile() {
+        profileTracker = new ProfileTracker() {
+            @Override
+            protected void onCurrentProfileChanged(Profile oldProfile, Profile currentProfile) {
+                if (oldProfile != null) {
+                    //登出後
 //                    fbName.setText("");
-                 fbImg.setImageBitmap(null);
+                    fbImg.setImageBitmap(null);
 
-             }
+                }
 
-             if(currentProfile!=null){
-                 //登入
+                if (currentProfile != null) {
+                    //登入
 //                    fbName.setText(currentProfile.getName());
-                 MyApi.loadImage(String.valueOf(currentProfile.getProfilePictureUri(150,150)),fbImg,LoginActivity.this);
+                    MyApi.loadImage(String.valueOf(currentProfile.getProfilePictureUri(150, 150)), fbImg, LoginActivity.this);
 
 
-             }
+                }
 
-         }
-     };
-     profileTracker.startTracking();
-     if(profileTracker.isTracking()){
-         Log.d(getClass().getSimpleName(), "profile currentProfile Tracking: " + "yes");
-         if(Profile.getCurrentProfile()==null)return;
+            }
+        };
+        profileTracker.startTracking();
+        if (profileTracker.isTracking()) {
+            Log.d(getClass().getSimpleName(), "profile currentProfile Tracking: " + "yes");
+            if (Profile.getCurrentProfile() == null) return;
 
 //            if(Profile.getCurrentProfile().getName()!=null)	fbName.setText(Profile.getCurrentProfile().getName());
-         if(Profile.getCurrentProfile().getProfilePictureUri(150, 150)!=null)	MyApi.loadImage(String.valueOf(Profile.getCurrentProfile().getProfilePictureUri(150, 150)),fbImg, LoginActivity.this);
-     }
+            if (Profile.getCurrentProfile().getProfilePictureUri(150, 150) != null)
+                MyApi.loadImage(String.valueOf(Profile.getCurrentProfile().getProfilePictureUri(150, 150)), fbImg, LoginActivity.this);
+        } else
+            Log.d(getClass().getSimpleName(), "profile currentProfile Tracking: " + "no");
 
+    }
 
-     else
-         Log.d(getClass().getSimpleName(), "profile currentProfile Tracking: " + "no");
+    @Override
+    public void getDatabaseData(Object o) {
 
- }
+    }
 
+    @Override
+    public void getDeleteState(boolean b, String s) {
+
+    }
+
+    @Override
+    public void createUserState(boolean b) {
+        if (b) {
+            Toast.makeText(this, "註冊成功,將跳到商品列表", Toast.LENGTH_SHORT).show();
+            startActivity(new Intent(LoginActivity.this, MainActivity.class));
+            LoginActivity.this.finish();
+        } else {
+
+        }
+
+    }
+
+    @Override
+    public void useLognState(boolean b) {
+        if (b) {
+            Toast.makeText(this, "登入成功,將跳到商品列表", Toast.LENGTH_SHORT).show();
+
+            startActivity(new Intent(LoginActivity.this, MainActivity.class));
+            LoginActivity.this.finish();
+        } else {
+            new AlertDialog.Builder(LoginActivity.this)
+                    .setTitle("登入問題")
+                    .setMessage("無此帳號，是否要以此帳號與密碼註冊?")
+                    .setPositiveButton("註冊",
+                            new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialog, int which) {
+                                    mfiebaselibsClass.createUser(email, password);
+                                }
+                            })
+                    .setNeutralButton("取消", null)
+                    .show();
+
+        }
+
+    }
+
+    @Override
+    public void getuseLoginId(String s) {
+        if (!s.equals("")) {
+            userUID = s;
+            MySharedPrefernces.saveUserId(LoginActivity.this, userUID);
+
+        } else {
+            userUID = "";
+            MySharedPrefernces.saveUserId(LoginActivity.this, "");
+            LoginManager.getInstance().logOut();
+            fbImg.setImageBitmap(null);
+
+        }
+
+    }
+
+    @Override
+    public void resetPassWordState(boolean b) {
+        if(b){
+            Toast.makeText(this, "成功修改密碼！！", Toast.LENGTH_SHORT).show();
+
+        }else {
+            Toast.makeText(this, "發生錯誤,查無此帳號", Toast.LENGTH_SHORT).show();
+        }
+
+    }
+
+    @Override
+    public void getFireBaseDBState(boolean b, String s) {
+
+    }
+
+    @Override
+    public void getFirebaseStorageState(boolean b) {
+
+    }
+
+    @Override
+    public void getFirebaseStorageType(String s, String s1) {
+
+    }
+
+    @Override
+    public void getsSndPasswordResetEmailState(boolean b) {
+        if (b) {
+            Toast.makeText(this, "已將重設密碼信寄至信箱！！", Toast.LENGTH_SHORT).show();
+
+        } else {
+            Toast.makeText(this, "發生錯誤！請檢查email是否註冊", Toast.LENGTH_SHORT).show();
+
+        }
+
+    }
 }

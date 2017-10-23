@@ -70,5 +70,6 @@ dependencies {
     compile 'com.google.firebase:firebase-core:10.0.1'
     compile 'com.google.firebase:firebase-messaging:10.0.1'
     compile files('libs/mFirebaseLibs.jar')
+    compile files('libs/qumi_banner_2.8.5.jar')
 }
 apply plugin: 'com.google.gms.google-services'
