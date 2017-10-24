@@ -9,6 +9,7 @@ import android.os.Build;
 import android.provider.DocumentsContract;
 import android.provider.MediaStore;
 import android.support.annotation.NonNull;
+import android.util.Log;
 import android.widget.Toast;
 
 import com.firebase.client.DataSnapshot;
@@ -26,6 +27,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.EmailAuthProvider;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.auth.UserProfileChangeRequest;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.OnProgressListener;
 import com.google.firebase.storage.StorageMetadata;
@@ -258,12 +260,12 @@ public class MfiebaselibsClass {
             }
         });
     }
+
     /**
      * url 路徑
      * pathString 節點id 預設 是 id+data
-     *
+     * <p>
      * memberid 會員id 用來檢查 是否自己發布
-     *
      */
 
     public void userDeleteData(String url, String pathString, String memberid) {
@@ -492,6 +494,154 @@ public class MfiebaselibsClass {
         if (authListener != null) {
             auth.removeAuthStateListener(authListener);
         }
+
+    }
+
+    /**
+     * 更新會員名稱
+     */
+    public void updateUserName(String Name) {
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+
+        UserProfileChangeRequest profileUpdates = new UserProfileChangeRequest.Builder()
+                .setDisplayName(Name)
+                .build();
+
+        user.updateProfile(profileUpdates)
+                .addOnCompleteListener(new OnCompleteListener<Void>() {
+                    @Override
+                    public void onComplete(@NonNull Task<Void> task) {
+                        if (task.isSuccessful()) {
+                            callback.getUpdateUserName(true);
+                            Toast.makeText(mContext, "更新成功,將於下次登入後更新!!", Toast.LENGTH_SHORT).show();
+
+                        } else {
+                            callback.getUpdateUserName(false);
+                            Toast.makeText(mContext, "更新失敗", Toast.LENGTH_SHORT).show();
+
+                        }
+
+                    }
+                });
+    }
+
+    /**
+     * 更新會員照片
+     * datauri 照片路徑
+     * url storge url
+     *
+     */
+    @TargetApi(Build.VERSION_CODES.KITKAT)
+
+    private void updateUserPic(Uri datauri, String url) {
+        final boolean after44 = Build.VERSION.SDK_INT >= 19;
+        String filePath = "";
+
+        if (after44) {
+            String wholeID = DocumentsContract.getDocumentId(datauri);
+
+            String id = wholeID.split(":")[1];
+
+            String[] column = {MediaStore.Images.Media.DATA};
+
+            String sel = MediaStore.Images.Media._ID + "=?";
+
+            Cursor cursor = mContext.getContentResolver().
+                    query(MediaStore.Images.Media.EXTERNAL_CONTENT_URI,
+                            column, sel, new String[]{id}, null);
+
+
+            int columnIndex = cursor.getColumnIndex(column[0]);
+
+            if (cursor.moveToFirst()) {
+                filePath = cursor.getString(columnIndex);
+
+            }
+
+            cursor.close();
+        } else {
+
+            try {
+                String[] filePathColumn = {MediaStore.Images.Media.DATA};
+
+                Cursor cursor = mContext.getContentResolver().query(datauri,
+                        filePathColumn, null, null, null);
+                cursor.moveToFirst();
+
+                int columnIndex = cursor.getColumnIndex(filePathColumn[0]);
+                filePath = cursor.getString(columnIndex);
+                cursor.close();
+            } catch (Exception e) {
+                // TODO: handle exception
+                e.printStackTrace();
+            }
+
+        }
+        FirebaseStorage storage = FirebaseStorage.getInstance();
+        StorageReference storageRef = storage.getReferenceFromUrl(url);
+
+        StorageReference mountainsRef = storageRef.child(filePath);
+
+
+        InputStream stream = null;
+        try {
+            stream = new FileInputStream(new File(filePath));
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        UploadTask mUploadTask = mountainsRef.putStream(stream);
+        progressDialog = new ProgressDialog(mContext);
+
+
+        mUploadTask.addOnFailureListener(new OnFailureListener() {
+
+            @Override
+            public void onFailure(@NonNull Exception exception) {
+                progressDialog.dismiss();
+                Toast.makeText(mContext, "上傳失敗", Toast.LENGTH_SHORT).show();
+
+            }
+        }).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
+            @Override
+            public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
+                FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+
+                UserProfileChangeRequest profileUpdates = new UserProfileChangeRequest.Builder()
+
+                        .setPhotoUri(Uri.parse(taskSnapshot.getDownloadUrl().toString()))
+                        .build();
+
+                user.updateProfile(profileUpdates)
+                        .addOnCompleteListener(new OnCompleteListener<Void>() {
+                            @Override
+                            public void onComplete(@NonNull Task<Void> task) {
+                                if (task.isSuccessful()) {
+                                    Toast.makeText(mContext, "更新照片成功,將於下次登入後更新!!", Toast.LENGTH_SHORT).show();
+                                    progressDialog.dismiss();
+                                } else {
+                                    Toast.makeText(mContext, "更新照片失敗", Toast.LENGTH_SHORT).show();
+                                    progressDialog.dismiss();
+                                }
+
+                            }
+                        });
+
+            }
+
+        }).addOnProgressListener(new OnProgressListener<UploadTask.TaskSnapshot>() {
+            @Override
+            public void onProgress(UploadTask.TaskSnapshot taskSnapshot) {
+                //calculating progress percentage
+                int progress = (int) ((100 * taskSnapshot.getBytesTransferred()) / taskSnapshot.getTotalByteCount());
+                progressDialog.setTitle("提示訊息");
+                progressDialog.setCancelable(false);
+                progressDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
+                progressDialog.setMessage("上傳中！！");
+                progressDialog.show();
+            }
+
+        });
+
 
     }
 }
