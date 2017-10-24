@@ -1,11 +1,15 @@
 package com.jackpan.TaiwanpetadoptionApp;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.PixelFormat;
 import android.os.Bundle;
 import android.app.Activity;
 import android.util.DisplayMetrics;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -23,7 +27,7 @@ public class UserActivity extends Activity implements MfirebaeCallback {
     boolean mUserLvBoolean;
     private static final String TAG = "UserActivity";
     private DisplayMetrics mPhone;
-    private Button mUserLogoutBtn;
+    private Button mUserLogoutBtn,mResetPassword;
     MfiebaselibsClass mfiebaselibsClass;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +50,7 @@ public class UserActivity extends Activity implements MfirebaeCallback {
         mUserMailStr = MySharedPrefernces.getUserMail(mActivty);
         mUserLvBoolean = MySharedPrefernces.getIsBuyed(mActivty);
 
+
     }
 
 
@@ -63,6 +68,49 @@ public class UserActivity extends Activity implements MfirebaeCallback {
             @Override
             public void onClick(View view) {
                 mfiebaselibsClass.userLogout(mUserIdStr);
+            }
+        });
+        mResetPassword = (Button) findViewById(R.id.button2);
+        mResetPassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                final EditText passwordeditText = new EditText(UserActivity.this);
+                new AlertDialog.Builder(UserActivity.this)
+                        .setView(passwordeditText)
+                        .setTitle("重設密碼")
+                        .setMessage("請輸入當初設定舊密碼")
+                        .setPositiveButton("送出", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+                                final String oldPassword = passwordeditText.getText().toString().trim();
+                                if (oldPassword.equals("")) {
+                                    Toast.makeText(UserActivity.this, "請勿輸入空白", Toast.LENGTH_SHORT).show();
+                                    return;
+                                }
+                                final EditText passwordeditText = new EditText(UserActivity.this);
+                                new AlertDialog.Builder(UserActivity.this)
+                                        .setView(passwordeditText)
+                                        .setTitle("重設密碼")
+                                        .setMessage("請輸入新密碼")
+                                        .setPositiveButton("送出", new DialogInterface.OnClickListener() {
+                                            @Override
+                                            public void onClick(DialogInterface dialogInterface, int i) {
+                                                String newPassword = passwordeditText.getText().toString().trim();
+                                                if (newPassword.equals("")) {
+                                                    Toast.makeText(UserActivity.this, "請勿輸入空白", Toast.LENGTH_SHORT).show();
+                                                    return;
+                                                }
+                                                Log.d(TAG, "onClick: " + oldPassword);
+                                                Log.d(TAG, "onClick: " + newPassword);
+                                                mfiebaselibsClass.resetPassWord(oldPassword,newPassword);
+                                                dialogInterface.dismiss();
+                                            }
+                                        }).show();
+                                dialogInterface.dismiss();
+                            }
+                        }).show();
+
+
             }
         });
 
@@ -113,6 +161,12 @@ public class UserActivity extends Activity implements MfirebaeCallback {
 
     @Override
     public void resetPassWordState(boolean b) {
+        if(b){
+            Toast.makeText(this, "成功修改密碼！！", Toast.LENGTH_SHORT).show();
+
+        }else {
+            Toast.makeText(this, "發生錯誤,查無此帳號", Toast.LENGTH_SHORT).show();
+        }
 
     }
 
