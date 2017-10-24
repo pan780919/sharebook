@@ -85,10 +85,13 @@
         android:textSize="20dp"
         android:text="Lv"
         ></TextView>
-    <com.adbert.AdbertLoopADView
-        android:gravity="bottom"
-        android:id="@+id/adbertADView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-    </com.adbert.AdbertLoopADView>
+        <Button
+            android:layout_marginLeft="20dp"
+            android:id="@+id/userlogoutbtn"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="登出"
+            ></Button>
 </LinearLayout>

@@ -30,4 +30,6 @@ public interface MfirebaeCallback {
 
     void getUpdateUserName(boolean b);
 
+    void  getUserLogoutState(boolean b);
+
 }

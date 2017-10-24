@@ -75,62 +75,6 @@ public class LoginActivity extends Activity implements View.OnClickListener, Mfi
     }
 
 
-    private void register(final String email, final String password) {
-        String account = MySharedPrefernces.getUserId(this);
-        if (!account.equals("")) {
-            new AlertDialog.Builder(LoginActivity.this)
-                    .setTitle("登入問題")
-                    .setMessage("密碼錯誤?")
-                    .setNeutralButton("取消", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialogInterface, int i) {
-                            dialogInterface.dismiss();
-                        }
-                    })
-                    .show();
-        } else {
-            new AlertDialog.Builder(LoginActivity.this)
-                    .setTitle("登入問題")
-                    .setMessage("無此帳號，是否要以此帳號與密碼註冊?")
-                    .setPositiveButton("註冊",
-                            new DialogInterface.OnClickListener() {
-                                @Override
-                                public void onClick(DialogInterface dialog, int which) {
-                                    createUser(email, password);
-                                }
-                            })
-                    .setNeutralButton("取消", null)
-                    .show();
-        }
-
-
-    }
-
-    private void createUser(String email, String password) {
-        auth.createUserWithEmailAndPassword(email, password)
-                .addOnCompleteListener(
-                        new OnCompleteListener<AuthResult>() {
-                            @Override
-                            public void onComplete(@NonNull Task<AuthResult> task) {
-                                String message =
-                                        task.isSuccessful() ? "註冊成功" : "註冊失敗";
-                                // task.isComplete() ? "註冊成功" : "註冊失敗"; (感謝jiaping網友提醒)
-                                new AlertDialog.Builder(LoginActivity.this)
-                                        .setMessage(message)
-                                        .setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                                            @Override
-                                            public void onClick(DialogInterface dialog, int which) {
-                                                startActivity(new Intent(LoginActivity.this, MainActivity.class));
-                                                LoginActivity.this.finish();
-                                                dialog.dismiss();
-
-                                            }
-                                        })
-                                        .show();
-                            }
-                        });
-    }
-
     @Override
     protected void onStart() {
         super.onStart();
@@ -251,11 +195,6 @@ public class LoginActivity extends Activity implements View.OnClickListener, Mfi
 
         });
 
-//		accessTokenTracker = new AccessTokenTracker() {
-//			@Override
-//			protected void onCurrentAccessTokenChanged(AccessToken oldAccessToken, AccessToken currentAccessToken) {
-//			}
-//		};
 
 
     }
@@ -373,6 +312,8 @@ public class LoginActivity extends Activity implements View.OnClickListener, Mfi
         if (!s.equals("")) {
             userUID = s;
             MySharedPrefernces.saveUserId(LoginActivity.this, userUID);
+            startActivity(new Intent(LoginActivity.this,UserActivity.class));
+            LoginActivity.this.finish();
 
         } else {
             userUID = "";
