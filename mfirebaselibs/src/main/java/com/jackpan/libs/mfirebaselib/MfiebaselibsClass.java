@@ -51,6 +51,7 @@ public class MfiebaselibsClass {
     private String DELETESUCCESS = "成功刪除資料";
     private String DELETEFAIL = "刪除資料失敗";
     private String SETDBSUCCESS = "成功寫入資料";
+    private String NOSELFDATA = "不是自己的文章,不能刪除";
     private Context mContext;
     private MfirebaeCallback callback;
     private ProgressDialog progressDialog;
@@ -111,6 +112,8 @@ public class MfiebaselibsClass {
                     userUID = user.getUid();
                     callback.getuseLoginId(userUID);
                 } else {
+                    userUID = "";
+
                     callback.getuseLoginId("");
                 }
             }
@@ -200,12 +203,13 @@ public class MfiebaselibsClass {
         });
 
     }
+
     /**
      * url db路徑
      * pathString 結點位置
      * item  要更新的欄位
-     * **/
-    public void upLoadDB(String url ,String pathString ,String item,final  Object value){
+     **/
+    public void upLoadDB(String url, String pathString, String item, final Object value) {
 
         Firebase mFirebaseRef = new Firebase(url);
 
@@ -215,7 +219,7 @@ public class MfiebaselibsClass {
             @Override
             public Transaction.Result doTransaction(MutableData currentData) {
 
-                if(currentData.getValue() == null) {
+                if (currentData.getValue() == null) {
                     currentData.setValue(value);
                 } else {
                     currentData.setValue((Long) currentData.getValue() + 1);
@@ -229,10 +233,11 @@ public class MfiebaselibsClass {
             }
         });
     }
+
     /**
-    * url 路徑
+     * url 路徑
      * pathString 節點的id
-    * */
+     */
     public void deleteData(String url, String pathString) {
         Firebase myFirebaseRef = new Firebase(url);
         final Firebase userRef = myFirebaseRef.child(pathString);
@@ -253,9 +258,19 @@ public class MfiebaselibsClass {
             }
         });
     }
+    /**
+     * url 路徑
+     * pathString 節點id 預設 是 id+data
+     *
+     * memberid 會員id 用來檢查 是否自己發布
+     *
+     */
 
-    public void userDeleteData(String url, String pathString) {
-
+    public void userDeleteData(String url, String pathString, String memberid) {
+        if (!userUID.equals(memberid)) {
+            Toast.makeText(mContext, NOSELFDATA, Toast.LENGTH_SHORT).show();
+            return;
+        }
         Firebase myFirebaseRef = new Firebase(url);
         final Firebase userRef = myFirebaseRef.child(pathString);
         userRef.addValueEventListener(new ValueEventListener() {
@@ -275,6 +290,7 @@ public class MfiebaselibsClass {
             }
         });
     }
+
     public void resetPassWord(String oldpassword, final String newpassword) {
         userpassword = FirebaseAuth.getInstance().getCurrentUser();
         final String email = userpassword.getEmail();
@@ -301,14 +317,15 @@ public class MfiebaselibsClass {
             }
         });
     }
-    public  void sendPasswordResetEmail(String emailAddress){
+
+    public void sendPasswordResetEmail(String emailAddress) {
         auth.sendPasswordResetEmail(emailAddress)
                 .addOnCompleteListener(new OnCompleteListener<Void>() {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
                         if (task.isSuccessful()) {
                             callback.getsSndPasswordResetEmailState(true);
-                        }else {
+                        } else {
                             callback.getsSndPasswordResetEmailState(false);
 
                         }
@@ -323,7 +340,7 @@ public class MfiebaselibsClass {
      * datauri  照片路徑uri
      * url   firebase url
      **/
-    public void setFirebaseStorageForPhoto(Uri datauri,String url) {
+    public void setFirebaseStorageForPhoto(Uri datauri, String url) {
         final boolean after44 = Build.VERSION.SDK_INT >= 19;
         String filePath = "";
         if (after44) {
@@ -455,6 +472,7 @@ public class MfiebaselibsClass {
             }
         });
     }
+
     /**
      * 每次建構完 都要在 onstart 呼叫
      */
@@ -466,6 +484,7 @@ public class MfiebaselibsClass {
 
 
     }
+
     /**
      * 每次建構完 都要在 onstop 呼叫
      */
