@@ -302,6 +302,16 @@ public class MainActivity extends Activity implements MfirebaeCallback {
 
     }
 
+    @Override
+    public void getUpdateUserName(boolean b) {
+
+    }
+
+    @Override
+    public void getUserLogoutState(boolean b) {
+
+    }
+
 
     public class MyAdapter extends BaseAdapter {
         //		private ArrayList<ResultData> mDatas;

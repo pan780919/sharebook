@@ -1,4 +1,5 @@
 package com.jackpan.TaiwanpetadoptionApp;
+import android.content.Intent;
 import android.graphics.PixelFormat;
 import android.os.Bundle;
 import android.app.Activity;
@@ -7,10 +8,14 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import com.bumptech.glide.Glide;
 import com.jackpan.Brokethenews.R;
+import com.jackpan.libs.mfirebaselib.MfiebaselibsClass;
+import com.jackpan.libs.mfirebaselib.MfirebaeCallback;
 
-public class UserActivity extends Activity{
+public class UserActivity extends Activity implements MfirebaeCallback {
     private ImageView mUsetImg;
     private TextView mUserName,mUserId,mUserEmail,mUserLv;
     Activity mActivty;
@@ -19,12 +24,15 @@ public class UserActivity extends Activity{
     private static final String TAG = "UserActivity";
     private DisplayMetrics mPhone;
     private Button mUserLogoutBtn;
+    MfiebaselibsClass mfiebaselibsClass;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user);
         getWindow().setFormat(PixelFormat.TRANSPARENT);
         mActivty = this;
+         mfiebaselibsClass = new MfiebaselibsClass(mActivty,UserActivity.this);
+
         getUser();
         initLayout();
         setUser();
@@ -54,7 +62,7 @@ public class UserActivity extends Activity{
         mUserLogoutBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                mfiebaselibsClass.userLogout(mUserIdStr);
             }
         });
 
@@ -78,4 +86,71 @@ public class UserActivity extends Activity{
         else  mUserLv.setText("尊榮會員");
     }
 
+    @Override
+    public void getDatabaseData(Object o) {
+
+    }
+
+    @Override
+    public void getDeleteState(boolean b, String s) {
+
+    }
+
+    @Override
+    public void createUserState(boolean b) {
+
+    }
+
+    @Override
+    public void useLognState(boolean b) {
+
+    }
+
+    @Override
+    public void getuseLoginId(String s) {
+
+    }
+
+    @Override
+    public void resetPassWordState(boolean b) {
+
+    }
+
+    @Override
+    public void getFireBaseDBState(boolean b, String s) {
+
+    }
+
+    @Override
+    public void getFirebaseStorageState(boolean b) {
+
+    }
+
+    @Override
+    public void getFirebaseStorageType(String s, String s1) {
+
+    }
+
+    @Override
+    public void getsSndPasswordResetEmailState(boolean b) {
+
+    }
+
+    @Override
+    public void getUpdateUserName(boolean b) {
+
+    }
+
+    @Override
+    public void getUserLogoutState(boolean b) {
+        if(b){
+            Toast.makeText(mActivty,"會員登出成功",Toast.LENGTH_SHORT).show();
+            startActivity(new Intent(mActivty,LoginActivity.class));
+            mActivty.finish();
+            MySharedPrefernces.saveUserId(mActivty,"");
+        }else {
+
+        }
+
+    }
 }

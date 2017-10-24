@@ -362,4 +362,14 @@ public class LoginActivity extends Activity implements View.OnClickListener, Mfi
         }
 
     }
+
+    @Override
+    public void getUpdateUserName(boolean b) {
+
+    }
+
+    @Override
+    public void getUserLogoutState(boolean b) {
+
+    }
 }

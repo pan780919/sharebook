@@ -647,27 +647,13 @@ public class MfiebaselibsClass {
     /**
      * 會員登出 先檢查 id是否存在 如果存在就登出 之後再用authListener檢查是否成功
      */
-    public  void userLogout(){
-        if(!userUID.equals("")){
-            auth.signOut();
-            authListener = new FirebaseAuth.AuthStateListener() {
-                @Override
-                public void onAuthStateChanged(
-                        @NonNull FirebaseAuth firebaseAuth) {
-                    FirebaseUser user = firebaseAuth.getCurrentUser();
-                    if (user != null) {
-                        Toast.makeText(mContext,"登出失敗",Toast.LENGTH_SHORT).show();
-                        callback.getUserLogoutState(false);
-                    } else {
-                        Toast.makeText(mContext,"登出成功",Toast.LENGTH_SHORT).show();
-                        callback.getUserLogoutState(true);
+    public  void userLogout(String memberid){
 
-                    }
-                }
-            };
+        if(!memberid.equals("")){
+            auth.signOut();
+            callback.getUserLogoutState(true);
         }else {
             callback.getUserLogoutState(false);
-            Toast.makeText(mContext,"登出失敗",Toast.LENGTH_SHORT).show();
 
         }
 
