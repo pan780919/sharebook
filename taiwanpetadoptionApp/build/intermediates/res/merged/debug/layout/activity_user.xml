@@ -20,7 +20,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="20dp"
-        android:text="會員Id:"
+        android:text="會員ID:"
         android:layout_marginLeft="20dp"
         ></TextView>
     <TextView
@@ -29,7 +29,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="20dp"
-        android:text="id"
+        android:text="ID"
         android:layout_marginLeft="20dp"
         ></TextView>
     <TextView
@@ -59,7 +59,7 @@
         ></TextView>
     <TextView
         android:id="@+id/usermail"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="4dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="20dp"
@@ -70,7 +70,7 @@
     <TextView
         android:layout_marginLeft="20dp"
 
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="4dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="20dp"
@@ -79,16 +79,27 @@
     <TextView
         android:layout_marginLeft="20dp"
         android:id="@+id/userlv"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="4dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="20dp"
         android:text="Lv"
         ></TextView>
-    <com.adbert.AdbertLoopADView
-        android:gravity="bottom"
-        android:id="@+id/adbertADView"
+        <Button
+            android:layout_marginLeft="20dp"
+            android:id="@+id/userlogoutbtn"
+            android:layout_marginTop="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="登出"
+            ></Button>
+    <Button
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="4dp"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-    </com.adbert.AdbertLoopADView>
+        android:layout_height="wrap_content"
+        android:text="修改密碼"
+        android:id="@+id/button2"
+        />
 </LinearLayout>
