@@ -46,6 +46,7 @@ import com.google.gson.Gson;
 
 import java.io.File;
 import java.io.FileOutputStream;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -55,12 +56,15 @@ import Appkey.MyAdKey;
 import bolts.AppLinks;
 
 import com.igexin.sdk.PushManager;
-import com.jackpan.MyPushService;
 import com.jackpan.libs.mfirebaselib.MfiebaselibsClass;
 import com.jackpan.libs.mfirebaselib.MfirebaeCallback;
 import com.jackpan.Brokethenews.R;
 import com.newqm.sdkoffer.AdView;
 import com.newqm.sdkoffer.QuMiConnect;
+
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
 
 public class MainActivity extends Activity implements MfirebaeCallback {
     private ListView petlist;
@@ -127,6 +131,7 @@ public class MainActivity extends Activity implements MfirebaeCallback {
                     else MySharedPrefernces.saveUserPic(MainActivity.this, "");
                 } else {
                     Log.d("onAuthStateChanged", "已登出");
+                    userUID = "";
                     MySharedPrefernces.saveUserId(MainActivity.this, "");
                 }
             }
@@ -137,15 +142,55 @@ public class MainActivity extends Activity implements MfirebaeCallback {
 
         FacebookSdk.sdkInitialize(getApplicationContext());
         AppEventsLogger.activateApp(this);
+        new Thread(){
+            @Override
+            public void run() {
+                super.run();
+                try {
+                    Document doc = Jsoup.connect("http://rate.bot.com.tw/xrt?Lang=zh-TW").get();
 
+                    for (Element element : doc.getElementsByTag("tr")) {
+//                        Log.d(TAG, "run: "+element.toString());
+//                        Log.d(TAG, "run: "+element.text());
+                        for (Element td : element.getElementsByTag("td")) {
+                            for (Element div : td.getElementsByTag("div")) {
+                            }
+                        }
+
+
+
+                    }
+
+                } catch (IOException e) {
+                    e.printStackTrace();
+                    Log.d(TAG, "run: "+e.getMessage());
+                }
+
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+
+                    }
+                });
+            }
+
+        }.start();
         mInviteBtn = (Button) findViewById(R.id.inviteBtn);
         mInviteBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if(userUID.equals("")){
+                    new AlertDialog.Builder(MainActivity.this)
+                            .setTitle("尚未登入")
+                            .setMessage("還沒登入會員,不能發文喔！由左向右滑可以看到選單喔！")
+                            .setPositiveButton("確定",null).show();
+                    return;
+                }else{
+                    Intent i = new Intent();
+                    i.setClass(MainActivity.this, ForIdeaAndShareActivity.class);
+                    startActivity(i);
+                }
 
-                Intent i = new Intent();
-                i.setClass(MainActivity.this, ForIdeaAndShareActivity.class);
-                startActivity(i);
 //				uploadFromStream();
 //				upLoad();
 //				setFireBaseDB();
@@ -233,30 +278,7 @@ public class MainActivity extends Activity implements MfirebaeCallback {
 
     }
 
-    @Override
-    protected void onResume() {
-        super.onResume();
-        PushManager.getInstance().initialize(MainActivity.this, MyPushService.class);
-        PushManager.getInstance().registerPushIntentService(MainActivity.this, MyIntentService.class);
-    }
 
-
-
-
-
-    private void writeNewPost(String userId, String username, String title, String body) {
-        // Create new post at /user-posts/$userid/$postid and at
-        // /posts/$postid simultaneously
-        String key = mDatabase.child("posts").push().getKey();
-        Post post = new Post(userId, username, title, body);
-        Map<String, Object> postValues = post.toMap();
-
-        Map<String, Object> childUpdates = new HashMap<>();
-        childUpdates.put("/posts/" + key, postValues);
-        childUpdates.put("/user-posts/" + userId + "/" + key, postValues);
-
-        mDatabase.updateChildren(childUpdates);
-    }
 
     @Override
     public void getDatabaseData(Object o) {
@@ -316,6 +338,16 @@ public class MainActivity extends Activity implements MfirebaeCallback {
 
     }
 
+    @Override
+    public void getUpdateUserName(boolean b) {
+
+    }
+
+    @Override
+    public void getUserLogoutState(boolean b) {
+
+    }
+
 
     public class MyAdapter extends BaseAdapter {
         //		private ArrayList<ResultData> mDatas;
@@ -361,13 +393,13 @@ public class MainActivity extends Activity implements MfirebaeCallback {
             TextView userlike = (TextView) convertView.findViewById(R.id.like);
             userview.setVisibility(View.GONE);
             userlike.setVisibility(View.GONE);
-
             bigtext.setText(taipeiZoo.cat);
             textname.setText(taipeiZoo.getTittle());
             list.setText("賣家:" + taipeiZoo.getName());
             time.setText("發文時間:" + taipeiZoo.getDate());
             place.setVisibility(View.VISIBLE);
             place.setText("ID:" + taipeiZoo.getId());
+            place.setVisibility(View.GONE);
             imageView = (ImageView) convertView.findViewById(R.id.photoimg);
 
             Glide.with(MainActivity.this)

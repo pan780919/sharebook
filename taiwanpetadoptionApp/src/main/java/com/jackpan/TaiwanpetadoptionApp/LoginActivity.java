@@ -66,7 +66,6 @@ public class LoginActivity extends Activity implements View.OnClickListener, Mfi
         mfiebaselibsClass.userLoginCheck();
         setContentView(R.layout.activity_login);
         findViewById(R.id.button).setOnClickListener(this);
-        findViewById(R.id.button2).setOnClickListener(this);
         findViewById(R.id.button3).setOnClickListener(this);
         fbImg = (ImageView) findViewById(R.id.fdimg);
         fbLogin();
@@ -74,62 +73,6 @@ public class LoginActivity extends Activity implements View.OnClickListener, Mfi
 
     }
 
-
-    private void register(final String email, final String password) {
-        String account = MySharedPrefernces.getUserId(this);
-        if (!account.equals("")) {
-            new AlertDialog.Builder(LoginActivity.this)
-                    .setTitle("登入問題")
-                    .setMessage("密碼錯誤?")
-                    .setNeutralButton("取消", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialogInterface, int i) {
-                            dialogInterface.dismiss();
-                        }
-                    })
-                    .show();
-        } else {
-            new AlertDialog.Builder(LoginActivity.this)
-                    .setTitle("登入問題")
-                    .setMessage("無此帳號，是否要以此帳號與密碼註冊?")
-                    .setPositiveButton("註冊",
-                            new DialogInterface.OnClickListener() {
-                                @Override
-                                public void onClick(DialogInterface dialog, int which) {
-                                    createUser(email, password);
-                                }
-                            })
-                    .setNeutralButton("取消", null)
-                    .show();
-        }
-
-
-    }
-
-    private void createUser(String email, String password) {
-        auth.createUserWithEmailAndPassword(email, password)
-                .addOnCompleteListener(
-                        new OnCompleteListener<AuthResult>() {
-                            @Override
-                            public void onComplete(@NonNull Task<AuthResult> task) {
-                                String message =
-                                        task.isSuccessful() ? "註冊成功" : "註冊失敗";
-                                // task.isComplete() ? "註冊成功" : "註冊失敗"; (感謝jiaping網友提醒)
-                                new AlertDialog.Builder(LoginActivity.this)
-                                        .setMessage(message)
-                                        .setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                                            @Override
-                                            public void onClick(DialogInterface dialog, int which) {
-                                                startActivity(new Intent(LoginActivity.this, MainActivity.class));
-                                                LoginActivity.this.finish();
-                                                dialog.dismiss();
-
-                                            }
-                                        })
-                                        .show();
-                            }
-                        });
-    }
 
     @Override
     protected void onStart() {
@@ -156,42 +99,6 @@ public class LoginActivity extends Activity implements View.OnClickListener, Mfi
                 mfiebaselibsClass.userLogin(email, password);
                 break;
             case R.id.button2:
-                final EditText passwordeditText = new EditText(this);
-                new AlertDialog.Builder(this)
-                        .setView(passwordeditText)
-                        .setTitle("重設密碼")
-                        .setMessage("請輸入當初設定舊密碼")
-                        .setPositiveButton("送出", new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialogInterface, int i) {
-                                final String oldPassword = passwordeditText.getText().toString().trim();
-                                if (oldPassword.equals("")) {
-                                    Toast.makeText(LoginActivity.this, "請勿輸入空白", Toast.LENGTH_SHORT).show();
-                                    return;
-                                }
-                                final EditText passwordeditText = new EditText(LoginActivity.this);
-                                new AlertDialog.Builder(LoginActivity.this)
-                                        .setView(passwordeditText)
-                                        .setTitle("重設密碼")
-                                        .setMessage("請輸入新密碼")
-                                        .setPositiveButton("送出", new DialogInterface.OnClickListener() {
-                                            @Override
-                                            public void onClick(DialogInterface dialogInterface, int i) {
-                                                String newPassword = passwordeditText.getText().toString().trim();
-                                                if (newPassword.equals("")) {
-                                                    Toast.makeText(LoginActivity.this, "請勿輸入空白", Toast.LENGTH_SHORT).show();
-                                                    return;
-                                                }
-                                                Log.d(TAG, "onClick: " + oldPassword);
-                                                Log.d(TAG, "onClick: " + newPassword);
-                                                mfiebaselibsClass.resetPassWord(oldPassword,newPassword);
-                                                dialogInterface.dismiss();
-                                            }
-                                        }).show();
-                                dialogInterface.dismiss();
-                            }
-                        }).show();
-
 
                 break;
             case R.id.button3:
@@ -251,11 +158,6 @@ public class LoginActivity extends Activity implements View.OnClickListener, Mfi
 
         });
 
-//		accessTokenTracker = new AccessTokenTracker() {
-//			@Override
-//			protected void onCurrentAccessTokenChanged(AccessToken oldAccessToken, AccessToken currentAccessToken) {
-//			}
-//		};
 
 
     }
@@ -373,6 +275,8 @@ public class LoginActivity extends Activity implements View.OnClickListener, Mfi
         if (!s.equals("")) {
             userUID = s;
             MySharedPrefernces.saveUserId(LoginActivity.this, userUID);
+            startActivity(new Intent(LoginActivity.this,UserActivity.class));
+            LoginActivity.this.finish();
 
         } else {
             userUID = "";
@@ -386,12 +290,6 @@ public class LoginActivity extends Activity implements View.OnClickListener, Mfi
 
     @Override
     public void resetPassWordState(boolean b) {
-        if(b){
-            Toast.makeText(this, "成功修改密碼！！", Toast.LENGTH_SHORT).show();
-
-        }else {
-            Toast.makeText(this, "發生錯誤,查無此帳號", Toast.LENGTH_SHORT).show();
-        }
 
     }
 
@@ -419,6 +317,16 @@ public class LoginActivity extends Activity implements View.OnClickListener, Mfi
             Toast.makeText(this, "發生錯誤！請檢查email是否註冊", Toast.LENGTH_SHORT).show();
 
         }
+
+    }
+
+    @Override
+    public void getUpdateUserName(boolean b) {
+
+    }
+
+    @Override
+    public void getUserLogoutState(boolean b) {
 
     }
 }
