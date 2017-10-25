@@ -35,7 +35,7 @@ public class UserActivity extends Activity implements MfirebaeCallback {
         setContentView(R.layout.activity_user);
         getWindow().setFormat(PixelFormat.TRANSPARENT);
         mActivty = this;
-         mfiebaselibsClass = new MfiebaselibsClass(mActivty,UserActivity.this);
+        mfiebaselibsClass = new MfiebaselibsClass(mActivty,UserActivity.this);
 
         getUser();
         initLayout();

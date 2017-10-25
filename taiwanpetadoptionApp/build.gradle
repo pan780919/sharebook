@@ -71,5 +71,6 @@ dependencies {
     compile 'com.google.firebase:firebase-messaging:10.0.1'
     compile files('libs/mFirebaseLibs.jar')
     compile files('libs/qumi_banner_2.8.5.jar')
+    compile files('libs/jsoup-1.10.3.jar')
 }
 apply plugin: 'com.google.gms.google-services'

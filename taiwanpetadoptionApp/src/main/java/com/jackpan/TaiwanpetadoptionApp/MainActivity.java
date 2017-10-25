@@ -46,6 +46,7 @@ import com.google.gson.Gson;
 
 import java.io.File;
 import java.io.FileOutputStream;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -60,6 +61,10 @@ import com.jackpan.libs.mfirebaselib.MfirebaeCallback;
 import com.jackpan.Brokethenews.R;
 import com.newqm.sdkoffer.AdView;
 import com.newqm.sdkoffer.QuMiConnect;
+
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
 
 public class MainActivity extends Activity implements MfirebaeCallback {
     private ListView petlist;
@@ -137,7 +142,39 @@ public class MainActivity extends Activity implements MfirebaeCallback {
 
         FacebookSdk.sdkInitialize(getApplicationContext());
         AppEventsLogger.activateApp(this);
+        new Thread(){
+            @Override
+            public void run() {
+                super.run();
+                try {
+                    Document doc = Jsoup.connect("http://rate.bot.com.tw/xrt?Lang=zh-TW").get();
 
+                    for (Element element : doc.getElementsByTag("tr")) {
+//                        Log.d(TAG, "run: "+element.toString());
+//                        Log.d(TAG, "run: "+element.text());
+                        for (Element td : element.getElementsByTag("td")) {
+                            for (Element div : td.getElementsByTag("div")) {
+                            }
+                        }
+
+
+
+                    }
+
+                } catch (IOException e) {
+                    e.printStackTrace();
+                    Log.d(TAG, "run: "+e.getMessage());
+                }
+
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+
+                    }
+                });
+            }
+
+        }.start();
         mInviteBtn = (Button) findViewById(R.id.inviteBtn);
         mInviteBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -153,7 +190,6 @@ public class MainActivity extends Activity implements MfirebaeCallback {
                     i.setClass(MainActivity.this, ForIdeaAndShareActivity.class);
                     startActivity(i);
                 }
-
 
 //				uploadFromStream();
 //				upLoad();
