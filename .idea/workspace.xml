@@ -11,154 +11,14 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-<<<<<<< HEAD
-    <list default="true" id="d8937790-a171-47d5-84d4-f286683668e0" name="Default" comment="" />
-=======
-<<<<<<< HEAD
-    <list default="true" id="d8937790-a171-47d5-84d4-f286683668e0" name="Default" comment="" />
-=======
     <list default="true" id="d8937790-a171-47d5-84d4-f286683668e0" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/LoginActivity$10$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/LoginActivity$10.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$6$1.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/cache.properties.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshotsToTreeSnapshotsIndex.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshotsToTreeSnapshotsIndex.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_taiwanpetadoptionApp_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_taiwanpetadoptionApp_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_taiwanpetadoptionApp_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_taiwanpetadoptionApp_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_taiwanpetadoptionApp_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_taiwanpetadoptionApp_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/ForIdeaAndShareActivity$1.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/ForIdeaAndShareActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/ForIdeaAndShareActivity$10.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/ForIdeaAndShareActivity$10.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/ForIdeaAndShareActivity$11.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/ForIdeaAndShareActivity$11.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/ForIdeaAndShareActivity$12.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/ForIdeaAndShareActivity$12.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/ForIdeaAndShareActivity$13.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/ForIdeaAndShareActivity$13.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/ForIdeaAndShareActivity$14.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/ForIdeaAndShareActivity$14.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/ForIdeaAndShareActivity$2$1.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/ForIdeaAndShareActivity$2$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/ForIdeaAndShareActivity$2.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/ForIdeaAndShareActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/ForIdeaAndShareActivity$3.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/ForIdeaAndShareActivity$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/ForIdeaAndShareActivity$4.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/ForIdeaAndShareActivity$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/ForIdeaAndShareActivity$5.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/ForIdeaAndShareActivity$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/ForIdeaAndShareActivity$6.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/ForIdeaAndShareActivity$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/ForIdeaAndShareActivity$7.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/ForIdeaAndShareActivity$7.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/ForIdeaAndShareActivity$8.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/ForIdeaAndShareActivity$8.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/ForIdeaAndShareActivity$9.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/ForIdeaAndShareActivity$9.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/ForIdeaAndShareActivity.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/ForIdeaAndShareActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/LoginActivity$1.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/LoginActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/LoginActivity$2.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/LoginActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/LoginActivity$3.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/LoginActivity$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/LoginActivity$4$1.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/LoginActivity$4$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/LoginActivity$4.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/LoginActivity$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/LoginActivity$5.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/LoginActivity$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/LoginActivity$6.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/LoginActivity$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/LoginActivity$7.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/LoginActivity$7.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/LoginActivity$8.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/LoginActivity$8.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/LoginActivity$9.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/LoginActivity$9.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/LoginActivity.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/LoginActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$1.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$10.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$10.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$11.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$11.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$12.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$12.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$13.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$13.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$14.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$14.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$15.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$15.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$16.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$16.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$2.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$3.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$4.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$5.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$6.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$7.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$7.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$8.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$8.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$9$1.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$9$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$9.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$9.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$LoadNetAsyncTask$1.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$LoadNetAsyncTask$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$LoadNetAsyncTask$2.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$LoadNetAsyncTask$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$LoadNetAsyncTask$3.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$LoadNetAsyncTask$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$LoadNetAsyncTask.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$LoadNetAsyncTask.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$MyAdapter.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$MyAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/multi-dex/debug/componentClasses.jar" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/multi-dex/debug/componentClasses.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes2.dex" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes2.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/transforms/jarMerging/debug/jars/1/1f/combined.jar" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/transforms/jarMerging/debug/jars/1/1f/combined.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/outputs/apk/taiwanpetadoptionApp-debug.apk" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/outputs/apk/taiwanpetadoptionApp-debug.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/animated_vector_drawable_25_3_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/animated_vector_drawable_25_3_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_25_3_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_25_3_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/audience_network_sdk_4_26_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/audience_network_sdk_4_26_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/exoplayer_r2_0_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/exoplayer_r2_0_3.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/firebase_analytics_10_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/firebase_analytics_10_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/firebase_analytics_impl_10_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/firebase_analytics_impl_10_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/firebase_appindexing_10_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/firebase_appindexing_10_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/firebase_auth_10_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/firebase_auth_10_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/firebase_common_10_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/firebase_common_10_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/firebase_config_10_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/firebase_config_10_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/firebase_core_10_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/firebase_core_10_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/firebase_crash_10_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/firebase_crash_10_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/firebase_database_10_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/firebase_database_10_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/firebase_database_connection_10_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/firebase_database_connection_10_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/firebase_iid_10_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/firebase_iid_10_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/firebase_messaging_10_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/firebase_messaging_10_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/firebase_storage_10_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/firebase_storage_10_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/firebase_storage_common_10_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/firebase_storage_common_10_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/mediarouter_v7_24_0_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/mediarouter_v7_24_0_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/palette_v7_24_0_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/palette_v7_24_0_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_10_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_10_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_ads_10_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_ads_10_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_ads_lite_10_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_ads_lite_10_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_analytics_10_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_analytics_10_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_analytics_impl_10_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_analytics_impl_10_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_appinvite_10_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_appinvite_10_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_auth_10_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_auth_10_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_auth_base_10_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_auth_base_10_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_awareness_10_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_awareness_10_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_base_10_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_base_10_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_basement_10_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_basement_10_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_cast_10_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_cast_10_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_cast_framework_10_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_cast_framework_10_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_clearcut_10_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_clearcut_10_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_drive_10_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_drive_10_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_fitness_10_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_fitness_10_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_games_10_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_games_10_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_gass_10_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_gass_10_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_gcm_10_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_gcm_10_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_identity_10_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_identity_10_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_iid_10_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_iid_10_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_instantapps_10_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_instantapps_10_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_location_10_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_location_10_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_maps_10_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_maps_10_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_nearby_10_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_nearby_10_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_panorama_10_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_panorama_10_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_places_10_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_places_10_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_plus_10_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_plus_10_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_safetynet_10_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_safetynet_10_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_tagmanager_10_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_tagmanager_10_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_tagmanager_api_10_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_tagmanager_api_10_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_tagmanager_v4_impl_10_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_tagmanager_v4_impl_10_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_tasks_10_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_tasks_10_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_vision_10_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_vision_10_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_wallet_10_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_wallet_10_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_wearable_10_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_wearable_10_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/recyclerview_v7_25_3_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/recyclerview_v7_25_3_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_compat_25_3_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_compat_25_3_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_core_ui_25_3_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_core_ui_25_3_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_core_utils_25_3_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_core_utils_25_3_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_fragment_25_3_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_fragment_25_3_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_media_compat_25_3_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_media_compat_25_3_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_v4_25_3_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_v4_25_3_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_vector_drawable_25_3_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_vector_drawable_25_3_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mfirebaselibs/mfirebaselibs.iml" afterPath="$PROJECT_DIR$/mfirebaselibs/mfirebaselibs.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mfirebaselibs/src/main/java/com/jackpan/libs/mfirebaselib/MfiebaselibsClass.java" afterPath="$PROJECT_DIR$/mfirebaselibs/src/main/java/com/jackpan/libs/mfirebaselib/MfiebaselibsClass.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mfirebaselibs/src/main/java/com/jackpan/libs/mfirebaselib/MfirebaeCallback.java" afterPath="$PROJECT_DIR$/mfirebaselibs/src/main/java/com/jackpan/libs/mfirebaselib/MfirebaeCallback.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/packageDebug/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/packageDebug/dex-renamer-state.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/multi-dex/debug/maindexlist.txt" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/multi-dex/debug/maindexlist.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/MainActivity.java" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/MainActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/taiwanpetadoptionApp.iml" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/taiwanpetadoptionApp.iml" />
     </list>
->>>>>>> 2fd465ef8cd05c96e4499f6a014daf86214bdc08
->>>>>>> 9518032a93739d30f65c26b61fd5292c83cb76b4
     <ignored path="sharebook.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -197,22 +57,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-            <state relative-caret-position="-364">
-              <caret line="321" column="60" selection-start-line="321" selection-start-column="52" selection-end-line="321" selection-end-column="60" />
-=======
-            <state relative-caret-position="57">
-              <caret line="196" column="0" selection-start-line="196" selection-start-column="0" selection-end-line="196" selection-end-column="0" />
->>>>>>> 2fd465ef8cd05c96e4499f6a014daf86214bdc08
-              <folding>
-                <element signature="e#5699#7240#0" expanded="true" />
-                <element signature="e#7239#7240#0" expanded="true" />
-                <element signature="e#7616#8489#0" expanded="true" />
-                <element signature="e#8488#8489#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="1415">
+              <caret line="144" column="0" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -220,7 +70,7 @@
       <file leaf-file-name="MfiebaselibsClass.class" pinned="false" current-in-tab="false">
         <entry file="jar://$PROJECT_DIR$/taiwanpetadoptionApp/libs/mFirebaseLibs.jar!/com/jackpan/libs/mfirebaselib/MfiebaselibsClass.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
+            <state relative-caret-position="76">
               <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
               <folding />
             </state>
@@ -230,33 +80,21 @@
       <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mfirebaselibs/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="393">
+            <state relative-caret-position="646">
               <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MfiebaselibsClass.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MfiebaselibsClass.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mfirebaselibs/src/main/java/com/jackpan/libs/mfirebaselib/MfiebaselibsClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="255" column="31" selection-start-line="255" selection-start-column="31" selection-end-line="255" selection-end-column="31" />
+            <state relative-caret-position="4275">
+              <caret line="255" column="0" selection-start-line="255" selection-start-column="0" selection-end-line="255" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#8894#9329#0" expanded="true" />
-                <element signature="e#9328#9329#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GayPlace.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/GayPlace.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -264,28 +102,9 @@
       <file leaf-file-name="LoginActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/LoginActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="49" column="47" selection-start-line="49" selection-start-column="35" selection-end-line="49" selection-end-column="47" />
-              <folding>
-                <element signature="e#2757#4026#0" expanded="true" />
-                <element signature="e#4025#4026#0" expanded="true" />
-                <element signature="e#4382#4644#0" expanded="true" />
-                <element signature="e#4643#4644#0" expanded="true" />
-                <element signature="e#4912#5211#0" expanded="true" />
-                <element signature="e#5210#5211#0" expanded="true" />
-                <element signature="e#5498#6724#0" expanded="true" />
-                <element signature="e#6078#6618#0" expanded="true" />
-                <element signature="e#6617#6618#0" expanded="true" />
-                <element signature="e#6723#6724#0" expanded="true" />
-                <element signature="e#7534#7909#0" expanded="true" />
-                <element signature="e#7908#7909#0" expanded="true" />
-                <element signature="e#7932#8178#0" expanded="true" />
-                <element signature="e#8177#8178#0" expanded="true" />
-                <element signature="e#10006#10797#0" expanded="true" />
-                <element signature="e#10796#10797#0" expanded="true" />
-                <element signature="e#10860#11439#0" expanded="true" />
-                <element signature="e#11438#11439#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="228">
+              <caret line="49" column="28" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="28" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -293,7 +112,7 @@
       <file leaf-file-name="ForIdeaAndShareActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/ForIdeaAndShareActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1321">
+            <state relative-caret-position="4161">
               <caret line="300" column="0" selection-start-line="300" selection-start-column="0" selection-end-line="300" selection-end-column="0" />
               <folding>
                 <element signature="method#onCreate#0;class#ForIdeaAndShareActivity#0" expanded="false" />
@@ -315,7 +134,7 @@
       <file leaf-file-name="MfirebaeCallback.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mfirebaselibs/src/main/java/com/jackpan/libs/mfirebaselib/MfirebaeCallback.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
+            <state relative-caret-position="494">
               <caret line="26" column="52" selection-start-line="26" selection-start-column="52" selection-end-line="26" selection-end-column="52" />
               <folding />
             </state>
@@ -509,11 +328,6 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="assembleDefault" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Prepare com.facebook.android:audience-network-sdk:4.26.0" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="prepareComFacebookAndroidAudienceNetworkSdk4260Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
@@ -1306,6 +1120,11 @@
                 <option name="name" value="prepareComAndroidSupportRecyclerviewV72531Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Prepare com.facebook.android:audience-network-sdk:4.26.1" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareComFacebookAndroidAudienceNetworkSdk4261Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="description" value="Prepare com.google.android.gms:play-services-plus:10.0.1" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="prepareComGoogleAndroidGmsPlayServicesPlus1001Library" />
@@ -1668,11 +1487,6 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/mfirebaselibs" />
                 <option name="name" value="assembleDefault" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Prepare com.facebook.android:audience-network-sdk:4.26.0" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/mfirebaselibs" />
-                <option name="name" value="prepareComFacebookAndroidAudienceNetworkSdk4260Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/mfirebaselibs" />
@@ -2332,6 +2146,11 @@
                 <option name="name" value="prepareComAndroidSupportRecyclerviewV72531Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Prepare com.facebook.android:audience-network-sdk:4.26.1" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/mfirebaselibs" />
+                <option name="name" value="prepareComFacebookAndroidAudienceNetworkSdk4261Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="description" value="Prepare com.google.android.gms:play-services-plus:10.0.1" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/mfirebaselibs" />
                 <option name="name" value="prepareComGoogleAndroidGmsPlayServicesPlus1001Library" />
@@ -2653,11 +2472,6 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/taiwanpetadoptionApp" />
                 <option name="name" value="generateDebugAndroidTestBuildConfig" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Prepare com.facebook.android:audience-network-sdk:4.26.0" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/taiwanpetadoptionApp" />
-                <option name="name" value="prepareComFacebookAndroidAudienceNetworkSdk4260Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/taiwanpetadoptionApp" />
@@ -3362,6 +3176,11 @@
                 <option name="name" value="prepareComAndroidSupportRecyclerviewV72531Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Prepare com.facebook.android:audience-network-sdk:4.26.1" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/taiwanpetadoptionApp" />
+                <option name="name" value="prepareComFacebookAndroidAudienceNetworkSdk4261Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="description" value="Prepare com.google.android.gms:play-services-plus:10.0.1" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/taiwanpetadoptionApp" />
                 <option name="name" value="prepareComGoogleAndroidGmsPlayServicesPlus1001Library" />
@@ -3602,7 +3421,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="6033640143000" />
+        <entry key="$PROJECT_DIR$" value="6033887196000" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -4274,10 +4093,6 @@
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mfirebaselib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -4303,13 +4118,13 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="AndroidView">
-        <subPane />
-      </pane>
       <pane id="PackagesPane">
         <subPane />
       </pane>
+      <pane id="AndroidView">
+        <subPane />
+      </pane>
+      <pane id="Scope" />
       <pane id="Scratches">
         <subPane />
       </pane>
@@ -4714,28 +4529,28 @@
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286119" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3286119" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3286119" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286119" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286119" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286119" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286119" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286119" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24959612" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2536349" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24959612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -4811,26 +4626,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
-          <folding>
-            <element signature="e#2757#4026#0" expanded="true" />
-            <element signature="e#4025#4026#0" expanded="true" />
-            <element signature="e#4382#4644#0" expanded="true" />
-            <element signature="e#4643#4644#0" expanded="true" />
-            <element signature="e#4912#5211#0" expanded="true" />
-            <element signature="e#5210#5211#0" expanded="true" />
-            <element signature="e#5498#6724#0" expanded="true" />
-            <element signature="e#6078#6618#0" expanded="true" />
-            <element signature="e#6617#6618#0" expanded="true" />
-            <element signature="e#6723#6724#0" expanded="true" />
-            <element signature="e#7534#7909#0" expanded="true" />
-            <element signature="e#7908#7909#0" expanded="true" />
-            <element signature="e#7932#8178#0" expanded="true" />
-            <element signature="e#8177#8178#0" expanded="true" />
-            <element signature="e#10006#10797#0" expanded="true" />
-            <element signature="e#10796#10797#0" expanded="true" />
-            <element signature="e#10860#11439#0" expanded="true" />
-            <element signature="e#11438#11439#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -4884,9 +4680,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="7" column="50" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="50" />
-          <folding>
-            <marker date="1508518168000" expanded="true" signature="49:4401" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -4908,26 +4702,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-646">
           <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
-          <folding>
-            <element signature="e#2757#4026#0" expanded="true" />
-            <element signature="e#4025#4026#0" expanded="true" />
-            <element signature="e#4382#4644#0" expanded="true" />
-            <element signature="e#4643#4644#0" expanded="true" />
-            <element signature="e#4912#5211#0" expanded="true" />
-            <element signature="e#5210#5211#0" expanded="true" />
-            <element signature="e#5498#6724#0" expanded="true" />
-            <element signature="e#6078#6618#0" expanded="true" />
-            <element signature="e#6617#6618#0" expanded="true" />
-            <element signature="e#6723#6724#0" expanded="true" />
-            <element signature="e#7534#7909#0" expanded="true" />
-            <element signature="e#7908#7909#0" expanded="true" />
-            <element signature="e#7932#8178#0" expanded="true" />
-            <element signature="e#8177#8178#0" expanded="true" />
-            <element signature="e#10006#10797#0" expanded="true" />
-            <element signature="e#10796#10797#0" expanded="true" />
-            <element signature="e#10860#11439#0" expanded="true" />
-            <element signature="e#11438#11439#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -4983,7 +4758,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="7220">
           <caret line="380" column="36" selection-start-line="380" selection-start-column="36" selection-end-line="380" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -5089,9 +4863,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1178">
           <caret line="62" column="18" selection-start-line="62" selection-start-column="18" selection-end-line="62" selection-end-column="18" />
-          <folding>
-            <marker date="1508518168000" expanded="true" signature="18959:18964" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -5120,9 +4892,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="475">
           <caret line="108" column="12" selection-start-line="108" selection-start-column="12" selection-end-line="108" selection-end-column="12" />
-          <folding>
-            <marker date="1508518168000" expanded="true" signature="49:4401" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -5182,22 +4952,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="196" column="0" selection-start-line="196" selection-start-column="0" selection-end-line="196" selection-end-column="0" />
-          <folding>
-            <element signature="e#5699#7240#0" expanded="true" />
-            <element signature="e#7239#7240#0" expanded="true" />
-            <element signature="e#7616#8489#0" expanded="true" />
-            <element signature="e#8488#8489#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/taiwanpetadoptionApp/libs/mFirebaseLibs.jar!/com/jackpan/libs/mfirebaselib/MfiebaselibsClass.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
+        <state relative-caret-position="76">
           <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
           <folding />
         </state>
@@ -5205,54 +4962,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mfirebaselibs/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="-364">
-          <caret line="321" column="60" selection-start-line="321" selection-start-column="52" selection-end-line="321" selection-end-column="60" />
-=======
-        <state relative-caret-position="393">
+        <state relative-caret-position="646">
           <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/GayPlace.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/GayPlace.java" />
     <entry file="file://$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/LoginActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="49" column="47" selection-start-line="49" selection-start-column="35" selection-end-line="49" selection-end-column="47" />
-          <folding>
-            <element signature="e#2757#4026#0" expanded="true" />
-            <element signature="e#4025#4026#0" expanded="true" />
-            <element signature="e#4382#4644#0" expanded="true" />
-            <element signature="e#4643#4644#0" expanded="true" />
-            <element signature="e#4912#5211#0" expanded="true" />
-            <element signature="e#5210#5211#0" expanded="true" />
-            <element signature="e#5498#6724#0" expanded="true" />
-            <element signature="e#6078#6618#0" expanded="true" />
-            <element signature="e#6617#6618#0" expanded="true" />
-            <element signature="e#6723#6724#0" expanded="true" />
-            <element signature="e#7534#7909#0" expanded="true" />
-            <element signature="e#7908#7909#0" expanded="true" />
-            <element signature="e#7932#8178#0" expanded="true" />
-            <element signature="e#8177#8178#0" expanded="true" />
-            <element signature="e#10006#10797#0" expanded="true" />
-            <element signature="e#10796#10797#0" expanded="true" />
-            <element signature="e#10860#11439#0" expanded="true" />
-            <element signature="e#11438#11439#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="228">
+          <caret line="49" column="28" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/ForIdeaAndShareActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1321">
+        <state relative-caret-position="4161">
           <caret line="300" column="0" selection-start-line="300" selection-start-column="0" selection-end-line="300" selection-end-column="0" />
           <folding>
             <element signature="method#onCreate#0;class#ForIdeaAndShareActivity#0" expanded="false" />
@@ -5262,7 +4989,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mfirebaselibs/src/main/java/com/jackpan/libs/mfirebaselib/MfirebaeCallback.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
+        <state relative-caret-position="494">
           <caret line="26" column="52" selection-start-line="26" selection-start-column="52" selection-end-line="26" selection-end-column="52" />
           <folding />
         </state>
@@ -5270,14 +4997,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mfirebaselibs/src/main/java/com/jackpan/libs/mfirebaselib/MfiebaselibsClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="255" column="31" selection-start-line="255" selection-start-column="31" selection-end-line="255" selection-end-column="31" />
->>>>>>> 2fd465ef8cd05c96e4499f6a014daf86214bdc08
+        <state relative-caret-position="4275">
+          <caret line="255" column="0" selection-start-line="255" selection-start-column="0" selection-end-line="255" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#8894#9329#0" expanded="true" />
-            <element signature="e#9328#9329#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1415">
+          <caret line="144" column="0" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
