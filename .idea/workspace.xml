@@ -12,19 +12,532 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8937790-a171-47d5-84d4-f286683668e0" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$12.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$2$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/UserActivity$2$1$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/UserActivity$2$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/Connection$Base.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/Connection$KeyVal.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/Connection$Method.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/Connection$Request.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/Connection$Response.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/Connection.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/HttpStatusException.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/Jsoup.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/SerializationException.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/UnsupportedMimeTypeException.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/examples/HtmlToPlainText$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/examples/HtmlToPlainText$FormattingVisitor.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/examples/HtmlToPlainText.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/examples/ListLinks.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/helper/ChangeNotifyingArrayList.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/helper/DataUtil.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/helper/DescendableLinkedList$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/helper/DescendableLinkedList$DescendingIterator.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/helper/DescendableLinkedList.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/helper/HttpConnection$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/helper/HttpConnection$Base.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/helper/HttpConnection$KeyVal.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/helper/HttpConnection$Request.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/helper/HttpConnection$Response$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/helper/HttpConnection$Response$2.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/helper/HttpConnection$Response.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/helper/HttpConnection.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/helper/StringUtil.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/helper/Validate.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/helper/W3CDom$W3CBuilder.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/helper/W3CDom.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/internal/Normalizer.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/nodes/Attribute.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/nodes/Attributes$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/nodes/Attributes$Dataset$DatasetIterator.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/nodes/Attributes$Dataset$EntrySet.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/nodes/Attributes$Dataset.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/nodes/Attributes.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/nodes/BooleanAttribute.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/nodes/Comment.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/nodes/DataNode.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/nodes/Document$OutputSettings$Syntax.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/nodes/Document$OutputSettings.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/nodes/Document$QuirksMode.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/nodes/Document.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/nodes/DocumentType.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/nodes/Element$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/nodes/Element.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/nodes/Entities$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/nodes/Entities$CoreCharset.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/nodes/Entities$EscapeMode.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/nodes/Entities.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/nodes/FormElement.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/nodes/Node$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/nodes/Node$NodeList.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/nodes/Node$OuterHtmlVisitor.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/nodes/Node.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/nodes/TextNode.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/nodes/XmlDeclaration.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/CharacterReader.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/HtmlTreeBuilder.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/HtmlTreeBuilderState$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/HtmlTreeBuilderState$10.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/HtmlTreeBuilderState$11.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/HtmlTreeBuilderState$12.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/HtmlTreeBuilderState$13.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/HtmlTreeBuilderState$14.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/HtmlTreeBuilderState$15.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/HtmlTreeBuilderState$16.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/HtmlTreeBuilderState$17.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/HtmlTreeBuilderState$18.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/HtmlTreeBuilderState$19.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/HtmlTreeBuilderState$2.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/HtmlTreeBuilderState$20.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/HtmlTreeBuilderState$21.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/HtmlTreeBuilderState$22.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/HtmlTreeBuilderState$23.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/HtmlTreeBuilderState$24.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/HtmlTreeBuilderState$3.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/HtmlTreeBuilderState$4.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/HtmlTreeBuilderState$5.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/HtmlTreeBuilderState$6.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/HtmlTreeBuilderState$7.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/HtmlTreeBuilderState$8.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/HtmlTreeBuilderState$9.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/HtmlTreeBuilderState$Constants.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/HtmlTreeBuilderState.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/ParseError.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/ParseErrorList.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/ParseSettings.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/Parser.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/Tag.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/Token$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/Token$Character.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/Token$Comment.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/Token$Doctype.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/Token$EOF.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/Token$EndTag.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/Token$StartTag.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/Token$Tag.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/Token$TokenType.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/Token.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/TokenQueue.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/Tokeniser.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/TokeniserState$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/TokeniserState$10.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/TokeniserState$11.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/TokeniserState$12.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/TokeniserState$13.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/TokeniserState$14.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/TokeniserState$15.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/TokeniserState$16.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/TokeniserState$17.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/TokeniserState$18.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/TokeniserState$19.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/TokeniserState$2.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/TokeniserState$20.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/TokeniserState$21.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/TokeniserState$22.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/TokeniserState$23.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/TokeniserState$24.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/TokeniserState$25.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/TokeniserState$26.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/TokeniserState$27.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/TokeniserState$28.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/TokeniserState$29.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/TokeniserState$3.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/TokeniserState$30.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/TokeniserState$31.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/TokeniserState$32.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/TokeniserState$33.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/TokeniserState$34.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/TokeniserState$35.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/TokeniserState$36.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/TokeniserState$37.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/TokeniserState$38.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/TokeniserState$39.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/TokeniserState$4.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/TokeniserState$40.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/TokeniserState$41.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/TokeniserState$42.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/TokeniserState$43.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/TokeniserState$44.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/TokeniserState$45.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/TokeniserState$46.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/TokeniserState$47.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/TokeniserState$48.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/TokeniserState$49.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/TokeniserState$5.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/TokeniserState$50.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/TokeniserState$51.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/TokeniserState$52.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/TokeniserState$53.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/TokeniserState$54.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/TokeniserState$55.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/TokeniserState$56.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/TokeniserState$57.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/TokeniserState$58.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/TokeniserState$59.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/TokeniserState$6.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/TokeniserState$60.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/TokeniserState$61.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/TokeniserState$62.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/TokeniserState$63.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/TokeniserState$64.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/TokeniserState$65.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/TokeniserState$66.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/TokeniserState$67.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/TokeniserState$7.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/TokeniserState$8.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/TokeniserState$9.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/TokeniserState.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/TreeBuilder.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/XmlTreeBuilder$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/parser/XmlTreeBuilder.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/safety/Cleaner$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/safety/Cleaner$CleaningVisitor.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/safety/Cleaner$ElementMeta.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/safety/Cleaner.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/safety/Whitelist$AttributeKey.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/safety/Whitelist$AttributeValue.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/safety/Whitelist$Protocol.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/safety/Whitelist$TagName.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/safety/Whitelist$TypedValue.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/safety/Whitelist.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/select/Collector$Accumulator.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/select/Collector.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/select/CombiningEvaluator$And.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/select/CombiningEvaluator$Or.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/select/CombiningEvaluator.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/select/Elements.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/select/Evaluator$AllElements.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/select/Evaluator$Attribute.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/select/Evaluator$AttributeKeyPair.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/select/Evaluator$AttributeStarting.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/select/Evaluator$AttributeWithValue.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/select/Evaluator$AttributeWithValueContaining.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/select/Evaluator$AttributeWithValueEnding.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/select/Evaluator$AttributeWithValueMatching.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/select/Evaluator$AttributeWithValueNot.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/select/Evaluator$AttributeWithValueStarting.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/select/Evaluator$Class.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/select/Evaluator$ContainsData.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/select/Evaluator$ContainsOwnText.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/select/Evaluator$ContainsText.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/select/Evaluator$CssNthEvaluator.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/select/Evaluator$Id.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/select/Evaluator$IndexEquals.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/select/Evaluator$IndexEvaluator.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/select/Evaluator$IndexGreaterThan.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/select/Evaluator$IndexLessThan.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/select/Evaluator$IsEmpty.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/select/Evaluator$IsFirstChild.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/select/Evaluator$IsFirstOfType.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/select/Evaluator$IsLastChild.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/select/Evaluator$IsLastOfType.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/select/Evaluator$IsNthChild.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/select/Evaluator$IsNthLastChild.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/select/Evaluator$IsNthLastOfType.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/select/Evaluator$IsNthOfType.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/select/Evaluator$IsOnlyChild.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/select/Evaluator$IsOnlyOfType.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/select/Evaluator$IsRoot.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/select/Evaluator$Matches.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/select/Evaluator$MatchesOwn.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/select/Evaluator$Tag.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/select/Evaluator$TagEndsWith.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/select/Evaluator.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/select/NodeTraversor.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/select/NodeVisitor.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/select/QueryParser.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/select/Selector$SelectorParseException.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/select/Selector.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/select/StructuralEvaluator$Has.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/select/StructuralEvaluator$ImmediateParent.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/select/StructuralEvaluator$ImmediatePreviousSibling.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/select/StructuralEvaluator$Not.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/select/StructuralEvaluator$Parent.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/select/StructuralEvaluator$PreviousSibling.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/select/StructuralEvaluator$Root.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/jsoup-1.10.3.jar_13qp8biyvovao33jno4sy4ev4/org/jsoup/select/StructuralEvaluator.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/mFirebaseLibs.jar_dra2stsja72kpwzxtej1gclmz/com/jackpan/libs/mfirebaselib/MfiebaselibsClass$19.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/mFirebaseLibs.jar_dra2stsja72kpwzxtej1gclmz/com/jackpan/libs/mfirebaselib/MfiebaselibsClass$20.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/mFirebaseLibs.jar_dra2stsja72kpwzxtej1gclmz/com/jackpan/libs/mfirebaselib/MfiebaselibsClass$21$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/mFirebaseLibs.jar_dra2stsja72kpwzxtej1gclmz/com/jackpan/libs/mfirebaselib/MfiebaselibsClass$21.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/mFirebaseLibs.jar_dra2stsja72kpwzxtej1gclmz/com/jackpan/libs/mfirebaselib/MfiebaselibsClass$22.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/mFirebaseLibs.jar_dra2stsja72kpwzxtej1gclmz/com/jackpan/libs/mfirebaselib/MfiebaselibsClass$23.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/libs/jsoup-1.10.3.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/jsoup_1_10_3.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/CustomVideoView.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/MyPushService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/FireBaseListActivity$NewsAdapter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/FireBaseListActivity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/LoginActivity$3$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/LoginActivity$4$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/LoginActivity$6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/LoginActivity$7.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/LoginActivity$8.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/LoginActivity$9.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/UserActivity$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/UserActivity$4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/UserActivity$5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/UserActivity$6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/UserActivity$7.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/UserActivity$8.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/UserActivity$9.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/UserMessgeActivity$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/VideoViewActivity$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/VideoViewActivity$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/VideoViewActivity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/video/ForIdeaAndShareVideoActivity$1$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/video/ForIdeaAndShareVideoActivity$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/video/ForIdeaAndShareVideoActivity$10.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/video/ForIdeaAndShareVideoActivity$11.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/video/ForIdeaAndShareVideoActivity$12.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/video/ForIdeaAndShareVideoActivity$13.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/video/ForIdeaAndShareVideoActivity$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/video/ForIdeaAndShareVideoActivity$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/video/ForIdeaAndShareVideoActivity$4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/video/ForIdeaAndShareVideoActivity$5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/video/ForIdeaAndShareVideoActivity$6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/video/ForIdeaAndShareVideoActivity$7.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/video/ForIdeaAndShareVideoActivity$8.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/video/ForIdeaAndShareVideoActivity$9.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/video/ForIdeaAndShareVideoActivity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/video/GayVideo.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/video/VideoMainActivity$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/video/VideoMainActivity$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/video/VideoMainActivity$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/video/VideoMainActivity$4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/video/VideoMainActivity$5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/video/VideoMainActivity$6$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/video/VideoMainActivity$6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/video/VideoMainActivity$7.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/video/VideoMainActivity$MyAdapter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/video/VideoMainActivity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/video/VideoTwoActivity$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/video/VideoTwoActivity$10.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/video/VideoTwoActivity$11.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/video/VideoTwoActivity$12.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/video/VideoTwoActivity$13.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/video/VideoTwoActivity$14.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/video/VideoTwoActivity$15.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/video/VideoTwoActivity$16$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/video/VideoTwoActivity$16.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/video/VideoTwoActivity$17.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/video/VideoTwoActivity$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/video/VideoTwoActivity$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/video/VideoTwoActivity$4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/video/VideoTwoActivity$5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/video/VideoTwoActivity$6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/video/VideoTwoActivity$7.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/video/VideoTwoActivity$8.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/video/VideoTwoActivity$9.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/video/VideoTwoActivity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/a/a/a.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/a/a/b.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/a/a/c.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/a/a/d.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/a/b/a.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/a/b/a/a.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/a/b/a/b.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/a/b/a/c.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/a/b/a/d.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/a/b/a/e.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/a/b/a/f.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/a/b/a/g.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/a/b/a/h.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/a/b/a/i.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/a/b/a/j.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/a/b/a/k.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/a/b/a/l.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/a/b/a/m.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/a/b/a/n.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/a/b/a/o.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/a/b/a/p.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/a/b/aa.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/a/b/ab.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/a/b/ac.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/a/b/ad.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/a/b/ae.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/a/b/af.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/a/b/b.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/a/b/c.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/a/b/d.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/a/b/e.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/a/b/f.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/a/b/g.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/a/b/h.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/a/b/i.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/a/b/j.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/a/b/k.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/a/b/l.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/a/b/m.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/a/b/n.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/a/b/o.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/a/b/p.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/a/b/q.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/a/b/r.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/a/b/s.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/a/b/t.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/a/b/u.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/a/b/v.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/a/b/w.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/a/b/x.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/a/b/y.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/a/b/z.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/a/c/a.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/a/c/b.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/a/c/c.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/a/c/d.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/a/c/e.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/a/c/f.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/a/c/g.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/a/c/h.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/a/c/i.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/a/d/a.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/a/d/b.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/a/d/c.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/a/d/d.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/a/d/e.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/newqm/sdkoffer/AdView.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/newqm/sdkoffer/BanEventListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/newqm/sdkoffer/BanSy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/newqm/sdkoffer/BannerReceiver.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/newqm/sdkoffer/QuMiActivity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/newqm/sdkoffer/QuMiConnect.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/newqm/sdkoffer/a.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/newqm/sdkoffer/a/a.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/newqm/sdkoffer/a/b.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/newqm/sdkoffer/a/c.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/newqm/sdkoffer/a/d.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/newqm/sdkoffer/a/e.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/newqm/sdkoffer/a/f.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/newqm/sdkoffer/a/g.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/newqm/sdkoffer/a/h.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/newqm/sdkoffer/a/i.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/newqm/sdkoffer/a/j.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/newqm/sdkoffer/a/k.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/newqm/sdkoffer/a/l.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/newqm/sdkoffer/a/m.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/newqm/sdkoffer/b.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/newqm/sdkoffer/b/a.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/newqm/sdkoffer/c.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/newqm/sdkoffer/d.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/newqm/sdkoffer/e.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/newqm/sdkoffer/f.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/newqm/sdkoffer/g.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/newqm/sdkoffer/h.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/newqm/sdkoffer/i.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/newqm/sdkoffer/j.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/qumi_banner_2.8.5.jar_44req2z79ob512mjfacl91gka/com/newqm/sdkoffer/k.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/CustomVideoView.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/MyPushService.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/FireBaseListActivity.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/VideoViewActivity.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/video/ForIdeaAndShareVideoActivity.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/video/GayVideo.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/video/VideoMainActivity.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/video/VideoTwoActivity.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/cache.properties.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshotsToTreeSnapshotsIndex.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshotsToTreeSnapshotsIndex.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/taskArtifacts.bin" />
+<<<<<<< Updated upstream
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/res/resources-debug.ap_" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/res/resources-debug.ap_" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+=======
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_mfirebaselibs_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_mfirebaselibs_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_mfirebaselibs_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_mfirebaselibs_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_mfirebaselibs_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_mfirebaselibs_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_mfirebaselibs_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_mfirebaselibs_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_mfirebaselibs_compileReleaseJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_mfirebaselibs_compileReleaseJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_mfirebaselibs_compileReleaseJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_mfirebaselibs_compileReleaseJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_mfirebaselibs_compileReleaseJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_mfirebaselibs_compileReleaseJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_mfirebaselibs_compileReleaseJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_mfirebaselibs_compileReleaseJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_taiwanpetadoptionApp_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_taiwanpetadoptionApp_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_taiwanpetadoptionApp_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_taiwanpetadoptionApp_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_taiwanpetadoptionApp_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_taiwanpetadoptionApp_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_taiwanpetadoptionApp_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_taiwanpetadoptionApp_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mfirebaselibs/libs/jars/mFirebaseLibs.jar" afterPath="$PROJECT_DIR$/mfirebaselibs/libs/jars/mFirebaseLibs.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/adlocus/AdLocusLibrary/R$id.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/adlocus/AdLocusLibrary/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/Brokethenews/BuildConfig.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/Brokethenews/BuildConfig.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/Brokethenews/R$id.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/Brokethenews/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/Brokethenews/R$styleable.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/Brokethenews/R$styleable.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/LoginActivity$1.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/LoginActivity$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/LoginActivity$2.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/LoginActivity$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/LoginActivity$3.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/LoginActivity$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/LoginActivity$4.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/LoginActivity$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/LoginActivity$5.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/LoginActivity$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/LoginActivity.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/LoginActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$1.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$10.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$10.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$11.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$11.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$2.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$3.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$4.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$5.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$6.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$6.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$7.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$7.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$8.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$8.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$9.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$9.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$MyAdapter.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity$MyAdapter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/MainActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/TwoActivity$4$1.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/TwoActivity$4$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/TwoActivity$4.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/TwoActivity$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/TwoActivity.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/TwoActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/UserActivity$1.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/UserActivity$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/UserActivity$2.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/UserActivity$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/UserActivity.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/UserActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/UserMessgeActivity$1.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/UserMessgeActivity$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/UserMessgeActivity.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/classes/debug/com/jackpan/TaiwanpetadoptionApp/UserMessgeActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/exploded-aar/com.google.android.gms/play-services/10.0.1/jars/classes.jar" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/exploded-aar/com.google.android.gms/play-services/10.0.1/jars/classes.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/exploded-aar/com.google.firebase/firebase-ads/10.0.1/jars/classes.jar" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/exploded-aar/com.google.firebase/firebase-ads/10.0.1/jars/classes.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/exploded-aar/com.google.firebase/firebase-core/10.0.1/jars/classes.jar" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/exploded-aar/com.google.firebase/firebase-core/10.0.1/jars/classes.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/packageDebug/zip-cache/At+bLa8K5DxPVyghhHRqdLobfe0=" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/packageDebug/zip-cache/At+bLa8K5DxPVyghhHRqdLobfe0=" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/packageDebug/zip-cache/qFRnPxbOBlzSzs05bYRO_VDHdUo=" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/packageDebug/zip-cache/qFRnPxbOBlzSzs05bYRO_VDHdUo=" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/multi-dex/debug/componentClasses.jar" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/multi-dex/debug/componentClasses.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/res/resources-debug-androidTest.ap_" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/res/resources-debug-androidTest.ap_" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/res/resources-debug.ap_" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/res/resources-debug.ap_" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes2.dex" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes2.dex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/transforms/jarMerging/debug/jars/1/1f/combined.jar" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/transforms/jarMerging/debug/jars/1/1f/combined.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/outputs/apk/taiwanpetadoptionApp-debug.apk" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/outputs/apk/taiwanpetadoptionApp-debug.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/mFirebaseLibs.jar_dra2stsja72kpwzxtej1gclmz/com/jackpan/libs/mfirebaselib/MfiebaselibsClass$1.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/mFirebaseLibs.jar_dra2stsja72kpwzxtej1gclmz/com/jackpan/libs/mfirebaselib/MfiebaselibsClass$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/mFirebaseLibs.jar_dra2stsja72kpwzxtej1gclmz/com/jackpan/libs/mfirebaselib/MfiebaselibsClass$10.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/mFirebaseLibs.jar_dra2stsja72kpwzxtej1gclmz/com/jackpan/libs/mfirebaselib/MfiebaselibsClass$10.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/mFirebaseLibs.jar_dra2stsja72kpwzxtej1gclmz/com/jackpan/libs/mfirebaselib/MfiebaselibsClass$11$1.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/mFirebaseLibs.jar_dra2stsja72kpwzxtej1gclmz/com/jackpan/libs/mfirebaselib/MfiebaselibsClass$11$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/mFirebaseLibs.jar_dra2stsja72kpwzxtej1gclmz/com/jackpan/libs/mfirebaselib/MfiebaselibsClass$11.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/mFirebaseLibs.jar_dra2stsja72kpwzxtej1gclmz/com/jackpan/libs/mfirebaselib/MfiebaselibsClass$11.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/mFirebaseLibs.jar_dra2stsja72kpwzxtej1gclmz/com/jackpan/libs/mfirebaselib/MfiebaselibsClass$12.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/mFirebaseLibs.jar_dra2stsja72kpwzxtej1gclmz/com/jackpan/libs/mfirebaselib/MfiebaselibsClass$12.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/mFirebaseLibs.jar_dra2stsja72kpwzxtej1gclmz/com/jackpan/libs/mfirebaselib/MfiebaselibsClass$13.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/mFirebaseLibs.jar_dra2stsja72kpwzxtej1gclmz/com/jackpan/libs/mfirebaselib/MfiebaselibsClass$13.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/mFirebaseLibs.jar_dra2stsja72kpwzxtej1gclmz/com/jackpan/libs/mfirebaselib/MfiebaselibsClass$14.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/mFirebaseLibs.jar_dra2stsja72kpwzxtej1gclmz/com/jackpan/libs/mfirebaselib/MfiebaselibsClass$14.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/mFirebaseLibs.jar_dra2stsja72kpwzxtej1gclmz/com/jackpan/libs/mfirebaselib/MfiebaselibsClass$15.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/mFirebaseLibs.jar_dra2stsja72kpwzxtej1gclmz/com/jackpan/libs/mfirebaselib/MfiebaselibsClass$15.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/mFirebaseLibs.jar_dra2stsja72kpwzxtej1gclmz/com/jackpan/libs/mfirebaselib/MfiebaselibsClass$16.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/mFirebaseLibs.jar_dra2stsja72kpwzxtej1gclmz/com/jackpan/libs/mfirebaselib/MfiebaselibsClass$16.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/mFirebaseLibs.jar_dra2stsja72kpwzxtej1gclmz/com/jackpan/libs/mfirebaselib/MfiebaselibsClass$17.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/mFirebaseLibs.jar_dra2stsja72kpwzxtej1gclmz/com/jackpan/libs/mfirebaselib/MfiebaselibsClass$17.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/mFirebaseLibs.jar_dra2stsja72kpwzxtej1gclmz/com/jackpan/libs/mfirebaselib/MfiebaselibsClass$18.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/mFirebaseLibs.jar_dra2stsja72kpwzxtej1gclmz/com/jackpan/libs/mfirebaselib/MfiebaselibsClass$18.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/mFirebaseLibs.jar_dra2stsja72kpwzxtej1gclmz/com/jackpan/libs/mfirebaselib/MfiebaselibsClass$2.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/mFirebaseLibs.jar_dra2stsja72kpwzxtej1gclmz/com/jackpan/libs/mfirebaselib/MfiebaselibsClass$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/mFirebaseLibs.jar_dra2stsja72kpwzxtej1gclmz/com/jackpan/libs/mfirebaselib/MfiebaselibsClass$3.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/mFirebaseLibs.jar_dra2stsja72kpwzxtej1gclmz/com/jackpan/libs/mfirebaselib/MfiebaselibsClass$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/mFirebaseLibs.jar_dra2stsja72kpwzxtej1gclmz/com/jackpan/libs/mfirebaselib/MfiebaselibsClass$4.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/mFirebaseLibs.jar_dra2stsja72kpwzxtej1gclmz/com/jackpan/libs/mfirebaselib/MfiebaselibsClass$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/mFirebaseLibs.jar_dra2stsja72kpwzxtej1gclmz/com/jackpan/libs/mfirebaselib/MfiebaselibsClass$5.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/mFirebaseLibs.jar_dra2stsja72kpwzxtej1gclmz/com/jackpan/libs/mfirebaselib/MfiebaselibsClass$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/mFirebaseLibs.jar_dra2stsja72kpwzxtej1gclmz/com/jackpan/libs/mfirebaselib/MfiebaselibsClass$6.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/mFirebaseLibs.jar_dra2stsja72kpwzxtej1gclmz/com/jackpan/libs/mfirebaselib/MfiebaselibsClass$6.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/mFirebaseLibs.jar_dra2stsja72kpwzxtej1gclmz/com/jackpan/libs/mfirebaselib/MfiebaselibsClass$7.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/mFirebaseLibs.jar_dra2stsja72kpwzxtej1gclmz/com/jackpan/libs/mfirebaselib/MfiebaselibsClass$7.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/mFirebaseLibs.jar_dra2stsja72kpwzxtej1gclmz/com/jackpan/libs/mfirebaselib/MfiebaselibsClass$8.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/mFirebaseLibs.jar_dra2stsja72kpwzxtej1gclmz/com/jackpan/libs/mfirebaselib/MfiebaselibsClass$8.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/mFirebaseLibs.jar_dra2stsja72kpwzxtej1gclmz/com/jackpan/libs/mfirebaselib/MfiebaselibsClass$9.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/mFirebaseLibs.jar_dra2stsja72kpwzxtej1gclmz/com/jackpan/libs/mfirebaselib/MfiebaselibsClass$9.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/mFirebaseLibs.jar_dra2stsja72kpwzxtej1gclmz/com/jackpan/libs/mfirebaselib/MfiebaselibsClass.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/mFirebaseLibs.jar_dra2stsja72kpwzxtej1gclmz/com/jackpan/libs/mfirebaselib/MfiebaselibsClass.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/mFirebaseLibs.jar_dra2stsja72kpwzxtej1gclmz/com/jackpan/libs/mfirebaselib/MfirebaeCallback.class" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/tmp/expandedArchives/mFirebaseLibs.jar_dra2stsja72kpwzxtej1gclmz/com/jackpan/libs/mfirebaselib/MfirebaeCallback.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/libs/mFirebaseLibs.jar" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/libs/mFirebaseLibs.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mfirebaselibs/mfirebaselibs.iml" afterPath="$PROJECT_DIR$/mfirebaselibs/mfirebaselibs.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mfirebaselibs/src/main/java/com/jackpan/libs/mfirebaselib/MfiebaselibsClass.java" afterPath="$PROJECT_DIR$/mfirebaselibs/src/main/java/com/jackpan/libs/mfirebaselib/MfiebaselibsClass.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mfirebaselibs/src/main/java/com/jackpan/libs/mfirebaselib/MfirebaeCallback.java" afterPath="$PROJECT_DIR$/mfirebaselibs/src/main/java/com/jackpan/libs/mfirebaselib/MfirebaeCallback.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build.gradle" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build.gradle" />
+>>>>>>> Stashed changes
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/generated/source/buildConfig/debug/com/jackpan/Brokethenews/BuildConfig.java" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/generated/source/buildConfig/debug/com/jackpan/Brokethenews/BuildConfig.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/generated/source/r/debug/com/adlocus/AdLocusLibrary/R.java" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/generated/source/r/debug/com/adlocus/AdLocusLibrary/R.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/generated/source/r/debug/com/jackpan/Brokethenews/R.java" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/generated/source/r/debug/com/jackpan/Brokethenews/R.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/blame/res/debug/multi/values.json" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/blame/res/debug/multi/values.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/blame/res/debug/single/drawable-hdpi-v4.json" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/blame/res/debug/single/drawable-hdpi-v4.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/blame/res/debug/single/drawable-mdpi-v4.json" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/blame/res/debug/single/drawable-mdpi-v4.json" />
+<<<<<<< Updated upstream
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/blame/res/debug/single/drawable-xxhdpi-v4.json" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/blame/res/debug/single/drawable-xxhdpi-v4.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/blame/res/debug/single/drawable-xxxhdpi-v4.json" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/blame/res/debug/single/drawable-xxxhdpi-v4.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/blame/res/debug/single/layout.json" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/blame/res/debug/single/layout.json" />
@@ -32,12 +545,41 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merger.xml" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merger.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/manifests/full/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/manifests/full/debug/AndroidManifest.xml" />
+=======
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/blame/res/debug/single/drawable-xhdpi-v4.json" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/blame/res/debug/single/drawable-xhdpi-v4.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/blame/res/debug/single/drawable-xxhdpi-v4.json" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/blame/res/debug/single/drawable-xxhdpi-v4.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/blame/res/debug/single/drawable-xxxhdpi-v4.json" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/blame/res/debug/single/drawable-xxxhdpi-v4.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/blame/res/debug/single/layout.json" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/blame/res/debug/single/layout.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugAndroidTestResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugAndroidTestResources/compile-file-map.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merger.xml" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/mergeDebugResources/merger.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/packageDebug/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/packageDebug/dex-renamer-state.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/packageDebug/file-input-save-data.txt" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/incremental/packageDebug/file-input-save-data.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/manifests/full/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/manifests/full/debug/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/multi-dex/debug/components.flags" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/multi-dex/debug/components.flags" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/multi-dex/debug/maindexlist.txt" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/multi-dex/debug/maindexlist.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/multi-dex/debug/manifest_keep.txt" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/multi-dex/debug/manifest_keep.txt" />
+>>>>>>> Stashed changes
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/res/merged/debug/layout/activity_for_idea_and_share.xml" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/res/merged/debug/layout/activity_for_idea_and_share.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/res/merged/debug/layout/activity_login.xml" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/res/merged/debug/layout/activity_login.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/res/merged/debug/layout/activity_user.xml" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/res/merged/debug/layout/activity_user.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/res/merged/debug/values/values.xml" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/res/merged/debug/values/values.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/symbols/debug/R.txt" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/intermediates/symbols/debug/R.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/build/outputs/logs/manifest-merger-debug-report.txt" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/build/outputs/logs/manifest-merger-debug-report.txt" />
+<<<<<<< Updated upstream
+=======
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/src/main/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/LoginActivity.java" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/LoginActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/MainActivity.java" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/MainActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/TwoActivity.java" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/TwoActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/UserActivity.java" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/UserActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/UserMessgeActivity.java" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/UserMessgeActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/src/main/res/layout/activity_for_idea_and_share.xml" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/src/main/res/layout/activity_for_idea_and_share.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/src/main/res/layout/activity_login.xml" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/src/main/res/layout/activity_login.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/src/main/res/layout/activity_user.xml" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/src/main/res/layout/activity_user.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/src/main/res/values/strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taiwanpetadoptionApp/taiwanpetadoptionApp.iml" afterPath="$PROJECT_DIR$/taiwanpetadoptionApp/taiwanpetadoptionApp.iml" />
+>>>>>>> Stashed changes
     </list>
     <ignored path="sharebook.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -80,30 +622,51 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
             <state relative-caret-position="-266">
               <caret line="173" column="19" selection-start-line="173" selection-start-column="19" selection-end-line="173" selection-end-column="19" />
               <folding>
                 <element signature="e#2279#2291#0" expanded="true" />
                 <element signature="e#3938#5513#0" expanded="true" />
                 <element signature="e#5512#5513#0" expanded="true" />
+=======
+            <state relative-caret-position="1149">
+              <caret line="189" column="0" selection-start-line="189" selection-start-column="0" selection-end-line="189" selection-end-column="0" />
+              <folding>
+                <element signature="e#2279#2291#0" expanded="true" />
+>>>>>>> Stashed changes
                 <element signature="e#5798#6793#0" expanded="true" />
                 <element signature="e#6792#6793#0" expanded="true" />
                 <element signature="e#6901#8144#0" expanded="true" />
                 <element signature="e#8143#8144#0" expanded="true" />
+<<<<<<< Updated upstream
                 <element signature="e#8484#8746#0" expanded="true" />
                 <element signature="e#8745#8746#0" expanded="true" />
+=======
+>>>>>>> Stashed changes
                 <element signature="e#8865#9089#0" expanded="true" />
                 <element signature="e#9088#9089#0" expanded="true" />
                 <element signature="e#9500#9920#0" expanded="true" />
                 <element signature="e#9919#9920#0" expanded="true" />
                 <element signature="e#9966#10183#0" expanded="true" />
                 <element signature="e#10182#10183#0" expanded="true" />
+<<<<<<< Updated upstream
                 <element signature="e#14813#15119#0" expanded="true" />
                 <element signature="e#15118#15119#0" expanded="true" />
                 <element signature="e#15158#15361#0" expanded="true" />
                 <element signature="e#15360#15361#0" expanded="true" />
                 <element signature="e#17662#18384#0" expanded="true" />
                 <element signature="e#18383#18384#0" expanded="true" />
+=======
+                <element signature="e#12129#12130#0" expanded="true" />
+                <element signature="e#12167#12168#0" expanded="true" />
+                <element signature="e#12357#12358#0" expanded="true" />
+                <element signature="e#12401#12402#0" expanded="true" />
+                <element signature="e#12466#12467#0" expanded="true" />
+                <element signature="e#12517#12518#0" expanded="true" />
+                <element signature="e#12582#12583#0" expanded="true" />
+                <element signature="e#12621#12622#0" expanded="true" />
+>>>>>>> Stashed changes
               </folding>
             </state>
           </provider>
@@ -113,7 +676,7 @@
         <entry file="jar://$PROJECT_DIR$/taiwanpetadoptionApp/libs/mFirebaseLibs.jar!/com/jackpan/libs/mfirebaselib/MfiebaselibsClass.class">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="76">
-              <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+              <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -132,8 +695,13 @@
       <file leaf-file-name="MfiebaselibsClass.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mfirebaselibs/src/main/java/com/jackpan/libs/mfirebaselib/MfiebaselibsClass.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
             <state relative-caret-position="4845">
               <caret line="255" column="0" selection-start-line="255" selection-start-column="0" selection-end-line="255" selection-end-column="0" />
+=======
+            <state relative-caret-position="4598">
+              <caret line="272" column="0" selection-start-line="272" selection-start-column="0" selection-end-line="272" selection-end-column="0" />
+>>>>>>> Stashed changes
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -144,8 +712,8 @@
       <file leaf-file-name="LoginActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/LoginActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="49" column="28" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="28" />
+            <state relative-caret-position="152">
+              <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -176,8 +744,8 @@
       <file leaf-file-name="MfirebaeCallback.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mfirebaselibs/src/main/java/com/jackpan/libs/mfirebaselib/MfirebaeCallback.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="26" column="52" selection-start-line="26" selection-start-column="52" selection-end-line="26" selection-end-column="52" />
+            <state relative-caret-position="570">
+              <caret line="30" column="38" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -187,7 +755,7 @@
         <entry file="file://$PROJECT_DIR$/taiwanpetadoptionApp/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="855">
-              <caret line="45" column="4" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="4" />
+              <caret line="46" column="4" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -3463,7 +4031,11 @@
     </option>
     <option name="modificationStamps">
       <map>
+<<<<<<< Updated upstream
         <entry key="$PROJECT_DIR$" value="6034060062000" />
+=======
+        <entry key="$PROJECT_DIR$" value="6034059472000" />
+>>>>>>> Stashed changes
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -3839,9 +4411,9 @@
         <option value="$PROJECT_DIR$/mfirebaselibs/src/main/java/com/jackpan/libs/mfirebaselib/mmm.java" />
         <option value="$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/LoginActivity.java" />
         <option value="$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/ForIdeaAndShareActivity.java" />
-        <option value="$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/MainActivity.java" />
         <option value="$PROJECT_DIR$/mfirebaselibs/src/main/java/com/jackpan/libs/mfirebaselib/MfirebaeCallback.java" />
         <option value="$PROJECT_DIR$/mfirebaselibs/src/main/java/com/jackpan/libs/mfirebaselib/MfiebaselibsClass.java" />
+        <option value="$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/MainActivity.java" />
       </list>
     </option>
   </component>
@@ -4003,6 +4575,7 @@
               <option name="myItemId" value="com" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+<<<<<<< Updated upstream
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -4033,6 +4606,8 @@
               <option name="myItemId" value="com" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+=======
+>>>>>>> Stashed changes
             <PATH_ELEMENT>
               <option name="myItemId" value="TaiwanpetadoptionApp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
@@ -4882,9 +5457,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1178">
           <caret line="110" column="45" selection-start-line="110" selection-start-column="45" selection-end-line="110" selection-end-column="45" />
+<<<<<<< Updated upstream
           <folding>
             <element signature="imports" expanded="false" />
           </folding>
+=======
+          <folding />
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
@@ -5014,7 +5593,7 @@
     <entry file="file://$PROJECT_DIR$/taiwanpetadoptionApp/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="855">
-          <caret line="45" column="4" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="4" />
+          <caret line="46" column="4" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="4" />
           <folding />
         </state>
       </provider>
@@ -5030,7 +5609,7 @@
     <entry file="jar://$PROJECT_DIR$/taiwanpetadoptionApp/libs/mFirebaseLibs.jar!/com/jackpan/libs/mfirebaselib/MfiebaselibsClass.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
-          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
           <folding />
         </state>
       </provider>
@@ -5046,8 +5625,8 @@
     <entry file="file://$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/GayPlace.java" />
     <entry file="file://$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/LoginActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="49" column="28" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="28" />
+        <state relative-caret-position="152">
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
           <folding />
         </state>
       </provider>
@@ -5064,16 +5643,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mfirebaselibs/src/main/java/com/jackpan/libs/mfirebaselib/MfirebaeCallback.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="26" column="52" selection-start-line="26" selection-start-column="52" selection-end-line="26" selection-end-column="52" />
+        <state relative-caret-position="570">
+          <caret line="30" column="38" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mfirebaselibs/src/main/java/com/jackpan/libs/mfirebaselib/MfiebaselibsClass.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="4845">
           <caret line="255" column="0" selection-start-line="255" selection-start-column="0" selection-end-line="255" selection-end-column="0" />
+=======
+        <state relative-caret-position="4598">
+          <caret line="272" column="0" selection-start-line="272" selection-start-column="0" selection-end-line="272" selection-end-column="0" />
+>>>>>>> Stashed changes
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -5082,30 +5666,51 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/taiwanpetadoptionApp/src/main/java/com/jackpan/TaiwanpetadoptionApp/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="-266">
           <caret line="173" column="19" selection-start-line="173" selection-start-column="19" selection-end-line="173" selection-end-column="19" />
           <folding>
             <element signature="e#2279#2291#0" expanded="true" />
             <element signature="e#3938#5513#0" expanded="true" />
             <element signature="e#5512#5513#0" expanded="true" />
+=======
+        <state relative-caret-position="1149">
+          <caret line="189" column="0" selection-start-line="189" selection-start-column="0" selection-end-line="189" selection-end-column="0" />
+          <folding>
+            <element signature="e#2279#2291#0" expanded="true" />
+>>>>>>> Stashed changes
             <element signature="e#5798#6793#0" expanded="true" />
             <element signature="e#6792#6793#0" expanded="true" />
             <element signature="e#6901#8144#0" expanded="true" />
             <element signature="e#8143#8144#0" expanded="true" />
+<<<<<<< Updated upstream
             <element signature="e#8484#8746#0" expanded="true" />
             <element signature="e#8745#8746#0" expanded="true" />
+=======
+>>>>>>> Stashed changes
             <element signature="e#8865#9089#0" expanded="true" />
             <element signature="e#9088#9089#0" expanded="true" />
             <element signature="e#9500#9920#0" expanded="true" />
             <element signature="e#9919#9920#0" expanded="true" />
             <element signature="e#9966#10183#0" expanded="true" />
             <element signature="e#10182#10183#0" expanded="true" />
+<<<<<<< Updated upstream
             <element signature="e#14813#15119#0" expanded="true" />
             <element signature="e#15118#15119#0" expanded="true" />
             <element signature="e#15158#15361#0" expanded="true" />
             <element signature="e#15360#15361#0" expanded="true" />
             <element signature="e#17662#18384#0" expanded="true" />
             <element signature="e#18383#18384#0" expanded="true" />
+=======
+            <element signature="e#12129#12130#0" expanded="true" />
+            <element signature="e#12167#12168#0" expanded="true" />
+            <element signature="e#12357#12358#0" expanded="true" />
+            <element signature="e#12401#12402#0" expanded="true" />
+            <element signature="e#12466#12467#0" expanded="true" />
+            <element signature="e#12517#12518#0" expanded="true" />
+            <element signature="e#12582#12583#0" expanded="true" />
+            <element signature="e#12621#12622#0" expanded="true" />
+>>>>>>> Stashed changes
           </folding>
         </state>
       </provider>
