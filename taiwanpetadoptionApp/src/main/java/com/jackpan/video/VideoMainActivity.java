@@ -7,12 +7,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.graphics.Matrix;
-import android.net.Uri;
-import android.os.AsyncTask;
 import android.os.Bundle;
-import android.os.Environment;
-import android.support.annotation.NonNull;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
@@ -32,64 +27,33 @@ import android.widget.RelativeLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
 
-import com.MyAPI.VersionChecker;
-import com.adlocus.PushAd;
 import com.bumptech.glide.Glide;
-import com.facebook.FacebookSdk;
 import com.facebook.ads.AdSize;
-import com.facebook.appevents.AppEventsLogger;
-import com.facebook.applinks.AppLinkData;
 import com.firebase.client.DataSnapshot;
 import com.firebase.client.Firebase;
 import com.firebase.client.FirebaseError;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.InterstitialAd;
-import com.google.android.gms.tasks.OnFailureListener;
-import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.storage.FirebaseStorage;
-import com.google.firebase.storage.StorageReference;
-import com.google.firebase.storage.UploadTask;
 import com.google.gson.Gson;
-import com.igexin.sdk.PushManager;
 import com.jackpan.Brokethenews.R;
-import com.jackpan.MyPushService;
-import com.jackpan.TaiwanpetadoptionApp.ForIdeaAndShareActivity;
-import com.jackpan.TaiwanpetadoptionApp.GayPlace;
 import com.jackpan.TaiwanpetadoptionApp.InAppBillingActivity;
-import com.jackpan.TaiwanpetadoptionApp.MainActivity;
-import com.jackpan.TaiwanpetadoptionApp.MyIntentService;
 import com.jackpan.TaiwanpetadoptionApp.MySharedPrefernces;
-import com.jackpan.TaiwanpetadoptionApp.Post;
 
 import com.jackpan.TaiwanpetadoptionApp.ResultData;
-import com.jackpan.TaiwanpetadoptionApp.TwoActivity;
 import com.jackpan.TaiwanpetadoptionApp.UserActivity;
-import com.jackpan.VideoViewActivity;
 
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.io.BufferedReader;
-import java.io.ByteArrayOutputStream;
-import java.io.File;
-import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Map;
 
 import Appkey.MyAdKey;
-import bolts.AppLinks;
 
 public class VideoMainActivity extends Activity {
     private ListView petlist;

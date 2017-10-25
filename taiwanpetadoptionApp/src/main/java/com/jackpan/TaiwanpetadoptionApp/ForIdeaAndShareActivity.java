@@ -85,11 +85,6 @@ public class ForIdeaAndShareActivity extends Activity implements View.OnClickLis
     private String picUri = "";
     private String picUri2 = "";
     private String picUri3 = "";
-    private String picUri4 = "";
-    private String picUri5 = "";
-    private String videoUri = "";
-    private String videoUri2 = "";
-    private String videoUri3 = "";
     CharSequence s;
     private Bitmap bitmap;
     private static final int PICKER = 100;
@@ -106,13 +101,10 @@ public class ForIdeaAndShareActivity extends Activity implements View.OnClickLis
     private EditText mAddEdt;
     private Button mAddBtn;
     private String mcatStr, mMoodStr;
-    String[] cat = {"文學", "文財經企管", "生活風格", "飲食料理", "心理勵志", "醫療保健", "旅遊", "宗教命理","教育/親子教養","童書","漫畫"};
-//    String[] mood = {"喜", "怒", "哀", "樂"};
+    String[] cat;
     private int picInt = 0;
     private int videoInt = 0;
     String returnAddress = "";
-    Double lat, lon;
-    LocationManager locationMgr;
     private  EditText pricetext, isbntext;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -120,6 +112,7 @@ public class ForIdeaAndShareActivity extends Activity implements View.OnClickLis
         setContentView(R.layout.activity_for_idea_and_share);
         mPhone = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(mPhone);
+        cat =getResources().getStringArray(R.array.musicals);
         initLayout();
         Calendar mCal = Calendar.getInstance();
         s = DateFormat.format("yyyy-MM-dd kk:mm:ss", mCal.getTime());
@@ -297,81 +290,6 @@ public class ForIdeaAndShareActivity extends Activity implements View.OnClickLis
         });
     }
 
-    private void upLoad() {
-
-//				sharePicWithUri(uri);
-
-        FirebaseStorage storage = FirebaseStorage.getInstance();
-        StorageReference storageRef = storage.getReferenceFromUrl("gs://sevenpeoplebook.appspot.com");
-        StorageReference mountainsRef = storageRef.child("file.jpg");
-        // Get the data from an ImageView as bytes
-        imageView.setDrawingCacheEnabled(true);
-        imageView.buildDrawingCache();
-        Bitmap bitmap = imageView.getDrawingCache();
-        ByteArrayOutputStream baos = new ByteArrayOutputStream();
-        bitmap.compress(Bitmap.CompressFormat.JPEG, 100, baos);
-        byte[] data = baos.toByteArray();
-
-        UploadTask uploadTask = mountainsRef.putBytes(data);
-        uploadTask.addOnFailureListener(new OnFailureListener() {
-            @Override
-            public void onFailure(@NonNull Exception exception) {
-                // Handle unsuccessful uploads
-            }
-        }).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
-            @Override
-            public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-                // taskSnapshot.getMetadata() contains file metadata such as size, content-type, and download URL.
-                 Uri downloadUrl = taskSnapshot.getDownloadUrl();
-            }
-        });
-    }
-
-    private void selectVideo() {
-        int permission = ActivityCompat.checkSelfPermission(this,
-                android.Manifest.permission.READ_EXTERNAL_STORAGE);
-        if (permission != PackageManager.PERMISSION_GRANTED) {
-            //未取得權限，向使用者要求允許權限
-
-            if (ActivityCompat.shouldShowRequestPermissionRationale(ForIdeaAndShareActivity.this,
-                    android.Manifest.permission.CAMERA)) {
-                new android.support.v7.app.AlertDialog.Builder(ForIdeaAndShareActivity.this)
-                        .setMessage("我真的沒有要做壞事, 給我權限吧?")
-                        .setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
-                                ActivityCompat.requestPermissions(ForIdeaAndShareActivity.this,
-                                        new String[]{android.Manifest.permission.CAMERA},
-                                        REQUEST_EXTERNAL_STORAGE);
-                            }
-                        })
-                        .setNegativeButton("No", new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
-                                finish();
-                            }
-                        })
-                        .show();
-            } else {
-                ActivityCompat.requestPermissions(this,
-                        new String[]{android.Manifest.permission.READ_EXTERNAL_STORAGE},
-                        REQUEST_EXTERNAL_STORAGE
-
-                );
-            }
-
-        } else {
-            //開啟相簿相片集，須由startActivityForResult且帶入requestCode進行呼叫，原因
-            //為點選相片後返回程式呼叫onActivityResult
-            Intent intent = new Intent();
-            intent.setType("video/*");
-            intent.setAction(Intent.ACTION_GET_CONTENT);
-            startActivityForResult(intent, VIDEO);
-
-
-        }
-    }
-
     private void selectPic() {
         int permission = ActivityCompat.checkSelfPermission(this,
                 android.Manifest.permission.READ_EXTERNAL_STORAGE);
@@ -462,82 +380,11 @@ public class ForIdeaAndShareActivity extends Activity implements View.OnClickLis
         if ((requestCode == CAMERA || requestCode == VIDEO) && data != null) {
             //取得照片路徑uri
             Uri datauri = data.getData();
-            uploadFromFile(datauri);
+//            uploadFromFile(datauri);
 
 
             super.onActivityResult(requestCode, resultCode, data);
         }
-    }
-
-    private void uploadFromFile(Uri path) {
-        FirebaseStorage storage = FirebaseStorage.getInstance();
-        StorageReference storageRef = storage.getReferenceFromUrl("gs://bookshare-99cb3.appspot.com\n" +
-                "file_upload 上傳檔案");
-        Uri file = path;
-        StorageReference imageRef = storageRef.child(file.getLastPathSegment());
-        StorageMetadata metadata = new StorageMetadata.Builder()
-                .setContentType("audio/mpeg")
-                .setCustomMetadata("country", "x")
-                .build();
-        UploadTask uploadTask = imageRef.putFile(file, metadata);
-
-        progressDialog = new ProgressDialog(ForIdeaAndShareActivity.this);
-
-
-        uploadTask.addOnFailureListener(new OnFailureListener() {
-            @Override
-            public void onFailure(@NonNull Exception exception) {
-
-                progressDialog.dismiss();
-                Toast.makeText(ForIdeaAndShareActivity.this, "上傳失敗", Toast.LENGTH_SHORT).show();
-
-
-            }
-        }).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
-            @Override
-            public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-                switch (videoInt) {
-                    case 1:
-                        mVideoName.setText(taskSnapshot.getMetadata().getName());
-                        videoUri = taskSnapshot.getDownloadUrl().toString();
-                        progressDialog.dismiss();
-                        Toast.makeText(ForIdeaAndShareActivity.this, "上傳成功", Toast.LENGTH_SHORT).show();
-
-
-                        break;
-                    case 2:
-                        mVideoName2.setText(taskSnapshot.getMetadata().getName());
-                        videoUri2 = taskSnapshot.getDownloadUrl().toString();
-                        progressDialog.dismiss();
-                        Toast.makeText(ForIdeaAndShareActivity.this, "上傳成功", Toast.LENGTH_SHORT).show();
-
-
-                        break;
-
-                    case 3:
-                        mVideoName3.setText(taskSnapshot.getMetadata().getName());
-                        videoUri3 = taskSnapshot.getDownloadUrl().toString();
-                        progressDialog.dismiss();
-                        Toast.makeText(ForIdeaAndShareActivity.this, "上傳成功", Toast.LENGTH_SHORT).show();
-
-
-                        break;
-
-                }
-
-
-            }
-        }).addOnProgressListener(new OnProgressListener<UploadTask.TaskSnapshot>() {
-            @Override
-            public void onProgress(UploadTask.TaskSnapshot taskSnapshot) {
-
-                progressDialog.setTitle("提示訊息");
-                progressDialog.setCancelable(false);
-                progressDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
-                progressDialog.setMessage("上傳中！！");
-                progressDialog.show();
-            }
-        });
     }
 
 
@@ -648,20 +495,7 @@ public class ForIdeaAndShareActivity extends Activity implements View.OnClickLis
                         progressDialog.dismiss();
                         Toast.makeText(ForIdeaAndShareActivity.this, "上傳成功", Toast.LENGTH_SHORT).show();
                         break;
-                    case 4:
 
-                        picUri4 = taskSnapshot.getDownloadUrl().toString();
-                        mPicName4.setText(taskSnapshot.getMetadata().getName());
-                        progressDialog.dismiss();
-                        Toast.makeText(ForIdeaAndShareActivity.this, "上傳成功", Toast.LENGTH_SHORT).show();
-                        break;
-                    case 5:
-
-                        picUri5 = taskSnapshot.getDownloadUrl().toString();
-                        mPicName5.setText(taskSnapshot.getMetadata().getName());
-                        progressDialog.dismiss();
-                        Toast.makeText(ForIdeaAndShareActivity.this, "上傳成功", Toast.LENGTH_SHORT).show();
-                        break;
 
 
                 }

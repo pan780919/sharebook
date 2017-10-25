@@ -106,7 +106,7 @@
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.android.support/support-v4/25.3.1/jars" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.3.1/jars" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.android.support/transition/25.1.0/jars" />
-      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.facebook.android/audience-network-sdk/4.26.0/jars" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.facebook.android/audience-network-sdk/4.26.1/jars" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.27.0/jars" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.facebook.android/facebook-applinks/4.27.0/jars" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.facebook.android/facebook-common/4.27.0/jars" />
@@ -193,14 +193,15 @@
     <orderEntry type="library" exported="" name="play-services-wearable-10.0.1" level="project" />
     <orderEntry type="library" exported="" name="play-services-cast-framework-10.0.1" level="project" />
     <orderEntry type="library" exported="" name="play-services-places-10.0.1" level="project" />
+    <orderEntry type="library" exported="" name="qumi_banner_2.8.5" level="project" />
     <orderEntry type="library" exported="" name="jackson-annotations-2.2.2" level="project" />
     <orderEntry type="library" exported="" name="play-services-location-10.0.1" level="project" />
     <orderEntry type="library" exported="" name="firebase-crash-10.0.1" level="project" />
     <orderEntry type="library" exported="" name="facebook-share-4.27.0" level="project" />
     <orderEntry type="library" exported="" name="play-services-appinvite-10.0.1" level="project" />
     <orderEntry type="library" exported="" scope="TEST" name="multidex-instrumentation-1.0.1" level="project" />
+    <orderEntry type="library" exported="" name="audience-network-sdk-4.26.1" level="project" />
     <orderEntry type="library" exported="" name="play-services-plus-10.0.1" level="project" />
-    <orderEntry type="library" exported="" name="audience-network-sdk-4.26.0" level="project" />
     <orderEntry type="library" exported="" name="play-services-basement-10.0.1" level="project" />
     <orderEntry type="library" exported="" name="support-v4-25.3.1" level="project" />
     <orderEntry type="library" exported="" name="support-media-compat-25.3.1" level="project" />

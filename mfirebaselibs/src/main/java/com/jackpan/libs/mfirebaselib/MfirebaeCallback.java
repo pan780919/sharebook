@@ -16,6 +16,8 @@ public interface MfirebaeCallback {
 
     void useLognState(boolean b);
 
+    void getuseLoginId(String s);
+
     void resetPassWordState(boolean b);
 
     void getFireBaseDBState(boolean b, String s);

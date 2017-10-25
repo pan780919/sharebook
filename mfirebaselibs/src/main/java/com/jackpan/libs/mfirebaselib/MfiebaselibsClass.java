@@ -9,12 +9,13 @@ import android.os.Build;
 import android.provider.DocumentsContract;
 import android.provider.MediaStore;
 import android.support.annotation.NonNull;
-import android.util.Log;
 import android.widget.Toast;
 
 import com.firebase.client.DataSnapshot;
 import com.firebase.client.Firebase;
 import com.firebase.client.FirebaseError;
+import com.firebase.client.MutableData;
+import com.firebase.client.Transaction;
 import com.firebase.client.ValueEventListener;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -108,8 +109,9 @@ public class MfiebaselibsClass {
                 FirebaseUser user = firebaseAuth.getCurrentUser();
                 if (user != null) {
                     userUID = user.getUid();
+                    callback.getuseLoginId(userUID);
                 } else {
-
+                    callback.getuseLoginId("");
                 }
             }
         };
@@ -198,7 +200,39 @@ public class MfiebaselibsClass {
         });
 
     }
+    /**
+     * url db路徑
+     * pathString 結點位置
+     * item  要更新的欄位
+     * **/
+    public void upLoadDB(String url ,String pathString ,String item,final  Object value){
 
+        Firebase mFirebaseRef = new Firebase(url);
+
+        Firebase countRef = mFirebaseRef.child(pathString).child(item);
+        countRef.runTransaction(new Transaction.Handler() {
+
+            @Override
+            public Transaction.Result doTransaction(MutableData currentData) {
+
+                if(currentData.getValue() == null) {
+                    currentData.setValue(value);
+                } else {
+                    currentData.setValue((Long) currentData.getValue() + 1);
+                }
+                return Transaction.success(currentData); //we can also abort by calling Transaction.abort()
+            }
+
+            @Override
+            public void onComplete(FirebaseError firebaseError, boolean committed, DataSnapshot currentData) {
+                //This method will be called once with the results of the transaction.
+            }
+        });
+    }
+    /**
+    * url 路徑
+     * pathString 節點的id
+    * */
     public void deleteData(String url, String pathString) {
         Firebase myFirebaseRef = new Firebase(url);
         final Firebase userRef = myFirebaseRef.child(pathString);
@@ -220,6 +254,27 @@ public class MfiebaselibsClass {
         });
     }
 
+    public void userDeleteData(String url, String pathString) {
+
+        Firebase myFirebaseRef = new Firebase(url);
+        final Firebase userRef = myFirebaseRef.child(pathString);
+        userRef.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                if (dataSnapshot.getValue() != null) {
+                    userRef.removeValue();
+                    callback.getDeleteState(true, DELETESUCCESS);
+                } else {
+                    callback.getDeleteState(false, DELETEFAIL);
+                }
+            }
+
+            @Override
+            public void onCancelled(FirebaseError firebaseError) {
+                callback.getDeleteState(false, firebaseError.getMessage());
+            }
+        });
+    }
     public void resetPassWord(String oldpassword, final String newpassword) {
         userpassword = FirebaseAuth.getInstance().getCurrentUser();
         final String email = userpassword.getEmail();
@@ -400,6 +455,9 @@ public class MfiebaselibsClass {
             }
         });
     }
+    /**
+     * 每次建構完 都要在 onstart 呼叫
+     */
 
     public void setAuthListener() {
         if (authListener != null) {
@@ -408,7 +466,9 @@ public class MfiebaselibsClass {
 
 
     }
-
+    /**
+     * 每次建構完 都要在 onstop 呼叫
+     */
     public void removeAuthListener() {
         if (authListener != null) {
             auth.removeAuthStateListener(authListener);

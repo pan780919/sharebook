@@ -3,23 +3,13 @@ package com.jackpan.TaiwanpetadoptionApp;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
-import android.content.ContentResolver;
-import android.content.CursorLoader;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.pm.PackageManager;
-import android.database.Cursor;
 import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.graphics.Color;
 import android.graphics.Matrix;
 import android.net.Uri;
-import android.os.AsyncTask;
-import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
-import android.provider.DocumentsContract;
-import android.provider.MediaStore;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -27,11 +17,8 @@ import android.support.v4.widget.DrawerLayout;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.Window;
 import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
@@ -42,59 +29,24 @@ import android.widget.ExpandableListAdapter;
 import android.widget.ExpandableListView;
 import android.widget.ImageView;
 import android.widget.ListView;
-import android.widget.RelativeLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.MyAPI.VersionChecker;
 import com.adlocus.PushAd;
 import com.bumptech.glide.Glide;
 import com.facebook.FacebookSdk;
 import com.facebook.appevents.AppEventsLogger;
 import com.facebook.applinks.AppLinkData;
-import com.firebase.client.DataSnapshot;
-import com.firebase.client.Firebase;
-import com.firebase.client.FirebaseError;
-import com.firebase.client.ValueEventListener;
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
 
 import com.google.android.gms.ads.InterstitialAd;
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.OnFailureListener;
-import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.GenericTypeIndicator;
-import com.google.firebase.database.Query;
-import com.google.firebase.storage.FirebaseStorage;
-import com.google.firebase.storage.StorageReference;
-import com.google.firebase.storage.UploadTask;
 import com.google.gson.Gson;
 
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.io.BufferedReader;
-import java.io.ByteArrayOutputStream;
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.lang.reflect.Type;
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -102,16 +54,13 @@ import java.util.Map;
 import Appkey.MyAdKey;
 import bolts.AppLinks;
 
-import com.facebook.ads.*;
-
-import com.google.gson.reflect.TypeToken;
 import com.igexin.sdk.PushManager;
 import com.jackpan.MyPushService;
-import com.jackpan.VideoViewActivity;
 import com.jackpan.libs.mfirebaselib.MfiebaselibsClass;
 import com.jackpan.libs.mfirebaselib.MfirebaeCallback;
-import com.jackpan.video.VideoMainActivity;
 import com.jackpan.Brokethenews.R;
+import com.newqm.sdkoffer.AdView;
+import com.newqm.sdkoffer.QuMiConnect;
 
 public class MainActivity extends Activity implements MfirebaeCallback {
     private ListView petlist;
@@ -122,8 +71,6 @@ public class MainActivity extends Activity implements MfirebaeCallback {
     private ProgressDialog progressDialog;
     private DrawerLayout drawerLayout;
     private NavigationView navigation_view;
-
-    private com.facebook.ads.AdView adView, googleads;
     private InterstitialAd interstitial;
     private Spinner mSpinner, mSpinner2;
     HashMap<String, ArrayList<ResultData>> mKind;
@@ -134,9 +81,7 @@ public class MainActivity extends Activity implements MfirebaeCallback {
     private Button mInviteBtn;
     ImageView imageView;
     private static final String TAG = "MainActivity";
-    private ArrayList<GayPlace> list = new ArrayList<>();
-
-    private AdView admobAd, admobAd2;
+    private ArrayList<FirebaseData> list = new ArrayList<>();
     FirebaseAuth auth;
     FirebaseAuth.AuthStateListener authListener;
     private String userUID;
@@ -145,7 +90,6 @@ public class MainActivity extends Activity implements MfirebaeCallback {
     private String[] items;
 
     private List<String> mExpandableListTitle;
-//    private NavigationManager mNavigationManager;
     private ExpandableListAdapter mExpandableListAdapter;
 
     private Map<String, List<String>> mExpandableListData;
@@ -157,6 +101,10 @@ public class MainActivity extends Activity implements MfirebaeCallback {
 //                             WindowManager.LayoutParams.FLAG_FULLSCREEN);
 ////        //設定隱藏APP標題
 //        requestWindowFeature(Window.FEATURE_NO_TITLE);
+
+
+        MfiebaselibsClass m = new MfiebaselibsClass(this,MainActivity.this);
+        m.getFirebaseDatabase("https://bookshare-99cb3.firebaseio.com/sharebook","data");
         auth = FirebaseAuth.getInstance();
         authListener = new FirebaseAuth.AuthStateListener() {
             @Override
@@ -195,9 +143,9 @@ public class MainActivity extends Activity implements MfirebaeCallback {
             @Override
             public void onClick(View v) {
 
-//                Intent i = new Intent();
-//                i.setClass(MainActivity.this, LoginActivity.class);
-//                startActivity(i);
+                Intent i = new Intent();
+                i.setClass(MainActivity.this, ForIdeaAndShareActivity.class);
+                startActivity(i);
 //				uploadFromStream();
 //				upLoad();
 //				setFireBaseDB();
@@ -238,8 +186,6 @@ public class MainActivity extends Activity implements MfirebaeCallback {
                 finish();
             }
         });
-//        configVersionCheck();
-
         boolean isbuy = MySharedPrefernces.getIsBuyed(this);
         if (isbuy) {
             Intent promotionIntent = new Intent(this, MainActivity.class);
@@ -247,48 +193,8 @@ public class MainActivity extends Activity implements MfirebaeCallback {
         } else {
             PushAd.disablePush(MainActivity.this);
         }
-//		FirebaseMessaging.getInstance().subscribeToTopic("news");
-//
-//
-//		mDatabase = FirebaseDatabase.getInstance().getReference();
-//		final String userId = "123456";
-//		mDatabase.child("users").child(userId).addListenerForSingleValueEvent(
-//				new ValueEventListener() {
-//					@Override
-//					public void onDataChange(DataSnapshot dataSnapshot) {
-//						// Get user value
-//						User user = dataSnapshot.getValue(User.class);
-//
-//						// [START_EXCLUDE]
-//						if (user == null) {
-//							// User is null, error out
-//							Log.e("Jack", "User " + userId + " is unexpectedly null");
-//							Toast.makeText(MainActivity.this,
-//									"Error: could not fetch user.",
-//									Toast.LENGTH_SHORT).show();
-//						} else {
-//							// Write new post
-//							writeNewPost(userId, user.username, "name", "message");
-//						}
-//
-//						// Finish this Activity, back to the stream
-//						finish();
-//						// [END_EXCLUDE]
-//					}
-//
-//					@Override
-//					public void onCancelled(DatabaseError databaseError) {
-//						Log.d("Jack", "getUser:onCancelled", databaseError.toException());
-//					}
-//				});
 
-//		PushAd.test(this);
-
-        //		numtext= (TextView) findViewById(R.id.textView1);
-        //		numtext.setVisibility(View.GONE);
         petlist = (ListView) findViewById(R.id.listView1);
-        //		petadp= new ArrayAdapter<String>(this, android.R.layout.simple_expandable_list_item_1,android.R.id.text1);
-
         petlist.setOnItemClickListener(new OnItemClickListener() {
 
             @Override
@@ -305,9 +211,6 @@ public class MainActivity extends Activity implements MfirebaeCallback {
         petlist.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
             public boolean onItemLongClick(AdapterView<?> adapterView, View view, int i, long l) {
-
-
-//                userRef.removeValue();
                 return true;
             }
         });
@@ -315,33 +218,19 @@ public class MainActivity extends Activity implements MfirebaeCallback {
         mAdapter = new MyAdapter(list);
 
         petlist.setAdapter(mAdapter);
-//
-//		LoadNetAsyncTask loadNetAsyncTask = new LoadNetAsyncTask();
-//		loadNetAsyncTask.execute(MyAdKey.jsondata);
-//		MobileAds.initialize(this, "ca-app-pub-7019441527375550~9403733429");
-//		adapterWrapper = new AdmobAdapterWrapper(this);
-//		String admobUnitId =getResources().getString(R.string.admob_unit_id);
-//
-//		adapterWrapper.setAdmobReleaseUnitId(admobUnitId);
-//		adapterWrapper.setAdapter(mAdapter);
-//		adapterWrapper.setLimitOfAds(3);
-//		adapterWrapper.setNoOfDataBetweenAds(3);
-//
-//		petlist.setAdapter(adapterWrapper);
-//		mAdapter.notifyDataSetChanged();
-//		initUpdateAdsTimer();
         items = getResources().getStringArray(R.array.film_genre);
-        MfiebaselibsClass m = new MfiebaselibsClass(this,MainActivity.this);
-        m.getFirebaseDatabase("https://bookshare-99cb3.firebaseio.com/sharebook","data");
+
 //        setFireBase();
         mExpandableListData = ExpandableListDataSource.getData(this);
         mExpandableListTitle = new ArrayList(mExpandableListData.keySet());
-        Log.d(TAG, "onCreate: "+mExpandableListData.keySet());
 
         initdrawlatout();
+//        QuMiConnect.ConnectQuMi(this, "5dd972580405c9d2", "6345c4cc61b91055");
+//        AdView adView = (AdView) findViewById(R.id.adView);
+//        adView.setSwitchStatus(true);//隐藏关闭按钮
+//        QuMiConnect.getQumiConnectInstance(this).initAdView(adView);
 
-//		setAdMobAd();
-//        setFbAd();
+
     }
 
     @Override
@@ -352,35 +241,8 @@ public class MainActivity extends Activity implements MfirebaeCallback {
     }
 
 
-    private void setFbAd() {
-        interstitial = new InterstitialAd(this);
-        interstitial.setAdUnitId(MyAdKey.AdmobinterstitialBannerId);
-        AdRequest adRequest = new AdRequest.Builder().build();
-        interstitial.loadAd(adRequest);
-//        RelativeLayout adViewContainer = (RelativeLayout) findViewById(R.id.adViewContainer);
-//
-//        adView = new com.facebook.ads.AdView(this, "583698071813390_587400221443175", AdSize.BANNER_320_50);
-//        adViewContainer.addView(adView);
-//        adView.loadAd();
-
-        RelativeLayout adViewContainer2 = (RelativeLayout) findViewById(R.id.adViewContainer2);
-        googleads = new com.facebook.ads.AdView(this, "583698071813390_587400221443175", AdSize.BANNER_320_50);
-        adViewContainer2.addView(googleads);
-        googleads.loadAd();
-
-    }
-
-    private void setAdMobAd() {
-        admobAd = (AdView) findViewById(R.id.adView);
-        AdRequest adRequest = new AdRequest.Builder().build();
-        admobAd.loadAd(adRequest);
-
-//        admobAd2 = (AdView) findViewById(R.id.adView);
-//        AdRequest adRequest2 = new AdRequest.Builder().build();
-//        admobAd2.loadAd(adRequest2);
 
 
-    }
 
     private void writeNewPost(String userId, String username, String title, String body) {
         // Create new post at /user-posts/$userid/$postid and at
@@ -400,9 +262,7 @@ public class MainActivity extends Activity implements MfirebaeCallback {
     public void getDatabaseData(Object o) {
         Gson gson = new Gson();
         String jsonInString = gson.toJson(o);
-        GayPlace g = gson.fromJson(jsonInString,GayPlace.class);
-        Log.d(TAG, "getDatabaseData: "+g.getName()
-        );
+        FirebaseData g = gson.fromJson(jsonInString,FirebaseData.class);
         list.add(0, g);
 
 
@@ -411,195 +271,61 @@ public class MainActivity extends Activity implements MfirebaeCallback {
 
     }
 
-
-    private class LoadNetAsyncTask extends AsyncTask<String, Void, ArrayList<ResultData>> {
-
-        @Override
-        protected void onPostExecute(final ArrayList<ResultData> result) {
-            super.onPostExecute(result);
-            progressDialog.dismiss();
-            if (result == null) {
-                new AlertDialog.Builder(MainActivity.this)
-                        .setTitle("出錯囉!!")
-                        .setMessage("很抱歉，系統暫時無法提供服務。請您稍後再試～")
-                        .setPositiveButton("確定", new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
-                                MainActivity.this.finish();
-//						interstitial.show();
-                            }
-                        }).show();
-                return;
-
-            }
-
-            final ArrayList<String> kindStrings = new ArrayList<String>(mCity.keySet());
-
-
-            String id = kindStrings.toString().substring(0, kindStrings.toString().length());
-
-            kindStrings.add(0, "全部");
-
-            ArrayAdapter<String> animalKindSpinner = new
-                    ArrayAdapter<String>(MainActivity.this, R.layout.myspinnerlayout, kindStrings);
-            mAdapter2 = new ArrayAdapter<String>(MainActivity.this, R.layout.myspinnerlayout, new ArrayList<String>());
-
-
-            animalKindSpinner.setDropDownViewResource(R.layout.myspinnerlayout);
-            mAdapter2.setDropDownViewResource(R.layout.myspinnerlayout);
-            mSpinner.setAdapter(animalKindSpinner);
-            mSpinner2.setAdapter(mAdapter2);
-
-
-            mSpinner.setOnItemSelectedListener(new
-                                                       AdapterView.OnItemSelectedListener() {
-                                                           @Override
-                                                           public void onItemSelected(AdapterView<?> parent, View view, int
-                                                                   position, long id) {
-//					if (position == 0) {
-//						mAdapter.updateData(mAllData);
-//						mSpinner2.setVisibility(View.GONE);
-//					} else {
-//						selectSpinner(kindStrings.get(position));
-//						mSpinner2.setVisibility(View.VISIBLE);
-//					}
-                                                           }
-
-                                                           @Override
-                                                           public void onNothingSelected(AdapterView<?> parent) {
-//					mAdapter.updateData(mAllData);
-                                                           }
-                                                       });
-            mSpinner2.setOnItemSelectedListener(new
-                                                        AdapterView.OnItemSelectedListener() {
-                                                            @Override
-                                                            public void onItemSelected(AdapterView<?> parent, View view, int
-                                                                    position, long id) {
-
-                                                                String city = (String) mSpinner.getSelectedItem();
-                                                                String township = (String) mSpinner2.getSelectedItem();
-
-                                                                selectSpinner2(city + "," + township);
-                                                            }
-
-                                                            @Override
-                                                            public void onNothingSelected(AdapterView<?> parent) {
-//					mAdapter2.updateData(mAllData);
-                                                            }
-                                                        });
-
-            mAllData = result;
-//			mAdapter.updateData(mAllData);
-
-        }
-
-        @Override
-        protected ArrayList<ResultData> doInBackground(String... params) {
-            BufferedReader br = null;
-            StringBuilder sb = new StringBuilder();
-            try {
-                URL url = new URL(params[0]);
-                HttpURLConnection httpUrlCon =
-                        (HttpURLConnection) url.openConnection();
-                httpUrlCon.setConnectTimeout(20000);//連線
-                httpUrlCon.setReadTimeout(20000);//讀取
-
-                InputStream inputStream = httpUrlCon.getInputStream();
-                InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
-                br = new BufferedReader(inputStreamReader);
-                String value = null;
-
-                while ((value = br.readLine()) != null) {
-                    sb.append(value);
-                }
-                String result = sb.toString();
-
-                ArrayList<ResultData> allData = new ArrayList<ResultData>();
-                mKind = new HashMap<String, ArrayList<ResultData>>();//city
-                mCity = new HashMap<String, ArrayList<String>>();
-                try {
-
-//					JSONArray jsonarry = new JSONArray(result);
-                    JSONObject o = new JSONObject(result);
-                    JSONObject resultObj = o.getJSONObject("result");
-                    JSONArray jsonarry = resultObj.getJSONArray("results");
-                    for (int i = 0; i < jsonarry.length(); i++) {
-                        JSONObject jsonObject = jsonarry.getJSONObject(i);
-                        Gson gson = new Gson();
-                        ResultData data = gson.fromJson(jsonObject.toString(), ResultData.class);
-                        String key = data.A_Location + "," + data.A_Name_Ch;
-                        ArrayList<ResultData> animalKind = mKind.get(key);
-                        if (animalKind == null) {
-                            animalKind = new ArrayList<ResultData>();
-
-                        }
-                        mKind.put(key, animalKind);
-
-                        animalKind.add(data);
-
-
-                        ArrayList<String> towmShip = mCity.get(data.A_Location);
-                        if (towmShip == null) {
-                            towmShip = new ArrayList<String>();
-
-                        }
-                        mCity.put(data.A_Location, towmShip);
-                        if (!towmShip.contains(data.A_Name_Ch)) towmShip.add(data.A_Name_Ch);
-
-//						data.startTime = MyApi.getTime(data.animal_opendate);
-
-                        allData.add(data);
-
-                    }
-//					Collections.sort(allData);
-
-
-                } catch (JSONException e) {
-                }
-
-                return allData;
-            } catch (MalformedURLException e) {
-            } catch (IOException e) {
-            } finally {
-
-                try {
-                    if (br != null) br.close();
-                } catch (IOException e) {
-                }
-            }
-
-            return null;
-
-        }
-
+    @Override
+    public void getDeleteState(boolean b, String s) {
 
     }
 
-    public void selectSpinner(String kinds) {
-        ArrayList<String> kindList = mCity.get(kinds);
-        mAdapter2.clear();
-
-        mAdapter2.addAll(kindList);
+    @Override
+    public void createUserState(boolean b) {
 
     }
 
-    public void selectSpinner2(String kinds) {
-
-        ArrayList<ResultData> kindList = mKind.get(kinds);
-
-//		mAdapter.updateData(kindList);
+    @Override
+    public void useLognState(boolean b) {
 
     }
+
+    @Override
+    public void getuseLoginId(String s) {
+
+    }
+
+    @Override
+    public void resetPassWordState(boolean b) {
+
+    }
+
+    @Override
+    public void getFireBaseDBState(boolean b, String s) {
+
+    }
+
+    @Override
+    public void getFirebaseStorageState(boolean b) {
+
+    }
+
+    @Override
+    public void getFirebaseStorageType(String s, String s1) {
+
+    }
+
+    @Override
+    public void getsSndPasswordResetEmailState(boolean b) {
+
+    }
+
 
     public class MyAdapter extends BaseAdapter {
         //		private ArrayList<ResultData> mDatas;
-        private ArrayList<GayPlace> mDatas;
+        private ArrayList<FirebaseData> mDatas;
 
-        public MyAdapter(ArrayList<GayPlace> datas) {
+        public MyAdapter(ArrayList<FirebaseData> datas) {
             mDatas = datas;
         }
 
-        public void updateData(ArrayList<GayPlace> datas) {
+        public void updateData(ArrayList<FirebaseData> datas) {
             mDatas = datas;
             notifyDataSetChanged();
         }
@@ -624,8 +350,7 @@ public class MainActivity extends Activity implements MfirebaeCallback {
             if (convertView == null)
                 convertView = LayoutInflater.from(MainActivity.this).inflate(
                         R.layout.mylayout, null);
-//			ResultData data = mDatas.get(position);
-            GayPlace taipeiZoo = mDatas.get(position);
+            FirebaseData taipeiZoo = mDatas.get(position);
             TextView textname = (TextView) convertView.findViewById(R.id.name);
             TextView list = (TextView) convertView.findViewById(R.id.txtengname);
             TextView bigtext = (TextView) convertView.findViewById(R.id.bigtext);
@@ -634,31 +359,16 @@ public class MainActivity extends Activity implements MfirebaeCallback {
             TextView time = (TextView) convertView.findViewById(R.id.time);
             TextView userview = (TextView) convertView.findViewById(R.id.view);
             TextView userlike = (TextView) convertView.findViewById(R.id.like);
+            userview.setVisibility(View.GONE);
+            userlike.setVisibility(View.GONE);
+
             bigtext.setText(taipeiZoo.cat);
             textname.setText(taipeiZoo.getTittle());
             list.setText("賣家:" + taipeiZoo.getName());
             time.setText("發文時間:" + taipeiZoo.getDate());
-//            bigtext.setVisibility(View.GONE);
             place.setVisibility(View.VISIBLE);
             place.setText("ID:" + taipeiZoo.getId());
-            if (taipeiZoo.getView() == -1) {
-                userview.setText("觀看人數:" + 0);
-            } else {
-                userview.setText("觀看人數:" + taipeiZoo.view);
-            }
-            if (taipeiZoo.getLike() == -1) {
-                userlike.setText("喜歡人數:" + 0);
-            } else {
-                userlike.setText("喜歡人數:" + taipeiZoo.like);
-            }
-
-
-//            time.setVisibility(View.GONE);
-//			place.setText("英文名:"+taipeiZoo.getAge());
-//			time.setText("地理分布:"+data.A_Distribution );
             imageView = (ImageView) convertView.findViewById(R.id.photoimg);
-            //			loadImage(data.album_file, img);
-            //			Glide.with(MainActivity.this).load(data.album_file).into(imageView);
 
             Glide.with(MainActivity.this)
                     .load(taipeiZoo.getPic())
@@ -702,7 +412,6 @@ public class MainActivity extends Activity implements MfirebaeCallback {
                 MainActivity.this.finish();//關閉activity
                 auth.signOut();
                 MySharedPrefernces.saveUserId(MainActivity.this, "");
-//                interstitial.show();
 
             }
 
@@ -713,7 +422,6 @@ public class MainActivity extends Activity implements MfirebaeCallback {
             public void onClick(DialogInterface dialog, int i) {
 
                 MainActivity.this.finish();//關閉activity
-//                interstitial.show();
             }
 
         });
@@ -723,151 +431,7 @@ public class MainActivity extends Activity implements MfirebaeCallback {
     }
 
 
-    private void configVersionCheck() {
 
-//        if (!GtApi.checkNetwork(IndexActivity.this)) return;
-
-        VersionChecker.checkOnce(MainActivity.this, new VersionChecker.DoneAdapter() {
-
-            @Override
-            public void onHasNewVersion() {
-                new AlertDialog.Builder(MainActivity.this)
-                        .setTitle("已有最新版本!")
-                        .setMessage("本次更新內容：\n\n" +
-                                "修正 觀看人數 按讚 留言板問題！！")
-                        .setNegativeButton("確定", new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
-                                startActivity(VersionChecker.openMartketIntent());
-                                dialog.dismiss();
-                            }
-                        })
-                        .show();
-            }
-
-
-        });
-
-    }
-
-    private void setFireBase() {
-        Firebase.setAndroidContext(this);
-        String url = "https://bookshare-99cb3.firebaseio.com/sharebook";
-
-        Firebase mFirebaseRef = new Firebase(url);
-        //.orderByChild("cat").equalTo("醫療保健")
-//		if(Firebase.getDefaultConfig().isPersistenceEnabled()==false)mFirebaseRef.getDefaultConfig().setPersistenceEnabled(true);
-        mFirebaseRef.orderByChild("date").addChildEventListener(new com.firebase.client.ChildEventListener() {
-            @Override
-            public void onChildAdded(com.firebase.client.DataSnapshot dataSnapshot, String s) {
-//                Log.d(TAG, "onChildAdded: " + dataSnapshot.getValue().toString());
-//				Log.d(TAG, "onChildAdded: "+ (String) dataSnapshot.child("tittle").getValue());
-//				Log.d(TAG, "onChildAdded: "+ (Long) dataSnapshot.child("message").getValue());
-//				TaipeiZoo taipeiZoo = new TaipeiZoo();
-//				taipeiZoo.setName((String)dataSnapshot.child("name").getValue());
-//                for (DataSnapshot alert: dataSnapshot.getChildren()) {
-//                    Log.d(TAG, "onChildAdded: "+alert.getValue().toString());
-//                    list.add(0,gayPlace);
-////                    for (DataSnapshot recipient: alert.child("formsg").getChildren()) {
-////                        Log.d(TAG, "onChildAdded: "+recipient.getValue().toString());
-////                    }
-//
-                Log.d(TAG, "onChildAdded: "+dataSnapshot.getValue());
-//                Log.d(TAG, "onChildAdded: "+dataSnapshot.toString());
-//                Log.d(TAG, "onChildAdded: "+dataSnapshot.getKey().toString().trim());
-
-                GayPlace gayPlace = dataSnapshot.getValue(GayPlace.class);
-                list.add(0, gayPlace);
-
-
-                mAdapter.notifyDataSetChanged();
-                progressDialog.dismiss();
-
-
-            }
-
-            @Override
-            public void onChildChanged(com.firebase.client.DataSnapshot dataSnapshot, String s) {
-                Log.d(TAG, "onChildChanged: " + "onChildChanged");
-
-            }
-
-            @Override
-            public void onChildRemoved(com.firebase.client.DataSnapshot dataSnapshot) {
-
-            }
-
-            @Override
-            public void onChildMoved(com.firebase.client.DataSnapshot dataSnapshot, String s) {
-
-            }
-
-            @Override
-            public void onCancelled(FirebaseError firebaseError) {
-
-            }
-
-        });
-
-
-    }
-
-    private void setFireBaseDB(String uri) {
-        String url = "https://sevenpeoplebook.firebaseio.com/GayPlace";
-        Firebase mFirebaseRef = new Firebase(url);
-//		Firebase userRef = mFirebaseRef.child("user");
-//		Map newUserData = new HashMap();
-//		newUserData.put("age", 30);
-//		newUserData.put("city", "Provo, UT");
-        Firebase newPostRef = mFirebaseRef.child("posts").push();
-        String newPostKey = newPostRef.getKey();
-        Log.d(TAG, "setFireBaseDB: " + newPostKey);
-        Map newPost = new HashMap();
-        newPost.put("tittle", "hello");
-        newPost.put("message", 21);
-        newPost.put("pic", uri);
-        Map updatedUserData = new HashMap();
-//		updatedUserData.put("3/posts/" + newPostKey, true);
-        updatedUserData.put(newPostKey, newPost);
-        mFirebaseRef.updateChildren(updatedUserData, new Firebase.CompletionListener() {
-            @Override
-            public void onComplete(FirebaseError firebaseError, Firebase firebase) {
-                if (firebaseError != null) {
-                    Log.d(TAG, "onComplete: " + "Error updating data: " + firebaseError.getMessage());
-                }
-            }
-        });
-    }
-
-    private void upLoad() {
-
-//				sharePicWithUri(uri);
-
-        FirebaseStorage storage = FirebaseStorage.getInstance();
-        StorageReference storageRef = storage.getReferenceFromUrl("gs://sevenpeoplebook.appspot.com");
-        StorageReference mountainsRef = storageRef.child("file.jpg");
-        // Get the data from an ImageView as bytes
-        imageView.setDrawingCacheEnabled(true);
-        imageView.buildDrawingCache();
-        Bitmap bitmap = imageView.getDrawingCache();
-        ByteArrayOutputStream baos = new ByteArrayOutputStream();
-        bitmap.compress(Bitmap.CompressFormat.JPEG, 100, baos);
-        byte[] data = baos.toByteArray();
-
-        UploadTask uploadTask = mountainsRef.putBytes(data);
-        uploadTask.addOnFailureListener(new OnFailureListener() {
-            @Override
-            public void onFailure(@NonNull Exception exception) {
-                // Handle unsuccessful uploads
-            }
-        }).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
-            @Override
-            public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-                // taskSnapshot.getMetadata() contains file metadata such as size, content-type, and download URL.
-                Uri downloadUrl = taskSnapshot.getDownloadUrl();
-            }
-        });
-    }
 
 
     //縮放照片
@@ -943,9 +507,9 @@ public class MainActivity extends Activity implements MfirebaeCallback {
                 String selectedItem = ((List) (mExpandableListData.get(mExpandableListTitle.get(groupPosition))))
                         .get(childPosition).toString();
                 Log.d(TAG, "selectedItem: "+selectedItem);
-                Log.d(TAG, "groupPosition: "+groupPosition);
-                Log.d(TAG, "childPosition: "+childPosition);
-                Log.d(TAG, "id: "+id);
+                if(groupPosition==1){
+                    startActivity(new Intent(MainActivity.this,LoginActivity.class));
+                }
 
                 drawerLayout.closeDrawer(GravityCompat.START);
                 return false;
