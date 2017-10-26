@@ -16,6 +16,7 @@ import android.provider.DocumentsContract;
 import android.provider.MediaStore;
 import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
+import android.text.format.DateFormat;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.widget.Toast;
@@ -47,6 +48,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.InputStream;
+import java.util.Calendar;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -760,6 +762,7 @@ public class MfiebaselibsClass {
      }
      */
     public void scaleAndSavePic(Uri datauri){
+
         mPhone = new DisplayMetrics();
         ((Activity)mContext).getWindowManager().getDefaultDisplay().getMetrics(mPhone);
         ContentResolver cr = mContext.getContentResolver();
@@ -801,10 +804,11 @@ public class MfiebaselibsClass {
 
     //儲存圖片
     public Uri savePicture(Bitmap bitmap) {
+        Calendar mCal = Calendar.getInstance();
         String root = Environment.getExternalStorageDirectory().toString();
         File myDir = new File(root + "/req_images");
         myDir.mkdirs();
-        String fname = "temp.jpg";
+        String fname = DateFormat.format("yyyy-MM-dd kk:mm:ss", mCal.getTime())+".jpg";
         File file = new File(myDir, fname);
         if (file.exists()) file.delete();
 
