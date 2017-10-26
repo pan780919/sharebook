@@ -102,16 +102,35 @@ public class MainActivity extends Activity implements MfirebaeCallback {
             public void run() {
                 super.run();
                 try {
-                    Document doc = Jsoup.connect("http://rate.bot.com.tw/xrt?Lang=zh-TW").get();
+                    Document doc = Jsoup.connect("https://tw.movies.yahoo.com/movietime_result.html/id=6851").get();
+//                    Log.d(TAG, "doc: "+doc.select("div.area_timebox").toString());
+                    for (Element element : doc.select("div.area_timebox")) {
+//                        Log.d(TAG, "element.text(): "+element.text());
+//                        Log.d(TAG, "area_title: "+element.select("div.area_title").text());
+//                        Log.d(TAG, "adds: "+element.select("li.adds").text());
+//                        Log.d(TAG, "taps: "+element.select("li.taps").text());
+//
 
-                    for (Element element : doc.getElementsByTag("tr")) {
-//                        Log.d(TAG, "run: "+element.toString());
-//                        Log.d(TAG, "run: "+element.text());
-                        for (Element td : element.getElementsByTag("td")) {
-                            for (Element div : td.getElementsByTag("div")) {
-                            }
+//                        Log.d(TAG, "run: "+element.select("li.time._c").size());
+                        Log.d(TAG, "run: "+element.select("li.time._c").eq(0).text());
+                        for (String s : element.select("li.time._c").eq(0).text().split(" ")) {
+                            Log.d(TAG, "run: "+s.toString());
                         }
+//                        for (int i = 0; i < element.select("li.time._c").size(); i++) {
+//                            for (Element element1 : element.select("li.time._c").eq(i)) {
+//                                Log.d(TAG, "run: "+element1.text());
+//                            }
+//                        }
+
                     }
+//                    for (Element element : doc.getElementsByTag("div")) {
+//                        Log.d(TAG, "div: "+element.toString());
+//                        Log.d(TAG, "text: "+element.text());
+////                        for (Element td : element.getElementsByTag("td")) {
+////                            for (Element div : td.getElementsByTag("div")) {
+////                            }
+////                        }
+//                    }
 
                 } catch (IOException e) {
                     e.printStackTrace();
