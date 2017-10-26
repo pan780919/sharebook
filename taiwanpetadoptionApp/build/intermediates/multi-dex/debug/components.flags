@@ -38,18 +38,6 @@
     <init>();
 }
 
--keep class com.jackpan.video.VideoMainActivity {
-    <init>();
-}
-
--keep class com.jackpan.video.VideoTwoActivity {
-    <init>();
-}
-
--keep class com.jackpan.video.ForIdeaAndShareVideoActivity {
-    <init>();
-}
-
 -keep class com.adlocus.AdActivity {
     <init>();
 }
@@ -78,10 +66,6 @@
     <init>();
 }
 
--keep class com.jackpan.TaiwanpetadoptionApp.SpinnerActivity {
-    <init>();
-}
-
 -keep class com.google.android.gms.analytics.AnalyticsReceiver {
     <init>();
 }
@@ -106,10 +90,6 @@
     <init>();
 }
 
--keep class com.jackpan.VideoViewActivity {
-    <init>();
-}
-
 -keep class com.jackpan.TaiwanpetadoptionApp.LoginActivity {
     <init>();
 }
@@ -127,10 +107,6 @@
 }
 
 -keep class com.jackpan.TaiwanpetadoptionApp.UserMessgeActivity {
-    <init>();
-}
-
--keep class com.jackpan.MyPushService {
     <init>();
 }
 

@@ -70,26 +70,6 @@ public class UserMessgeActivity extends Activity implements View.OnClickListener
         setTitle(name+"的留言板");
     }
 
-    private void showAD(){
-
-        adbertView = (AdbertLoopADView)findViewById(R.id.adbertADView);
-        adbertView.setMode(AdbertOrientation.NORMAL);
-        adbertView.setExpandVideo(ExpandVideoPosition.BOTTOM);
-        adbertView.setFullScreen(false);
-
-        adbertView.setAPPID("20161111000002", "5a73897de2c53f95333b6ddaf23639c7");
-        adbertView.setListener(new AdbertListener() {
-            @Override
-            public void onReceive(String msg) {
-
-            }
-            @Override
-            public void onFailedReceive(String msg) {
-
-            }
-        });
-        adbertView.start();
-    }
     private void toMsg(final String msg) {
 
         String url = "https://sevenpeoplebook.firebaseio.com/Broke";

@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.jackpan.Brokethenews"
     android:versionCode="2"
-    android:versionName="1.1">
+    android:versionName="1.0.1">
 
     <uses-sdk
         android:minSdkVersion="9"
@@ -81,24 +81,6 @@
             android:hardwareAccelerated="true"
             android:label="@string/title_activity_two"
             android:screenOrientation="portrait" />
-        <activity
-            android:name="com.jackpan.video.VideoMainActivity"
-            android:configChanges="orientation|screenSize"
-            android:hardwareAccelerated="true"
-            android:label="@string/app_name"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name="com.jackpan.video.VideoTwoActivity"
-            android:configChanges="orientation|screenSize"
-            android:hardwareAccelerated="true"
-            android:label="@string/title_activity_two"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name="com.jackpan.video.ForIdeaAndShareVideoActivity"
-            android:configChanges="orientation|screenSize"
-            android:hardwareAccelerated="true"
-            android:label="@string/title_activity_two"
-            android:screenOrientation="portrait" />
         <!--  -->
         <activity
             android:name="com.adlocus.AdActivity"
@@ -151,9 +133,6 @@
             android:name="com.google.android.gms.ads.AdActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
             android:theme="@android:style/Theme.Translucent" />
-        <activity
-            android:name="com.jackpan.TaiwanpetadoptionApp.SpinnerActivity"
-            android:label="@string/title_activity_spinner" />
         <!-- for ga -->
         <receiver
             android:name="com.google.android.gms.analytics.AnalyticsReceiver"
@@ -201,10 +180,6 @@
             android:configChanges="orientation|screenSize"
             android:theme="@style/myteme" />
         <activity
-            android:name="com.jackpan.VideoViewActivity"
-            android:label="@string/app_name"
-            android:theme="@style/myteme" />
-        <activity
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"
 
             android:name="com.jackpan.TaiwanpetadoptionApp.LoginActivity"
@@ -227,12 +202,6 @@
         <activity
             android:name="com.jackpan.TaiwanpetadoptionApp.UserMessgeActivity"
             android:label="@string/title_activity_user_messge"></activity>
-        <service
-            android:name="com.jackpan.MyPushService"
-            android:exported="true"
-            android:label="PushService"
-            android:process=":pushservice">
-        </service>
         <service android:name="com.jackpan.TaiwanpetadoptionApp.MyIntentService"/>
 
         <!-- 个推SDK配置开始 -->

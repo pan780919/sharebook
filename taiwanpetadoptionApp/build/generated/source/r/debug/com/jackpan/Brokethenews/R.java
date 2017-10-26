@@ -4546,7 +4546,7 @@ containing a value of this type.
         public static final int zoo=0x7f020238;
     }
     public static final class id {
-        public static final int LinearLayout1=0x7f0f010c;
+        public static final int LinearLayout1=0x7f0f010b;
         public static final int ProMe_NotificationClickIcon=0x7f0f020b;
         public static final int ProMe_NotificationIcon=0x7f0f0209;
         public static final int ProMe_NotificationImage=0x7f0f0208;
@@ -4579,18 +4579,17 @@ containing a value of this type.
         public static final int actions=0x7f0f01fa;
         public static final int activity_chooser_view_content=0x7f0f009c;
         public static final int activity_fire_base_list=0x7f0f00cb;
-        public static final int activity_user=0x7f0f0131;
+        public static final int activity_user=0x7f0f0130;
         public static final int activity_user_messge=0x7f0f0138;
         public static final int activity_video_view=0x7f0f013c;
-        public static final int adView=0x7f0f0108;
-        public static final int adViewContainer=0x7f0f0111;
-        public static final int adViewContainer2=0x7f0f0106;
-        public static final int adViewContainer3=0x7f0f0116;
+        public static final int adView=0x7f0f0107;
+        public static final int adViewContainer=0x7f0f0110;
+        public static final int adViewContainer2=0x7f0f0105;
+        public static final int adViewContainer3=0x7f0f0115;
         public static final int ad_container=0x7f0f014b;
         public static final int ad_image_view=0x7f0f014e;
         public static final int ad_in_progress_label=0x7f0f014d;
         public static final int ad_label=0x7f0f014c;
-        public static final int adbertADView=0x7f0f0137;
         public static final int add=0x7f0f002f;
         public static final int addbtn=0x7f0f00d3;
         public static final int addedt=0x7f0f00d2;
@@ -4607,11 +4606,11 @@ containing a value of this type.
         public static final int audio_list_view=0x7f0f0165;
         public static final int auto=0x7f0f0036;
         public static final int automatic=0x7f0f0094;
-        public static final int b_button_like=0x7f0f011a;
+        public static final int b_button_like=0x7f0f0119;
         public static final int b_button_look=0x7f0f0144;
-        public static final int b_button_message=0x7f0f011c;
+        public static final int b_button_message=0x7f0f011b;
         public static final int b_button_setting=0x7f0f0143;
-        public static final int b_button_share=0x7f0f0118;
+        public static final int b_button_share=0x7f0f0117;
         public static final int b_content=0x7f0f0141;
         public static final int b_imageview_bigimage=0x7f0f0142;
         public static final int b_imageview_icon=0x7f0f013e;
@@ -4629,15 +4628,15 @@ containing a value of this type.
         public static final int btn_sure_send=0x7f0f00e4;
         public static final int button=0x7f0f0092;
         public static final int button1=0x7f0f00fb;
-        public static final int button2=0x7f0f0101;
-        public static final int button3=0x7f0f0102;
+        public static final int button2=0x7f0f0137;
+        public static final int button3=0x7f0f0101;
         public static final int buttonPanel=0x7f0f00a3;
         public static final int button_0=0x7f0f0157;
         public static final int button_1=0x7f0f0158;
         public static final int button_2=0x7f0f015a;
         public static final int button_3=0x7f0f015b;
         public static final int button_play_pause_toggle=0x7f0f0159;
-        public static final int buttongps=0x7f0f0126;
+        public static final int buttongps=0x7f0f0125;
         public static final int buyButton=0x7f0f007a;
         public static final int buyList=0x7f0f00fc;
         public static final int buy_now=0x7f0f007e;
@@ -4808,7 +4807,7 @@ containing a value of this type.
         public static final int intent_data=0x7f0f004f;
         public static final int intent_data_id=0x7f0f0050;
         public static final int intent_extra_data=0x7f0f0051;
-        public static final int inviteBtn=0x7f0f0105;
+        public static final int inviteBtn=0x7f0f0104;
         public static final int isbnedt=0x7f0f00d9;
         public static final int isbntext=0x7f0f00d8;
         public static final int item_touch_helper_previous_elevation=0x7f0f0013;
@@ -4818,19 +4817,19 @@ containing a value of this type.
         public static final int left=0x7f0f003d;
         public static final int light=0x7f0f004a;
         public static final int like=0x7f0f01e6;
-        public static final int liketext=0x7f0f011b;
+        public static final int liketext=0x7f0f011a;
         public static final int line1=0x7f0f01fc;
         public static final int line3=0x7f0f01fd;
         public static final int linearLayout2=0x7f0f01e1;
         public static final int listMode=0x7f0f0020;
         public static final int listTitle=0x7f0f01c4;
-        public static final int listView1=0x7f0f0107;
+        public static final int listView1=0x7f0f0106;
         public static final int list_item=0x7f0f00a0;
         public static final int live_stream_indicator=0x7f0f0154;
         public static final int live_stream_seek_bar=0x7f0f0156;
         public static final int loading_indicator=0x7f0f014f;
         public static final int logo_only=0x7f0f0083;
-        public static final int lvMessages=0x7f0f010a;
+        public static final int lvMessages=0x7f0f0109;
         public static final int mailedt=0x7f0f00e6;
         public static final int masked=0x7f0f020f;
         public static final int match_global_nicknames=0x7f0f006c;
@@ -4866,13 +4865,13 @@ containing a value of this type.
         public static final int mr_volume_item_icon=0x7f0f01d9;
         public static final int mr_volume_slider=0x7f0f01da;
         public static final int multiply=0x7f0f0030;
-        public static final int mylayout=0x7f0f0104;
+        public static final int mylayout=0x7f0f0103;
         public static final int name=0x7f0f01e3;
         public static final int nameedt=0x7f0f00d0;
         public static final int nametext=0x7f0f01e8;
-        public static final int navList=0x7f0f0109;
+        public static final int navList=0x7f0f0108;
         public static final int navigation_header_container=0x7f0f017c;
-        public static final int navigation_view=0x7f0f0103;
+        public static final int navigation_view=0x7f0f0102;
         public static final int never=0x7f0f0063;
         public static final int never_display=0x7f0f0096;
         public static final int next=0x7f0f0186;
@@ -4886,11 +4885,11 @@ containing a value of this type.
         public static final int omnibox_url_section=0x7f0f006e;
         public static final int open_graph=0x7f0f008e;
         public static final int page=0x7f0f008f;
-        public static final int pageimg=0x7f0f010f;
-        public static final int pageimg2=0x7f0f0110;
-        public static final int pageimg3=0x7f0f0113;
-        public static final int pageimg4=0x7f0f0115;
-        public static final int pageimg5=0x7f0f0117;
+        public static final int pageimg=0x7f0f010e;
+        public static final int pageimg2=0x7f0f010f;
+        public static final int pageimg3=0x7f0f0112;
+        public static final int pageimg4=0x7f0f0114;
+        public static final int pageimg5=0x7f0f0116;
         public static final int palace=0x7f0f01e5;
         public static final int parallax=0x7f0f0041;
         public static final int parentPanel=0x7f0f00a5;
@@ -4928,7 +4927,7 @@ containing a value of this type.
         public static final int right=0x7f0f003e;
         public static final int right_icon=0x7f0f01f8;
         public static final int right_side=0x7f0f01f5;
-        public static final int rvMessages=0x7f0f010b;
+        public static final int rvMessages=0x7f0f010a;
         public static final int sandbox=0x7f0f0077;
         public static final int satellite=0x7f0f005e;
         public static final int screen=0x7f0f0031;
@@ -4936,7 +4935,7 @@ containing a value of this type.
         public static final int scrollIndicatorDown=0x7f0f00ab;
         public static final int scrollIndicatorUp=0x7f0f00a7;
         public static final int scrollView=0x7f0f00a8;
-        public static final int scrollView1=0x7f0f010e;
+        public static final int scrollView1=0x7f0f010d;
         public static final int scrollable=0x7f0f0073;
         public static final int search_badge=0x7f0f00c0;
         public static final int search_bar=0x7f0f00bf;
@@ -4965,7 +4964,7 @@ containing a value of this type.
         public static final int snap=0x7f0f002e;
         public static final int spacer=0x7f0f00a4;
         public static final int spinner1=0x7f0f00ce;
-        public static final int spinnertextView=0x7f0f010d;
+        public static final int spinnertextView=0x7f0f010c;
         public static final int split_action_bar=0x7f0f0016;
         public static final int src_atop=0x7f0f0032;
         public static final int src_in=0x7f0f0033;
@@ -4992,25 +4991,25 @@ containing a value of this type.
         public static final int textTitle=0x7f0f015c;
         public static final int textView1=0x7f0f00cf;
         public static final int textView10=0x7f0f00cd;
-        public static final int textView11=0x7f0f0127;
-        public static final int textView12=0x7f0f0128;
-        public static final int textView13=0x7f0f0129;
-        public static final int textView14=0x7f0f012a;
-        public static final int textView15=0x7f0f012b;
-        public static final int textView16=0x7f0f0112;
-        public static final int textView17=0x7f0f012c;
-        public static final int textView18=0x7f0f0114;
-        public static final int textView19=0x7f0f012d;
+        public static final int textView11=0x7f0f0126;
+        public static final int textView12=0x7f0f0127;
+        public static final int textView13=0x7f0f0128;
+        public static final int textView14=0x7f0f0129;
+        public static final int textView15=0x7f0f012a;
+        public static final int textView16=0x7f0f0111;
+        public static final int textView17=0x7f0f012b;
+        public static final int textView18=0x7f0f0113;
+        public static final int textView19=0x7f0f012c;
         public static final int textView2=0x7f0f00d1;
-        public static final int textView20=0x7f0f012f;
-        public static final int textView21=0x7f0f012e;
+        public static final int textView20=0x7f0f012e;
+        public static final int textView21=0x7f0f012d;
         public static final int textView3=0x7f0f00d4;
         public static final int textView4=0x7f0f00d6;
         public static final int textView5=0x7f0f00dc;
-        public static final int textView6=0x7f0f0122;
-        public static final int textView7=0x7f0f0124;
-        public static final int textView8=0x7f0f0125;
-        public static final int textView9=0x7f0f0130;
+        public static final int textView6=0x7f0f0121;
+        public static final int textView7=0x7f0f0123;
+        public static final int textView8=0x7f0f0124;
+        public static final int textView9=0x7f0f012f;
         public static final int text_empty_message=0x7f0f0166;
         public static final int text_input_password_toggle=0x7f0f0181;
         public static final int text_list_view=0x7f0f0164;
@@ -5036,14 +5035,15 @@ containing a value of this type.
         public static final int up=0x7f0f001b;
         public static final int url=0x7f0f0068;
         public static final int useLogo=0x7f0f0029;
-        public static final int userid=0x7f0f0133;
-        public static final int userimg=0x7f0f0132;
-        public static final int userlv=0x7f0f0136;
-        public static final int usermail=0x7f0f0135;
+        public static final int userid=0x7f0f0132;
+        public static final int userimg=0x7f0f0131;
+        public static final int userlogoutbtn=0x7f0f0136;
+        public static final int userlv=0x7f0f0135;
+        public static final int usermail=0x7f0f0134;
         public static final int usermsgbtn=0x7f0f013b;
         public static final int usermsgedt=0x7f0f013a;
         public static final int usermsgtext=0x7f0f0139;
-        public static final int username=0x7f0f0134;
+        public static final int username=0x7f0f0133;
         public static final int videoView=0x7f0f013d;
         public static final int video_frame=0x7f0f018a;
         public static final int videobtn=0x7f0f00e8;
@@ -5066,13 +5066,13 @@ containing a value of this type.
         public static final int videonametext7=0x7f0f00f3;
         public static final int videonametext8=0x7f0f00f5;
         public static final int videonametext9=0x7f0f00f7;
-        public static final int view=0x7f0f0119;
-        public static final int view1=0x7f0f011d;
-        public static final int view2=0x7f0f011e;
-        public static final int view3=0x7f0f011f;
-        public static final int view4=0x7f0f0120;
-        public static final int view6=0x7f0f0123;
-        public static final int view8=0x7f0f0121;
+        public static final int view=0x7f0f0118;
+        public static final int view1=0x7f0f011c;
+        public static final int view2=0x7f0f011d;
+        public static final int view3=0x7f0f011e;
+        public static final int view4=0x7f0f011f;
+        public static final int view6=0x7f0f0122;
+        public static final int view8=0x7f0f0120;
         public static final int view_offset_helper=0x7f0f001c;
         public static final int visible=0x7f0f020e;
         public static final int volume_item_container=0x7f0f01d8;
@@ -5444,8 +5444,15 @@ containing a value of this type.
         public static final int Animation_Design_BottomSheetDialog=0x7f0a00ab;
         /**  API 11 theme customizations can go here. 
  API 14 theme customizations can go here. 
+
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        
          */
         public static final int AppBaseTheme=0x7f0a000c;
+        /**  All customizations that are NOT specific to a particular API-level can go here. 
+         */
         public static final int AppTheme=0x7f0a00ac;
         public static final int Base_AlertDialog_AppCompat=0x7f0a00ad;
         public static final int Base_AlertDialog_AppCompat_Light=0x7f0a00ae;
@@ -5897,6 +5904,8 @@ containing a value of this type.
         public static final int com_facebook_button_share=0x7f0a01c7;
         public static final int com_facebook_loginview_default_style=0x7f0a01c8;
         public static final int com_facebook_loginview_silver_style=0x7f0a01c9;
+        /**  背景是否模糊显示 
+         */
         public static final int loading_dialog=0x7f0a01ca;
         public static final int myteme=0x7f0a01cb;
         public static final int tooltip_bubble_text=0x7f0a01cc;
