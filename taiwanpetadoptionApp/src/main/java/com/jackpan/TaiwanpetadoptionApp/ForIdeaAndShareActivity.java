@@ -5,12 +5,16 @@ import android.annotation.TargetApi;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
+import android.content.ContentResolver;
+import android.content.ContentValues;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.Matrix;
 import android.location.Address;
 import android.location.Criteria;
 import android.location.Geocoder;
@@ -19,6 +23,7 @@ import android.location.LocationManager;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Environment;
 import android.provider.DocumentsContract;
 import android.provider.MediaStore;
 import android.support.annotation.NonNull;
@@ -64,6 +69,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Calendar;
@@ -204,7 +210,8 @@ public class ForIdeaAndShareActivity extends Activity implements View.OnClickLis
                 break;
             case R.id.picbtn:
                 picInt = 1;
-                selectPic();
+//                selectPic();
+                getPermissionCAMERA();
                 break;
             case R.id.picbtn2:
                 picInt = 2;
@@ -330,7 +337,7 @@ public class ForIdeaAndShareActivity extends Activity implements View.OnClickLis
             intent.setType("image/*");
             intent.setAction(Intent.ACTION_GET_CONTENT);
             startActivityForResult(intent, PHOTO);
-
+;
 
         }
     }
@@ -371,10 +378,22 @@ public class ForIdeaAndShareActivity extends Activity implements View.OnClickLis
         if ((requestCode == CAMERA || requestCode == PHOTO) && data != null) {
             //取得照片路徑uri
             Uri datauri = data.getData();
-
+            ContentResolver cr = this.getContentResolver();
+            try {
+                //讀取照片，型態為Bitmap
+                bitmap = BitmapFactory.decodeStream(cr.openInputStream(datauri));
+                //判斷照片為橫向或者為直向，並進入ScalePic判斷圖片是否要進行縮放
+                if (bitmap.getWidth() > bitmap.getHeight()) ScalePic(bitmap,
+                        mPhone.heightPixels);
+                else ScalePic(bitmap, mPhone.widthPixels);
+            } catch (FileNotFoundException e) {
+                e.printStackTrace();
+                Log.d(TAG, "onActivityResult: "+e.getMessage());
+            }
+            savePicture(bitmap);
             uploadFromPic(datauri);
 
-
+//            uploadFromPic( savePicture(bitmap));
             super.onActivityResult(requestCode, resultCode, data);
         }
         if ((requestCode == CAMERA || requestCode == VIDEO) && data != null) {
@@ -390,52 +409,70 @@ public class ForIdeaAndShareActivity extends Activity implements View.OnClickLis
 
     @TargetApi(Build.VERSION_CODES.KITKAT)
     private void uploadFromPic(Uri datauri) {
+        Log.d(TAG, "uploadFromPic: "+datauri);
         final boolean after44 = Build.VERSION.SDK_INT >= 19;
         String filePath = "";
+//
+//        if (after44) {
+//            String wholeID = DocumentsContract.getDocumentId(datauri);
+//
+//// Split at colon, use second item in the array
+//            String id = wholeID.split(":")[1];
+//
+//            String[] column = {MediaStore.Images.Media.DATA};
+//
+//// where id is equal to
+//            String sel = MediaStore.Images.Media._ID + "=?";
+//
+//            Cursor cursor = getContentResolver().
+//                    query(MediaStore.Images.Media.EXTERNAL_CONTENT_URI,
+//                            column, sel, new String[]{id}, null);
+//
+//
+//            int columnIndex = cursor.getColumnIndex(column[0]);
+//
+//            if (cursor.moveToFirst()) {
+//                filePath = cursor.getString(columnIndex);
+//                Log.d(TAG, "onActivityResult: " + filePath);
+//
+//            }
+//
+//            cursor.close();
+//        } else {
+//
+//            try {
+//                String[] filePathColumn = {MediaStore.Images.Media.DATA};
+//
+//                Cursor cursor = getContentResolver().query(datauri,
+//                        filePathColumn, null, null, null);
+//                cursor.moveToFirst();
+//
+//                int columnIndex = cursor.getColumnIndex(filePathColumn[0]);
+//                filePath = cursor.getString(columnIndex);
+//                Log.d(TAG, "uploadFromPic:" + filePath);
+//                cursor.close();
+//            } catch (Exception e) {
+//                // TODO: handle exception
+//                e.printStackTrace();
+//            }
+//
+//        }
 
-        if (after44) {
-            String wholeID = DocumentsContract.getDocumentId(datauri);
 
-// Split at colon, use second item in the array
-            String id = wholeID.split(":")[1];
+        try {
+            String[] filePathColumn = {MediaStore.Images.Media.DATA};
 
-            String[] column = {MediaStore.Images.Media.DATA};
+            Cursor cursor = getContentResolver().query(datauri,
+                    filePathColumn, null, null, null);
+            cursor.moveToFirst();
 
-// where id is equal to
-            String sel = MediaStore.Images.Media._ID + "=?";
-
-            Cursor cursor = getContentResolver().
-                    query(MediaStore.Images.Media.EXTERNAL_CONTENT_URI,
-                            column, sel, new String[]{id}, null);
-
-
-            int columnIndex = cursor.getColumnIndex(column[0]);
-
-            if (cursor.moveToFirst()) {
-                filePath = cursor.getString(columnIndex);
-                Log.d(TAG, "onActivityResult: " + filePath);
-
-            }
-
+            int columnIndex = cursor.getColumnIndex(filePathColumn[0]);
+            filePath = cursor.getString(columnIndex);
+            Log.d(TAG, "uploadFromPic:" + filePath);
             cursor.close();
-        } else {
-
-            try {
-                String[] filePathColumn = {MediaStore.Images.Media.DATA};
-
-                Cursor cursor = getContentResolver().query(datauri,
-                        filePathColumn, null, null, null);
-                cursor.moveToFirst();
-
-                int columnIndex = cursor.getColumnIndex(filePathColumn[0]);
-                filePath = cursor.getString(columnIndex);
-                Log.d(TAG, "uploadFromPic:" + filePath);
-                cursor.close();
-            } catch (Exception e) {
-                // TODO: handle exception
-                e.printStackTrace();
-            }
-
+        } catch (Exception e) {
+            // TODO: handle exception
+            e.printStackTrace();
         }
 
 //			sharePicWithUri(uri);
@@ -536,6 +573,48 @@ public class ForIdeaAndShareActivity extends Activity implements View.OnClickLis
     }
 
 
+    //縮放照片
+    private void ScalePic(Bitmap bitmap, int phone) {
+        //縮放比例預設為1
+        float mScale = 1;
+
+        //如果圖片寬度大於手機寬度則進行縮放，否則直接將圖片放入ImageView內
+        if (bitmap.getWidth() > phone) {
+            //判斷縮放比例
+            mScale = (float) phone / (float) bitmap.getWidth();
+
+            Matrix mMat = new Matrix();
+            mMat.setScale(mScale, mScale);
+
+            Bitmap mScaleBitmap = Bitmap.createBitmap(bitmap,
+                    0,
+                    0,
+                    bitmap.getWidth(),
+                    bitmap.getHeight(),
+                    mMat,
+                    false);
+        }
+    }
+
+    //儲存圖片
+    public Uri savePicture(Bitmap bitmap) {
+        String root = Environment.getExternalStorageDirectory().toString();
+        File myDir = new File(root + "/req_images");
+        myDir.mkdirs();
+        String fname = "temp.jpg";
+        File file = new File(myDir, fname);
+        if (file.exists()) file.delete();
+
+        try {
+            FileOutputStream out = new FileOutputStream(file);
+            bitmap.compress(Bitmap.CompressFormat.JPEG, 90, out);
+            out.flush();
+            out.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return Uri.fromFile(file);
+    }
     /**
      * 查詢MediaStroe Uri對應的絕對路徑。
      * @param context 傳入Context
@@ -560,4 +639,52 @@ public class ForIdeaAndShareActivity extends Activity implements View.OnClickLis
         return null;
     }
 
+    private void getPermissionCAMERA() {
+
+        int permission = ActivityCompat.checkSelfPermission(this,
+                Manifest.permission.CAMERA);
+        if (permission != PackageManager.PERMISSION_GRANTED) {
+            //未取得權限，向使用者要求允許權限
+            if (ActivityCompat.shouldShowRequestPermissionRationale(ForIdeaAndShareActivity.this,
+                    Manifest.permission.CAMERA)) {
+                new android.support.v7.app.AlertDialog.Builder(ForIdeaAndShareActivity.this)
+                        .setMessage("我真的沒有要做壞事, 給我權限吧?")
+                        .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                ActivityCompat.requestPermissions(ForIdeaAndShareActivity.this,
+                                        new String[]{Manifest.permission.CAMERA},
+                                        REQUEST_EXTERNAL_STORAGE);
+                            }
+                        })
+                        .setNegativeButton("No", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                finish();
+                            }
+                        })
+                        .show();
+            } else {
+                ActivityCompat.requestPermissions(this,
+                        new String[]{Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.CAMERA},
+                        REQUEST_EXTERNAL_STORAGE
+
+                );
+            }
+
+        } else {
+            //開啟相機功能，並將拍照後的圖片存入SD卡相片集內，須由startActivityForResult且
+            // 帶入
+            //requestCode進行呼叫，原因為拍照完畢後返回程式後則呼叫onActivityResult
+            ContentValues value = new ContentValues();
+            value.put(MediaStore.Images.Media.MIME_TYPE, "image/jpeg");
+            Uri uri = getContentResolver().insert(MediaStore.Images.Media.EXTERNAL_CONTENT_URI,
+                    value);
+            Intent intent = new Intent("android.media.action.IMAGE_CAPTURE");
+            intent.putExtra(MediaStore.EXTRA_OUTPUT, uri.getPath());
+            startActivityForResult(intent, CAMERA);
+
+        }
+
+    }
 }

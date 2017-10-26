@@ -430,6 +430,80 @@ public class MfiebaselibsClass {
 
         });
     }
+    /**
+     *
+     */
+    public void setFirebaseStorageForCamera(Uri datauri, String url) {
+        String filePath = "";
+        try {
+            String[] filePathColumn = {MediaStore.Images.Media.DATA};
+            Cursor cursor = mContext.getContentResolver().query(datauri,
+                    filePathColumn, null, null, null);
+            cursor.moveToFirst();
+
+            int columnIndex = cursor.getColumnIndex(filePathColumn[0]);
+            filePath = cursor.getString(columnIndex);
+            cursor.close();
+        } catch (Exception e) {
+            // TODO: handle exception
+            e.printStackTrace();
+            callback.getFirebaseStorageState(false);
+        }
+
+
+        FirebaseStorage storage = FirebaseStorage.getInstance();
+        StorageReference storageRef = storage.getReferenceFromUrl(url + "");
+
+        StorageReference mountainsRef = storageRef.child(filePath);
+
+
+        InputStream stream = null;
+        try {
+            stream = new FileInputStream(new File(filePath));
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        UploadTask mUploadTask = mountainsRef.putStream(stream);
+        progressDialog = new ProgressDialog(mContext);
+
+
+        mUploadTask.addOnFailureListener(new OnFailureListener() {
+
+
+            @Override
+            public void onFailure(@NonNull Exception exception) {
+                callback.getFirebaseStorageState(false);
+                progressDialog.dismiss();
+                Toast.makeText(mContext, "上傳失敗", Toast.LENGTH_SHORT).show();
+
+            }
+        }).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
+            @Override
+            public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
+                callback.getFirebaseStorageState(true);
+                callback.getFirebaseStorageType(taskSnapshot.getDownloadUrl().toString(), taskSnapshot.getMetadata().getName());
+                progressDialog.dismiss();
+                Toast.makeText(mContext, "上傳成功", Toast.LENGTH_SHORT).show();
+
+            }
+
+        }).addOnProgressListener(new OnProgressListener<UploadTask.TaskSnapshot>() {
+            @Override
+            public void onProgress(UploadTask.TaskSnapshot taskSnapshot) {
+                //calculating progress percentage
+                int progress = (int) ((100 * taskSnapshot.getBytesTransferred()) / taskSnapshot.getTotalByteCount());
+                progressDialog.setTitle("提示訊息");
+                progressDialog.setCancelable(false);
+                progressDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
+                progressDialog.setMessage("上傳中！！");
+                progressDialog.show();
+            }
+
+        });
+    }
+    /**
+     * 這邊是上傳影片
+     */
 
     private void setFirebaseStorageForFile(String url, Uri path) {
         FirebaseStorage storage = FirebaseStorage.getInstance();
