@@ -55,12 +55,9 @@ import java.util.Map;
 import Appkey.MyAdKey;
 import bolts.AppLinks;
 
-import com.igexin.sdk.PushManager;
 import com.jackpan.libs.mfirebaselib.MfiebaselibsClass;
 import com.jackpan.libs.mfirebaselib.MfirebaeCallback;
 import com.jackpan.Brokethenews.R;
-import com.newqm.sdkoffer.AdView;
-import com.newqm.sdkoffer.QuMiConnect;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -74,9 +71,6 @@ public class MainActivity extends Activity implements MfirebaeCallback {
     private boolean isCencel = false;
     private ProgressDialog progressDialog;
     private DrawerLayout drawerLayout;
-    private NavigationView navigation_view;
-    private InterstitialAd interstitial;
-    private Spinner mSpinner, mSpinner2;
     HashMap<String, ArrayList<ResultData>> mKind;
     HashMap<String, ArrayList<String>> mCity;
     private MyAdapter mAdapter;
@@ -138,8 +132,6 @@ public class MainActivity extends Activity implements MfirebaeCallback {
         };
         setContentView(R.layout.activity_main);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
-//		MyGAManager.sendScreenName(this,"搜尋頁面");
-
         FacebookSdk.sdkInitialize(getApplicationContext());
         AppEventsLogger.activateApp(this);
         new Thread(){
@@ -156,9 +148,6 @@ public class MainActivity extends Activity implements MfirebaeCallback {
                             for (Element div : td.getElementsByTag("div")) {
                             }
                         }
-
-
-
                     }
 
                 } catch (IOException e) {
@@ -191,20 +180,6 @@ public class MainActivity extends Activity implements MfirebaeCallback {
                     startActivity(i);
                 }
 
-//				uploadFromStream();
-//				upLoad();
-//				setFireBaseDB();
-//				String appLinkUrl, previewImageUrl;
-//				appLinkUrl = "https://play.google.com/store/apps/details?id=com.jackpan.TaipeiZoo";
-//				previewImageUrl = "https://lh3.googleusercontent.com/2TPsyspPyf6WOYUEjduISOrg0HZH_xqtwa0G5LJsclL-knggHE0-KdbisjutLpr7lo8=w300-rw";
-//
-//				if (AppInviteDialog.canShow()) {
-//					AppInviteContent content = new AppInviteContent.Builder()
-//							.setApplinkUrl(appLinkUrl)
-//							.setPreviewImageUrl(previewImageUrl)
-//							.build();
-//					AppInviteDialog.show(MainActivity.this, content);
-//				}
             }
         });
 
