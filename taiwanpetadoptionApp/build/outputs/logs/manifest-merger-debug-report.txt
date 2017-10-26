@@ -20,7 +20,7 @@ ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifes
 uses-sdk
 ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:8:5-11:58
 MERGED from [com.android.support:multidex:1.0.1] /Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/exploded-aar/com.android.support/multidex/1.0.1/AndroidManifest.xml:18:5-42
-MERGED from [com.facebook.android:audience-network-sdk:4.26.0] /Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/exploded-aar/com.facebook.android/audience-network-sdk/4.26.0/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.android:audience-network-sdk:4.26.1] /Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/exploded-aar/com.facebook.android/audience-network-sdk/4.26.1/AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.android.exoplayer:exoplayer:r2.0.3] /Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/exploded-aar/com.google.android.exoplayer/exoplayer/r2.0.3/AndroidManifest.xml:21:5-23:41
 MERGED from [com.facebook.android:facebook-android-sdk:4.27.0] /Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.27.0/AndroidManifest.xml:24:5-26:41
 MERGED from [com.facebook.android:facebook-login:4.27.0] /Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/exploded-aar/com.facebook.android/facebook-login/4.27.0/AndroidManifest.xml:24:5-26:41
@@ -114,7 +114,7 @@ ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifes
 		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:14:22-62
 uses-permission#android.permission.INTERNET
 ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:15:5-67
-MERGED from [com.facebook.android:audience-network-sdk:4.26.0] /Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/exploded-aar/com.facebook.android/audience-network-sdk/4.26.0/AndroidManifest.xml:11:5-67
+MERGED from [com.facebook.android:audience-network-sdk:4.26.1] /Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/exploded-aar/com.facebook.android/audience-network-sdk/4.26.1/AndroidManifest.xml:11:5-67
 MERGED from [com.adlocus:library:3.5.2] /Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/exploded-aar/com.adlocus/library/3.5.2/AndroidManifest.xml:11:5-67
 MERGED from [com.google.android.gms:play-services-analytics:10.0.1] /Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/10.0.1/AndroidManifest.xml:20:5-66
 MERGED from [com.google.android.gms:play-services-appinvite:10.0.1] /Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/10.0.1/AndroidManifest.xml:18:5-66
@@ -141,7 +141,7 @@ MERGED from [com.adlocus:library:3.5.2] /Users/jackpan/sharebook/taiwanpetadopti
 		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:17:22-78
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:18:5-79
-MERGED from [com.facebook.android:audience-network-sdk:4.26.0] /Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/exploded-aar/com.facebook.android/audience-network-sdk/4.26.0/AndroidManifest.xml:12:5-79
+MERGED from [com.facebook.android:audience-network-sdk:4.26.1] /Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/exploded-aar/com.facebook.android/audience-network-sdk/4.26.1/AndroidManifest.xml:12:5-79
 MERGED from [com.adlocus:library:3.5.2] /Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/exploded-aar/com.adlocus/library/3.5.2/AndroidManifest.xml:13:5-79
 MERGED from [com.google.android.gms:play-services-analytics:10.0.1] /Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/10.0.1/AndroidManifest.xml:21:5-78
 MERGED from [com.google.android.gms:play-services-nearby:10.0.1] /Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/10.0.1/AndroidManifest.xml:4:5-78
@@ -220,7 +220,7 @@ ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifes
 		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:37:22-65
 application
 ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:39:5-278:19
-MERGED from [com.facebook.android:audience-network-sdk:4.26.0] /Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/exploded-aar/com.facebook.android/audience-network-sdk/4.26.0/AndroidManifest.xml:14:5-18:19
+MERGED from [com.facebook.android:audience-network-sdk:4.26.1] /Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/exploded-aar/com.facebook.android/audience-network-sdk/4.26.1/AndroidManifest.xml:14:5-18:19
 MERGED from [com.facebook.android:facebook-android-sdk:4.27.0] /Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.27.0/AndroidManifest.xml:28:5-29:19
 MERGED from [com.facebook.android:facebook-login:4.27.0] /Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/exploded-aar/com.facebook.android/facebook-login/4.27.0/AndroidManifest.xml:28:5-29:19
 MERGED from [com.facebook.android:facebook-share:4.27.0] /Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/exploded-aar/com.facebook.android/facebook-share/4.27.0/AndroidManifest.xml:28:5-29:19
@@ -691,11 +691,11 @@ ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifes
 	android:name
 		ADDED from /Users/jackpan/sharebook/taiwanpetadoptionApp/src/main/AndroidManifest.xml:269:13-52
 activity#com.facebook.ads.AudienceNetworkActivity
-ADDED from [com.facebook.android:audience-network-sdk:4.26.0] /Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/exploded-aar/com.facebook.android/audience-network-sdk/4.26.0/AndroidManifest.xml:15:9-17:77
+ADDED from [com.facebook.android:audience-network-sdk:4.26.1] /Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/exploded-aar/com.facebook.android/audience-network-sdk/4.26.1/AndroidManifest.xml:15:9-17:77
 	android:configChanges
-		ADDED from [com.facebook.android:audience-network-sdk:4.26.0] /Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/exploded-aar/com.facebook.android/audience-network-sdk/4.26.0/AndroidManifest.xml:17:13-74
+		ADDED from [com.facebook.android:audience-network-sdk:4.26.1] /Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/exploded-aar/com.facebook.android/audience-network-sdk/4.26.1/AndroidManifest.xml:17:13-74
 	android:name
-		ADDED from [com.facebook.android:audience-network-sdk:4.26.0] /Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/exploded-aar/com.facebook.android/audience-network-sdk/4.26.0/AndroidManifest.xml:16:13-68
+		ADDED from [com.facebook.android:audience-network-sdk:4.26.1] /Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/exploded-aar/com.facebook.android/audience-network-sdk/4.26.1/AndroidManifest.xml:16:13-68
 activity#com.facebook.FacebookActivity
 ADDED from [com.facebook.android:facebook-common:4.27.0] /Users/jackpan/sharebook/taiwanpetadoptionApp/build/intermediates/exploded-aar/com.facebook.android/facebook-common/4.27.0/AndroidManifest.xml:29:9-32:66
 	android:configChanges
