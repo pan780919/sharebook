@@ -28,4 +28,8 @@ public interface MfirebaeCallback {
 
     void  getsSndPasswordResetEmailState(boolean b);
 
+    void getUpdateUserName(boolean b);
+
+    void  getUserLogoutState(boolean b);
+
 }

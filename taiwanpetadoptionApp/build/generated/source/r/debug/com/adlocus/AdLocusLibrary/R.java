@@ -147,7 +147,7 @@ public final class R {
 		public static final int ProMe_NotificationText = 0x7f0f020a;
 		public static final int b_button_look = 0x7f0f0144;
 		public static final int b_button_setting = 0x7f0f0143;
-		public static final int b_button_share = 0x7f0f0118;
+		public static final int b_button_share = 0x7f0f0117;
 		public static final int b_content = 0x7f0f0141;
 		public static final int b_imageview_bigimage = 0x7f0f0142;
 		public static final int b_imageview_icon = 0x7f0f013e;
