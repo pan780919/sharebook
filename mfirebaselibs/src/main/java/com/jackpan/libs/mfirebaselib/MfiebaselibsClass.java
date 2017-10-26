@@ -1,14 +1,22 @@
 package com.jackpan.libs.mfirebaselib;
 
 import android.annotation.TargetApi;
+import android.app.Activity;
 import android.app.ProgressDialog;
+import android.content.ContentResolver;
 import android.content.Context;
 import android.database.Cursor;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.Matrix;
 import android.net.Uri;
 import android.os.Build;
+import android.os.Environment;
 import android.provider.DocumentsContract;
 import android.provider.MediaStore;
 import android.support.annotation.NonNull;
+import android.support.v4.app.ActivityCompat;
+import android.util.DisplayMetrics;
 import android.util.Log;
 import android.widget.Toast;
 
@@ -37,6 +45,7 @@ import com.google.firebase.storage.UploadTask;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.InputStream;
 import java.util.HashMap;
 import java.util.Map;
@@ -57,6 +66,10 @@ public class MfiebaselibsClass {
     private Context mContext;
     private MfirebaeCallback callback;
     private ProgressDialog progressDialog;
+    public static final String READ_EXTERNAL_STORAGE = "android.permission.READ_EXTERNAL_STORAGE";
+    public static final String CAMERA = "android.permission.CAMERA";
+    private Bitmap bitmap;
+    private DisplayMetrics mPhone;
 
     public MfiebaselibsClass(Context context, MfirebaeCallback mfirebaeCallback) {
         this.mContext = context;
@@ -434,6 +447,7 @@ public class MfiebaselibsClass {
      *
      */
     public void setFirebaseStorageForCamera(Uri datauri, String url) {
+        scaleAndSavePic(datauri);
         String filePath = "";
         try {
             String[] filePathColumn = {MediaStore.Images.Media.DATA};
@@ -731,5 +745,84 @@ public class MfiebaselibsClass {
 
         }
 
+    }
+    /**
+     *
+     try {
+     //讀取照片，型態為Bitmap
+     //判斷照片為橫向或者為直向，並進入ScalePic判斷圖片是否要進行縮放
+     if (bitmap.getWidth() > bitmap.getHeight()) ScalePic(bitmap,
+     mPhone.heightPixels);
+     else ScalePic(bitmap, mPhone.widthPixels);
+     } catch (FileNotFoundException e) {
+     e.printStackTrace();
+     Log.d(TAG, "onActivityResult: "+e.getMessage());
+     }
+     */
+    public void scaleAndSavePic(Uri datauri){
+        mPhone = new DisplayMetrics();
+        ((Activity)mContext).getWindowManager().getDefaultDisplay().getMetrics(mPhone);
+        ContentResolver cr = mContext.getContentResolver();
+        try {
+            //讀取照片，型態為Bitmap
+            //判斷照片為橫向或者為直向，並進入ScalePic判斷圖片是否要進行縮放
+            if (bitmap.getWidth() > bitmap.getHeight()) ScalePic(bitmap,
+                    mPhone.heightPixels);
+            else ScalePic(bitmap, mPhone.widthPixels);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        savePicture(bitmap);
+
+    }
+
+    //縮放照片
+    private void ScalePic(Bitmap bitmap, int phone) {
+        //縮放比例預設為1
+        float mScale = 1;
+
+        //如果圖片寬度大於手機寬度則進行縮放，否則直接將圖片放入ImageView內
+        if (bitmap.getWidth() > phone) {
+            //判斷縮放比例
+            mScale = (float) phone / (float) bitmap.getWidth();
+
+            Matrix mMat = new Matrix();
+            mMat.setScale(mScale, mScale);
+
+            Bitmap mScaleBitmap = Bitmap.createBitmap(bitmap,
+                    0,
+                    0,
+                    bitmap.getWidth(),
+                    bitmap.getHeight(),
+                    mMat,
+                    false);
+        }
+    }
+
+    //儲存圖片
+    public Uri savePicture(Bitmap bitmap) {
+        String root = Environment.getExternalStorageDirectory().toString();
+        File myDir = new File(root + "/req_images");
+        myDir.mkdirs();
+        String fname = "temp.jpg";
+        File file = new File(myDir, fname);
+        if (file.exists()) file.delete();
+
+        try {
+            FileOutputStream out = new FileOutputStream(file);
+            bitmap.compress(Bitmap.CompressFormat.JPEG, 90, out);
+            out.flush();
+            out.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return Uri.fromFile(file);
+    }
+    /**
+     *
+     */
+    public  void checkPermission(Activity activity ,String permissionName){
+        int permission = ActivityCompat.checkSelfPermission(mContext,
+                android.Manifest.permission.READ_EXTERNAL_STORAGE);
     }
 }

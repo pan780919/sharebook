@@ -210,8 +210,8 @@ public class ForIdeaAndShareActivity extends Activity implements View.OnClickLis
                 break;
             case R.id.picbtn:
                 picInt = 1;
-//                selectPic();
-                getPermissionCAMERA();
+                selectPic();
+//                getPermissionCAMERA();
                 break;
             case R.id.picbtn2:
                 picInt = 2;
