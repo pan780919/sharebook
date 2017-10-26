@@ -102,25 +102,30 @@ public class MainActivity extends Activity implements MfirebaeCallback {
             public void run() {
                 super.run();
                 try {
-                    Document doc = Jsoup.connect("https://tw.movies.yahoo.com/movietime_result.html/id=6851").get();
+                    Document doc = Jsoup.connect("https://tw.movies.yahoo.com/movie_intheaters.html").get();
 //                    Log.d(TAG, "doc: "+doc.select("div.area_timebox").toString());
-                    for (Element element : doc.select("div.area_timebox")) {
-//                        Log.d(TAG, "element.text(): "+element.text());
+                    //div.area_timebox
+                    for (Element element : doc.select("ul.release_list")) {
+                        Log.d(TAG, "element.text(): "+element.text());
 //                        Log.d(TAG, "area_title: "+element.select("div.area_title").text());
 //                        Log.d(TAG, "adds: "+element.select("li.adds").text());
 //                        Log.d(TAG, "taps: "+element.select("li.taps").text());
 //
 
 //                        Log.d(TAG, "run: "+element.select("li.time._c").size());
-                        Log.d(TAG, "run: "+element.select("li.time._c").eq(0).text());
-                        for (String s : element.select("li.time._c").eq(0).text().split(" ")) {
-                            Log.d(TAG, "run: "+s.toString());
-                        }
+//                        Log.d(TAG, "run: "+element.select("li.time._c").eq(0).text());
+//                        for (String s : element.select("li.time._c").eq(0).text().split(" ")) {
+//                            Log.d(TAG, "run: "+s.toString());
+//                        }
 //                        for (int i = 0; i < element.select("li.time._c").size(); i++) {
 //                            for (Element element1 : element.select("li.time._c").eq(i)) {
 //                                Log.d(TAG, "run: "+element1.text());
 //                            }
 //                        }
+
+                    }
+                    for (Element page : doc.select("div.page_numbox")) {
+                        Log.d(TAG, "run: "+page.text());
 
                     }
 //                    for (Element element : doc.getElementsByTag("div")) {
