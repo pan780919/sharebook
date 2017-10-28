@@ -10,8 +10,6 @@ import android.graphics.Matrix;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
-import android.support.annotation.NonNull;
-import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.util.Log;
@@ -29,7 +27,6 @@ import android.widget.ExpandableListAdapter;
 import android.widget.ExpandableListView;
 import android.widget.ImageView;
 import android.widget.ListView;
-import android.widget.Spinner;
 import android.widget.TextView;
 
 import com.adlocus.PushAd;
@@ -37,8 +34,6 @@ import com.bumptech.glide.Glide;
 import com.facebook.FacebookSdk;
 import com.facebook.appevents.AppEventsLogger;
 import com.facebook.applinks.AppLinkData;
-
-import com.google.android.gms.ads.InterstitialAd;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
@@ -55,12 +50,9 @@ import java.util.Map;
 import Appkey.MyAdKey;
 import bolts.AppLinks;
 
-import com.igexin.sdk.PushManager;
 import com.jackpan.libs.mfirebaselib.MfiebaselibsClass;
 import com.jackpan.libs.mfirebaselib.MfirebaeCallback;
 import com.jackpan.Brokethenews.R;
-import com.newqm.sdkoffer.AdView;
-import com.newqm.sdkoffer.QuMiConnect;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -74,9 +66,6 @@ public class MainActivity extends Activity implements MfirebaeCallback {
     private boolean isCencel = false;
     private ProgressDialog progressDialog;
     private DrawerLayout drawerLayout;
-    private NavigationView navigation_view;
-    private InterstitialAd interstitial;
-    private Spinner mSpinner, mSpinner2;
     HashMap<String, ArrayList<ResultData>> mKind;
     HashMap<String, ArrayList<String>> mCity;
     private MyAdapter mAdapter;
@@ -97,49 +86,15 @@ public class MainActivity extends Activity implements MfirebaeCallback {
     private ExpandableListAdapter mExpandableListAdapter;
 
     private Map<String, List<String>> mExpandableListData;
+    MfiebaselibsClass m;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-////		 //開啟全螢幕
-//        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
-//                             WindowManager.LayoutParams.FLAG_FULLSCREEN);
-////        //設定隱藏APP標題
-//        requestWindowFeature(Window.FEATURE_NO_TITLE);
-
-
-        MfiebaselibsClass m = new MfiebaselibsClass(this,MainActivity.this);
+        m = new MfiebaselibsClass(this,MainActivity.this);
         m.getFirebaseDatabase("https://bookshare-99cb3.firebaseio.com/sharebook","data");
-        auth = FirebaseAuth.getInstance();
-        authListener = new FirebaseAuth.AuthStateListener() {
-            @Override
-            public void onAuthStateChanged(
-                    @NonNull FirebaseAuth firebaseAuth) {
-                FirebaseUser user = firebaseAuth.getCurrentUser();
-                if (user != null) {
-                    Log.d("onAuthStateChanged", "登入:" +
-                            user.getUid());
-                    userUID = user.getUid();
-                    MySharedPrefernces.saveUserId(MainActivity.this, userUID);
-                    if (firebaseAuth.getCurrentUser().getDisplayName() != null)
-                        MySharedPrefernces.saveUserName(MainActivity.this, firebaseAuth.getCurrentUser().getDisplayName());
-                    else MySharedPrefernces.saveUserName(MainActivity.this, "沒有暱稱");
-                    if (firebaseAuth.getCurrentUser().getEmail() != null)
-                        MySharedPrefernces.saveUserMail(MainActivity.this, firebaseAuth.getCurrentUser().getEmail());
-                    else MySharedPrefernces.saveUserMail(MainActivity.this, "");
-                    if (firebaseAuth.getCurrentUser().getPhotoUrl() != null)
-                        MySharedPrefernces.saveUserPic(MainActivity.this, String.valueOf(firebaseAuth.getCurrentUser().getPhotoUrl()));
-                    else MySharedPrefernces.saveUserPic(MainActivity.this, "");
-                } else {
-                    Log.d("onAuthStateChanged", "已登出");
-                    userUID = "";
-                    MySharedPrefernces.saveUserId(MainActivity.this, "");
-                }
-            }
-        };
+        m.userLoginCheck();
         setContentView(R.layout.activity_main);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
-//		MyGAManager.sendScreenName(this,"搜尋頁面");
-
         FacebookSdk.sdkInitialize(getApplicationContext());
         AppEventsLogger.activateApp(this);
         new Thread(){
@@ -147,19 +102,40 @@ public class MainActivity extends Activity implements MfirebaeCallback {
             public void run() {
                 super.run();
                 try {
-                    Document doc = Jsoup.connect("http://rate.bot.com.tw/xrt?Lang=zh-TW").get();
+                    Document doc = Jsoup.connect("https://tw.movies.yahoo.com/movie_intheaters.html").get();
+//                    Log.d(TAG, "doc: "+doc.select("div.area_timebox").toString());
+                    //div.area_timebox
+                    for (Element element : doc.select("ul.release_list")) {
+                        Log.d(TAG, "element.text(): "+element.text());
+//                        Log.d(TAG, "area_title: "+element.select("div.area_title").text());
+//                        Log.d(TAG, "adds: "+element.select("li.adds").text());
+//                        Log.d(TAG, "taps: "+element.select("li.taps").text());
+//
 
-                    for (Element element : doc.getElementsByTag("tr")) {
-//                        Log.d(TAG, "run: "+element.toString());
-//                        Log.d(TAG, "run: "+element.text());
-                        for (Element td : element.getElementsByTag("td")) {
-                            for (Element div : td.getElementsByTag("div")) {
-                            }
-                        }
-
-
+//                        Log.d(TAG, "run: "+element.select("li.time._c").size());
+//                        Log.d(TAG, "run: "+element.select("li.time._c").eq(0).text());
+//                        for (String s : element.select("li.time._c").eq(0).text().split(" ")) {
+//                            Log.d(TAG, "run: "+s.toString());
+//                        }
+//                        for (int i = 0; i < element.select("li.time._c").size(); i++) {
+//                            for (Element element1 : element.select("li.time._c").eq(i)) {
+//                                Log.d(TAG, "run: "+element1.text());
+//                            }
+//                        }
 
                     }
+                    for (Element page : doc.select("div.page_numbox")) {
+                        Log.d(TAG, "run: "+page.text());
+
+                    }
+//                    for (Element element : doc.getElementsByTag("div")) {
+//                        Log.d(TAG, "div: "+element.toString());
+//                        Log.d(TAG, "text: "+element.text());
+////                        for (Element td : element.getElementsByTag("td")) {
+////                            for (Element div : td.getElementsByTag("div")) {
+////                            }
+////                        }
+//                    }
 
                 } catch (IOException e) {
                     e.printStackTrace();
@@ -191,20 +167,6 @@ public class MainActivity extends Activity implements MfirebaeCallback {
                     startActivity(i);
                 }
 
-//				uploadFromStream();
-//				upLoad();
-//				setFireBaseDB();
-//				String appLinkUrl, previewImageUrl;
-//				appLinkUrl = "https://play.google.com/store/apps/details?id=com.jackpan.TaipeiZoo";
-//				previewImageUrl = "https://lh3.googleusercontent.com/2TPsyspPyf6WOYUEjduISOrg0HZH_xqtwa0G5LJsclL-knggHE0-KdbisjutLpr7lo8=w300-rw";
-//
-//				if (AppInviteDialog.canShow()) {
-//					AppInviteContent content = new AppInviteContent.Builder()
-//							.setApplinkUrl(appLinkUrl)
-//							.setPreviewImageUrl(previewImageUrl)
-//							.build();
-//					AppInviteDialog.show(MainActivity.this, content);
-//				}
             }
         });
 
@@ -264,8 +226,6 @@ public class MainActivity extends Activity implements MfirebaeCallback {
 
         petlist.setAdapter(mAdapter);
         items = getResources().getStringArray(R.array.film_genre);
-
-//        setFireBase();
         mExpandableListData = ExpandableListDataSource.getData(this);
         mExpandableListTitle = new ArrayList(mExpandableListData.keySet());
 
@@ -305,11 +265,24 @@ public class MainActivity extends Activity implements MfirebaeCallback {
 
     @Override
     public void useLognState(boolean b) {
+        if (b){
+
+        }else {
+
+        }
 
     }
 
     @Override
     public void getuseLoginId(String s) {
+        if (!s.equals("")){
+            MySharedPrefernces.saveUserId(this,s);
+            userUID = s;
+
+        }else {
+            MySharedPrefernces.saveUserId(this,"");
+            userUID = "";
+        }
 
     }
 
@@ -551,14 +524,12 @@ public class MainActivity extends Activity implements MfirebaeCallback {
     @Override
     protected void onStart() {
         super.onStart();
-        auth.addAuthStateListener(authListener);
+        m.setAuthListener();
     }
 
     @Override
     protected void onStop() {
         super.onStop();
-        if (authListener != null) {
-            auth.removeAuthStateListener(authListener);
-        }
+        m.removeAuthListener();
     }
 }
