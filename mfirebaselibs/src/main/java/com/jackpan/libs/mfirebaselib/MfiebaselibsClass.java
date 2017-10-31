@@ -285,7 +285,7 @@ public class MfiebaselibsClass {
 
     public void userDeleteData(String url, String pathString, String memberid) {
         if (!userUID.equals(memberid)) {
-            Toast.makeText(mContext, NOSELFDATA, Toast.LENGTH_SHORT).show();
+            callback.getDeleteState(false, DELETEFAIL);
             return;
         }
         Firebase myFirebaseRef = new Firebase(url);

@@ -234,7 +234,8 @@
                         android:layout_marginLeft="12dp"
                         android:layout_marginRight="12dp"
                         android:paddingLeft="8dp"
-                        android:id="@+id/phoneedt"></EditText>
+                        android:id="@+id/phoneedt"
+                        android:inputType="phone"></EditText>
                 </LinearLayout>
 
             </LinearLayout>>

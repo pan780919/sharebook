@@ -3,9 +3,11 @@ package com.jackpan.TaiwanpetadoptionApp;
 
 import android.app.Activity;
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.location.LocationManager;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.Menu;
@@ -13,6 +15,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -61,6 +64,7 @@ public class TwoActivity extends Activity {
 	private  Button mUserLikeBtn;
 	private  TextView mUserText;
 	private  Button toUserMsg,mBtnGPS;
+	private ImageButton callphone;
 
 	private com.facebook.ads.InterstitialAd interstitialAd;
 
@@ -166,6 +170,8 @@ public class TwoActivity extends Activity {
 		mUserText = (TextView) findViewById(R.id.liketext);
 		toUserMsg = (Button) findViewById(R.id.b_button_message);
 		toUserMsg.setVisibility(View.GONE);
+		callphone =(ImageButton) findViewById(R.id.callphone);
+
 
 	}
 
@@ -182,7 +188,12 @@ public class TwoActivity extends Activity {
 		textview4.setText("聯絡電話:"+data.phone);
 		textview5.setText("價錢:"+data.price);
 		textview6.setText("ISBN:"+data.isbn);
-
+		callphone.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View view) {
+				startActivity(new Intent(Intent.ACTION_DIAL, Uri.parse("tel:"+data.phone)));
+			}
+		});
 //		if(data.getView()!=0)userView();
 		mUserText.setText(data.getLike()+"人");
 		mUserText.setVisibility(View.GONE);
