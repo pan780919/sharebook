@@ -20,6 +20,7 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
+import android.provider.DocumentsContract;
 import android.provider.MediaStore;
 import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
@@ -58,7 +59,7 @@ import java.util.Map;
 
 //import com.google.android.gms.location.LocationServices;
 
-public class ForIdeaAndShareActivity extends Activity implements View.OnClickListener{
+public class ForIdeaAndShareActivity extends Activity implements View.OnClickListener {
     private EditText mNameEdt, mMailEdt, mTiitleEdt, mMessageEdt;
     private Button mSureBtn, mCancelBtn;
     private ImageView mImg;
@@ -89,14 +90,15 @@ public class ForIdeaAndShareActivity extends Activity implements View.OnClickLis
     private int picInt = 0;
     private int videoInt = 0;
     String returnAddress = "";
-    private  EditText pricetext, isbntext;
+    private EditText pricetext, isbntext;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_for_idea_and_share);
         mPhone = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(mPhone);
-        cat =getResources().getStringArray(R.array.musicals);
+        cat = getResources().getStringArray(R.array.musicals);
         initLayout();
         Calendar mCal = Calendar.getInstance();
         s = DateFormat.format("yyyy-MM-dd kk:mm:ss", mCal.getTime());
@@ -107,7 +109,7 @@ public class ForIdeaAndShareActivity extends Activity implements View.OnClickLis
         mPicName2 = (TextView) findViewById(R.id.picnametext2);
         mPicName3 = (TextView) findViewById(R.id.picnametext3);
         pricetext = (EditText) findViewById(R.id.price);
-        isbntext = (EditText)findViewById(R.id.isbnedt);
+        isbntext = (EditText) findViewById(R.id.isbnedt);
         mNameEdt = (EditText) findViewById(R.id.nameedt);
         mMailEdt = (EditText) findViewById(R.id.phoneedt);
         mTiitleEdt = (EditText) findViewById(R.id.tittle);
@@ -188,8 +190,8 @@ public class ForIdeaAndShareActivity extends Activity implements View.OnClickLis
                 break;
             case R.id.picbtn:
                 picInt = 1;
-//                selectPic();
-                getPermissionCAMERA();
+                selectPic();
+//                getPermissionCAMERA();
                 break;
             case R.id.picbtn2:
                 picInt = 2;
@@ -205,8 +207,8 @@ public class ForIdeaAndShareActivity extends Activity implements View.OnClickLis
 
     }
 
-    private void setFireBaseDB(String id, String tittle, String message, String phone,String cat, String uri, String uri2, String uri3
-            ,  String name,String price ,String isbn, String date,
+    private void setFireBaseDB(String id, String tittle, String message, String phone, String cat, String uri, String uri2, String uri3
+            , String name, String price, String isbn, String date,
                                String adds
     ) {
 
@@ -227,7 +229,7 @@ public class ForIdeaAndShareActivity extends Activity implements View.OnClickLis
         newPost.put("name", name);
         newPost.put("tittle", tittle);
         newPost.put("message", message);
-        newPost.put("phone",phone);
+        newPost.put("phone", phone);
         newPost.put("cat", cat);
 //        newPost.put("mood", mood);
         newPost.put("pic", uri);
@@ -241,8 +243,8 @@ public class ForIdeaAndShareActivity extends Activity implements View.OnClickLis
 //        newPost.put("url", videoUri);
 //        newPost.put("url2", videoUri2);
 //        newPost.put("url3", videoUri3);
-        newPost.put("price",price);
-        newPost.put("isbn",isbn);
+        newPost.put("price", price);
+        newPost.put("isbn", isbn);
 
         newPost.put("date", date);
         newPost.put("like", 1);
@@ -316,7 +318,7 @@ public class ForIdeaAndShareActivity extends Activity implements View.OnClickLis
             intent.setType("image/*");
             intent.setAction(Intent.ACTION_GET_CONTENT);
             startActivityForResult(intent, PHOTO);
-;
+            ;
 
         }
     }
@@ -367,7 +369,7 @@ public class ForIdeaAndShareActivity extends Activity implements View.OnClickLis
                 else ScalePic(bitmap, mPhone.widthPixels);
             } catch (FileNotFoundException e) {
                 e.printStackTrace();
-                Log.d(TAG, "onActivityResult: "+e.getMessage());
+                Log.d(TAG, "onActivityResult: " + e.getMessage());
             }
             savePicture(bitmap);
             uploadFromPic(datauri);
@@ -388,71 +390,71 @@ public class ForIdeaAndShareActivity extends Activity implements View.OnClickLis
 
     @TargetApi(Build.VERSION_CODES.KITKAT)
     private void uploadFromPic(Uri datauri) {
-        Log.d(TAG, "uploadFromPic: "+datauri);
+        Log.d(TAG, "uploadFromPic: " + datauri);
         final boolean after44 = Build.VERSION.SDK_INT >= 19;
         String filePath = "";
-//
-//        if (after44) {
-//            String wholeID = DocumentsContract.getDocumentId(datauri);
-//
-//// Split at colon, use second item in the array
-//            String id = wholeID.split(":")[1];
-//
-//            String[] column = {MediaStore.Images.Media.DATA};
-//
-//// where id is equal to
-//            String sel = MediaStore.Images.Media._ID + "=?";
-//
-//            Cursor cursor = getContentResolver().
-//                    query(MediaStore.Images.Media.EXTERNAL_CONTENT_URI,
-//                            column, sel, new String[]{id}, null);
-//
-//
-//            int columnIndex = cursor.getColumnIndex(column[0]);
-//
-//            if (cursor.moveToFirst()) {
-//                filePath = cursor.getString(columnIndex);
-//                Log.d(TAG, "onActivityResult: " + filePath);
-//
-//            }
-//
-//            cursor.close();
-//        } else {
-//
-//            try {
-//                String[] filePathColumn = {MediaStore.Images.Media.DATA};
-//
-//                Cursor cursor = getContentResolver().query(datauri,
-//                        filePathColumn, null, null, null);
-//                cursor.moveToFirst();
-//
-//                int columnIndex = cursor.getColumnIndex(filePathColumn[0]);
-//                filePath = cursor.getString(columnIndex);
-//                Log.d(TAG, "uploadFromPic:" + filePath);
-//                cursor.close();
-//            } catch (Exception e) {
-//                // TODO: handle exception
-//                e.printStackTrace();
-//            }
-//
-//        }
+
+        if (after44) {
+            String wholeID = DocumentsContract.getDocumentId(datauri);
+
+// Split at colon, use second item in the array
+            String id = wholeID.split(":")[1];
+
+            String[] column = {MediaStore.Images.Media.DATA};
+
+// where id is equal to
+            String sel = MediaStore.Images.Media._ID + "=?";
+
+            Cursor cursor = getContentResolver().
+                    query(MediaStore.Images.Media.EXTERNAL_CONTENT_URI,
+                            column, sel, new String[]{id}, null);
 
 
-        try {
-            String[] filePathColumn = {MediaStore.Images.Media.DATA};
+            int columnIndex = cursor.getColumnIndex(column[0]);
 
-            Cursor cursor = getContentResolver().query(datauri,
-                    filePathColumn, null, null, null);
-            cursor.moveToFirst();
+            if (cursor.moveToFirst()) {
+                filePath = cursor.getString(columnIndex);
+                Log.d(TAG, "onActivityResult: " + filePath);
 
-            int columnIndex = cursor.getColumnIndex(filePathColumn[0]);
-            filePath = cursor.getString(columnIndex);
-            Log.d(TAG, "uploadFromPic:" + filePath);
+            }
+
             cursor.close();
-        } catch (Exception e) {
-            // TODO: handle exception
-            e.printStackTrace();
+        } else {
+
+            try {
+                String[] filePathColumn = {MediaStore.Images.Media.DATA};
+
+                Cursor cursor = getContentResolver().query(datauri,
+                        filePathColumn, null, null, null);
+                cursor.moveToFirst();
+
+                int columnIndex = cursor.getColumnIndex(filePathColumn[0]);
+                filePath = cursor.getString(columnIndex);
+                Log.d(TAG, "uploadFromPic:" + filePath);
+                cursor.close();
+            } catch (Exception e) {
+                // TODO: handle exception
+                e.printStackTrace();
+            }
+
         }
+
+
+//        try {
+//            String[] filePathColumn = {MediaStore.Images.Media.DATA};
+//
+//            Cursor cursor = getContentResolver().query(datauri,
+//                    filePathColumn, null, null, null);
+//            cursor.moveToFirst();
+//
+//            int columnIndex = cursor.getColumnIndex(filePathColumn[0]);
+//            filePath = cursor.getString(columnIndex);
+//            Log.d(TAG, "uploadFromPic:" + filePath);
+//            cursor.close();
+//        } catch (Exception e) {
+//            // TODO: handle exception
+//            e.printStackTrace();
+//        }
 
 //			sharePicWithUri(uri);
 //			if (true) return;
@@ -511,7 +513,6 @@ public class ForIdeaAndShareActivity extends Activity implements View.OnClickLis
                         progressDialog.dismiss();
                         Toast.makeText(ForIdeaAndShareActivity.this, "上傳成功", Toast.LENGTH_SHORT).show();
                         break;
-
 
 
                 }
@@ -580,7 +581,7 @@ public class ForIdeaAndShareActivity extends Activity implements View.OnClickLis
         String root = Environment.getExternalStorageDirectory().toString();
         File myDir = new File(root + "/req_images");
         myDir.mkdirs();
-        String fname = s+".jpg";
+        String fname = s + ".jpg";
         File file = new File(myDir, fname);
         if (file.exists()) file.delete();
 
@@ -594,8 +595,10 @@ public class ForIdeaAndShareActivity extends Activity implements View.OnClickLis
         }
         return Uri.fromFile(file);
     }
+
     /**
      * 查詢MediaStroe Uri對應的絕對路徑。
+     *
      * @param context 傳入Context
      * @param uri     傳入MediaStore Uri
      * @return 傳回絕對路徑
