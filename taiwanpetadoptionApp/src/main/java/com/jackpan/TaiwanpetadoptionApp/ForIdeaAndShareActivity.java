@@ -285,14 +285,14 @@ public class ForIdeaAndShareActivity extends Activity implements View.OnClickLis
             //未取得權限，向使用者要求允許權限
 
             if (ActivityCompat.shouldShowRequestPermissionRationale(ForIdeaAndShareActivity.this,
-                    android.Manifest.permission.CAMERA)) {
+                    android.Manifest.permission.READ_EXTERNAL_STORAGE)) {
                 new android.support.v7.app.AlertDialog.Builder(ForIdeaAndShareActivity.this)
                         .setMessage("我真的沒有要做壞事, 給我權限吧?")
                         .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
                                 ActivityCompat.requestPermissions(ForIdeaAndShareActivity.this,
-                                        new String[]{android.Manifest.permission.CAMERA},
+                                        new String[]{android.Manifest.permission.READ_EXTERNAL_STORAGE},
                                         REQUEST_EXTERNAL_STORAGE);
                             }
                         })
@@ -369,7 +369,6 @@ public class ForIdeaAndShareActivity extends Activity implements View.OnClickLis
                 else ScalePic(bitmap, mPhone.widthPixels);
             } catch (FileNotFoundException e) {
                 e.printStackTrace();
-                Log.d(TAG, "onActivityResult: " + e.getMessage());
             }
             savePicture(bitmap);
             uploadFromPic(datauri);
@@ -414,7 +413,6 @@ public class ForIdeaAndShareActivity extends Activity implements View.OnClickLis
 
             if (cursor.moveToFirst()) {
                 filePath = cursor.getString(columnIndex);
-                Log.d(TAG, "onActivityResult: " + filePath);
 
             }
 
