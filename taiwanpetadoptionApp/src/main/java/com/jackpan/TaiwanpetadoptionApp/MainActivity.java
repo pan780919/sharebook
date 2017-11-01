@@ -251,6 +251,12 @@ public class MainActivity extends Activity implements MfirebaeCallback {
     }
 
     @Override
+    public void getuserLoginEmail(String s) {
+        MySharedPrefernces.saveUserMail(this,s);
+
+    }
+
+    @Override
     public void resetPassWordState(boolean b) {
 
     }

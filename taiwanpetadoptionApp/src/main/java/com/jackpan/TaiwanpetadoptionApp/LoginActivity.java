@@ -289,6 +289,12 @@ public class LoginActivity extends Activity implements View.OnClickListener, Mfi
     }
 
     @Override
+    public void getuserLoginEmail(String s) {
+        MySharedPrefernces.saveUserMail(this,s);
+
+    }
+
+    @Override
     public void resetPassWordState(boolean b) {
 
     }

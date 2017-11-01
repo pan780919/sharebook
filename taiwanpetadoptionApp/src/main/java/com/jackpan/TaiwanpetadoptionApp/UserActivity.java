@@ -129,7 +129,8 @@ public class UserActivity extends Activity implements MfirebaeCallback {
                 .into(mUsetImg);
         mUserId.setText(mUserIdStr);
         mUserName.setText(mUserNameStr);
-        mUserEmail.setText(mUserMailStr);
+        if(mUserMailStr.equals("")) mUserEmail.setText("無資料");
+        else mUserEmail.setText(mUserMailStr);
         if (!mUserLvBoolean) mUserLv.setText("普通會員");
         else  mUserLv.setText("尊榮會員");
     }
@@ -156,6 +157,11 @@ public class UserActivity extends Activity implements MfirebaeCallback {
 
     @Override
     public void getuseLoginId(String s) {
+
+    }
+
+    @Override
+    public void getuserLoginEmail(String s) {
 
     }
 

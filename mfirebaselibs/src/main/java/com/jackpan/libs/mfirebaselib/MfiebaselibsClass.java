@@ -127,11 +127,15 @@ public class MfiebaselibsClass {
                 FirebaseUser user = firebaseAuth.getCurrentUser();
                 if (user != null) {
                     userUID = user.getUid();
+
                     callback.getuseLoginId(userUID);
+                    callback.getuserLoginEmail(user.getEmail());
                 } else {
                     userUID = "";
 
                     callback.getuseLoginId("");
+                    callback.getuserLoginEmail("");
+
                 }
             }
         };
