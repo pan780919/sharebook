@@ -229,7 +229,7 @@ public class LoginActivity extends Activity implements View.OnClickListener, Mfi
     }
 
     @Override
-    public void getDeleteState(boolean b, String s) {
+    public void getDeleteState(boolean b, String s ,Object o) {
 
     }
 

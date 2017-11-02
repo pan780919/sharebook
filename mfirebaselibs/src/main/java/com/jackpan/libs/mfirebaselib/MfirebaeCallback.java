@@ -10,7 +10,7 @@ public interface MfirebaeCallback {
 
     void getDatabaseData(Object o);
 
-    void getDeleteState(boolean b, String s);
+    void getDeleteState(boolean b, String s, Object o);
 
     void createUserState(boolean b);
 
@@ -26,12 +26,12 @@ public interface MfirebaeCallback {
 
     void getFirebaseStorageState(boolean b);
 
-    void  getFirebaseStorageType(String uri , String name);
+    void getFirebaseStorageType(String uri, String name);
 
-    void  getsSndPasswordResetEmailState(boolean b);
+    void getsSndPasswordResetEmailState(boolean b);
 
     void getUpdateUserName(boolean b);
 
-    void  getUserLogoutState(boolean b);
+    void getUserLogoutState(boolean b);
 
 }

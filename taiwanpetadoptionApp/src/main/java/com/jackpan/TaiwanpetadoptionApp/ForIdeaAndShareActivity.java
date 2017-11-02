@@ -393,66 +393,66 @@ public class ForIdeaAndShareActivity extends Activity implements View.OnClickLis
         final boolean after44 = Build.VERSION.SDK_INT >= 19;
         String filePath = "";
 
-//        if (after44) {
-//            String wholeID = DocumentsContract.getDocumentId(datauri);
-//
-//// Split at colon, use second item in the array
-//            String id = wholeID.split(":")[1];
-//
-//            String[] column = {MediaStore.Images.Media.DATA};
-//
-//// where id is equal to
-//            String sel = MediaStore.Images.Media._ID + "=?";
-//
-//            Cursor cursor = getContentResolver().
-//                    query(MediaStore.Images.Media.EXTERNAL_CONTENT_URI,
-//                            column, sel, new String[]{id}, null);
-//
-//
-//            int columnIndex = cursor.getColumnIndex(column[0]);
-//
-//            if (cursor.moveToFirst()) {
-//                filePath = cursor.getString(columnIndex);
-//
-//            }
-//
-//            cursor.close();
-//        } else {
-//
-//            try {
-//                String[] filePathColumn = {MediaStore.Images.Media.DATA};
-//
-//                Cursor cursor = getContentResolver().query(datauri,
-//                        filePathColumn, null, null, null);
-//                cursor.moveToFirst();
-//
-//                int columnIndex = cursor.getColumnIndex(filePathColumn[0]);
-//                filePath = cursor.getString(columnIndex);
-//                Log.d(TAG, "uploadFromPic:" + filePath);
-//                cursor.close();
-//            } catch (Exception e) {
-//                // TODO: handle exception
-//                e.printStackTrace();
-//            }
-//
-//        }
+        if (after44) {
+            String wholeID = DocumentsContract.getDocumentId(datauri);
+
+// Split at colon, use second item in the array
+            String id = wholeID.split(":")[1];
+
+            String[] column = {MediaStore.Images.Media.DATA};
+
+// where id is equal to
+            String sel = MediaStore.Images.Media._ID + "=?";
+
+            Cursor cursor = getContentResolver().
+                    query(MediaStore.Images.Media.EXTERNAL_CONTENT_URI,
+                            column, sel, new String[]{id}, null);
 
 
-        try {
-            String[] filePathColumn = {MediaStore.Images.Media.DATA};
+            int columnIndex = cursor.getColumnIndex(column[0]);
 
-            Cursor cursor = getContentResolver().query(datauri,
-                    filePathColumn, null, null, null);
-            cursor.moveToFirst();
+            if (cursor.moveToFirst()) {
+                filePath = cursor.getString(columnIndex);
 
-            int columnIndex = cursor.getColumnIndex(filePathColumn[0]);
-            filePath = cursor.getString(columnIndex);
-            Log.d(TAG, "uploadFromPic:" + filePath);
+            }
+
             cursor.close();
-        } catch (Exception e) {
-            // TODO: handle exception
-            e.printStackTrace();
+        } else {
+
+            try {
+                String[] filePathColumn = {MediaStore.Images.Media.DATA};
+
+                Cursor cursor = getContentResolver().query(datauri,
+                        filePathColumn, null, null, null);
+                cursor.moveToFirst();
+
+                int columnIndex = cursor.getColumnIndex(filePathColumn[0]);
+                filePath = cursor.getString(columnIndex);
+                Log.d(TAG, "uploadFromPic:" + filePath);
+                cursor.close();
+            } catch (Exception e) {
+                // TODO: handle exception
+                e.printStackTrace();
+            }
+
         }
+
+//
+//        try {
+//            String[] filePathColumn = {MediaStore.Images.Media.DATA};
+//
+//            Cursor cursor = getContentResolver().query(datauri,
+//                    filePathColumn, null, null, null);
+//            cursor.moveToFirst();
+//
+//            int columnIndex = cursor.getColumnIndex(filePathColumn[0]);
+//            filePath = cursor.getString(columnIndex);
+//            Log.d(TAG, "uploadFromPic:" + filePath);
+//            cursor.close();
+//        } catch (Exception e) {
+//            // TODO: handle exception
+//            e.printStackTrace();
+//        }
 
 //			sharePicWithUri(uri);
 //			if (true) return;

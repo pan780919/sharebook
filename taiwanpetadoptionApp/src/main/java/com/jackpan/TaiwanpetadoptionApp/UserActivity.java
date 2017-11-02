@@ -141,7 +141,7 @@ public class UserActivity extends Activity implements MfirebaeCallback {
     }
 
     @Override
-    public void getDeleteState(boolean b, String s) {
+    public void getDeleteState(boolean b, String s ,Object o) {
 
     }
 

@@ -73,7 +73,7 @@ public class MainActivity extends Activity implements MfirebaeCallback {
     FirebaseAuth.AuthStateListener authListener;
     private String userUID;
     private ExpandableListView mExpandableListView;
-
+    private  boolean deleteBool = false;
     private String[] items;
 
     private List<String> mExpandableListTitle;
@@ -205,22 +205,25 @@ public class MainActivity extends Activity implements MfirebaeCallback {
         FirebaseData g = gson.fromJson(jsonInString, FirebaseData.class);
         list.add(0, g);
 
-
         mAdapter.notifyDataSetChanged();
         progressDialog.dismiss();
 
     }
 
     @Override
-    public void getDeleteState(boolean b, String s) {
+    public void getDeleteState(boolean b, String s, Object o) {
         if (b) {
-            Toast.makeText(this, "刪除成功,將於下次更新！", Toast.LENGTH_SHORT).show();
-            mAdapter.notifyDataSetChanged();
+            Toast.makeText(this, "刪除成功！", Toast.LENGTH_SHORT).show();
+            list.clear();
+            m.getFirebaseDatabase("https://bookshare-99cb3.firebaseio.com/sharebook", "data");
+//            deleteBool  = true;
         } else {
+//            if(deleteBool) return;
             Toast.makeText(this, "刪除失敗！你不是該文章的作者", Toast.LENGTH_SHORT).show();
         }
-
     }
+
+
 
     @Override
     public void createUserState(boolean b) {
@@ -293,7 +296,6 @@ public class MainActivity extends Activity implements MfirebaeCallback {
 
 
     public class MyAdapter extends BaseAdapter {
-        //		private ArrayList<ResultData> mDatas;
         private ArrayList<FirebaseData> mDatas;
 
         public MyAdapter(ArrayList<FirebaseData> datas) {
@@ -360,7 +362,7 @@ public class MainActivity extends Activity implements MfirebaeCallback {
 
         if ((keyCode == KeyEvent.KEYCODE_BACK)) {   //確定按下退出鍵
 
-            ConfirmExit(); //呼叫ConfirmExit()函數
+            MainActivity.this.finish();//關閉activity
 
             return true;
 
