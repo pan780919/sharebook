@@ -56,9 +56,6 @@ import java.io.InputStream;
 import java.util.Calendar;
 import java.util.HashMap;
 import java.util.Map;
-
-//import com.google.android.gms.location.LocationServices;
-
 public class ForIdeaAndShareActivity extends Activity implements View.OnClickListener {
     private EditText mNameEdt, mMailEdt, mTiitleEdt, mMessageEdt;
     private Button mSureBtn, mCancelBtn;
