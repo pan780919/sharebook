@@ -41,6 +41,7 @@
     </string-array>
 
     <string-array name="musicals">
+        <item>全部</item>
         <item>文學</item>
         <item>文財經企管</item>
         <item>生活風格</item>

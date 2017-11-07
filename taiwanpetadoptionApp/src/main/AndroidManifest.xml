@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.jackpan.Brokethenews"
-    android:versionCode="2"
-    android:versionName="1.0.1">
+    android:versionCode="4"
+    android:versionName="1.0.4">
 
     <uses-sdk
         android:minSdkVersion="9"
@@ -118,12 +118,6 @@
             android:configChanges="orientation|keyboardHidden|navigation|keyboard|screenLayout|uiMode|screenSize|smallestScreenSize"
             android:hardwareAccelerated="true"
             android:theme="@android:style/Theme.Translucent" />
-        <activity
-            android:name="com.jackpan.TaiwanpetadoptionApp.HeadpageActivity"
-            android:configChanges="orientation|screenSize"
-            android:label="@string/title_activity_headpage"
-            android:launchMode="singleInstance"
-            android:screenOrientation="portrait" />
         <!-- This meta-data tag is required to use Google Play Services. -->
         <meta-data
             android:name="com.google.android.gms.version"
@@ -147,21 +141,17 @@
             android:enabled="true"
             android:exported="false" />
 
-        <activity
-            android:name="com.jackpan.TaiwanpetadoptionApp.InAppBillingActivity"
-            android:label="@string/title_activity_in_app_billing"
-            android:launchMode="singleInstance" />
 
         <!--<service android:name="com.jackpan.TaiwanpetadoptionApp.MyFirebaseMessagingService">-->
             <!--<intent-filter>-->
                 <!--<action android:name="com.google.firebase.MESSAGING_EVENT" />-->
             <!--</intent-filter>-->
         <!--</service>-->
-        <service android:name="com.jackpan.TaiwanpetadoptionApp.MyFirebaseInstanceIDService">
-            <intent-filter>
-                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
-            </intent-filter>
-        </service>
+        <!--<service android:name="com.jackpan.TaiwanpetadoptionApp.MyFirebaseInstanceIDService">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="com.google.firebase.INSTANCE_ID_EVENT" />-->
+            <!--</intent-filter>-->
+        <!--</service>-->
 
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
@@ -202,8 +192,6 @@
         <activity
             android:name="com.jackpan.TaiwanpetadoptionApp.UserMessgeActivity"
             android:label="@string/title_activity_user_messge"></activity>
-        <service android:name="com.jackpan.TaiwanpetadoptionApp.MyIntentService"/>
-
         <!-- 个推SDK配置开始 -->
         <!-- 配置的第三方参数属性 -->
         <meta-data

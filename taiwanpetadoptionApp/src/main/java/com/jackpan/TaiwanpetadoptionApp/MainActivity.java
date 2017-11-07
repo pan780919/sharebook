@@ -30,7 +30,6 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.adlocus.PushAd;
 import com.bumptech.glide.Glide;
 import com.facebook.FacebookSdk;
 import com.facebook.appevents.AppEventsLogger;
@@ -49,18 +48,15 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import Appkey.MyAdKey;
 import bolts.AppLinks;
 
 public class MainActivity extends Activity implements MfirebaeCallback {
     private ListView petlist;
-    private ArrayList<ResultData> mAllData = new ArrayList<ResultData>();
     private TextView numtext;
     MyAdapter mydapter = null;
     private boolean isCencel = false;
     private ProgressDialog progressDialog;
     private DrawerLayout drawerLayout;
-    HashMap<String, ArrayList<ResultData>> mKind;
     HashMap<String, ArrayList<String>> mCity;
     private MyAdapter mAdapter;
     private ArrayAdapter<String> mAdapter2 = null;
@@ -135,14 +131,6 @@ public class MainActivity extends Activity implements MfirebaeCallback {
                 finish();
             }
         });
-        boolean isbuy = MySharedPrefernces.getIsBuyed(this);
-        if (isbuy) {
-            Intent promotionIntent = new Intent(this, MainActivity.class);
-            PushAd.enablePush(this, MyAdKey.AdLoucskey, promotionIntent);
-        } else {
-            PushAd.disablePush(MainActivity.this);
-        }
-
         petlist = (ListView) findViewById(R.id.listView1);
         petlist.setOnItemClickListener(new OnItemClickListener() {
 
@@ -200,13 +188,15 @@ public class MainActivity extends Activity implements MfirebaeCallback {
 
     @Override
     public void getDatabaseData(Object o) {
-        if(list.size()>0 && list!=null){
-            list.clear();
-        }
+        Log.d(TAG, "getDatabaseData: "+o.toString());
+        Log.d(TAG, "getDatabaseData: "+list.size());
         Gson gson = new Gson();
         String jsonInString = gson.toJson(o);
         FirebaseData g = gson.fromJson(jsonInString, FirebaseData.class);
         list.add(0, g);
+        Log.d(TAG, "getDatabaseData: "+list.size());
+        mAdapter = new MyAdapter(list);
+        petlist.setAdapter(mAdapter);
         mAdapter.notifyDataSetChanged();
         progressDialog.dismiss();
 
@@ -481,11 +471,20 @@ public class MainActivity extends Activity implements MfirebaeCallback {
                                         int groupPosition, int childPosition, long id) {
                 String selectedItem = ((List) (mExpandableListData.get(mExpandableListTitle.get(groupPosition))))
                         .get(childPosition).toString();
-                Log.d(TAG, "selectedItem: " + selectedItem);
                 if (groupPosition == 1) {
                     startActivity(new Intent(MainActivity.this, LoginActivity.class));
                 }else {
-                    m.searchFirebaseDatabase("https://bookshare-99cb3.firebaseio.com/sharebook", "cat",selectedItem);
+                    list.clear();
+
+                    Log.d(TAG, "onChildClick: "+groupPosition);
+
+                    Log.d(TAG, "onChildClick: "+selectedItem);
+                    if(selectedItem.equals("全部")){
+                        m.getFirebaseDatabase("https://bookshare-99cb3.firebaseio.com/sharebook","data");
+                    }else {
+                        m.searchFirebaseDatabase("https://bookshare-99cb3.firebaseio.com/sharebook", "cat",selectedItem);
+
+                    }
                 }
 
 
