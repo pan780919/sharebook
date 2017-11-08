@@ -1,10 +1,12 @@
 package com.jackpan.TaiwanpetadoptionApp;
 
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
-import android.app.Activity;
 import android.support.annotation.NonNull;
 import android.util.Log;
 import android.view.View;
@@ -24,20 +26,23 @@ import com.facebook.login.LoginManager;
 import com.facebook.login.LoginResult;
 import com.facebook.login.widget.LoginButton;
 import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthCredential;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FacebookAuthProvider;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-
-import java.util.Arrays;
-import java.util.List;
-
 import com.jackpan.Brokethenews.R;
 import com.jackpan.libs.mfirebaselib.MfiebaselibsClass;
 import com.jackpan.libs.mfirebaselib.MfirebaeCallback;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.Arrays;
+import java.util.List;
 
 public class LoginActivity extends Activity implements View.OnClickListener, MfirebaeCallback {
     FirebaseAuth auth;
@@ -134,7 +139,6 @@ public class LoginActivity extends Activity implements View.OnClickListener, Mfi
 
     private void fbLogin() {
         List<String> PERMISSIONS_PUBLISH = Arrays.asList("public_profile", "email", "user_friends");
-//        fbName  =(TextView ) findViewById(R.id.fbname);
         loginButton = (LoginButton) findViewById(R.id.fb_btn);
         loginButton.setReadPermissions(PERMISSIONS_PUBLISH);
         loginButton.registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
@@ -203,7 +207,7 @@ public class LoginActivity extends Activity implements View.OnClickListener, Mfi
                 if (currentProfile != null) {
                     //登入
 //                    fbName.setText(currentProfile.getName());
-                    MyApi.loadImage(String.valueOf(currentProfile.getProfilePictureUri(150, 150)), fbImg, LoginActivity.this);
+                    loadImage(String.valueOf(currentProfile.getProfilePictureUri(150, 150)), fbImg, LoginActivity.this);
 
 
                 }
@@ -217,7 +221,7 @@ public class LoginActivity extends Activity implements View.OnClickListener, Mfi
 
 //            if(Profile.getCurrentProfile().getName()!=null)	fbName.setText(Profile.getCurrentProfile().getName());
             if (Profile.getCurrentProfile().getProfilePictureUri(150, 150) != null)
-                MyApi.loadImage(String.valueOf(Profile.getCurrentProfile().getProfilePictureUri(150, 150)), fbImg, LoginActivity.this);
+                loadImage(String.valueOf(Profile.getCurrentProfile().getProfilePictureUri(150, 150)), fbImg, LoginActivity.this);
         } else
             Log.d(getClass().getSimpleName(), "profile currentProfile Tracking: " + "no");
 
@@ -229,7 +233,7 @@ public class LoginActivity extends Activity implements View.OnClickListener, Mfi
     }
 
     @Override
-    public void getDeleteState(boolean b, String s) {
+    public void getDeleteState(boolean b, String s ,Object o) {
 
     }
 
@@ -289,6 +293,12 @@ public class LoginActivity extends Activity implements View.OnClickListener, Mfi
     }
 
     @Override
+    public void getuserLoginEmail(String s) {
+        MySharedPrefernces.saveUserMail(this,s);
+
+    }
+
+    @Override
     public void resetPassWordState(boolean b) {
 
     }
@@ -327,6 +337,47 @@ public class LoginActivity extends Activity implements View.OnClickListener, Mfi
 
     @Override
     public void getUserLogoutState(boolean b) {
+
+    }
+    public static  void loadImage(final String path,
+                                  final ImageView imageView, final Activity activity){
+
+        new Thread(){
+
+            @Override
+            public void run() {
+
+                try {
+                    URL imageUrl = new URL(path);
+                    HttpURLConnection httpCon =
+                            (HttpURLConnection) imageUrl.openConnection();
+                    InputStream imageStr =  httpCon.getInputStream();
+                    final Bitmap bitmap =  BitmapFactory.decodeStream(imageStr);
+
+                    activity.runOnUiThread(new Runnable() {
+
+                        @Override
+                        public void run() {
+                            // TODO Auto-generated method stub
+                            imageView.setImageBitmap(bitmap);
+                        }
+                    });
+
+
+                } catch (MalformedURLException e) {
+                    // TODO Auto-generated catch block
+                    Log.e("Howard", "MalformedURLException:" + e);
+                } catch (IOException e) {
+                    // TODO Auto-generated catch block
+                    Log.e("Howard", "IOException:"+e);
+                }
+
+
+
+            }
+
+
+        }.start();
 
     }
 }

@@ -41,6 +41,7 @@
     </string-array>
 
     <string-array name="musicals">
+        <item>全部</item>
         <item>文學</item>
         <item>文財經企管</item>
         <item>生活風格</item>
@@ -55,7 +56,7 @@
         <item>語言學習</item>
         <item>考試用書</item>
         <item>電腦資訊</item>
-        <item>專業/教科書/政府出版本</item>
+        <item>專業/教科書/政府出版品</item>
         <item>外文書</item>
     </string-array>
 

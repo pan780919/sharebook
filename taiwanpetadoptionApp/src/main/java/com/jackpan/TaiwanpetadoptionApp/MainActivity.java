@@ -28,46 +28,37 @@ import android.widget.ExpandableListView;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
-import com.adlocus.PushAd;
 import com.bumptech.glide.Glide;
 import com.facebook.FacebookSdk;
 import com.facebook.appevents.AppEventsLogger;
 import com.facebook.applinks.AppLinkData;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.gson.Gson;
+import com.jackpan.Brokethenews.R;
+import com.jackpan.libs.mfirebaselib.MfiebaselibsClass;
+import com.jackpan.libs.mfirebaselib.MfirebaeCallback;
 
 import java.io.File;
 import java.io.FileOutputStream;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import Appkey.MyAdKey;
 import bolts.AppLinks;
 
-import com.jackpan.libs.mfirebaselib.MfiebaselibsClass;
-import com.jackpan.libs.mfirebaselib.MfirebaeCallback;
-import com.jackpan.Brokethenews.R;
 
-import org.jsoup.Jsoup;
-import org.jsoup.nodes.Document;
-import org.jsoup.nodes.Element;
-import org.jsoup.select.Elements;
 
 public class MainActivity extends Activity implements MfirebaeCallback {
     private ListView petlist;
-    private ArrayList<ResultData> mAllData = new ArrayList<ResultData>();
     private TextView numtext;
     MyAdapter mydapter = null;
     private boolean isCencel = false;
     private ProgressDialog progressDialog;
     private DrawerLayout drawerLayout;
-    HashMap<String, ArrayList<ResultData>> mKind;
     HashMap<String, ArrayList<String>> mCity;
     private MyAdapter mAdapter;
     private ArrayAdapter<String> mAdapter2 = null;
@@ -80,7 +71,7 @@ public class MainActivity extends Activity implements MfirebaeCallback {
     FirebaseAuth.AuthStateListener authListener;
     private String userUID;
     private ExpandableListView mExpandableListView;
-
+    private  boolean deleteBool = false;
     private String[] items;
 
     private List<String> mExpandableListTitle;
@@ -88,11 +79,12 @@ public class MainActivity extends Activity implements MfirebaeCallback {
 
     private Map<String, List<String>> mExpandableListData;
     MfiebaselibsClass m;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        m = new MfiebaselibsClass(this,MainActivity.this);
-        m.getFirebaseDatabase("https://bookshare-99cb3.firebaseio.com/sharebook","data");
+        m = new MfiebaselibsClass(this, MainActivity.this);
+        m.getFirebaseDatabase("https://bookshare-99cb3.firebaseio.com/sharebook", "data");
         m.userLoginCheck();
         setContentView(R.layout.activity_main);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
@@ -104,13 +96,13 @@ public class MainActivity extends Activity implements MfirebaeCallback {
         mInviteBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(userUID.equals("")){
+                if (userUID.equals("")) {
                     new AlertDialog.Builder(MainActivity.this)
                             .setTitle("尚未登入")
                             .setMessage("還沒登入會員,不能發文喔！由左向右滑可以看到選單喔！")
-                            .setPositiveButton("確定",null).show();
+                            .setPositiveButton("確定", null).show();
                     return;
-                }else{
+                } else {
                     Intent i = new Intent();
                     i.setClass(MainActivity.this, ForIdeaAndShareActivity.class);
                     startActivity(i);
@@ -142,14 +134,6 @@ public class MainActivity extends Activity implements MfirebaeCallback {
                 finish();
             }
         });
-        boolean isbuy = MySharedPrefernces.getIsBuyed(this);
-        if (isbuy) {
-            Intent promotionIntent = new Intent(this, MainActivity.class);
-            PushAd.enablePush(this, MyAdKey.AdLoucskey, promotionIntent);
-        } else {
-            PushAd.disablePush(MainActivity.this);
-        }
-
         petlist = (ListView) findViewById(R.id.listView1);
         petlist.setOnItemClickListener(new OnItemClickListener() {
 
@@ -167,6 +151,9 @@ public class MainActivity extends Activity implements MfirebaeCallback {
         petlist.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
             public boolean onItemLongClick(AdapterView<?> adapterView, View view, int i, long l) {
+                String userid = mAdapter.mDatas.get(i).id;
+                String pathString = userid + mAdapter.mDatas.get(i).date;
+                deleteData(pathString,userid);
                 return true;
             }
         });
@@ -187,25 +174,49 @@ public class MainActivity extends Activity implements MfirebaeCallback {
 
     }
 
-
+    private void deleteData(final String pathString,final  String userid ) {
+        new AlertDialog.Builder(this)
+                .setTitle("刪除文章")
+                .setMessage("你確定要刪除本篇文章內容嗎？")
+                .setPositiveButton("確定", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        m.userDeleteData("https://bookshare-99cb3.firebaseio.com/sharebook", pathString, userid);
+                        dialogInterface.dismiss();
+                    }
+                })
+                .setNegativeButton("取消", null)
+                .show();
+    }
 
     @Override
     public void getDatabaseData(Object o) {
+        Log.d(TAG, "getDatabaseData: "+o.toString());
+        Log.d(TAG, "getDatabaseData: "+list.size());
         Gson gson = new Gson();
         String jsonInString = gson.toJson(o);
-        FirebaseData g = gson.fromJson(jsonInString,FirebaseData.class);
+        FirebaseData g = gson.fromJson(jsonInString, FirebaseData.class);
         list.add(0, g);
-
-
+        Log.d(TAG, "getDatabaseData: "+list.size());
+        mAdapter = new MyAdapter(list);
+        petlist.setAdapter(mAdapter);
         mAdapter.notifyDataSetChanged();
         progressDialog.dismiss();
 
     }
 
     @Override
-    public void getDeleteState(boolean b, String s) {
-
+    public void getDeleteState(boolean b, String s, Object o) {
+        if (b) {
+            Toast.makeText(this, "刪除成功！", Toast.LENGTH_SHORT).show();
+            list.clear();
+            m.getFirebaseDatabase("https://bookshare-99cb3.firebaseio.com/sharebook", "data");
+        } else {
+            Toast.makeText(this, "刪除失敗！你不是該文章的作者", Toast.LENGTH_SHORT).show();
+        }
     }
+
+
 
     @Override
     public void createUserState(boolean b) {
@@ -214,9 +225,9 @@ public class MainActivity extends Activity implements MfirebaeCallback {
 
     @Override
     public void useLognState(boolean b) {
-        if (b){
+        if (b) {
 
-        }else {
+        } else {
 
         }
 
@@ -224,14 +235,20 @@ public class MainActivity extends Activity implements MfirebaeCallback {
 
     @Override
     public void getuseLoginId(String s) {
-        if (!s.equals("")){
-            MySharedPrefernces.saveUserId(this,s);
+        if (!s.equals("")) {
+            MySharedPrefernces.saveUserId(this, s);
             userUID = s;
 
-        }else {
-            MySharedPrefernces.saveUserId(this,"");
+        } else {
+            MySharedPrefernces.saveUserId(this, "");
             userUID = "";
         }
+
+    }
+
+    @Override
+    public void getuserLoginEmail(String s) {
+        MySharedPrefernces.saveUserMail(this,s);
 
     }
 
@@ -272,7 +289,6 @@ public class MainActivity extends Activity implements MfirebaeCallback {
 
 
     public class MyAdapter extends BaseAdapter {
-        //		private ArrayList<ResultData> mDatas;
         private ArrayList<FirebaseData> mDatas;
 
         public MyAdapter(ArrayList<FirebaseData> datas) {
@@ -339,7 +355,7 @@ public class MainActivity extends Activity implements MfirebaeCallback {
 
         if ((keyCode == KeyEvent.KEYCODE_BACK)) {   //確定按下退出鍵
 
-            ConfirmExit(); //呼叫ConfirmExit()函數
+            MainActivity.this.finish();//關閉activity
 
             return true;
 
@@ -364,7 +380,6 @@ public class MainActivity extends Activity implements MfirebaeCallback {
 
 
                 MainActivity.this.finish();//關閉activity
-                auth.signOut();
                 MySharedPrefernces.saveUserId(MainActivity.this, "");
 
             }
@@ -383,9 +398,6 @@ public class MainActivity extends Activity implements MfirebaeCallback {
         ad.show();//顯示訊息視窗
 
     }
-
-
-
 
 
     //縮放照片
@@ -432,6 +444,7 @@ public class MainActivity extends Activity implements MfirebaeCallback {
         }
         return Uri.fromFile(file);
     }
+
     private void initdrawlatout() {
         drawerLayout = (DrawerLayout) findViewById(R.id.drawerLayout);
         mExpandableListView = (ExpandableListView) findViewById(R.id.navList);
@@ -439,6 +452,7 @@ public class MainActivity extends Activity implements MfirebaeCallback {
         addDrawerItems();
 
     }
+
     private void addDrawerItems() {
         mExpandableListAdapter = new CustomExpandableListAdapter(this, mExpandableListTitle, mExpandableListData);
         mExpandableListView.setAdapter(mExpandableListAdapter);
@@ -460,16 +474,29 @@ public class MainActivity extends Activity implements MfirebaeCallback {
                                         int groupPosition, int childPosition, long id) {
                 String selectedItem = ((List) (mExpandableListData.get(mExpandableListTitle.get(groupPosition))))
                         .get(childPosition).toString();
-                Log.d(TAG, "selectedItem: "+selectedItem);
-                if(groupPosition==1){
-                    startActivity(new Intent(MainActivity.this,LoginActivity.class));
+                if (groupPosition == 1) {
+                    startActivity(new Intent(MainActivity.this, LoginActivity.class));
+                }else {
+                    list.clear();
+
+                    Log.d(TAG, "onChildClick: "+groupPosition);
+
+                    Log.d(TAG, "onChildClick: "+selectedItem);
+                    if(selectedItem.equals("全部")){
+                        m.getFirebaseDatabase("https://bookshare-99cb3.firebaseio.com/sharebook","data");
+                    }else {
+                        m.searchFirebaseDatabase("https://bookshare-99cb3.firebaseio.com/sharebook", "cat",selectedItem);
+
+                    }
                 }
+
 
                 drawerLayout.closeDrawer(GravityCompat.START);
                 return false;
             }
         });
     }
+
     @Override
     protected void onStart() {
         super.onStart();

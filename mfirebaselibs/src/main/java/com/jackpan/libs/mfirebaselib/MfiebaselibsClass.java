@@ -127,11 +127,15 @@ public class MfiebaselibsClass {
                 FirebaseUser user = firebaseAuth.getCurrentUser();
                 if (user != null) {
                     userUID = user.getUid();
+
                     callback.getuseLoginId(userUID);
+                    callback.getuserLoginEmail(user.getEmail());
                 } else {
                     userUID = "";
 
                     callback.getuseLoginId("");
+                    callback.getuserLoginEmail("");
+
                 }
             }
         };
@@ -263,15 +267,15 @@ public class MfiebaselibsClass {
             public void onDataChange(DataSnapshot dataSnapshot) {
                 if (dataSnapshot.getValue() != null) {
                     userRef.removeValue();
-                    callback.getDeleteState(true, DELETESUCCESS);
+                    callback.getDeleteState(true, DELETESUCCESS, dataSnapshot.getValue());
                 } else {
-                    callback.getDeleteState(false, DELETEFAIL);
+                    callback.getDeleteState(false, DELETEFAIL, dataSnapshot.getValue());
                 }
             }
 
             @Override
             public void onCancelled(FirebaseError firebaseError) {
-                callback.getDeleteState(false, firebaseError.getMessage());
+                callback.getDeleteState(false, firebaseError.getMessage(), null);
             }
         });
     }
@@ -285,7 +289,7 @@ public class MfiebaselibsClass {
 
     public void userDeleteData(String url, String pathString, String memberid) {
         if (!userUID.equals(memberid)) {
-            Toast.makeText(mContext, NOSELFDATA, Toast.LENGTH_SHORT).show();
+            callback.getDeleteState(false, NOSELFDATA, null);
             return;
         }
         Firebase myFirebaseRef = new Firebase(url);
@@ -295,15 +299,13 @@ public class MfiebaselibsClass {
             public void onDataChange(DataSnapshot dataSnapshot) {
                 if (dataSnapshot.getValue() != null) {
                     userRef.removeValue();
-                    callback.getDeleteState(true, DELETESUCCESS);
-                } else {
-                    callback.getDeleteState(false, DELETEFAIL);
+                    callback.getDeleteState(true, DELETESUCCESS, dataSnapshot.getValue());
                 }
             }
 
             @Override
             public void onCancelled(FirebaseError firebaseError) {
-                callback.getDeleteState(false, firebaseError.getMessage());
+                callback.getDeleteState(false, firebaseError.getMessage(), null);
             }
         });
     }
@@ -445,6 +447,7 @@ public class MfiebaselibsClass {
 
         });
     }
+
     /**
      *
      */
@@ -517,6 +520,7 @@ public class MfiebaselibsClass {
 
         });
     }
+
     /**
      * 這邊是上傳影片
      */
@@ -619,7 +623,6 @@ public class MfiebaselibsClass {
      * 更新會員照片
      * datauri 照片路徑
      * url storge url
-     *
      */
     @TargetApi(Build.VERSION_CODES.KITKAT)
 
@@ -734,37 +737,38 @@ public class MfiebaselibsClass {
 
 
     }
+
     /**
      * 會員登出 先檢查 id是否存在 如果存在就登出 之後再用authListener檢查是否成功
      */
-    public  void userLogout(String memberid){
+    public void userLogout(String memberid) {
 
-        if(!memberid.equals("")){
+        if (!memberid.equals("")) {
             auth.signOut();
             callback.getUserLogoutState(true);
-        }else {
+        } else {
             callback.getUserLogoutState(false);
 
         }
 
     }
+
     /**
-     *
-     try {
-     //讀取照片，型態為Bitmap
-     //判斷照片為橫向或者為直向，並進入ScalePic判斷圖片是否要進行縮放
-     if (bitmap.getWidth() > bitmap.getHeight()) ScalePic(bitmap,
-     mPhone.heightPixels);
-     else ScalePic(bitmap, mPhone.widthPixels);
-     } catch (FileNotFoundException e) {
-     e.printStackTrace();
-     Log.d(TAG, "onActivityResult: "+e.getMessage());
-     }
+     * try {
+     * //讀取照片，型態為Bitmap
+     * //判斷照片為橫向或者為直向，並進入ScalePic判斷圖片是否要進行縮放
+     * if (bitmap.getWidth() > bitmap.getHeight()) ScalePic(bitmap,
+     * mPhone.heightPixels);
+     * else ScalePic(bitmap, mPhone.widthPixels);
+     * } catch (FileNotFoundException e) {
+     * e.printStackTrace();
+     * Log.d(TAG, "onActivityResult: "+e.getMessage());
+     * }
      */
-    public void scaleAndSavePic(Uri datauri){
+    public void scaleAndSavePic(Uri datauri) {
 
         mPhone = new DisplayMetrics();
-        ((Activity)mContext).getWindowManager().getDefaultDisplay().getMetrics(mPhone);
+        ((Activity) mContext).getWindowManager().getDefaultDisplay().getMetrics(mPhone);
         ContentResolver cr = mContext.getContentResolver();
         try {
             //讀取照片，型態為Bitmap
@@ -808,7 +812,7 @@ public class MfiebaselibsClass {
         String root = Environment.getExternalStorageDirectory().toString();
         File myDir = new File(root + "/req_images");
         myDir.mkdirs();
-        String fname = DateFormat.format("yyyy-MM-dd kk:mm:ss", mCal.getTime())+".jpg";
+        String fname = DateFormat.format("yyyy-MM-dd kk:mm:ss", mCal.getTime()) + ".jpg";
         File file = new File(myDir, fname);
         if (file.exists()) file.delete();
 
@@ -822,10 +826,11 @@ public class MfiebaselibsClass {
         }
         return Uri.fromFile(file);
     }
+
     /**
      *
      */
-    public  void checkPermission(Activity activity ,String permissionName){
+    public void checkPermission(Activity activity, String permissionName) {
         int permission = ActivityCompat.checkSelfPermission(mContext,
                 android.Manifest.permission.READ_EXTERNAL_STORAGE);
     }
