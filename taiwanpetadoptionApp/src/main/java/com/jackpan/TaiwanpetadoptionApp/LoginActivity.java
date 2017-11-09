@@ -147,6 +147,12 @@ public class LoginActivity extends Activity implements View.OnClickListener, Mfi
                 Log.d(TAG, "onSuccess: " + loginResult.getAccessToken());
                 handleFacebookAccessToken(loginResult.getAccessToken());
                 setUsetProfile();
+                Log.d(TAG, "onComplete: "+loginResult.getAccessToken().getUserId());
+                MySharedPrefernces.saveUserId(LoginActivity.this, loginResult.getAccessToken().getUserId());
+
+                Toast.makeText(LoginActivity.this, "登入成功,將跳到商品列表", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(LoginActivity.this, MainActivity.class));
+                LoginActivity.this.finish();
             }
 
             @Override
@@ -171,6 +177,7 @@ public class LoginActivity extends Activity implements View.OnClickListener, Mfi
         // [START_EXCLUDE silent]
 
         // [END_EXCLUDE]
+        auth = FirebaseAuth.getInstance();
 
         AuthCredential credential = FacebookAuthProvider.getCredential(token.getToken());
         auth.signInWithCredential(credential)
@@ -178,7 +185,6 @@ public class LoginActivity extends Activity implements View.OnClickListener, Mfi
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         Log.d(TAG, "signInWithCredential:onComplete:" + task.isSuccessful());
-
                         // If sign in fails, display a message to the user. If sign in succeeds
                         // the auth state listener will be notified and logic to handle the
                         // signed in user can be handled in the listener.
@@ -208,7 +214,6 @@ public class LoginActivity extends Activity implements View.OnClickListener, Mfi
                     //登入
 //                    fbName.setText(currentProfile.getName());
                     loadImage(String.valueOf(currentProfile.getProfilePictureUri(150, 150)), fbImg, LoginActivity.this);
-
 
                 }
 
@@ -276,6 +281,12 @@ public class LoginActivity extends Activity implements View.OnClickListener, Mfi
 
     @Override
     public void getuseLoginId(String s) {
+        if(!MySharedPrefernces.getUserId(LoginActivity.this).equals("")){
+            startActivity(new Intent(LoginActivity.this,UserActivity.class));
+            LoginActivity.this.finish();
+            return;
+        }
+
         if (!s.equals("")) {
             userUID = s;
             MySharedPrefernces.saveUserId(LoginActivity.this, userUID);

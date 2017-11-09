@@ -87,7 +87,7 @@ public class MainActivity extends Activity implements MfirebaeCallback {
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
         FacebookSdk.sdkInitialize(getApplicationContext());
         AppEventsLogger.activateApp(this);
-
+        userUID = MySharedPrefernces.getUserId(MainActivity.this);
 
         mInviteBtn = (Button) findViewById(R.id.inviteBtn);
         mInviteBtn.setOnClickListener(new View.OnClickListener() {
@@ -225,6 +225,7 @@ public class MainActivity extends Activity implements MfirebaeCallback {
 
     @Override
     public void getuseLoginId(String s) {
+        if(!MySharedPrefernces.getUserId(MainActivity.this).equals("")) return;
         if (!s.equals("")) {
             MySharedPrefernces.saveUserId(this, s);
             userUID = s;
