@@ -5,11 +5,8 @@ import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.Matrix;
 import android.net.Uri;
 import android.os.Bundle;
-import android.os.Environment;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.util.Log;
@@ -41,8 +38,6 @@ import com.jackpan.Brokethenews.R;
 import com.jackpan.libs.mfirebaselib.MfiebaselibsClass;
 import com.jackpan.libs.mfirebaselib.MfirebaeCallback;
 
-import java.io.File;
-import java.io.FileOutputStream;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -83,8 +78,10 @@ public class MainActivity extends Activity implements MfirebaeCallback {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        // 設定資料庫跟撈取資料庫
         m = new MfiebaselibsClass(this, MainActivity.this);
         m.getFirebaseDatabase("https://bookshare-99cb3.firebaseio.com/sharebook", "data");
+        //檢查登入狀態
         m.userLoginCheck();
         setContentView(R.layout.activity_main);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
@@ -166,10 +163,6 @@ public class MainActivity extends Activity implements MfirebaeCallback {
         mExpandableListTitle = new ArrayList(mExpandableListData.keySet());
 
         initdrawlatout();
-//        QuMiConnect.ConnectQuMi(this, "5dd972580405c9d2", "6345c4cc61b91055");
-//        AdView adView = (AdView) findViewById(R.id.adView);
-//        adView.setSwitchStatus(true);//隐藏关闭按钮
-//        QuMiConnect.getQumiConnectInstance(this).initAdView(adView);
 
 
     }
@@ -191,13 +184,10 @@ public class MainActivity extends Activity implements MfirebaeCallback {
 
     @Override
     public void getDatabaseData(Object o) {
-        Log.d(TAG, "getDatabaseData: "+o.toString());
-        Log.d(TAG, "getDatabaseData: "+list.size());
         Gson gson = new Gson();
         String jsonInString = gson.toJson(o);
         FirebaseData g = gson.fromJson(jsonInString, FirebaseData.class);
         list.add(0, g);
-        Log.d(TAG, "getDatabaseData: "+list.size());
         mAdapter = new MyAdapter(list);
         petlist.setAdapter(mAdapter);
         mAdapter.notifyDataSetChanged();
@@ -269,7 +259,6 @@ public class MainActivity extends Activity implements MfirebaeCallback {
 
     @Override
     public void getFirebaseStorageType(String s, String s1) {
-
     }
 
     @Override
@@ -397,52 +386,6 @@ public class MainActivity extends Activity implements MfirebaeCallback {
 
         ad.show();//顯示訊息視窗
 
-    }
-
-
-    //縮放照片
-    private void ScalePic(Bitmap bitmap, int phone) {
-        //縮放比例預設為1
-        float mScale = 1;
-
-        //如果圖片寬度大於手機寬度則進行縮放，否則直接將圖片放入ImageView內
-        if (bitmap.getWidth() > phone) {
-            //判斷縮放比例
-            mScale = (float) phone / (float) bitmap.getWidth();
-
-            Matrix mMat = new Matrix();
-            mMat.setScale(mScale, mScale);
-
-            Bitmap mScaleBitmap = Bitmap.createBitmap(bitmap,
-                    0,
-                    0,
-                    bitmap.getWidth(),
-                    bitmap.getHeight(),
-                    mMat,
-                    false);
-//			mImg.setImageBitmap(mScaleBitmap);
-        }
-//		else mImg.setImageBitmap(bitmap);
-    }
-
-    //儲存圖片
-    public Uri savePicture(Bitmap bitmap) {
-        String root = Environment.getExternalStorageDirectory().toString();
-        File myDir = new File(root + "/req_images");
-        myDir.mkdirs();
-        String fname = "temp.jpg";
-        File file = new File(myDir, fname);
-        if (file.exists()) file.delete();
-
-        try {
-            FileOutputStream out = new FileOutputStream(file);
-            bitmap.compress(Bitmap.CompressFormat.JPEG, 90, out);
-            out.flush();
-            out.close();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return Uri.fromFile(file);
     }
 
     private void initdrawlatout() {

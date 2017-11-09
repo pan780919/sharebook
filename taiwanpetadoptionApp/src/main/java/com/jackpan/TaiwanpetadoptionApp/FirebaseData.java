@@ -6,7 +6,7 @@ import java.text.Normalizer;
 import java.util.List;
 
 /**
- * Created by HYXEN20141227 on 2016/12/21.
+ * 資料庫欄位
  */
 
 public class FirebaseData {

@@ -136,7 +136,7 @@ public class LoginActivity extends Activity implements View.OnClickListener, Mfi
         super.onActivityResult(requestCode, resultCode, data);
         callbackManager.onActivityResult(requestCode, resultCode, data);
     }
-
+    //臉書登入
     private void fbLogin() {
         List<String> PERMISSIONS_PUBLISH = Arrays.asList("public_profile", "email", "user_friends");
         loginButton = (LoginButton) findViewById(R.id.fb_btn);

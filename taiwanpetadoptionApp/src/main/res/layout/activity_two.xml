@@ -200,9 +200,9 @@
                     <ImageButton
                         android:layout_marginLeft="12dp"
                         android:id="@+id/callphone"
-                        android:layout_width="60dp"
-                        android:layout_height="60dp"
-                        android:src="@drawable/phone"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/phone"
 
                         ></ImageButton>
                 </LinearLayout>

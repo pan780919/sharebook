@@ -79,7 +79,7 @@ public class TwoActivity extends Activity {
 
 
     }
-
+    //設定介面
     private void initLayout() {
         mShareBtn = (Button) findViewById(R.id.b_button_share);
         mShareBtn.setVisibility(View.GONE);
@@ -125,8 +125,7 @@ public class TwoActivity extends Activity {
 
     }
 
-    private static final String TAG = "TwoActivity";
-
+    //讀取資料
     private void loadIntent() {
         String json = getIntent().getStringExtra("json");
         final FirebaseData data = new Gson().fromJson(json, FirebaseData.class);
@@ -152,7 +151,7 @@ public class TwoActivity extends Activity {
         loadImage(data.pic3, img3);
 
     }
-
+    //設定圖片
     private void loadImage(final String path,
                            final ImageView imageView) {
 

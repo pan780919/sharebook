@@ -100,8 +100,6 @@ public class UserActivity extends Activity implements MfirebaeCallback {
                                                     Toast.makeText(UserActivity.this, "請勿輸入空白", Toast.LENGTH_SHORT).show();
                                                     return;
                                                 }
-                                                Log.d(TAG, "onClick: " + oldPassword);
-                                                Log.d(TAG, "onClick: " + newPassword);
                                                 mfiebaselibsClass.resetPassWord(oldPassword,newPassword);
                                                 dialogInterface.dismiss();
                                             }
