@@ -80,7 +80,7 @@ public class MainActivity extends Activity implements MfirebaeCallback {
         super.onCreate(savedInstanceState);
         // 設定資料庫跟撈取資料庫
         m = new MfiebaselibsClass(this, MainActivity.this);
-        m.getFirebaseDatabase("https://bookshare-99cb3.firebaseio.com/sharebook", "data");
+        m.getFirebaseDatabase("https://bookshare-99cb3.firebaseio.com/sharebook", "date");
         //檢查登入狀態
         m.userLoginCheck();
         setContentView(R.layout.activity_main);
@@ -200,7 +200,7 @@ public class MainActivity extends Activity implements MfirebaeCallback {
         if (b) {
             Toast.makeText(this, "刪除成功！", Toast.LENGTH_SHORT).show();
             list.clear();
-            m.getFirebaseDatabase("https://bookshare-99cb3.firebaseio.com/sharebook", "data");
+            m.getFirebaseDatabase("https://bookshare-99cb3.firebaseio.com/sharebook", "date");
         } else {
             Toast.makeText(this, "刪除失敗！你不是該文章的作者", Toast.LENGTH_SHORT).show();
         }
