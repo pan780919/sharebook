@@ -101,13 +101,14 @@ public class LoginActivity extends Activity implements View.OnClickListener, Mfi
                 password = ((EditText) findViewById(R.id.password))
                         .getText().toString();
                 Log.d("AUTH", email + "/" + password);
-                if(email.isEmpty()&& password.isEmpty()){
-                    Toast.makeText(LoginActivity.this,"請輸入帳號或密碼",Toast.LENGTH_SHORT).show();
+                if(email.isEmpty()){
+                    Toast.makeText(LoginActivity.this,"請輸入帳號",Toast.LENGTH_SHORT).show();
                     return;
-                }else {
-                    mfiebaselibsClass.userLogin(email, password);
-
+                }if(password.isEmpty()){
+                    Toast.makeText(LoginActivity.this,"請輸入密碼",Toast.LENGTH_SHORT).show();
+                    return;
                 }
+                mfiebaselibsClass.userLogin(email, password);
                 break;
             case R.id.button2:
 
